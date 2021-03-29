@@ -17,7 +17,7 @@ use stdClass;
 * 	FortiOS configuration API
 *	@property Config $config Config object with all needed information.
 *	@property string $session_key Authentication token kept in cache.
-*	@property mixed<int|null> $transaction Ongoning transaction ID.
+*	@property int|null $transaction Ongoning transaction ID.
 *	WARNING : When going through the method prepareRequestData(), all upper case letter in function parameter name will be replaced by '-' and brought down to lower case. If you modify or add new endpoints replace all '-' in parameter name by the next letter in uppercase.
 *	@link https://fndn.fortinet.net/ Fortinet developer ressource center.
 */
@@ -55,9 +55,9 @@ class FortiOSAPI {
 	 * Method to request the firewall's API
 	 * @param  string $method HTTP method (e.g. 'GET', 'POST', 'PUT', 'DELETE' ...).
 	 * @param  string $endpoint API endpoint without the 2 first element ('rest' and API version '/api/vX'), e.g. /cmdb/router/static.
-	 * @param  mixed<int|string> $pathData Data to be passed in the request path (only one).
-	 * @param  mixed<stdClass|array> $queryData Data to be passed in the request query as GET arguments.
-	 * @param  mixed<stdClass|array> $bodyData Data to be passed in the request body as a JSON object.
+	 * @param  int|string $pathData Data to be passed in the request path (only one).
+	 * @param  stdClass|array $queryData Data to be passed in the request query as GET arguments.
+	 * @param  stdClass|array $bodyData Data to be passed in the request body as a JSON object.
 	 * @return stdClass Return firewall's response as a stdClass.
 	 */
 	private function curlRequest(string $method, string $endpoint, $pathData = NULL, $queryData = NULL, $bodyData = NULL, int $timeout = NULL) : stdClass {
