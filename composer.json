@@ -1,5 +1,5 @@
 {
-    "name": "benclerc/fortinet-fortios-cmdb",
+    "name": "benclerc/fortinet-fortiosapi",
     "description": "PHP library used for interacting with Fortigate firewall (FortiOS) configuration API.",
     "homepage": "https://github.com/benclerc/Fortinet-FortiOSAPI",
     "license": "MIT",
