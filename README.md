@@ -45,7 +45,7 @@ Optional parameters :
 * Timeout : 5000ms. Use `setTimeout()` to change.
 * SSL verify peer option : TRUE. Use `setSSLVerifyPeer()` to change.
 * SSL verify host option : 2. Use `setSSLVerifyHost()` to change.
-* API version : 'v7'. Use `setAPIVersion()` to change (only >= v7 are supported).
+* API version : 2. Use `setAPIVersion()` to change.
 
 Example :
 
@@ -73,7 +73,7 @@ try {
 }
 ```
 
-### SwitchAPI class
+### FortiOSAPI class
 
 #### Usage
 
