@@ -1,0 +1,24 @@
+{
+    "name": "benclerc/fortinet-fortios-cmdb",
+    "description": "PHP library used for interacting with Fortigate firewall (FortiOS) configuration API.",
+    "homepage": "https://github.com/benclerc/Fortinet-FortiOSAPI",
+    "license": "MIT",
+    "type": "Library",
+    "authors": [
+        {
+            "name": "Benjamin Clerc",
+            "email": "contact@benjamin-clerc.com",
+            "homepage": "https://benjamin-clerc.com",
+            "role": "Creator/Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Aruba\\": "src/Fortinet/"
+        }
+    }
+}
