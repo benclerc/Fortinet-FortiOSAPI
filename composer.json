@@ -1,6 +1,6 @@
 {
     "name": "benclerc/fortinet-fortiosapi",
-    "description": "PHP library used for interacting with Fortigate firewall (FortiOS) configuration API.",
+    "description": "PHP library used for interacting with Fortigate firewall (FortiOS) APIs.",
     "homepage": "https://github.com/benclerc/Fortinet-FortiOSAPI",
     "license": "MIT",
     "type": "Library",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Aruba\\": "src/Fortinet/"
+            "Fortinet\\": "src/Fortinet/FortiOSAPI/"
         }
     }
 }
