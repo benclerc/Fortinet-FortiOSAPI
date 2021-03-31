@@ -34,7 +34,9 @@ You can find a full documentation [here](https://benclerc.github.io/Fortinet-For
 
 ### Config class
 
-This Config class is used to prepare the mandatory configuration information to instanciate and use the SwitchAPI class. In the constructor you must pass :
+#### Usage
+
+This Config class is used to prepare the mandatory configuration information to instanciate and use the FortiOSAPI... classes. In the constructor you must pass :
 
 1. The switch's hostname (FQDN) or IP address
 2. A valid user's username
@@ -47,7 +49,7 @@ Optional parameters :
 * SSL verify host option : 2. Use `setSSLVerifyHost()` to change.
 * API version : 2. Use `setAPIVersion()` to change.
 
-Example :
+#### Examples
 
 ```php
 // Basic configuration
@@ -65,21 +67,22 @@ $configFirewall->setSSLVerifyPeer(FALSE)->setSSLVerifyHost(FALSE);
 $configFirewall = new \Fortinet\Config('123.123.123.123', 'admin', 'password');
 $configFirewall->setAPIVersion(1);
 
-// The class logins to the firewall when being instanciated hence the try/catch statement. 
+// The class logins to the firewall when being instanciated hence the try/catch statement.
+// Here I use the class FortiOSAPICmdb for the example but it the same for FortiOSAPILog and FortiOSAPIMonitor classes.
 try {
-	$firewall = new \Fortinet\FortiOSAPI($configFirewall);
+	$firewall = new \Fortinet\FortiOSAPICmdb($configFirewall);
 } catch (Exception $e) {
 	echo('Handle error : '.$e->getMessage());
 }
 ```
 
-### FortiOSAPI class
+### FortiOSAPICmdb, FortiOSAPILog and FortiOSAPIMonitor classes
 
 #### Usage
 
-This class uses Exception to handle errors, for nominal execution you should instanciate and request methods inside try/catch statements.
+These classes uses Exception to handle errors, for nominal execution you should instanciate and request methods inside try/catch statements.
 
-Examples :
+#### Examples
 
 ```php
 // Get one particular static route
@@ -89,10 +92,27 @@ try {
 } catch (Exception $e) {
 	echo('Handle error : '.$e->getMessage());
 }
+
+// Set a static route
+// Define the route
+$staticRoute = new stdClass;
+$staticRoute->status = 'enable';
+$staticRoute->dst = '1.1.1.1 255.255.255.255';
+$staticRoute->src = '198.168.1.0 255.255.255.0';
+$staticRoute->gateway = '198.168.1.254';
+$staticRoute->device = 'lan';
+$staticRoute->distance = 20;
+
+// Send the request to the firewall
+try {
+   $res = $firewall->addRouterStatic($staticRoute);
+
+   if ($res->status == 'success') {
+      echo('Route added');
+   } else {
+      echo('Route adding failed');
+   }
+} catch (Exception $e) {
+   echo('Handle error : '.$e->getMessage());
+}
 ```
-
-#### Available methods
-
-* [startTransaction()](https://benclerc.github.io/Fortinet-FortiOSAPI/classes/Fortinet-FortiOSAPI.html#method_startTransaction) : Start a transaction (Warning : Fortinet says all tables are not supported but do not indicate which one exactly).
-* [commitTransaction()](https://benclerc.github.io/Fortinet-FortiOSAPI/classes/Fortinet-FortiOSAPI.html#method_commitTransaction) : Commit a transaction (apply operations).
-* [abortTransaction()](https://benclerc.github.io/Fortinet-FortiOSAPI/classes/Fortinet-FortiOSAPI.html#method_abortTransaction) : Abort a transaction (rollback operations).
