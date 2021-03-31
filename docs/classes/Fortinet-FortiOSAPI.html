@@ -85,12 +85,12 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">24</span>
 </aside>
 
-            <p class="phpdocumentor-summary">FortiOS configuration API</p>
+            <p class="phpdocumentor-summary">FortiOS API</p>
 
     <section class="phpdocumentor-description"></section>
 
@@ -185,39 +185,11 @@
 <dd>Abort a transaction (rollback operations).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Fortinet-FortiOSAPI.html#method_addRouterStatic">addRouterStatic()</a>
-    <span>
-                        &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
-</dt>
-<dd>Create object(s) in this table. Access Group: netgrp</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Fortinet-FortiOSAPI.html#method_commitTransaction">commitTransaction()</a>
     <span>
                         &nbsp;: bool    </span>
 </dt>
 <dd>Commit a transaction (apply operations).</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Fortinet-FortiOSAPI.html#method_deleteRouterStatic">deleteRouterStatic()</a>
-    <span>
-                        &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
-</dt>
-<dd>Delete this specific resource. Access Group: netgrp</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Fortinet-FortiOSAPI.html#method_getAllRouterStatic">getAllRouterStatic()</a>
-    <span>
-                        &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
-</dt>
-<dd>Select all entries in a CLI table. Access Group: netgrp</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Fortinet-FortiOSAPI.html#method_getRouterStatic">getRouterStatic()</a>
-    <span>
-                        &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
-</dt>
-<dd>Select a specific entry from a CLI table. Access Group: netgrp</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Fortinet-FortiOSAPI.html#method_listTransactions">listTransactions()</a>
@@ -233,19 +205,19 @@
 </dt>
 <dd>Start a transaction (Warning : Fortinet says all tables are not supported but do not indicate which one exactly).</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Fortinet-FortiOSAPI.html#method_updateRouterStatic">updateRouterStatic()</a>
-    <span>
-                        &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
-</dt>
-<dd>Update this specific resource. Access Group: netgrp</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Fortinet-FortiOSAPI.html#method_curlRequest">curlRequest()</a>
     <span>
                         &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
 </dt>
-<dd>Method to request the firewall&#039;s API</dd>
+<dd>Method to request the firewall&#039;s API.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Fortinet-FortiOSAPI.html#method_httpBuildCustomQuery">httpBuildCustomQuery()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Function used to build a query with params but following fortigate satndards.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Fortinet-FortiOSAPI.html#method_login">login()</a>
@@ -259,14 +231,7 @@
     <span>
                         &nbsp;: <abbr title="\Fortinet\Return">Return</abbr>    </span>
 </dt>
-<dd>Logout</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -private">
-    <a href="classes/Fortinet-FortiOSAPI.html#method_prepareRequestData">prepareRequestData()</a>
-    <span>
-                        &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
-</dt>
-<dd>Function used to create the data object for the request. Warning : this method will always discard a variable named &quot;body&quot; or &quot;seqnum&quot;.</dd>
+<dd>Logout from the firewall.</dd>
 
         </dl>
 
@@ -294,7 +259,7 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 </aside>
@@ -326,7 +291,7 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 </aside>
@@ -358,7 +323,7 @@
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">0</span>
 </aside>
@@ -371,7 +336,7 @@
     </code>
 
         <section class="phpdocumentor-description"><p>Ongoning transaction ID.
-WARNING : When going through the method prepareRequestData(), all upper case letter in function parameter name will be replaced by '-' and brought down to lower case. If you modify or add new endpoints replace all '-' in parameter name by the next letter in uppercase.</p>
+WARNING : When going through the method prepareRequestData(), all upper case letter in function parameter name will be replaced by '-' and ;brought down to lower case. If you modify or add new endpoints replace all '-' in parameter name by the next letter in uppercase.</p>
 </section>
 
     
@@ -391,9 +356,9 @@ WARNING : When going through the method prepareRequestData(), all upper case let
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">25</span>
+    <span class="phpdocumentor-element-found-in__line">26</span>
 </aside>
 
     
@@ -421,9 +386,9 @@ WARNING : When going through the method prepareRequestData(), all upper case let
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">26</span>
+    <span class="phpdocumentor-element-found-in__line">27</span>
 </aside>
 
     
@@ -451,9 +416,9 @@ WARNING : When going through the method prepareRequestData(), all upper case let
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">27</span>
+    <span class="phpdocumentor-element-found-in__line">28</span>
 </aside>
 
     
@@ -485,9 +450,9 @@ WARNING : When going through the method prepareRequestData(), all upper case let
         <a href="classes/Fortinet-FortiOSAPI.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">38</span>
+    <span class="phpdocumentor-element-found-in__line">35</span>
 </aside>
 
         <p class="phpdocumentor-summary">Constructor takes care of checking and registering switch&#039;s data and login to the API</p>
@@ -531,9 +496,9 @@ WARNING : When going through the method prepareRequestData(), all upper case let
         <a href="classes/Fortinet-FortiOSAPI.html#method___destruct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">49</span>
+    <span class="phpdocumentor-element-found-in__line">47</span>
 </aside>
 
         <p class="phpdocumentor-summary">Destructor takes care of logout.</p>
@@ -565,16 +530,16 @@ WARNING : When going through the method prepareRequestData(), all upper case let
         <a href="classes/Fortinet-FortiOSAPI.html#method_abortTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">256</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 </aside>
 
         <p class="phpdocumentor-summary">Abort a transaction (rollback operations).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">abortTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">abortTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -583,7 +548,7 @@ WARNING : When going through the method prepareRequestData(), all upper case let
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$vdom</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Specify the Virtual Domain from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.</p>
 </section>
@@ -597,91 +562,6 @@ WARNING : When going through the method prepareRequestData(), all upper case let
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
             <section class="phpdocumentor-description"><p>Return TRUE on success and FALSE on failure.</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_addRouterStatic">
-        addRouterStatic()
-        <a href="classes/Fortinet-FortiOSAPI.html#method_addRouterStatic" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">402</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Create object(s) in this table. Access Group: netgrp</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">addRouterStatic</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$nkey</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$body</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>All parameters describing the route details as a JSON document.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$vdom</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
-The URL parameter is one of:
-vdom=root (Single VDOM)
-vdom=vdom1,vdom2 (Multiple VDOMs)
-vdom=* (All VDOMs)</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If supported, an action can be specified.
-clone: Clone this specific resource.
-When action=clone is set, the extra parameters nkey must be provided.
-Note: If this parameter is provided when not supported, the action will be ignored and an “invalid request” error will be returned.
-Available values : clone</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$nkey</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If action=clone, use nkey to specify the ID for the new resource to be created.
-For example, to clone address1 to address1_clone, use:
-action=clone&amp;nkey=address1_clone
-Note: This parameter can only be used when the action parameter is set to clone</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
 </section>
 
     
@@ -697,16 +577,16 @@ Note: This parameter can only be used when the action parameter is set to clone<
         <a href="classes/Fortinet-FortiOSAPI.html#method_commitTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">236</span>
+    <span class="phpdocumentor-element-found-in__line">271</span>
 </aside>
 
         <p class="phpdocumentor-summary">Commit a transaction (apply operations).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">commitTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">commitTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -715,7 +595,7 @@ Note: This parameter can only be used when the action parameter is set to clone<
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$vdom</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Specify the Virtual Domain from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.</p>
 </section>
@@ -729,357 +609,6 @@ Note: This parameter can only be used when the action parameter is set to clone<
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
             <section class="phpdocumentor-description"><p>Return TRUE on success and FALSE on failure.</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_deleteRouterStatic">
-        deleteRouterStatic()
-        <a href="classes/Fortinet-FortiOSAPI.html#method_deleteRouterStatic" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">336</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Delete this specific resource. Access Group: netgrp</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">deleteRouterStatic</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$seqnum</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$seqnum</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Sequence number of the route to be deleted.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$vdom</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
-The URL parameter is one of:
-vdom=root (Single VDOM)
-vdom=vdom1,vdom2 (Multiple VDOMs)
-vdom=* (All VDOMs)</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getAllRouterStatic">
-        getAllRouterStatic()
-        <a href="classes/Fortinet-FortiOSAPI.html#method_getAllRouterStatic" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">378</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Select all entries in a CLI table. Access Group: netgrp</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getAllRouterStatic</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$datasource</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$start</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$count</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$with_meta</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$with_contents_hash</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skip</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pattern</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$scope</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$excludeDefaultValues</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$datasource</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable to include datasource information for each linked object.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$start</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Starting entry index.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$count</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Maximum number of entries to return.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$with_meta</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable to include meta information about each object (type id, references, etc).</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$with_contents_hash</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable to include a checksum of each object's contents.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$skip</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable to call CLI skip operator to hide skipped properties.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>List of property names to include in results, separated by | (i.e. policyid|srcintf).</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$filter</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Filtering multiple key/value pairs
-Operator | Description
-== | Case insensitive match with pattern.
-!= | Does not match with pattern (case insensitive).
-=@ | Pattern found in object value (case insensitive).
-!@ | ﻿Pattern not﻿ found in object value (case insensitive).
-&lt;= | Value must be less than or equal to ﻿pattern﻿.
-&lt; | Value must be less than pattern﻿.
-.&gt;= | Value must be greater than or equal to ﻿pattern﻿.
-.&gt; | Value must be greater than ﻿pattern﻿.
-Logical OR | Separate filters using commas ','
-Logical AND | Filter strings can be combined to create logical AND queries by including multiple filters in the request.
-Combining AND and OR | You can combine AND and OR filters together to create more complex filters.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$key</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If present, objects will be filtered on property with this name.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$pattern</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If present, objects will be filtered on property with this value.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$scope</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Scope [global|vdom|both*]</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$excludeDefaultValues</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Exclude properties/objects with default value.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>default: Return the CLI default values for entire CLI tree.
-meta: Return meta data for a specific object, table, or the entire CLI tree.
-schema: Return schema for entire CLI tree.
-Available values : default, schema.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$vdom</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
-The URL parameter is one of:
-vdom=root (Single VDOM)
-vdom=vdom1,vdom2 (Multiple VDOMs)
-vdom=* (All VDOMs)</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getRouterStatic">
-        getRouterStatic()
-        <a href="classes/Fortinet-FortiOSAPI.html#method_getRouterStatic" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">293</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Select a specific entry from a CLI table. Access Group: netgrp</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">getRouterStatic</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$seqnum</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$datasource</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$with_meta</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$skip</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$format</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$seqnum</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Sequence number of the route to be deleted.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$datasource</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable to include datasource information for each linked object.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$with_meta</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable to include meta information about each object (type id, references, etc).</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$skip</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable to call CLI skip operator to hide skipped properties.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$format</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>List of property names to include in results, separated by | (i.e. policyid|srcintf).</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>default: Return the CLI default values for entire CLI tree.
-meta: Return meta data for a specific object, table, or the entire CLI tree.
-schema: Return schema for entire CLI tree.
-Available values : default, schema.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$vdom</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
-The URL parameter is one of:
-vdom=root (Single VDOM)
-vdom=vdom1,vdom2 (Multiple VDOMs)
-vdom=* (All VDOMs)</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
 </section>
 
     
@@ -1095,16 +624,16 @@ vdom=* (All VDOMs)</p>
         <a href="classes/Fortinet-FortiOSAPI.html#method_listTransactions" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">206</span>
+    <span class="phpdocumentor-element-found-in__line">239</span>
 </aside>
 
         <p class="phpdocumentor-summary">List all transactions.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">listTransactions</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">listTransactions</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1113,7 +642,7 @@ vdom=* (All VDOMs)</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$vdom</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1124,8 +653,8 @@ vdom=* (All VDOMs)</p>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">bool</span>
             &mdash;
-            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
-<p>As of version 6.4.5, this method sometimes returns unparsable JSON.</p>
+            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.
+As of version 6.4.5, this method sometimes returns unparsable JSON.</p>
 </section>
 
     
@@ -1141,16 +670,16 @@ vdom=* (All VDOMs)</p>
         <a href="classes/Fortinet-FortiOSAPI.html#method_startTransaction" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">218</span>
+    <span class="phpdocumentor-element-found-in__line">252</span>
 </aside>
 
         <p class="phpdocumentor-summary">Start a transaction (Warning : Fortinet says all tables are not supported but do not indicate which one exactly).</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">startTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+                <span class="phpdocumentor-signature__name">startTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1159,7 +688,7 @@ vdom=* (All VDOMs)</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$timeout</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Transaction's timeout.</p>
 </section>
@@ -1168,7 +697,7 @@ vdom=* (All VDOMs)</p>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$vdom</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Specify the Virtual Domain from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.</p>
 </section>
@@ -1189,111 +718,7 @@ vdom=* (All VDOMs)</p>
                     <article
         class="phpdocumentor-element
             -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_updateRouterStatic">
-        updateRouterStatic()
-        <a href="classes/Fortinet-FortiOSAPI.html#method_updateRouterStatic" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">321</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Update this specific resource. Access Group: netgrp</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">updateRouterStatic</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$seqnum</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$body</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$action</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$before</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$after</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$seqnum</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$body</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>All parameters describing the route details as a JSON document.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$vdom</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
-The URL parameter is one of:
-vdom=root (Single VDOM)
-vdom=vdom1,vdom2 (Multiple VDOMs)
-vdom=* (All VDOMs)</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$action</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If supported, an action can be specified.
-move: Move this specific resource.
-When action=move is set, one of the extra parameters (before, after) must be provided.
-Note: If this parameter is provided when not supported, the action will be ignored and an “invalid request” error will be returned.
-Available values : move</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$before</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If action=move, use before to specify the ID of the resource that this resource will be moved before.
-For example, to move object 1 to before object 2, use:
-action=move&amp;before=2
-Note: This parameter can only be used when the action parameter is set to move.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$after</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>If action=move, use after to specify the ID of the resource that this resource will be moved after.
-For example, to move object 1 to after object 3, use:
-action=move&amp;after=3
-Note: This parameter can only be used when the action parameter is set to move.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="method_curlRequest">
@@ -1301,16 +726,16 @@ Note: This parameter can only be used when the action parameter is set to move.<
         <a href="classes/Fortinet-FortiOSAPI.html#method_curlRequest" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">62</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Method to request the firewall&#039;s API</p>
+        <p class="phpdocumentor-summary">Method to request the firewall&#039;s API.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">curlRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endpoint</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bodyData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">curlRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endpoint</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bodyData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1337,7 +762,7 @@ Note: This parameter can only be used when the action parameter is set to move.<
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$pathData</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int|string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Data to be passed in the request path (only one).</p>
 </section>
@@ -1346,7 +771,7 @@ Note: This parameter can only be used when the action parameter is set to move.<
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$queryData</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Data to be passed in the request query as GET arguments.</p>
 </section>
@@ -1355,7 +780,7 @@ Note: This parameter can only be used when the action parameter is set to move.<
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$bodyData</span>
                 : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Data to be passed in the request body as a JSON object.</p>
 </section>
@@ -1364,7 +789,7 @@ Note: This parameter can only be used when the action parameter is set to move.<
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$timeout</span>
                 : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
@@ -1386,14 +811,61 @@ Note: This parameter can only be used when the action parameter is set to move.<
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_httpBuildCustomQuery">
+        httpBuildCustomQuery()
+        <a href="classes/Fortinet-FortiOSAPI.html#method_httpBuildCustomQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">142</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Function used to build a query with params but following fortigate satndards.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">httpBuildCustomQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Array of data.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return the data encoded in a string to be passed as an URL.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_login">
         login()
         <a href="classes/Fortinet-FortiOSAPI.html#method_login" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">157</span>
+    <span class="phpdocumentor-element-found-in__line">194</span>
 </aside>
 
         <p class="phpdocumentor-summary">Login in the firewall.</p>
@@ -1426,12 +898,12 @@ Note: This parameter can only be used when the action parameter is set to move.<
         <a href="classes/Fortinet-FortiOSAPI.html#method_logout" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">183</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 </aside>
 
-        <p class="phpdocumentor-summary">Logout</p>
+        <p class="phpdocumentor-summary">Logout from the firewall.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">private</span>
@@ -1446,53 +918,6 @@ Note: This parameter can only be used when the action parameter is set to move.<
     <span class="phpdocumentor-signature__response_type"><abbr title="\Fortinet\Return">Return</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>TRUE if successful, FALSE if it failed.</p>
-</section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -private
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_prepareRequestData">
-        prepareRequestData()
-        <a href="classes/Fortinet-FortiOSAPI.html#method_prepareRequestData" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">136</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Function used to create the data object for the request. Warning : this method will always discard a variable named &quot;body&quot; or &quot;seqnum&quot;.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">private</span>
-                <span class="phpdocumentor-signature__name">prepareRequestData</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">NULL</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$data</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;|null</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">NULL</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Keys are variable name and values are their values.</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
-            &mdash;
-            <section class="phpdocumentor-description"><p>Data as an object.</p>
 </section>
 
     
