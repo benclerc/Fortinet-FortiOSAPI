@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Fortinet\FortiOSAPI\\": "src/Fortinet/FortiOSAPI/"
+            "Fortinet\FortiOSAPI\": "src/Fortinet/FortiOSAPI/"
         }
     }
 }
