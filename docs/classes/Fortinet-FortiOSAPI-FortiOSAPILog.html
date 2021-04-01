@@ -82,7 +82,7 @@
     FortiOSAPILog
 
         <span class="phpdocumentor-element__extends">
-        extends <abbr title="\Fortinet\FortiOSAPI">FortiOSAPI</abbr>
+        extends <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html"><abbr title="\Fortinet\FortiOSAPI\FortiOSAPI">FortiOSAPI</abbr></a>
     </span>
     
     
@@ -126,12 +126,82 @@
 </h3>
 
 <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -method -public">
+                <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_config">$config</a>
+    <span>
+                &nbsp;: <a href="classes/Fortinet-FortiOSAPI-Config.html"><abbr title="\Fortinet\FortiOSAPI\Config">Config</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_session_key">$session_key</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_transaction">$transaction</a>
+    <span>
+                &nbsp;: int|null            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_config">$config</a>
+    <span>
+                &nbsp;: <a href="classes/Fortinet-FortiOSAPI-Config.html"><abbr title="\Fortinet\FortiOSAPI\Config">Config</abbr></a>            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_session_key">$session_key</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd></dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -private">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_transaction">$transaction</a>
+    <span>
+                &nbsp;: mixed            </span>
+</dt>
+<dd></dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method___construct">__construct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Constructor takes care of checking and registering switch&#039;s data and login to the API</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method___destruct">__destruct()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Destructor takes care of logout.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_abortTransaction">abortTransaction()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Abort a transaction (rollback operations).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Fortinet-FortiOSAPI-FortiOSAPILog.html#method_addSearchAbort">addSearchAbort()</a>
     <span>
                         &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
 </dt>
 <dd>Abort a running log search session.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_commitTransaction">commitTransaction()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Commit a transaction (apply operations).</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Fortinet-FortiOSAPI-FortiOSAPILog.html#method_getAllDiskVirusArchive">getAllDiskVirusArchive()</a>
@@ -385,6 +455,48 @@
 </dt>
 <dd>Log data for the given log type in raw format.</dd>
 
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_listTransactions">listTransactions()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>List all transactions.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_startTransaction">startTransaction()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Start a transaction (Warning : Fortinet says all tables are not supported but do not indicate which one exactly).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_curlRequest">curlRequest()</a>
+    <span>
+                        &nbsp;: <abbr title="\stdClass">stdClass</abbr>    </span>
+</dt>
+<dd>Method to request the firewall&#039;s API.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_httpBuildCustomQuery">httpBuildCustomQuery()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Function used to build a query with params but following fortigate satndards.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_login">login()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Login in the firewall.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_logout">logout()</a>
+    <span>
+                        &nbsp;: <abbr title="\Fortinet\FortiOSAPI\Return">Return</abbr>    </span>
+</dt>
+<dd>Logout from the firewall.</dd>
+
         </dl>
 
 
@@ -392,12 +504,332 @@
         
 
         
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/Fortinet-FortiOSAPI-FortiOSAPILog.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_config">
+        $config
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Fortinet-FortiOSAPI-Config.html"><abbr title="\Fortinet\FortiOSAPI\Config">Config</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$config</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Config object with all needed information.</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_session_key">
+        $session_key
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_session_key" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$session_key</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Authentication token kept in cache.</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_transaction">
+        $transaction
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_transaction" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">0</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type">int|null</span>
+    <span class="phpdocumentor-signature__name">$transaction</span>
+    </code>
+
+        <section class="phpdocumentor-description"><p>Ongoning transaction ID.
+WARNING : When going through the method prepareRequestData(), all upper case letter in function parameter name will be replaced by '-' and ;brought down to lower case. If you modify or add new endpoints replace all '-' in parameter name by the next letter in uppercase.</p>
+</section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_config">
+        $config
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_config" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">26</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Fortinet-FortiOSAPI-Config.html"><abbr title="\Fortinet\FortiOSAPI\Config">Config</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$config</span>
+    </code>
+
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_session_key">
+        $session_key
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_session_key" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$session_key</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;&#039;</span></code>
+
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_transaction">
+        $transaction
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#property_transaction" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">28</span>
+</aside>
+
+    
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+        <span class="phpdocumentor-signature__type">mixed</span>
+    <span class="phpdocumentor-signature__name">$transaction</span>
+    </code>
+
+    
+    
+
+</article>
+            </section>
 
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
             <a href="classes/Fortinet-FortiOSAPI-FortiOSAPILog.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___construct">
+        __construct()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">35</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Constructor takes care of checking and registering switch&#039;s data and login to the API</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Fortinet-FortiOSAPI-Config.html"><abbr title="\Fortinet\FortiOSAPI\Config">Config</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Fortinet-FortiOSAPI-Config.html"><abbr title="\Fortinet\FortiOSAPI\Config">Config</abbr></a></span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Object containing all necessary configuration.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method___destruct">
+        __destruct()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method___destruct" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">47</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Destructor takes care of logout.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">__destruct</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_abortTransaction">
+        abortTransaction()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_abortTransaction" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">296</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Abort a transaction (rollback operations).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">abortTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$vdom</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return TRUE on success and FALSE on failure.</p>
+</section>
+
+    
+</article>
                     <article
         class="phpdocumentor-element
             -method
@@ -456,6 +888,53 @@
     <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_commitTransaction">
+        commitTransaction()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_commitTransaction" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">275</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Commit a transaction (apply operations).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">commitTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$vdom</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return TRUE on success and FALSE on failure.</p>
 </section>
 
     
@@ -4452,6 +4931,315 @@ Combining AND and OR    |    You can combine AND and OR filters together to crea
     <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
             &mdash;
             <section class="phpdocumentor-description"><p>Return the firewall's response as an object.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_listTransactions">
+        listTransactions()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_listTransactions" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">243</span>
+</aside>
+
+        <p class="phpdocumentor-summary">List all transactions.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">listTransactions</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$vdom</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return the firewall's response as an object.
+As of version 6.4.5, this method sometimes returns unparsable JSON.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_startTransaction">
+        startTransaction()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_startTransaction" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">256</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Start a transaction (Warning : Fortinet says all tables are not supported but do not indicate which one exactly).</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">startTransaction</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$vdom</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timeout</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Transaction's timeout.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$vdom</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Specify the Virtual Domain from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return TRUE on success and FALSE on failure.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_curlRequest">
+        curlRequest()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_curlRequest" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">67</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Method to request the firewall&#039;s API.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">curlRequest</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$endpoint</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pathData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$queryData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$bodyData</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$timeout</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$method</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>HTTP method (e.g. 'GET', 'POST', 'PUT', 'DELETE' ...).</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$endpoint</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>API endpoint without the 2 first element ('rest' and API version '/api/vX'), e.g. /cmdb/router/static.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pathData</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int|string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Data to be passed in the request path (only one).</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$queryData</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Data to be passed in the request query as GET arguments.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$bodyData</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\stdClass">stdClass</abbr>|array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Data to be passed in the request body as a JSON object.</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$timeout</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\stdClass">stdClass</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return firewall's response as a stdClass.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_httpBuildCustomQuery">
+        httpBuildCustomQuery()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_httpBuildCustomQuery" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Function used to build a query with params but following fortigate satndards.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">httpBuildCustomQuery</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$data</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Array of data.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return the data encoded in a string to be passed as an URL.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_login">
+        login()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_login" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">198</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Login in the firewall.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">login</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>Return TRUE if successful or throw Exception if fails.</p>
+</section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_logout">
+        logout()
+        <a href="classes/Fortinet-FortiOSAPI-FortiOSAPI.html#method_logout" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Fortinet/FortiOSAPI/FortiOSAPI.php"><a href="files/src-fortinet-fortiosapi-fortiosapi.html"><abbr title="src/Fortinet/FortiOSAPI/FortiOSAPI.php">FortiOSAPI.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">225</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Logout from the firewall.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">logout</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Fortinet\FortiOSAPI\Return">Return</abbr></span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type"><abbr title="\Fortinet\FortiOSAPI\Return">Return</abbr></span>
+            &mdash;
+            <section class="phpdocumentor-description"><p>TRUE if successful, FALSE if it failed.</p>
 </section>
 
     
