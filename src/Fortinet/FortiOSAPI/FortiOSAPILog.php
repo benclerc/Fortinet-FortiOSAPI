@@ -16,7 +16,7 @@ use stdClass;
  * FortiOS API Log
  * @link https://fndn.fortinet.net/ Fortinet developer ressource center.
  */
-class FortiOSAPILog extends \Fortinet\FortiOSAPI
+class FortiOSAPILog extends FortiOSAPI
 {
 	/**
 	 * Return a description of the quarantined virus file.

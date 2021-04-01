@@ -16,7 +16,7 @@ use stdClass;
  * FortiOS API Monitor
  * @link https://fndn.fortinet.net/ Fortinet developer ressource center.
  */
-class FortiOSAPIMonitor extends \Fortinet\FortiOSAPI
+class FortiOSAPIMonitor extends FortiOSAPI
 {
 	/**
 	 * Retrieve a list of Azure applications that can be used for configuring an Azure SDN connector.

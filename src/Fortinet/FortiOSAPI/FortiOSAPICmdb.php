@@ -16,7 +16,7 @@ use stdClass;
  * FortiOS API Cmdb
  * @link https://fndn.fortinet.net/ Fortinet developer ressource center.
  */
-class FortiOSAPICmdb extends \Fortinet\FortiOSAPI
+class FortiOSAPICmdb extends FortiOSAPI
 {
 	/**
 	 * Select all entries in a CLI table.
