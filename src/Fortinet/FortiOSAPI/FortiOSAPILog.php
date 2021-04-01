@@ -8,7 +8,7 @@
  * @link https://github.com/benclerc/Fortinet-FortiOSAPI
  */
 
-namespace Fortinet;
+namespace Fortinet\FortiOSAPI;
 
 use stdClass;
 
@@ -16,7 +16,7 @@ use stdClass;
  * FortiOS API Log
  * @link https://fndn.fortinet.net/ Fortinet developer ressource center.
  */
-class FortiOSAPILog extends FortiOSAPI
+class FortiOSAPILog extends \Fortinet\FortiOSAPI
 {
 	/**
 	 * Return a description of the quarantined virus file.

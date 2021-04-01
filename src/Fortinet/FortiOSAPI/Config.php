@@ -8,7 +8,7 @@
  * @link https://github.com/benclerc/Fortinet-FortiOSAPI
  */
 
-namespace Fortinet;
+namespace Fortinet\FortiOSAPI;
 
 use Exception;
 
@@ -130,7 +130,7 @@ class Config
 	 * @param int $verifySSLPeer Curl's option to verify SSL peer.
 	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
 	 */
-	public function setSSLVerifyPeer(int $verifySSLPeer) : Config
+	public function setSSLVerifyPeer(int $verifySSLPeer) : \Fortinet\Config
 	{
 		$this->SSLVerifyPeer = $verifySSLPeer; return $this;
 	}
@@ -141,7 +141,7 @@ class Config
 	 * @param bool $verifySSLHost Curl's option to verify SSL host.
 	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
 	 */
-	public function setSSLVerifyHost(bool $verifySSLHost) : Config
+	public function setSSLVerifyHost(bool $verifySSLHost) : \Fortinet\Config
 	{
 		$this->SSLVerifyHost = ($verifySSLHost) ? 2 : 0; return $this;
 	}
@@ -152,7 +152,7 @@ class Config
 	 * @param int $timeout Curl's timeout in ms.
 	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
 	 */
-	public function setTimeout(int $timeout) : Config
+	public function setTimeout(int $timeout) : \Fortinet\Config
 	{
 		$this->timeout = $timeout; return $this;
 	}
@@ -163,7 +163,7 @@ class Config
 	 * @param int $version API version to use e.g. '2'.
 	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
 	 */
-	public function setAPIVersion(int $version) : Config
+	public function setAPIVersion(int $version) : \Fortinet\Config
 	{
 		$this->apiVersion = $version; return $this;
 	}

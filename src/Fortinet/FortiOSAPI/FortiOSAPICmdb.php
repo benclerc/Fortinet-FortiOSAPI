@@ -8,7 +8,7 @@
  * @link https://github.com/benclerc/Fortinet-FortiOSAPI
  */
 
-namespace Fortinet;
+namespace Fortinet\FortiOSAPI;
 
 use stdClass;
 
@@ -16,7 +16,7 @@ use stdClass;
  * FortiOS API Cmdb
  * @link https://fndn.fortinet.net/ Fortinet developer ressource center.
  */
-class FortiOSAPICmdb extends FortiOSAPI
+class FortiOSAPICmdb extends \Fortinet\FortiOSAPI
 {
 	/**
 	 * Select all entries in a CLI table.
