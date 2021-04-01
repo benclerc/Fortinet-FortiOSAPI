@@ -23,7 +23,7 @@ use stdClass;
  */
 class FortiOSAPI
 {
-	private \Fortinet\Config $config;
+	private Config $config;
 	private string $session_key = '';
 	private $transaction;
 
@@ -32,7 +32,7 @@ class FortiOSAPI
 	 * Constructor takes care of checking and registering switch's data and login to the API
 	 * @param Config $config Object containing all necessary configuration.
 	 */
-	public function __construct(\Fortinet\Config $config)
+	public function __construct(Config $config)
 	{
 		// Save configuration information
 		$this->config = $config;
