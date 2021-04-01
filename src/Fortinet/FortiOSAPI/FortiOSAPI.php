@@ -46,6 +46,11 @@ class FortiOSAPI
 	 */
 	public function __destruct()
 	{
+		// Check if there is an ongoing transaction, if so, abort it
+		if (!empty($this->transaction)) {
+			$this->abortTransaction();
+		}
+		// Logout
 		$this->logout();
 	}
 
@@ -128,7 +133,6 @@ class FortiOSAPI
 			}
 			return $resultJSON;
 		} else {
-			var_dump($result);
 			throw new Exception('curlRequest() called by '.debug_backtrace()[1]['function'].'() : Curl response is not JSON as expected.');
 		}
 	}

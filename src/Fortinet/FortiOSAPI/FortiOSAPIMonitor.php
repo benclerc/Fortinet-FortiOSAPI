@@ -21,7 +21,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of Azure applications that can be used for configuring an Azure SDN connector.
 	 * Access Group: sysgrp.cfg
-	 * @route  /azure/application-list
+	 * @route  GET /azure/application-list
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllAzureApplicationList() : stdClass
@@ -33,7 +33,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update the Azure application list data or get the status of an update.
 	 * Access Group: sysgrp.cfg
-	 * @route  /azure/application-list/refresh
+	 * @route  POST /azure/application-list/refresh
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -46,7 +46,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List endpoint records.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/record-list
+	 * @route  GET /endpoint-control/record-list
 	 * @param  $intf_name Filter: Name of interface where the endpoint was detected.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -59,7 +59,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Summary of FortiClient endpoint records.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/summary
+	 * @route  GET /endpoint-control/summary
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllEndpointControlSummary() : stdClass
@@ -71,7 +71,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List available FortiClient installers.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/installer
+	 * @route  GET /endpoint-control/installer
 	 * @param  $min_version Filter: Minimum installer version. (String of the format n[.n[.n]]).
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -84,7 +84,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download a FortiClient installer via FortiGuard.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/installer/download
+	 * @route  GET /endpoint-control/installer/download
 	 * @param  $mkey Name of installer (image_id).
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -97,7 +97,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download an endpoint avatar image.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/avatar/download
+	 * @route  GET /endpoint-control/avatar/download
 	 * @param  $uid Single FortiClient UID.
 	 * @param  $user User name of the endpoint.
 	 * @param  $fingerprint Avatar fingerprint.
@@ -117,7 +117,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve EMS connection status for a specific EMS.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/ems/status
+	 * @route  GET /endpoint-control/ems/status
 	 * @param  $ems_name EMS server name (as defined in CLI table endpoint-control.fctems).
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -130,7 +130,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve authentication status of the EMS server certificate for a specific EMS.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/ems/cert-status
+	 * @route  GET /endpoint-control/ems/cert-status
 	 * @param  $ems_name EMS server name (as defined in CLI table endpoint-control.fctems).
 	 * @param  $with_cert Return detailed certificate information. Available when the certificate is authenticated by installed CA certificates.
 	 * @return stdClass Return the firewall's response as an object.
@@ -144,7 +144,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Verify EMS server certificate for a specific EMS.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/ems/verify-cert
+	 * @route  POST /endpoint-control/ems/verify-cert
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -157,7 +157,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve status summary for all configured EMS.
 	 * Access Group: utmgrp.endpoint-control
-	 * @route  /endpoint-control/ems/status-summary
+	 * @route  GET /endpoint-control/ems/status-summary
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllEndpointControlEmsStatusSummary() : stdClass
@@ -169,7 +169,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve statistics for specific configured FortiExtender units.
 	 * Access Group: netgrp.cfg
-	 * @route  /extender-controller/extender
+	 * @route  GET /extender-controller/extender
 	 * @param  $id FortiExtender ID.
 	 * @param  $name List of FortiExtender IDs to query.
 	 * @param  $type Statistic type.'type' options are [system | modem | usage | last]. If 'type' is not specified, all types of statistics are retrieved.
@@ -184,7 +184,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Execute diagnotic commands.
 	 * Access Group: netgrp.cfg
-	 * @route  /extender-controller/extender/diagnose
+	 * @route  POST /extender-controller/extender/diagnose
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -197,7 +197,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset a specific FortiExtender unit.
 	 * Access Group: netgrp.cfg
-	 * @route  /extender-controller/extender/reset
+	 * @route  POST /extender-controller/extender/reset
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -210,7 +210,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upgrade FortiExtender.
 	 * Access Group: sysgrp.mnt
-	 * @route  /extender-controller/extender/upgrade
+	 * @route  POST /extender-controller/extender/upgrade
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -223,7 +223,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List configured load balance server health monitors.
 	 * Access Group: sysgrp.cfg
-	 * @route  /firewall/health
+	 * @route  GET /firewall/health
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallHealth() : stdClass
@@ -235,7 +235,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List implicit and explicit local-in firewall policies.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/local-in
+	 * @route  GET /firewall/local-in
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallLocalIn() : stdClass
@@ -247,7 +247,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List counters for all IPv4 ACL.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/acl
+	 * @route  GET /firewall/acl
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallAcl() : stdClass
@@ -259,7 +259,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset counters for one or more IPv4 ACLs by policy ID.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/acl/clear_counters
+	 * @route  POST /firewall/acl/clear_counters
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -272,7 +272,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List counters for all IPv6 ACL.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/acl6
+	 * @route  GET /firewall/acl6
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallAcl6() : stdClass
@@ -284,7 +284,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset counters for one or more IPv6 ACLs by policy ID.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/acl6/clear_counters
+	 * @route  POST /firewall/acl6/clear_counters
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -297,7 +297,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List internet services that exist at a given IP or Subnet.
 	 * Access Group: any
-	 * @route  /firewall/internet-service-match
+	 * @route  GET /firewall/internet-service-match
 	 * @param  $ip IP (in dot-decimal notation).
 	 * @param  $mask IP Mask (in dot-decimal notation).
 	 * @return stdClass Return the firewall's response as an object.
@@ -311,7 +311,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all details for a given Internet Service ID.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/internet-service-details
+	 * @route  GET /firewall/internet-service-details
 	 * @param  $id ID of the Internet Service to get details for.
 	 * @param  $country_id Filter: Country ID.
 	 * @param  $region_id Filter: Region ID.
@@ -337,7 +337,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List traffic statistics for firewall policies.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/policy
+	 * @route  GET /firewall/policy
 	 * @param  $policyid Filter: Policy ID.
 	 * @param  $ip_version Filter: Traffic IP Version. [ ipv4 | ipv6 ], if left empty, will retrieve data for both ipv4 and ipv6.
 	 * @return stdClass Return the firewall's response as an object.
@@ -351,7 +351,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset traffic statistics for all firewall policies.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/policy/reset
+	 * @route  POST /firewall/policy/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addFirewallPolicyReset() : stdClass
@@ -363,7 +363,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset traffic statistics for one or more firewall policies by policy ID.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/policy/clear_counters
+	 * @route  POST /firewall/policy/clear_counters
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -376,7 +376,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List IPS engine statistics for security policies.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/security-policy
+	 * @route  GET /firewall/security-policy
 	 * @param  $policyid Filter: Policy ID.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -389,7 +389,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset traffic statistics for one or more security policies by policy ID.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/security-policy/clear_counters
+	 * @route  POST /firewall/security-policy/clear_counters
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -402,7 +402,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List traffic statistics for all explicit proxy policies.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/proxy-policy
+	 * @route  GET /firewall/proxy-policy
 	 * @param  $policyid Filter: Policy ID.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -415,7 +415,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset traffic statistics for one or more explicit proxy policies by policy ID.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/proxy-policy/clear_counters
+	 * @route  POST /firewall/proxy-policy/clear_counters
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -428,7 +428,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Performs a policy lookup by creating a dummy packet and asking the kernel which policy would be hit.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/policy-lookup
+	 * @route  GET /firewall/policy-lookup
 	 * @param  $ipv6 Perform an IPv6 lookup?
 	 * @param  $srcintf Source interface.
 	 * @param  $sourceport Source port.
@@ -458,7 +458,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all active firewall sessions (optionally filtered).
 	 * Access Group: sysgrp.cfg
-	 * @route  /firewall/session
+	 * @route  GET /firewall/session
 	 * @param  $ip_version IP version [*ipv4 | ipv6 | ipboth].
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return. Valid range is [20, 1000]; if a value is specified out of that range, it will be rounded up or down.
@@ -531,7 +531,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately clear all active IPv4 and IPv6 sessions and IPS sessions of current VDOM.
 	 * Access Group: sysgrp.cfg
-	 * @route  /firewall/session/clear_all
+	 * @route  POST /firewall/session/clear_all
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addFirewallSessionClear_all() : stdClass
@@ -543,7 +543,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Close a specific firewall session that matches all provided criteria.
 	 * Access Group: sysgrp.cfg
-	 * @route  /firewall/session/close
+	 * @route  POST /firewall/session/close
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -556,7 +556,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of statistics for configured firewall shared traffic shapers.
 	 * Access Group: fwgrp.others
-	 * @route  /firewall/shaper
+	 * @route  GET /firewall/shaper
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallShaper() : stdClass
@@ -568,7 +568,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset statistics for all configured traffic shapers.
 	 * Access Group: fwgrp.others
-	 * @route  /firewall/shaper/reset
+	 * @route  POST /firewall/shaper/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addFirewallShaperReset() : stdClass
@@ -580,7 +580,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of statistics for configured firewall per-IP traffic shapers.
 	 * Access Group: fwgrp.others
-	 * @route  /firewall/per-ip-shaper
+	 * @route  GET /firewall/per-ip-shaper
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallPerIpShaper() : stdClass
@@ -592,7 +592,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset statistics for all configured firewall per-IP traffic shapers.
 	 * Access Group: fwgrp.others
-	 * @route  /firewall/per-ip-shaper/reset
+	 * @route  POST /firewall/per-ip-shaper/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addFirewallPerIpShaperReset() : stdClass
@@ -604,7 +604,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all firewall load balance servers.
 	 * Access Group: fwgrp.others
-	 * @route  /firewall/load-balance
+	 * @route  GET /firewall/load-balance
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @return stdClass Return the firewall's response as an object.
@@ -618,7 +618,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of FQDN address objects and the IPs they resolved to.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/address-fqdns
+	 * @route  GET /firewall/address-fqdns
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallAddressFqdns() : stdClass
@@ -630,7 +630,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of IPv6 FQDN address objects and the IPs they resolved to.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/address-fqdns6
+	 * @route  GET /firewall/address-fqdns6
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallAddressFqdns6() : stdClass
@@ -642,7 +642,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Add ClearPass address with SPT (System Posture Token) value.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/clearpass-address/add
+	 * @route  POST /firewall/clearpass-address/add
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -655,7 +655,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Delete ClearPass address with SPT (System Posture Token) value.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/clearpass-address/delete
+	 * @route  POST /firewall/clearpass-address/delete
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -668,7 +668,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List IPv4 pool statistics.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/ippool
+	 * @route  GET /firewall/ippool
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallIppool() : stdClass
@@ -680,7 +680,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get the list of IPv4 mappings for the specified IP pool.
 	 * Access Group: fwgrp.policy
-	 * @route  /firewall/ippool/mapping
+	 * @route  GET /firewall/ippool/mapping
 	 * @param  $mkey The IP pool name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -693,7 +693,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of all UUIDs with their object type and VDOM.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/uuid-list
+	 * @route  GET /firewall/uuid-list
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallUuidList() : stdClass
@@ -705,7 +705,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a mapping of UUIDs to their firewall object type for given UUIDs.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/uuid-type-lookup
+	 * @route  GET /firewall/uuid-type-lookup
 	 * @param  $uuids UUID to be resolved.
 	 * @param  $uuids List of UUIDs to be resolved.
 	 * @return stdClass Return the firewall's response as an object.
@@ -719,7 +719,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of Fabric Connector address objects and the IPs they resolve to.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/address-dynamic
+	 * @route  GET /firewall/address-dynamic
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallAddressDynamic() : stdClass
@@ -731,7 +731,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of IPv6 Fabric Connector address objects and the IPs they resolve to.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/address6-dynamic
+	 * @route  GET /firewall/address6-dynamic
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFirewallAddress6Dynamic() : stdClass
@@ -743,7 +743,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all available filters for a specified SDN Fabric Connector. Used for Fabric Connector address objects.
 	 * Access Group: fwgrp.address
-	 * @route  /firewall/sdn-connector-filters
+	 * @route  GET /firewall/sdn-connector-filters
 	 * @param  $connector Name of the SDN Fabric Connector to get the filters from.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -756,7 +756,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve the FortiGuard redirect portal IP.
 	 * Access Group: any
-	 * @route  /fortiguard/redirect-portal
+	 * @route  GET /fortiguard/redirect-portal
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFortiguardRedirectPortal() : stdClass
@@ -768,7 +768,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve historical statistics for communication with FortiGuard services.
 	 * Access Group: sysgrp.mnt
-	 * @route  /fortiguard/service-communication-stats
+	 * @route  GET /fortiguard/service-communication-stats
 	 * @param  $service_type To get stats for [forticare|fortiguard_download|fortiguard_query|forticloud_log|fortisandbox_cloud|fortiguard.com|ocvpn|sdns|fortitoken_registration|sms_service]. Defaults to all stats if not provided.
 	 * @param  $timeslot History timeslot of stats [1_hour|24_hour|1_week]. Defaults to all timeslots if not provided.
 	 * @return stdClass Return the firewall's response as an object.
@@ -784,7 +784,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve drill-down and summary data for FortiView (both realtime and historical).
 	 * Access Group: ftviewgrp
-	 * @route  /fortiview/statistics
+	 * @route  GET /fortiview/statistics
 	 * @param  $realtime Set to true to retrieve realtime results (from kernel).
 	 * @param  $filter A map of filter keys to arrays of values.
 	 * @param  $sessionid FortiView request Session ID.
@@ -818,7 +818,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Cancel a FortiView request session.
 	 * Access Group: ftviewgrp
-	 * @route  /fortiview/session/cancel
+	 * @route  POST /fortiview/session/cancel
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -831,7 +831,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve FortiSandbox analysis details for a specific file checksum.
 	 * Access Group: sysgrp.cfg
-	 * @route  /fortiview/sandbox-file-details
+	 * @route  GET /fortiview/sandbox-file-details
 	 * @param  $checksum Checksum of a specific file that has been analyzed by the connected FortiSandbox.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -844,7 +844,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve list of available FortiSandbox analysis files.
 	 * Access Group: sysgrp.cfg
-	 * @route  /fortiview/sandbox-file-list
+	 * @route  GET /fortiview/sandbox-file-list
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllFortiviewSandboxFileList() : stdClass
@@ -856,7 +856,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve location details for IPs queried against FortiGuard's geoip service.
 	 * Access Group: sysgrp.cfg
-	 * @route  /geoip/geoip-query/select
+	 * @route  POST /geoip/geoip-query/select
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -869,7 +869,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Returns a list of rate-based signatures in IPS package.
 	 * Access Group: utmgrp.ips
-	 * @route  /ips/rate-based
+	 * @route  GET /ips/rate-based
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllIpsRateBased() : stdClass
@@ -881,7 +881,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Returns IPS meta data.
 	 * Access Group: utmgrp.ips
-	 * @route  /ips/metadata
+	 * @route  GET /ips/metadata
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllIpsMetadata() : stdClass
@@ -893,7 +893,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Returns IPS anomaly list.
 	 * Access Group: utmgrp.ips
-	 * @route  /ips/anomaly
+	 * @route  GET /ips/anomaly
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllIpsAnomaly() : stdClass
@@ -905,7 +905,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Returns a list of applications that exceed the scan range from a list of application IDs.
 	 * Access Group: utmgrp.ips
-	 * @route  /ips/exceed-scan-range
+	 * @route  GET /ips/exceed-scan-range
 	 * @param  $ids List of application IDs.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -918,7 +918,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get current license & registration status.
 	 * Access Group: any
-	 * @route  /license/status
+	 * @route  GET /license/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLicenseStatus() : stdClass
@@ -930,7 +930,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get current license & registration status for the connected FortiAnalyzer.
 	 * Access Group: secfabgrp
-	 * @route  /license/fortianalyzer-status
+	 * @route  GET /license/fortianalyzer-status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLicenseFortianalyzerStatus() : stdClass
@@ -942,7 +942,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upgrade or downgrade UTM engine or signature package (IPS/AntiVirus/Application Control/Industrial database/Security Rating) using uploaded file.
 	 * Access Group: sysgrp.upd
-	 * @route  /license/database/upgrade
+	 * @route  POST /license/database/upgrade
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -955,7 +955,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get current FortiCare resellers for the requested country.
 	 * Access Group: sysgrp.cfg
-	 * @route  /license/forticare-resellers
+	 * @route  GET /license/forticare-resellers
 	 * @param  $country_code FortiGuard country code
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -968,7 +968,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get FortiCare organization size and industry lists.
 	 * Access Group: sysgrp.cfg
-	 * @route  /license/forticare-org-list
+	 * @route  GET /license/forticare-org-list
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLicenseForticareOrgList() : stdClass
@@ -980,7 +980,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return current used, free and total disk bytes.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/current-disk-usage
+	 * @route  GET /log/current-disk-usage
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLogCurrentDiskUsage() : stdClass
@@ -992,7 +992,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve information on state of log devices.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/device/state
+	 * @route  GET /log/device/state
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLogDeviceState() : stdClass
@@ -1004,7 +1004,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return FortiCloud log status.
 	 * Access Group: loggrp.config
-	 * @route  /log/forticloud
+	 * @route  GET /log/forticloud
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLogForticloud() : stdClass
@@ -1016,7 +1016,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get FortiCloud report list.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/forticloud-report-list
+	 * @route  GET /log/forticloud-report-list
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLogForticloudReportList() : stdClass
@@ -1028,7 +1028,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get local reports list.
 	 * Access Group: loggrp.report-access
-	 * @route  /log/local-report-list
+	 * @route  GET /log/local-report-list
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLogLocalReportList() : stdClass
@@ -1040,7 +1040,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download local report
 	 * Access Group: loggrp.data-access
-	 * @route  /log/local-report/download
+	 * @route  GET /log/local-report/download
 	 * @param  $mkey Local Report Name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1053,7 +1053,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Delete a local report.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/local-report/delete
+	 * @route  POST /log/local-report/delete
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1066,7 +1066,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return FortiAnalyzer/FortiManager log status.
 	 * Access Group: loggrp.config
-	 * @route  /log/fortianalyzer
+	 * @route  GET /log/fortianalyzer
 	 * @param  $scope Scope from which to test the connectivity of the FortiAnalyzer address [vdom|global].
 	 * @param  $server FortiAnalyzer/FortiManager address.
 	 * @param  $srcip The IP to use to make the request to the FortiAnalyzer [<ip>|auto]. When set to "auto" it will use the FortiGate's routing table to determine the IP to make the request from.
@@ -1081,7 +1081,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve information on FortiAnalyzer's queue state. Note:- FortiAnalyzer logs are queued only if upload-option is realtime.
 	 * Access Group: loggrp.config
-	 * @route  /log/fortianalyzer-queue
+	 * @route  GET /log/fortianalyzer-queue
 	 * @param  $scope Scope from which to retrieve FortiAnalyzer's queue state [vdom*|global].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1094,7 +1094,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return historic hourly disk usage in bytes.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/hourly-disk-usage
+	 * @route  GET /log/hourly-disk-usage
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLogHourlyDiskUsage() : stdClass
@@ -1106,7 +1106,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Returns the amount of logs in bytes sent daily to a remote logging service (FortiCloud or FortiAnalyzer).
 	 * Access Group: loggrp.data-access
-	 * @route  /log/historic-daily-remote-logs
+	 * @route  GET /log/historic-daily-remote-logs
 	 * @param  $server Service name [forticloud | fortianalyzer].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1119,7 +1119,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return number of logs sent by category per day for a specific log device.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/stats
+	 * @route  GET /log/stats
 	 * @param  $dev Log device [*memory | disk | fortianalyzer | forticloud].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1132,7 +1132,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset logging statistics for all log devices.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/stats/reset
+	 * @route  POST /log/stats/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addLogStatsReset() : stdClass
@@ -1144,7 +1144,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download PDF report from FortiCloud.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/forticloud-report/download
+	 * @route  GET /log/forticloud-report/download
 	 * @param  $mkey FortiCloud Report ID.
 	 * @param  $inline Set to 1 to download the report inline.
 	 * @return stdClass Return the firewall's response as an object.
@@ -1158,7 +1158,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download IPS/application control packet capture files. Uses configured log display device.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/ips-archive/download
+	 * @route  GET /log/ips-archive/download
 	 * @param  $mkey IPS archive ID.
 	 * @param  $pcap_no Packet capture roll number (required when log device is 'disk')
 	 * @param  $pcap_category Packet capture category (required when log device is 'disk')
@@ -1173,7 +1173,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download policy-based packet capture archive.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/policy-archive/download
+	 * @route  GET /log/policy-archive/download
 	 * @param  $mkey Session ID (from traffic log).
 	 * @param  $srcip Source IP.
 	 * @param  $dstip Destination IP.
@@ -1188,7 +1188,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download file quarantined by AntiVirus.
 	 * Access Group: loggrp.data-access
-	 * @route  /log/av-archive/download
+	 * @route  GET /log/av-archive/download
 	 * @param  $mkey Checksum for quarantined file.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1201,7 +1201,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all event log descriptions. Deprecated in 6.2.3 replaced by /api/v2/static/logid_metadata.json.
 	 * Access Group: any
-	 * @route  /log/event
+	 * @route  GET /log/event
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllLogEvent() : stdClass
@@ -1213,7 +1213,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get IPv4 ARP table.
 	 * Access Group: sysgrp.cfg
-	 * @route  /network/arp
+	 * @route  GET /network/arp
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllNetworkArp() : stdClass
@@ -1225,7 +1225,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all active LLDP neighbors.
 	 * Access Group: netgrp
-	 * @route  /network/lldp/neighbors
+	 * @route  GET /network/lldp/neighbors
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllNetworkLldpNeighbors() : stdClass
@@ -1237,7 +1237,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all active LLDP ports.
 	 * Access Group: netgrp
-	 * @route  /network/lldp/ports
+	 * @route  GET /network/lldp/ports
 	 * @param  $mkey Filter: specific port name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1250,7 +1250,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get DNS latency.
 	 * Access Group: sysgrp.cfg
-	 * @route  /network/dns/latency
+	 * @route  GET /network/dns/latency
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllNetworkDnsLatency() : stdClass
@@ -1262,7 +1262,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get latency information for live FortiGuard services.
 	 * Access Group: sysgrp.cfg
-	 * @route  /network/fortiguard/live-services-latency
+	 * @route  GET /network/fortiguard/live-services-latency
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllNetworkFortiguardLiveServicesLatency() : stdClass
@@ -1274,7 +1274,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get DDNS servers.
 	 * Access Group: sysgrp.cfg
-	 * @route  /network/ddns/servers
+	 * @route  GET /network/ddns/servers
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllNetworkDdnsServers() : stdClass
@@ -1286,7 +1286,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Check DDNS FQDN availability.
 	 * Access Group: sysgrp.cfg
-	 * @route  /network/ddns/lookup
+	 * @route  GET /network/ddns/lookup
 	 * @param  $domain Filter: domain to check.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1299,7 +1299,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve the resolved DNS domain name for a given IP address.
 	 * Access Group: any
-	 * @route  /network/reverse-ip-lookup
+	 * @route  GET /network/reverse-ip-lookup
 	 * @param  $ip IP address (in dot-decimal notation).
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1312,7 +1312,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve NSX service status.
 	 * Access Group: sysgrp.cfg
-	 * @route  /nsx/service/status
+	 * @route  GET /nsx/service/status
 	 * @param  $mkey Filter: NSX SDN name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1325,7 +1325,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Add NSX service to connector.
 	 * Access Group: sysgrp.cfg
-	 * @route  /nsx/service/add
+	 * @route  POST /nsx/service/add
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1338,7 +1338,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List NSX instances and their resource statistics.
 	 * Access Group: sysgrp.cfg
-	 * @route  /nsx/instance
+	 * @route  GET /nsx/instance
 	 * @param  $mkey Filter: NSX SDN name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1351,7 +1351,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Login to FortiCloud.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/login
+	 * @route  POST /registration/forticloud/login
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1364,7 +1364,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Create a FortiCloud account.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/create
+	 * @route  POST /registration/forticloud/create
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1377,7 +1377,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Logout from FortiCloud.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/logout
+	 * @route  POST /registration/forticloud/logout
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addRegistrationForticloudLogout() : stdClass
@@ -1389,7 +1389,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve the FortiCloud disclaimer.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/disclaimer
+	 * @route  GET /registration/forticloud/disclaimer
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllRegistrationForticloudDisclaimer() : stdClass
@@ -1401,7 +1401,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of FortiCloud login domains.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/domains
+	 * @route  GET /registration/forticloud/domains
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllRegistrationForticloudDomains() : stdClass
@@ -1413,7 +1413,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Login to FortiCare.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticare/login
+	 * @route  POST /registration/forticare/login
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1426,7 +1426,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Transfer to a new FortiCare account.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticare/transfer
+	 * @route  POST /registration/forticare/transfer
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1439,7 +1439,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Create a new FortiCare account.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticare/create
+	 * @route  POST /registration/forticare/create
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1452,7 +1452,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Add a FortiCare license.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticare/add-license
+	 * @route  POST /registration/forticare/add-license
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1465,7 +1465,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Register a device to FortiCloud through FortiGate. Currently FortiSwitch and FortiAP are supported.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/register-device
+	 * @route  POST /registration/forticloud/register-device
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1478,7 +1478,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Fetch device registration status from FortiCloud. Currently FortiSwitch and FortiAP are supported.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/device-status
+	 * @route  GET /registration/forticloud/device-status
 	 * @param  $serials Serials of FortiSwitch and FortiAP to fetch registration status.
 	 * @param  $update_cache Clear cache and retrieve updated data.
 	 * @return stdClass Return the firewall's response as an object.
@@ -1492,7 +1492,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Add a VDOM license.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/vdom/add-license
+	 * @route  POST /registration/vdom/add-license
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1505,7 +1505,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Migrate standalone FortiGate Cloud account to FortiCloud.
 	 * Access Group: sysgrp.cfg
-	 * @route  /registration/forticloud/migrate
+	 * @route  POST /registration/forticloud/migrate
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1518,7 +1518,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all active IPv4 routing table entries.
 	 * Access Group: netgrp.route-cfg
-	 * @route  /router/ipv4
+	 * @route  GET /router/ipv4
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return (Default for all routes).
 	 * @param  $ip_mask Filter: IP/netmask.
@@ -1542,7 +1542,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all active IPv6 routing table entries.
 	 * Access Group: netgrp.route-cfg
-	 * @route  /router/ipv6
+	 * @route  GET /router/ipv6
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return (Default for all routes).
 	 * @param  $ip_mask Filter: IP/netmask.
@@ -1566,7 +1566,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve routing table statistics, including number of matched routes.
 	 * Access Group: sysgrp.cfg
-	 * @route  /router/statistics
+	 * @route  GET /router/statistics
 	 * @param  $ip_version IP version (4|6). If not present, IPv4 and IPv6 will be returned.
 	 * @param  $ip_mask Filter: IP/netmask.
 	 * @param  $gateway Filter: gateway.
@@ -1588,7 +1588,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Performs a route lookup by querying the routing table.
 	 * Access Group: netgrp.route-cfg
-	 * @route  /router/lookup
+	 * @route  GET /router/lookup
 	 * @param  $ipv6 Perform an IPv6 lookup.
 	 * @param  $destination Destination IP/FQDN.
 	 * @return stdClass Return the firewall's response as an object.
@@ -1602,7 +1602,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Performs a route lookup by querying the policy routing table.
 	 * Access Group: netgrp.route-cfg
-	 * @route  /router/lookup-policy
+	 * @route  GET /router/lookup-policy
 	 * @param  $ipv6 Perform an IPv6 lookup.
 	 * @param  $destination Destination IP/FQDN.
 	 * @param  $source Source IP/FQDN.
@@ -1626,7 +1626,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of active IPv4 policy routes.
 	 * Access Group: netgrp.route-cfg
-	 * @route  /router/policy
+	 * @route  GET /router/policy
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @param  $count_only Returns the number of IPv4 policy routes only.
@@ -1641,7 +1641,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of active IPv6 policy routes.
 	 * Access Group: netgrp.route-cfg
-	 * @route  /router/policy6
+	 * @route  GET /router/policy6
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @param  $count_only Returns the number of IPv6 policy routes only.
@@ -1656,7 +1656,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve statistics for configured FortiSwitches
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch
+	 * @route  GET /switch-controller/managed-switch
 	 * @param  $mkey Filter: FortiSwitch ID.
 	 * @param  $fsw_id Filter: FortiSwitch ID. `mkey` should be used instead.
 	 * @param  $poe Filter: Retrieve PoE statistics for ports of configured FortiSwitches. Port power usage is in Watt units.
@@ -1684,7 +1684,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update administrative state for a given FortiSwitch (enable or disable authorization).
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/update
+	 * @route  POST /switch-controller/managed-switch/update
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1697,7 +1697,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Restart a given FortiSwitch.
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/restart
+	 * @route  POST /switch-controller/managed-switch/restart
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1710,7 +1710,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset PoE on a given FortiSwitch's port.
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/poe-reset
+	 * @route  POST /switch-controller/managed-switch/poe-reset
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1723,7 +1723,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve XML for rendering FortiSwitch faceplate widget.
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/faceplate-xml
+	 * @route  GET /switch-controller/managed-switch/faceplate-xml
 	 * @param  $mkey Name of managed FortiSwitch.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1736,7 +1736,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Send 'Factory Reset' command to a given FortiSwitch.
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/factory-reset
+	 * @route  POST /switch-controller/managed-switch/factory-reset
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1749,7 +1749,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve DHCP servers monitored by FortiSwitches.
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/dhcp-snooping
+	 * @route  GET /switch-controller/managed-switch/dhcp-snooping
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSwitchControllerManagedSwitchDhcpSnooping() : stdClass
@@ -1761,7 +1761,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get a list of transceivers being used by managed FortiSwitches.
 	 * Access Group: any
-	 * @route  /switch-controller/managed-switch/transceivers
+	 * @route  GET /switch-controller/managed-switch/transceivers
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSwitchControllerManagedSwitchTransceivers() : stdClass
@@ -1773,7 +1773,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve health-check statistics for managed FortiSwitches.
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/health
+	 * @route  GET /switch-controller/managed-switch/health
 	 * @param  $mkey Filter: FortiSwitch ID.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1786,7 +1786,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Diagnose cable information for a port. Virtual FortiSwitches and FortiLink ports are not supported.
 	 * Access Group: wifi
-	 * @route  /switch-controller/managed-switch/cable-status
+	 * @route  GET /switch-controller/managed-switch/cable-status
 	 * @param  $mkey Name of managed FortiSwitch.
 	 * @param  $port Name of managed FortiSwitch port.
 	 * @return stdClass Return the firewall's response as an object.
@@ -1800,7 +1800,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of recommended firmware for managed FortiSwitches.
 	 * Access Group: wifi
-	 * @route  /switch-controller/fsw-firmware
+	 * @route  GET /switch-controller/fsw-firmware
 	 * @param  $mkey Filter: FortiSwitch ID.
 	 * @param  $timeout FortiGuard connection timeout (defaults to 3 seconds).
 	 * @return stdClass Return the firewall's response as an object.
@@ -1814,7 +1814,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download FortiSwitch firmware from FortiGuard to the FortiGate according to FortiSwitch image ID.
 	 * Access Group: wifi
-	 * @route  /switch-controller/fsw-firmware/download
+	 * @route  POST /switch-controller/fsw-firmware/download
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1827,7 +1827,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Push FortiSwitch firmware to the given device.
 	 * Access Group: wifi
-	 * @route  /switch-controller/fsw-firmware/push
+	 * @route  POST /switch-controller/fsw-firmware/push
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1840,7 +1840,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upload FortiSwitch firmware to the management FortiGate and then push to target FortiSwitches.
 	 * Access Group: wifi
-	 * @route  /switch-controller/fsw-firmware/upload
+	 * @route  POST /switch-controller/fsw-firmware/upload
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1853,7 +1853,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of devices detected on all switches.
 	 * Access Group: wifi
-	 * @route  /switch-controller/detected-device
+	 * @route  GET /switch-controller/detected-device
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSwitchControllerDetectedDevice() : stdClass
@@ -1865,7 +1865,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Validate a FortiSwitch serial number prefix.
 	 * Access Group: wifi
-	 * @route  /switch-controller/validate-switch-prefix
+	 * @route  GET /switch-controller/validate-switch-prefix
 	 * @param  $prefix Prefix of FortiSwitch serial number.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1878,7 +1878,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Find a pair of FortiSwitches that are eligible to form a tier-1 MCLAG.
 	 * Access Group: wifi
-	 * @route  /switch-controller/mclag-icl/eligible-peer
+	 * @route  GET /switch-controller/mclag-icl/eligible-peer
 	 * @param  $fortilink FortiLink interface name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1891,7 +1891,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Switch between VDOM modes.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/admin/change-vdom-mode
+	 * @route  POST /system/admin/change-vdom-mode
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1904,7 +1904,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve the information about config scripts.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-script
+	 * @route  GET /system/config-script
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemConfigScript() : stdClass
@@ -1916,7 +1916,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Delete the history of config scripts.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-script/delete
+	 * @route  POST /system/config-script/delete
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1929,7 +1929,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Run remote config scripts.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-script/run
+	 * @route  POST /system/config-script/run
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1942,7 +1942,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upload and run a new configuration script file.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-script/upload
+	 * @route  POST /system/config-script/upload
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1955,7 +1955,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get configuration sync status of SLBC cluster master and slave.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-sync/status
+	 * @route  GET /system/config-sync/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemConfigSyncStatus() : stdClass
@@ -1967,7 +1967,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Generate a new api-key for the specified api-key-auth admin. The old api-key will be replaced. The response contains the only chance to read the new api-key plaintext in the api_key field.
 	 * Access Group: sysgrp.admin
-	 * @route  /system/api-user/generate-key
+	 * @route  POST /system/api-user/generate-key
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -1980,7 +1980,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Returns a list of system configuration revisions.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-revision
+	 * @route  GET /system/config-revision
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemConfigRevision() : stdClass
@@ -1992,7 +1992,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Updates comments for a system configuration file.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-revision/update-comments
+	 * @route  POST /system/config-revision/update-comments
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2005,7 +2005,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Deletes one or more system configuration revisions.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-revision/delete
+	 * @route  POST /system/config-revision/delete
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2018,7 +2018,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download a specific configuration revision.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-revision/file
+	 * @route  GET /system/config-revision/file
 	 * @param  $config_id Configuration id.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2031,7 +2031,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve meta information for a specific configuration revision.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-revision/info
+	 * @route  GET /system/config-revision/info
 	 * @param  $config_id Configuration id.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2044,7 +2044,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Create a new config revision checkpoint.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-revision/save
+	 * @route  POST /system/config-revision/save
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2057,7 +2057,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return a list of currently logged in administrators.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/current-admins
+	 * @route  GET /system/current-admins
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemCurrentAdmins() : stdClass
@@ -2069,7 +2069,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return admins info that are connected to current interface.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/interface-connected-admins-info
+	 * @route  GET /system/interface-connected-admins-info
 	 * @param  $interface Interface that admins is connected through.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2082,7 +2082,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Disconnects logged in administrators.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/disconnect-admins/select
+	 * @route  POST /system/disconnect-admins/select
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2095,7 +2095,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Sets current system time stamp.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/time/set
+	 * @route  POST /system/time/set
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2108,7 +2108,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Gets current system time stamp.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/time
+	 * @route  GET /system/time
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemTime() : stdClass
@@ -2120,7 +2120,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Gets a list of all NPU VDOM Links and VDOM Links.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/vdom-link
+	 * @route  GET /system/vdom-link
 	 * @param  $scope Scope from which to retrieve the VDOM link informaton from [vdom|global].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2133,7 +2133,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately reboot this device.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/os/reboot
+	 * @route  POST /system/os/reboot
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2146,7 +2146,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately shutdown this device.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/os/shutdown
+	 * @route  POST /system/os/shutdown
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2159,7 +2159,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve current usage of global resources as well as both the default and user configured maximum values.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/global-resources
+	 * @route  GET /system/global-resources
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemGlobalResources() : stdClass
@@ -2171,7 +2171,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve VDOM resource information, including CPU and memory usage.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/vdom-resource
+	 * @route  GET /system/vdom-resource
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemVdomResource() : stdClass
@@ -2183,7 +2183,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all DHCP and DHCPv6 leases.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/dhcp
+	 * @route  GET /system/dhcp
 	 * @param  $scope Scope from which to retrieve DHCP leases [vdom*|global]. Global scope is only accessible for global administrators.
 	 * @param  $ipv6 Include IPv6 addresses in the response.
 	 * @param  $interface Filter: Retrieve DHCP leases for this interface only.
@@ -2198,7 +2198,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Revoke IPv4 DHCP leases.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/dhcp/revoke
+	 * @route  POST /system/dhcp/revoke
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2211,7 +2211,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Revoke IPv6 DHCP leases.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/dhcp6/revoke
+	 * @route  POST /system/dhcp6/revoke
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2224,7 +2224,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List NTP servers status.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/ntp/status
+	 * @route  GET /system/ntp/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemNtpStatus() : stdClass
@@ -2236,7 +2236,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of firmware images available to use for upgrade on this device.
 	 * Access Group: sysgrp.mnt
-	 * @route  /system/firmware
+	 * @route  GET /system/firmware
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemFirmware() : stdClass
@@ -2248,7 +2248,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upgrade firmware image on this device using uploaded file.
 	 * Access Group: sysgrp.mnt
-	 * @route  /system/firmware/upgrade
+	 * @route  POST /system/firmware/upgrade
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2261,7 +2261,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of supported firmware upgrade paths.
 	 * Access Group: sysgrp.mnt
-	 * @route  /system/firmware/upgrade-paths
+	 * @route  GET /system/firmware/upgrade-paths
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemFirmwareUpgradePaths() : stdClass
@@ -2273,7 +2273,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Set file system check flag so that it will be executed on next device reboot.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/fsck/start
+	 * @route  POST /system/fsck/start
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemFsckStart() : stdClass
@@ -2285,7 +2285,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve information for the non-boot disk.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/storage
+	 * @route  GET /system/storage
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemStorage() : stdClass
@@ -2297,7 +2297,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Save admin and guest-admin passwords.
 	 * Access Group: any
-	 * @route  /system/change-password/select
+	 * @route  POST /system/change-password/select
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2310,7 +2310,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Check whether password conforms to the password policy.
 	 * Access Group: any
-	 * @route  /system/password-policy-conform/select
+	 * @route  POST /system/password-policy-conform/select
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2323,7 +2323,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a full tree of downstream FortiGates registered to the Security Fabric.
 	 * Access Group: secfabgrp
-	 * @route  /system/csf
+	 * @route  GET /system/csf
 	 * @param  $scope Scope from which to retrieve the Security Fabric tree [vdom*|global].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2336,7 +2336,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve fabric devices with pending authorizations for joining the Security Fabric. Note:- This list is currently available on Security Fabric root only.
 	 * Access Group: secfabgrp
-	 * @route  /system/csf/pending-authorizations
+	 * @route  GET /system/csf/pending-authorizations
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemCsfPendingAuthorizations() : stdClass
@@ -2348,7 +2348,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Register appliance to Security Fabric.
 	 * Access Group: secfabgrp
-	 * @route  /system/csf/register-appliance
+	 * @route  POST /system/csf/register-appliance
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2361,7 +2361,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve statistics for internal/external configured modem.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/modem
+	 * @route  GET /system/modem
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemModem() : stdClass
@@ -2373,7 +2373,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset statistics for internal/external configured modem.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/modem/reset
+	 * @route  POST /system/modem/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemModemReset() : stdClass
@@ -2385,7 +2385,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Trigger a connect for the configured modem.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/modem/connect
+	 * @route  POST /system/modem/connect
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemModemConnect() : stdClass
@@ -2397,7 +2397,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Trigger a disconnect for the configured modem.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/modem/disconnect
+	 * @route  POST /system/modem/disconnect
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemModemDisconnect() : stdClass
@@ -2409,7 +2409,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update supported modem list from FortiGuard.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/modem/update
+	 * @route  POST /system/modem/update
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemModemUpdate() : stdClass
@@ -2421,7 +2421,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all 3G modems available via FortiGuard.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/3g-modem
+	 * @route  GET /system/3g-modem
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystem3gModem() : stdClass
@@ -2433,7 +2433,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retreive current and historical usage data for a provided resource.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/resource/usage
+	 * @route  GET /system/resource/usage
 	 * @param  $scope Scope of resource [vdom|global]. This parameter is only applicable if the FGT is in VDOM mode.
 	 * @param  $resource Resource to get usage data for [cpu|mem|disk|session|session6|setuprate|setuprate6|disk_lograte|faz_lograte|forticloud_lograte]. Defaults to all resources if not provided. Additionally, [npu_session|npu_session6] data is available for devices that have an NPU and [nturbo_session|nturbo_session6] data is available for NP6 devices that support NTurbo.
 	 * @param  $interval Time interval of resource usage [1-min|10-min|30-min|1-hour|12-hour|24-hour]. Defaults to all intervals if not provided.
@@ -2451,7 +2451,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return a list of all configured packet captures.
 	 * Access Group: netgrp.packet-capture
-	 * @route  /system/sniffer
+	 * @route  GET /system/sniffer
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemSniffer() : stdClass
@@ -2463,7 +2463,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Restart specified packet capture.
 	 * Access Group: netgrp.packet-capture
-	 * @route  /system/sniffer/restart
+	 * @route  POST /system/sniffer/restart
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2476,7 +2476,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Start specified packet capture.
 	 * Access Group: netgrp.packet-capture
-	 * @route  /system/sniffer/start
+	 * @route  POST /system/sniffer/start
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2489,7 +2489,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Stop specified packet capture.
 	 * Access Group: netgrp.packet-capture
-	 * @route  /system/sniffer/stop
+	 * @route  POST /system/sniffer/stop
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2502,7 +2502,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Clear the results of a specified packet capture.
 	 * Access Group: netgrp.packet-capture
-	 * @route  /system/sniffer/clear
+	 * @route  POST /system/sniffer/clear
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2515,7 +2515,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download a stored packet capture.
 	 * Access Group: netgrp.packet-capture
-	 * @route  /system/sniffer/download
+	 * @route  GET /system/sniffer/download
 	 * @param  $mkey ID of packet capture entry.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2528,7 +2528,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Stats for automation stitches.
 	 * Access Group: secfabgrp
-	 * @route  /system/automation-stitch/stats
+	 * @route  GET /system/automation-stitch/stats
 	 * @param  $mkey Filter: Automation stitch name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2541,7 +2541,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Triggers an automation stitch for testing purposes.
 	 * Access Group: sysgrp
-	 * @route  /system/automation-stitch/test
+	 * @route  POST /system/automation-stitch/test
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2554,7 +2554,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Triggers an incoming webhook for an automation stitch.
 	 * Access Group: secfabgrp
-	 * @route  /system/automation-stitch/webhook
+	 * @route  POST /system/automation-stitch/webhook
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2567,7 +2567,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Format log disk.
 	 * Access Group: loggrp.data-access
-	 * @route  /system/logdisk/format
+	 * @route  POST /system/logdisk/format
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemLogdiskFormat() : stdClass
@@ -2579,7 +2579,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve statistics for all system interfaces.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/interface
+	 * @route  GET /system/interface
 	 * @param  $interface_name Filter: interface name.
 	 * @param  $include_vlan Enable to include VLANs in result list.
 	 * @param  $include_aggregate Enable to include Aggregate interfaces in result list.
@@ -2599,7 +2599,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve PoE statistics for system interfaces.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/interface/poe
+	 * @route  GET /system/interface/poe
 	 * @param  $mkey Filter: Name of the interface to fetch PoE statistics for.
 	 * @param  $scope Scope from which to retrieve the interface stats from [vdom|global] (default=vdom).
 	 * @return stdClass Return the firewall's response as an object.
@@ -2613,7 +2613,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve the DHCP client status of an interface.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/interface/dhcp-status
+	 * @route  GET /system/interface/dhcp-status
 	 * @param  $mkey Name of the interface.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2626,7 +2626,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Renew DHCP lease of an interface.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/interface/dhcp-renew
+	 * @route  POST /system/interface/dhcp-renew
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2639,7 +2639,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of all interfaces along with some meta information regarding their availability.
 	 * Access Group: any
-	 * @route  /system/available-interfaces
+	 * @route  GET /system/available-interfaces
 	 * @param  $view_type Optionally include additional information for interfaces. This parameter can be repeated multiple times. 'poe': Includes PoE information for supported ports (DEPRECATED in 6.4). 'ha': Includes extra meta information useful when dealing with interfaces related to HA configuration. Interfaces that are used by an HA cluster as management interfaces are also included in this view. 'zone': Includes extra meta information for determining zone membership eligibility. 'vwp': Includes extra meta information for determining virtual wire pair eligibility. 'sdwan': Includes extra meta information for determining SD-WAN eligibility. 'switch': Includes extra meta information for determining switch eligibility. 'hard-switch': Includes extra meta information for determining hard-switch eligibility. 'limited': Includes limited information on parent interfaces that are in another VDOM. 'stat': Includes TX/RX statistics data.
 	 * @param  $scope Scope of interface list [vdom|global]
 	 * @return stdClass Return the firewall's response as an object.
@@ -2653,7 +2653,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of interfaces and their acquired DNS servers.
 	 * Access Group: any
-	 * @route  /system/acquired-dns
+	 * @route  GET /system/acquired-dns
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemAcquiredDns() : stdClass
@@ -2665,7 +2665,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Resolves the provided FQDNs to FQDN -> IP mappings.
 	 * Access Group: any
-	 * @route  /system/resolve-fqdn
+	 * @route  GET /system/resolve-fqdn
 	 * @param  $ipv6 Resolve for the AAAA record?
 	 * @param  $fqdn FQDN
 	 * @param  $fqdn List of FQDNs to be resolved
@@ -2680,7 +2680,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of all IPv6 IP pools that are valid for NAT 46 policies.
 	 * Access Group: any
-	 * @route  /system/nat46-ippools
+	 * @route  GET /system/nat46-ippools
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemNat46Ippools() : stdClass
@@ -2692,7 +2692,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Run a speed-test on the given interface.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/interface/speed-test-trigger
+	 * @route  POST /system/interface/speed-test-trigger
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2705,7 +2705,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve the current status of a speed-test with the results if finished.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/interface/speed-test-status
+	 * @route  GET /system/interface/speed-test-status
 	 * @param  $id ID of the speed test.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2718,7 +2718,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve information about connected USB drives, including estimated log sizes.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/usb-log
+	 * @route  GET /system/usb-log
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemUsbLog() : stdClass
@@ -2730,7 +2730,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Start backup of logs from current VDOM to USB drive.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/usb-log/start
+	 * @route  POST /system/usb-log/start
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemUsbLogStart() : stdClass
@@ -2742,7 +2742,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Stop backup of logs to USB drive.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/usb-log/stop
+	 * @route  POST /system/usb-log/stop
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemUsbLogStop() : stdClass
@@ -2754,7 +2754,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Eject USB drives for safe removal.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/usb-device/eject
+	 * @route  POST /system/usb-device/eject
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemUsbDeviceEject() : stdClass
@@ -2766,7 +2766,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Determine if there is an IP conflict for a specific IP using ARP.
 	 * Access Group: netgrp.cfg
-	 * @route  /system/ipconf
+	 * @route  GET /system/ipconf
 	 * @param  $devs List of interfaces to check for conflict.
 	 * @param  $ipaddr IPv4 address to check for conflict.
 	 * @return stdClass Return the firewall's response as an object.
@@ -2780,7 +2780,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately update status for FortiGuard services.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/fortiguard/update
+	 * @route  POST /system/fortiguard/update
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemFortiguardUpdate() : stdClass
@@ -2792,7 +2792,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately clear all FortiGuard statistics.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/fortiguard/clear-statistics
+	 * @route  POST /system/fortiguard/clear-statistics
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemFortiguardClearStatistics() : stdClass
@@ -2804,7 +2804,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Test availability of FortiGuard services.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/fortiguard/test-availability
+	 * @route  POST /system/fortiguard/test-availability
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2817,7 +2817,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get FortiGuard server list and information.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/fortiguard/server-info
+	 * @route  GET /system/fortiguard/server-info
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemFortiguardServerInfo() : stdClass
@@ -2829,7 +2829,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get FortiManager status.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/fortimanager/status
+	 * @route  GET /system/fortimanager/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemFortimanagerStatus() : stdClass
@@ -2841,7 +2841,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Configure FortiManager IP. Register FortiManager if 'fortimanager_ip' is provided.       Unregister FortiManager if only 'unregister' parameter is specified and set to true.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/fortimanager/config
+	 * @route  POST /system/fortimanager/config
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2854,7 +2854,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get FortiManager backup summary.
 	 * Access Group: fwgrp
-	 * @route  /system/fortimanager/backup-summary
+	 * @route  GET /system/fortimanager/backup-summary
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemFortimanagerBackupSummary() : stdClass
@@ -2866,7 +2866,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import or update from FortiManager objects.
 	 * Access Group: fwgrp
-	 * @route  /system/fortimanager/backup-action
+	 * @route  POST /system/fortimanager/backup-action
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2879,7 +2879,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get the properties of a FortiManager object.
 	 * Access Group: fwgrp
-	 * @route  /system/fortimanager/backup-details
+	 * @route  GET /system/fortimanager/backup-details
 	 * @param  $mkey Object name.
 	 * @param  $datasource Object datasource.
 	 * @return stdClass Return the firewall's response as an object.
@@ -2893,7 +2893,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get available certificates.
 	 * Access Group: any
-	 * @route  /system/available-certificates
+	 * @route  GET /system/available-certificates
 	 * @param  $scope Scope of certificate [vdom*|global].
 	 * @param  $with_remote Include remote certificates.
 	 * @param  $with_ca Include certificate authorities.
@@ -2913,7 +2913,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get trusted certifiate authorities.
 	 * Access Group: any
-	 * @route  /system/trusted-cert-authorities
+	 * @route  GET /system/trusted-cert-authorities
 	 * @param  $scope Scope of certificate [vdom*|global].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2926,7 +2926,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download certificate.
 	 * Access Group: vpngrp
-	 * @route  /system/certificate/download
+	 * @route  GET /system/certificate/download
 	 * @param  $mkey Name of certificate.
 	 * @param  $type Type of certificate [local-cer|remote-cer|local-ca|remote-ca|local-csr|crl].
 	 * @param  $scope Scope of certificate [vdom*|global].
@@ -2941,7 +2941,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get certificate information from a certificate string.
 	 * Access Group: any
-	 * @route  /system/certificate/read-info
+	 * @route  POST /system/certificate/read-info
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -2954,7 +2954,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download debug report for technical support.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/debug/download
+	 * @route  GET /system/debug/download
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemDebugDownload() : stdClass
@@ -2966,7 +2966,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Dump system com-log to file.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/com-log/dump
+	 * @route  POST /system/com-log/dump
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemComLogDump() : stdClass
@@ -2978,7 +2978,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Fetch system com-log file dump progress.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/com-log/update
+	 * @route  GET /system/com-log/update
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemComLogUpdate() : stdClass
@@ -2990,7 +2990,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download com-log file (after file dump is complete).
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/com-log/download
+	 * @route  GET /system/com-log/download
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemComLogDownload() : stdClass
@@ -3002,7 +3002,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download the error log of the configuration management database.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config-error-log/download
+	 * @route  GET /system/config-error-log/download
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemConfigErrorLogDownload() : stdClass
@@ -3014,7 +3014,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve statistics for FortiGuard botnet database.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/botnet/stat
+	 * @route  GET /system/botnet/stat
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemBotnetStat() : stdClass
@@ -3026,7 +3026,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all known IP-based botnet entries in FortiGuard botnet database.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/botnet
+	 * @route  GET /system/botnet
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @param  $include_hit_only Include entries with hits only.
@@ -3041,7 +3041,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all known domain-based botnet entries in FortiGuard botnet database.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/botnet-domains
+	 * @route  GET /system/botnet-domains
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @return stdClass Return the firewall's response as an object.
@@ -3055,7 +3055,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List statistics on domain-based botnet entries in FortiGuard botnet database.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/botnet-domains/stat
+	 * @route  GET /system/botnet-domains/stat
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemBotnetDomainsStat() : stdClass
@@ -3067,7 +3067,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List hit botnet domains with hit count > 0.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/botnet-domains/hits
+	 * @route  GET /system/botnet-domains/hits
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemBotnetDomainsHits() : stdClass
@@ -3079,7 +3079,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of statistics for members of HA cluster.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/ha-statistics
+	 * @route  GET /system/ha-statistics
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemHaStatistics() : stdClass
@@ -3091,7 +3091,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get HA cluster historical logs.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/ha-history
+	 * @route  GET /system/ha-history
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemHaHistory() : stdClass
@@ -3103,7 +3103,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of checksums for members of HA cluster.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/ha-checksums
+	 * @route  GET /system/ha-checksums
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemHaChecksums() : stdClass
@@ -3115,7 +3115,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get configuration of peer(s) in HA cluster. Uptime is expressed in seconds.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/ha-peer
+	 * @route  GET /system/ha-peer
 	 * @param  $serial_no Serial number of the HA member. If not specified, fetch information for all HA members
 	 * @param  $vcluster_id Virtual cluster number. If not specified, fetch information for all active vclusters
 	 * @return stdClass Return the firewall's response as an object.
@@ -3129,7 +3129,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update configuration of peer in HA cluster.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/ha-peer/update
+	 * @route  POST /system/ha-peer/update
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3142,7 +3142,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update configuration of peer in HA cluster.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/ha-peer/disconnect
+	 * @route  POST /system/ha-peer/disconnect
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3155,7 +3155,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve per-interface statistics for active link monitors.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/link-monitor
+	 * @route  GET /system/link-monitor
 	 * @param  $mkey Name of link monitor.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3168,7 +3168,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Restore system configuration from uploaded file or from USB.
 	 * Access Group: sysgrp.mnt
-	 * @route  /system/config/restore
+	 * @route  POST /system/config/restore
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3181,7 +3181,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Backup system config
 	 * Access Group: sysgrp.mnt
-	 * @route  /system/config/backup
+	 * @route  GET /system/config/backup
 	 * @param  $destination Configuration file destination [file* | usb]
 	 * @param  $usb_filename When using 'usb' destination: the filename to save to on the connected USB device
 	 * @param  $password Password to encrypt configuration data.
@@ -3203,7 +3203,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Explicitly save all configuration.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config/save
+	 * @route  POST /system/config/save
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addSystemConfigSave() : stdClass
@@ -3215,7 +3215,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List configuration files available on connected USB drive.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/config/usb-filelist
+	 * @route  GET /system/config/usb-filelist
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemConfigUsbFilelist() : stdClass
@@ -3227,7 +3227,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List of running processes and their resource usage.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/running-processes
+	 * @route  GET /system/running-processes
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemRunningProcesses() : stdClass
@@ -3239,7 +3239,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of FortiSandbox cloud regions.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sandbox/cloud-regions
+	 * @route  GET /system/sandbox/cloud-regions
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemSandboxCloudRegions() : stdClass
@@ -3251,7 +3251,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve sandbox statistics.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sandbox/stats
+	 * @route  GET /system/sandbox/stats
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemSandboxStats() : stdClass
@@ -3263,7 +3263,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve sandbox status.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sandbox/status
+	 * @route  GET /system/sandbox/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemSandboxStatus() : stdClass
@@ -3275,7 +3275,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Test the connectivity of a given FortiSandbox IP.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sandbox/test-connect
+	 * @route  GET /system/sandbox/test-connect
 	 * @param  $server IP/FQDN of the FortiSandbox to test.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3288,7 +3288,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve all objects that are currently using as well as objects that can use the given object.
 	 * Access Group: any
-	 * @route  /system/object/usage
+	 * @route  GET /system/object/usage
 	 * @param  $q_path The CMDB table's path
 	 * @param  $q_name The CMDB table's name
 	 * @param  $qtypes List of CMDB table qTypes
@@ -3310,7 +3310,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve basic system status.
 	 * Access Group: any
-	 * @route  /system/status
+	 * @route  GET /system/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemStatus() : stdClass
@@ -3322,7 +3322,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get world timezone and daylight saving time.
 	 * Access Group: any
-	 * @route  /system/timezone
+	 * @route  GET /system/timezone
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemTimezone() : stdClass
@@ -3334,7 +3334,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get a list of transceivers being used by the FortiGate.
 	 * Access Group: any
-	 * @route  /system/interface/transceivers
+	 * @route  GET /system/interface/transceivers
 	 * @param  $scope Scope from which to retrieve the transceiver information from [vdom|global].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3347,7 +3347,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get VM information.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/vm-information
+	 * @route  GET /system/vm-information
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemVmInformation() : stdClass
@@ -3359,7 +3359,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update VM license using uploaded file. Reboots immediately if successful.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/vmlicense/upload
+	 * @route  POST /system/vmlicense/upload
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3372,7 +3372,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve system sensor status.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sensor-info
+	 * @route  GET /system/sensor-info
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemSensorInfo() : stdClass
@@ -3384,7 +3384,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a Security Rating report result. Without ID specified, returns the most recent result.
 	 * Access Group: secfabgrp
-	 * @route  /system/security-rating
+	 * @route  GET /system/security-rating
 	 * @param  $id Report ID.
 	 * @param  $report_type Report type to view, Security Report when unspecified.
 	 * @param  $scope Scope of the report [vdom*|global]. Global scope is only accessible for global administrators.
@@ -3399,7 +3399,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve list of report types the Security Rating package supports.
 	 * Access Group: secfabgrp
-	 * @route  /system/security-rating/supported-reports
+	 * @route  GET /system/security-rating/supported-reports
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllSystemSecurityRatingSupportedReports() : stdClass
@@ -3411,7 +3411,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve Security Rating history.
 	 * Access Group: secfabgrp
-	 * @route  /system/security-rating/history
+	 * @route  GET /system/security-rating/history
 	 * @param  $report_type Security Rating report history to view, view Security Report when unspecified.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3424,7 +3424,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Run a Security Rating report.
 	 * Access Group: secfabgrp
-	 * @route  /system/security-rating/trigger
+	 * @route  POST /system/security-rating/trigger
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3437,7 +3437,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Check if a Security Rating report is currently running.
 	 * Access Group: secfabgrp
-	 * @route  /system/security-rating/status
+	 * @route  GET /system/security-rating/status
 	 * @param  $id Report ID.
 	 * @param  $report_type Report type to view, Security Report when unspecified.
 	 * @param  $progress Query report progress.
@@ -3455,7 +3455,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Returns the requested Security Rating language mapping.
 	 * Access Group: secfabgrp
-	 * @route  /system/security-rating/lang
+	 * @route  GET /system/security-rating/lang
 	 * @param  $key Requested language mapping (en, fr, big5, euc-kr, GB2312, pg, sp, x-sjis).
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3468,7 +3468,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Check whether a list of TCP port ranges is available for a certain service.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/check-port-availability
+	 * @route  GET /system/check-port-availability
 	 * @param  $port_ranges List of TCP port range objects to check against.
 	 * @param  $service The service in which the ports could be available. 'service' options are [reserved | sysglobal | webproxy | ftpproxy | sslvpn | slaprobe | fsso | ftm_push]. If 'service' is not specified, the port ranges availability is checked against all services.
 	 * @return stdClass Return the firewall's response as an object.
@@ -3482,7 +3482,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of NSX security tags for connected NSX servers.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sdn-connector/nsx-security-tags
+	 * @route  GET /system/sdn-connector/nsx-security-tags
 	 * @param  $mkey Filter: NSX SDN connector name.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3495,7 +3495,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve connection status for SDN connectors.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sdn-connector/status
+	 * @route  GET /system/sdn-connector/status
 	 * @param  $mkey Filter: SDN connector name.
 	 * @param  $type Filter: SDN connector type. Ignored if mkey is specified.
 	 * @return stdClass Return the firewall's response as an object.
@@ -3509,7 +3509,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update an SDN connector's connection status.
 	 * Access Group: sysgrp.cfg
-	 * @route  /system/sdn-connector/update
+	 * @route  POST /system/sdn-connector/update
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3522,7 +3522,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Validate a string representing a private key from GCP in PEM format.
 	 * Access Group: any
-	 * @route  /system/sdn-connector/validate-gcp-key
+	 * @route  POST /system/sdn-connector/validate-gcp-key
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3535,7 +3535,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List authenticated firewall users.
 	 * Access Group: authgrp
-	 * @route  /user/firewall
+	 * @route  GET /user/firewall
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @param  $ipv4 Include IPv4 user (default=true).
@@ -3555,7 +3555,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Trigger authentication for a single firewall user.
 	 * Access Group: authgrp
-	 * @route  /user/firewall/auth
+	 * @route  POST /user/firewall/auth
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3568,7 +3568,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Deauthenticate single, multiple, or all firewall users.
 	 * Access Group: authgrp
-	 * @route  /user/firewall/deauth
+	 * @route  POST /user/firewall/deauth
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3581,7 +3581,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return a list of all banned users by IP.
 	 * Access Group: authgrp
-	 * @route  /user/banned
+	 * @route  GET /user/banned
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllUserBanned() : stdClass
@@ -3593,7 +3593,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately clear a list of specific banned users by IP.
 	 * Access Group: authgrp
-	 * @route  /user/banned/clear_users
+	 * @route  POST /user/banned/clear_users
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3606,7 +3606,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately add one or more users to the banned list.
 	 * Access Group: authgrp
-	 * @route  /user/banned/add_users
+	 * @route  POST /user/banned/add_users
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3619,7 +3619,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Immediately clear all banned users.
 	 * Access Group: authgrp
-	 * @route  /user/banned/clear_all
+	 * @route  POST /user/banned/clear_all
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addUserBannedClear_all() : stdClass
@@ -3631,7 +3631,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a map of FortiTokens and their status.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken
+	 * @route  GET /user/fortitoken
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllUserFortitoken() : stdClass
@@ -3643,7 +3643,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Activate a set of FortiTokens by serial number.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken/activate
+	 * @route  POST /user/fortitoken/activate
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3656,7 +3656,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve FortiToken Cloud service status.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken-cloud/status
+	 * @route  GET /user/fortitoken-cloud/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllUserFortitokenCloudStatus() : stdClass
@@ -3668,7 +3668,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List email addresses collected from captive portal.
 	 * Access Group: authgrp
-	 * @route  /user/collected-email
+	 * @route  GET /user/collected-email
 	 * @param  $ipv6 Include collected email from IPv6 users.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3681,7 +3681,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of detected devices.
 	 * Access Group: authgrp
-	 * @route  /user/detected-device
+	 * @route  GET /user/detected-device
 	 * @param  $expand_child_macs Include child devices as separate entries in the list.
 	 * @param  $with_dhcp Retrieve DHCP lease information.
 	 * @param  $with_endpoint Retrieve FortiClient endpoint information.
@@ -3705,7 +3705,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve user devices from user device store. List all the user devices if there is no filter set.
 	 * Access Group: authgrp
-	 * @route  /user/device/query
+	 * @route  GET /user/device/query
 	 * @param  $start Number of entries to skip from the beginning.
 	 * @param  $number Maximum number of entries to return.
 	 * @param  $filters A map of filters. Type: {"key":  "value"}
@@ -3720,7 +3720,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Remove single or multiple user devices specified by host MAC addresses.
 	 * Access Group: authgrp
-	 * @route  /user/device/remove
+	 * @route  POST /user/device/remove
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3733,7 +3733,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of detected devices.
 	 * Access Group: authgrp
-	 * @route  /user/device
+	 * @route  GET /user/device
 	 * @param  $master_only List of master device only.
 	 * @param  $master_mac Filter: Master MAC of a device. Multiple entries could be returned.
 	 * @return stdClass Return the firewall's response as an object.
@@ -3747,7 +3747,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Refresh a set of FortiTokens by serial number.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken/refresh
+	 * @route  POST /user/fortitoken/refresh
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3760,7 +3760,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Provision a set of FortiTokens by serial number.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken/provision
+	 * @route  POST /user/fortitoken/provision
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3773,7 +3773,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Send a FortiToken activation code to a user via SMS or Email.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken/send-activation
+	 * @route  POST /user/fortitoken/send-activation
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3786,7 +3786,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import trial mobile FortiTokens.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken/import-trial
+	 * @route  POST /user/fortitoken/import-trial
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addUserFortitokenImportTrial() : stdClass
@@ -3798,7 +3798,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import a list of tokens from FortiGuard to the FortiGate unit.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken/import-mobile
+	 * @route  POST /user/fortitoken/import-mobile
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3811,7 +3811,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import a FortiToken seed file.
 	 * Access Group: authgrp
-	 * @route  /user/fortitoken/import-seed
+	 * @route  POST /user/fortitoken/import-seed
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3824,7 +3824,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Refresh remote agent group list for all fsso agents.
 	 * Access Group: authgrp
-	 * @route  /user/fsso/refresh-server
+	 * @route  POST /user/fsso/refresh-server
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addUserFssoRefreshServer() : stdClass
@@ -3836,7 +3836,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get a list of fsso and fsso polling status.
 	 * Access Group: authgrp
-	 * @route  /user/fsso
+	 * @route  GET /user/fsso
 	 * @param  $mkey Filter: Get the status for a specific FSSO entry. `type` is required if this is set.
 	 * @param  $type Filter: Get the status for this type of FSSO entry [fsso|fsso-polling].
 	 * @return stdClass Return the firewall's response as an object.
@@ -3850,7 +3850,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Sent guest login details via email.
 	 * Access Group: authgrp
-	 * @route  /user/guest/email
+	 * @route  POST /user/guest/email
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3863,7 +3863,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Sent guest login details via SMS.
 	 * Access Group: authgrp
-	 * @route  /user/guest/sms
+	 * @route  POST /user/guest/sms
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3876,7 +3876,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Test the connectivity of the given RADIUS server and, optionally, the validity of a username & password.
 	 * Access Group: authgrp
-	 * @route  /user/radius/test-connect
+	 * @route  POST /user/radius/test-connect
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3889,7 +3889,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Test the connectivity of the given TACACS+ server.
 	 * Access Group: authgrp
-	 * @route  /user/tacacs-plus/test
+	 * @route  POST /user/tacacs-plus/test
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3902,7 +3902,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Query user info.
 	 * Access Group: authgrp
-	 * @route  /user/info/query
+	 * @route  GET /user/info/query
 	 * @param  $start Number of entries to skip from the beginning.
 	 * @param  $number Maximum number of entries to return.
 	 * @param  $filters A list of filters. Type: {"type": string, "value": string}
@@ -3917,7 +3917,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get user info thumbnail. Returns the first match to the filter.
 	 * Access Group: authgrp
-	 * @route  /user/info/thumbnail
+	 * @route  GET /user/info/thumbnail
 	 * @param  $filters A list of filters. Type: {"type": string, "value": string}
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3930,7 +3930,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Lookup FortiGuard rating for a specific URL.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /utm/rating-lookup/select
+	 * @route  POST /utm/rating-lookup/select
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3943,7 +3943,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Query remote FortiFlow database to resolve hosts to application control entries.
 	 * Access Group: any
-	 * @route  /utm/app-lookup
+	 * @route  GET /utm/app-lookup
 	 * @param  $hosts List of hosts to resolve.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -3956,7 +3956,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of application control categories.
 	 * Access Group: any
-	 * @route  /utm/application-categories
+	 * @route  GET /utm/application-categories
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllUtmApplicationCategories() : stdClass
@@ -3968,7 +3968,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve antivirus scanning statistics.
 	 * Access Group: utmgrp.antivirus
-	 * @route  /utm/antivirus/stats
+	 * @route  GET /utm/antivirus/stats
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllUtmAntivirusStats() : stdClass
@@ -3980,7 +3980,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of blacklisted SSL certificates.
 	 * Access Group: fwgrp.others
-	 * @route  /utm/blacklisted-certificates
+	 * @route  GET /utm/blacklisted-certificates
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return. Limit is set to 2000.
 	 * @return stdClass Return the firewall's response as an object.
@@ -3994,7 +3994,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve blacklisted SSL certificates statistics.
 	 * Access Group: fwgrp.others
-	 * @route  /utm/blacklisted-certificates/statistics
+	 * @route  GET /utm/blacklisted-certificates/statistics
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllUtmBlacklistedCertificatesStatistics() : stdClass
@@ -4006,7 +4006,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve health-check statistics for each SD-WAN link.
 	 * Access Group: netgrp.cfg
-	 * @route  /virtual-wan/health-check
+	 * @route  GET /virtual-wan/health-check
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllVirtualWanHealthCheck() : stdClass
@@ -4018,7 +4018,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve log of SD-WAN interface quality information.
 	 * Access Group: netgrp.cfg
-	 * @route  /virtual-wan/interface-log
+	 * @route  GET /virtual-wan/interface-log
 	 * @param  $interface Filter: Interface name.
 	 * @param  $since Filter: Only return SLA logs generated since this Unix timestamp.
 	 * @param  $seconds Filter: Only return SLA logs generated in the last N seconds.
@@ -4036,7 +4036,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve log of SLA probe results for for each SD-WAN SLA rule.
 	 * Access Group: netgrp.cfg
-	 * @route  /virtual-wan/sla-log
+	 * @route  GET /virtual-wan/sla-log
 	 * @param  $sla Filter: SLA name.
 	 * @param  $interface Filter: Interface name.
 	 * @param  $since Filter: Only return SLA logs generated since this Unix timestamp.
@@ -4056,7 +4056,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve interface statistics for each SD-WAN link.
 	 * Access Group: netgrp.cfg
-	 * @route  /virtual-wan/members
+	 * @route  GET /virtual-wan/members
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllVirtualWanMembers() : stdClass
@@ -4068,7 +4068,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import CA certificate.
 	 * Access Group: vpngrp
-	 * @route  /vpn-certificate/ca/import
+	 * @route  POST /vpn-certificate/ca/import
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4081,7 +4081,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import certificate revocation lists (CRL) from file content.
 	 * Access Group: vpngrp
-	 * @route  /vpn-certificate/crl/import
+	 * @route  POST /vpn-certificate/crl/import
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4094,7 +4094,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import local certificate.
 	 * Access Group: vpngrp
-	 * @route  /vpn-certificate/local/import
+	 * @route  POST /vpn-certificate/local/import
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4107,7 +4107,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import remote certificate.
 	 * Access Group: vpngrp
-	 * @route  /vpn-certificate/remote/import
+	 * @route  POST /vpn-certificate/remote/import
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4120,7 +4120,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Generate a certificate signing request (CSR) and a private key. The CSR can be retrieved / downloaded from CLI, GUI and REST API.
 	 * Access Group: vpngrp
-	 * @route  /vpn-certificate/csr/generate
+	 * @route  POST /vpn-certificate/csr/generate
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4133,7 +4133,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Clear IKE gateways.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ike/clear
+	 * @route  POST /vpn/ike/clear
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4146,7 +4146,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return an array of active IPsec VPNs.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ipsec
+	 * @route  GET /vpn/ipsec
 	 * @param  $tunnel Filter for a specific IPsec tunnel name.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -4161,7 +4161,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Bring up a specific IPsec VPN tunnel.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ipsec/tunnel_up
+	 * @route  POST /vpn/ipsec/tunnel_up
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4174,7 +4174,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Bring down a specific IPsec VPN tunnel.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ipsec/tunnel_down
+	 * @route  POST /vpn/ipsec/tunnel_down
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4187,7 +4187,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset statistics for a specific IPsec VPN tunnel.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ipsec/tunnel_reset_stats
+	 * @route  POST /vpn/ipsec/tunnel_reset_stats
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4200,7 +4200,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get information on devices registered in the Overlay Controller VPN cloud assisted group.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ocvpn/members
+	 * @route  GET /vpn/ocvpn/members
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllVpnOcvpnMembers() : stdClass
@@ -4212,7 +4212,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get the last status message from FortiCloud Overlay Controller VPN cloud service.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ocvpn/status
+	 * @route  GET /vpn/ocvpn/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllVpnOcvpnStatus() : stdClass
@@ -4224,7 +4224,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Get meta information (e.g. licenses and registered members) from Overlay Controller VPN cloud service.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ocvpn/meta
+	 * @route  GET /vpn/ocvpn/meta
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllVpnOcvpnMeta() : stdClass
@@ -4236,7 +4236,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of all SSL-VPN sessions and sub-sessions.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ssl
+	 * @route  GET /vpn/ssl
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllVpnSsl() : stdClass
@@ -4248,7 +4248,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Remove all active tunnel sessions in current virtual domain.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ssl/clear_tunnel
+	 * @route  POST /vpn/ssl/clear_tunnel
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addVpnSslClear_tunnel() : stdClass
@@ -4260,7 +4260,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Terminate the provided SSL-VPN session.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ssl/delete
+	 * @route  POST /vpn/ssl/delete
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4273,7 +4273,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return statistics about the SSL-VPN.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ssl/stats
+	 * @route  GET /vpn/ssl/stats
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllVpnSslStats() : stdClass
@@ -4285,7 +4285,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Provision SSL-VPN users with target applications. The provisioning message (email or SMS) is sent with no confirmation of success.
 	 * Access Group: vpngrp
-	 * @route  /vpn/ssl/provision-user
+	 * @route  POST /vpn/ssl/provision-user
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4298,7 +4298,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve WAN opt. statistics history.
 	 * Access Group: wanoptgrp
-	 * @route  /wanopt/history
+	 * @route  GET /wanopt/history
 	 * @param  $period Statistics period [10-min*|hour|day|week|30-day].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4311,7 +4311,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset WAN opt. statistics.
 	 * Access Group: wanoptgrp
-	 * @route  /wanopt/history/reset
+	 * @route  POST /wanopt/history/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addWanoptHistoryReset() : stdClass
@@ -4323,7 +4323,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve webcache statistics history.
 	 * Access Group: wanoptgrp
-	 * @route  /wanopt/webcache
+	 * @route  GET /wanopt/webcache
 	 * @param  $period Statistics period [10-min*|hour|day|week|30-day].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4336,7 +4336,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset webcache statistics.
 	 * Access Group: wanoptgrp
-	 * @route  /wanopt/webcache/reset
+	 * @route  POST /wanopt/webcache/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addWanoptWebcacheReset() : stdClass
@@ -4348,7 +4348,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of WAN opt peer statistics.
 	 * Access Group: wanoptgrp
-	 * @route  /wanopt/peer_stats
+	 * @route  GET /wanopt/peer_stats
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWanoptPeer_stats() : stdClass
@@ -4360,7 +4360,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset WAN opt peer statistics.
 	 * Access Group: wanoptgrp
-	 * @route  /wanopt/peer_stats/reset
+	 * @route  POST /wanopt/peer_stats/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addWanoptPeer_statsReset() : stdClass
@@ -4372,7 +4372,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Import localization language file to this FortiGate.
 	 * Access Group: sysgrp.mnt
-	 * @route  /web-ui/language/import
+	 * @route  POST /web-ui/language/import
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4385,7 +4385,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upload custom language file to this Fortigate.
 	 * Access Group: sysgrp.mnt
-	 * @route  /web-ui/custom-language/create
+	 * @route  POST /web-ui/custom-language/create
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4398,7 +4398,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update custom language file to this Fortigate.
 	 * Access Group: sysgrp.mnt
-	 * @route  /web-ui/custom-language/update
+	 * @route  POST /web-ui/custom-language/update
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4411,7 +4411,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download a custom language file.
 	 * Access Group: sysgrp.mnt
-	 * @route  /web-ui/custom-language/download
+	 * @route  GET /web-ui/custom-language/download
 	 * @param  $filename Name of custom language entry.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4424,7 +4424,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve webcache statistics.
 	 * Access Group: wanoptgrp
-	 * @route  /webcache/stats
+	 * @route  GET /webcache/stats
 	 * @param  $period Statistics period [10min|hour|day|month].
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4437,7 +4437,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset all webcache statistics.
 	 * Access Group: wanoptgrp
-	 * @route  /webcache/stats/reset
+	 * @route  POST /webcache/stats/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addWebcacheStatsReset() : stdClass
@@ -4449,7 +4449,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all administrative and user initiated webfilter overrides.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /webfilter/override
+	 * @route  GET /webfilter/override
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWebfilterOverride() : stdClass
@@ -4461,7 +4461,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Delete a configured webfilter override.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /webfilter/override/delete
+	 * @route  POST /webfilter/override/delete
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4474,7 +4474,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all URLs in FortiSandbox malicious URL database.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /webfilter/malicious-urls
+	 * @route  GET /webfilter/malicious-urls
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWebfilterMaliciousUrls() : stdClass
@@ -4486,7 +4486,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve statistics for the FortiSandbox malicious URL database.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /webfilter/malicious-urls/stat
+	 * @route  GET /webfilter/malicious-urls/stat
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWebfilterMaliciousUrlsStat() : stdClass
@@ -4498,7 +4498,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve quota usage statistics for webfilter categories.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /webfilter/category-quota
+	 * @route  GET /webfilter/category-quota
 	 * @param  $profile Webfilter profile.
 	 * @param  $user User or IP (required if profile specified).
 	 * @return stdClass Return the firewall's response as an object.
@@ -4512,7 +4512,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset webfilter quota for user or IP.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /webfilter/category-quota/reset
+	 * @route  POST /webfilter/category-quota/reset
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4525,7 +4525,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Return FortiGuard web filter categories.
 	 * Access Group: any
-	 * @route  /webfilter/fortiguard-categories
+	 * @route  GET /webfilter/fortiguard-categories
 	 * @param  $include_unrated Include Unrated category in result list.
 	 * @param  $convert_unrated_id Convert Unrated category id to the one for CLI use.
 	 * @return stdClass Return the firewall's response as an object.
@@ -4541,7 +4541,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * List all URLs in FortiGuard trusted URL database.
 	 * Access Group: utmgrp.webfilter
-	 * @route  /webfilter/trusted-urls
+	 * @route  GET /webfilter/trusted-urls
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWebfilterTrustedUrls() : stdClass
@@ -4553,7 +4553,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download webproxy PAC file.
 	 * Access Group: netgrp.cfg
-	 * @route  /webproxy/pacfile/download
+	 * @route  GET /webproxy/pacfile/download
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWebproxyPacfileDownload() : stdClass
@@ -4565,7 +4565,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upload webproxy PAC file.
 	 * Access Group: netgrp.cfg
-	 * @route  /webproxy/pacfile/upload
+	 * @route  POST /webproxy/pacfile/upload
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4578,7 +4578,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of connected WiFi clients.
 	 * Access Group: wifi
-	 * @route  /wifi/client
+	 * @route  GET /wifi/client
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @param  $type Request type [all*|fail-login].
@@ -4593,7 +4593,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Disassociate a WiFi client from the FortiAP it's currently connected to. The client will need to reassociate with the same FortiAP or another to resume connectivity.
 	 * Access Group: wifi
-	 * @route  /wifi/client/disassociate
+	 * @route  POST /wifi/client/disassociate
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4606,7 +4606,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of managed FortiAPs.
 	 * Access Group: wifi
-	 * @route  /wifi/managed_ap
+	 * @route  GET /wifi/managed_ap
 	 * @param  $wtp_id Filter: single managed FortiAP by ID.
 	 * @param  $incl_local Enable to include the local FortiWiFi device in the results.
 	 * @return stdClass Return the firewall's response as an object.
@@ -4620,7 +4620,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Update administrative state for a given FortiAP (enable or disable authorization).
 	 * Access Group: wifi
-	 * @route  /wifi/managed_ap/set_status
+	 * @route  POST /wifi/managed_ap/set_status
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4633,7 +4633,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of current and recommended firmware for FortiAPs in use.
 	 * Access Group: wifi
-	 * @route  /wifi/firmware
+	 * @route  GET /wifi/firmware
 	 * @param  $timeout FortiGuard connection timeout (defaults to 2 seconds).
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4646,7 +4646,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Download FortiAP firmware from FortiGuard to the FortiGate according to FortiAP image ID.
 	 * Access Group: wifi
-	 * @route  /wifi/firmware/download
+	 * @route  POST /wifi/firmware/download
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4659,7 +4659,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Push FortiAP firmware to the given device.
 	 * Access Group: wifi
-	 * @route  /wifi/firmware/push
+	 * @route  POST /wifi/firmware/push
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4672,7 +4672,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Upload FortiAP firmware to the management FortiGate and then push to target FortiAPs.
 	 * Access Group: wifi
-	 * @route  /wifi/firmware/upload
+	 * @route  POST /wifi/firmware/upload
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4685,7 +4685,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Restart a given FortiAP.
 	 * Access Group: wifi
-	 * @route  /wifi/managed_ap/restart
+	 * @route  POST /wifi/managed_ap/restart
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4698,7 +4698,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Turn a managed FortiAP's LED blinking on or off.
 	 * Access Group: wifi
-	 * @route  /wifi/managed_ap/led-blink
+	 * @route  POST /wifi/managed_ap/led-blink
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4711,7 +4711,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * When FortiWiFi is in client mode, retrieve list of local WiFi networks.
 	 * Access Group: wifi
-	 * @route  /wifi/network/list
+	 * @route  GET /wifi/network/list
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWifiNetworkList() : stdClass
@@ -4723,7 +4723,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * When FortiWiFi is in client mode, retrieve status of currently connected WiFi network, if any.
 	 * Access Group: wifi
-	 * @route  /wifi/network/status
+	 * @route  GET /wifi/network/status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWifiNetworkStatus() : stdClass
@@ -4735,7 +4735,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * When FortiWiFi is in client mode, connect to the specified network, if configured in the 'wifi' interface.
 	 * Access Group: wifi
-	 * @route  /wifi/network/connect
+	 * @route  POST /wifi/network/connect
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4748,7 +4748,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * When FortiWiFi is in client mode, start a scan for local WiFi networks.
 	 * Access Group: wifi
-	 * @route  /wifi/network/scan
+	 * @route  POST /wifi/network/scan
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addWifiNetworkScan() : stdClass
@@ -4760,7 +4760,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve statistics for all managed FortiAPs.
 	 * Access Group: wifi
-	 * @route  /wifi/ap_status
+	 * @route  GET /wifi/ap_status
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWifiAp_status() : stdClass
@@ -4772,7 +4772,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of interfering APs for one FortiAP radio.
 	 * Access Group: wifi
-	 * @route  /wifi/interfering_ap
+	 * @route  GET /wifi/interfering_ap
 	 * @param  $wtp FortiAP ID to query.
 	 * @param  $radio Radio ID.
 	 * @param  $start Starting entry index.
@@ -4792,7 +4792,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve presence analytics statistics.
 	 * Access Group: wifi
-	 * @route  /wifi/euclid
+	 * @route  GET /wifi/euclid
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function getAllWifiEuclid() : stdClass
@@ -4804,7 +4804,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Reset presence analytics statistics.
 	 * Access Group: wifi
-	 * @route  /wifi/euclid/reset
+	 * @route  POST /wifi/euclid/reset
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addWifiEuclidReset() : stdClass
@@ -4816,7 +4816,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieves a floorplan/region image from a configured FortiAP region.
 	 * Access Group: wifi
-	 * @route  /wifi/region-image
+	 * @route  GET /wifi/region-image
 	 * @param  $region_name Region name to retrieve image from.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4829,7 +4829,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Saves a floorplan/region image to an existing region.
 	 * Access Group: wifi
-	 * @route  /wifi/region-image/upload
+	 * @route  POST /wifi/region-image/upload
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4842,7 +4842,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve a list of detected rogue APs.
 	 * Access Group: wifi
-	 * @route  /wifi/rogue_ap
+	 * @route  GET /wifi/rogue_ap
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
 	 * @return stdClass Return the firewall's response as an object.
@@ -4856,7 +4856,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Clear all detected rogue APs.
 	 * Access Group: wifi
-	 * @route  /wifi/rogue_ap/clear_all
+	 * @route  POST /wifi/rogue_ap/clear_all
 	 * @return stdClass Return the firewall's response as an object.
 	 */
 	public function addWifiRogue_apClear_all() : stdClass
@@ -4868,7 +4868,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Mark detected APs as rogue APs.
 	 * Access Group: wifi
-	 * @route  /wifi/rogue_ap/set_status
+	 * @route  POST /wifi/rogue_ap/set_status
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4881,7 +4881,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve spectrum analysis information for a specific FortiAP.
 	 * Access Group: wifi
-	 * @route  /wifi/spectrum
+	 * @route  GET /wifi/spectrum
 	 * @param  $wtp_id FortiAP ID to query.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4894,7 +4894,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Start spectrum analysis for a specific FortiAP for a duration of time.
 	 * Access Group: wifi
-	 * @route  /wifi/spectrum/start
+	 * @route  POST /wifi/spectrum/start
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4907,7 +4907,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Extend duration of an existing spectrum analysis for a specific FortiAP.
 	 * Access Group: wifi
-	 * @route  /wifi/spectrum/keep-alive
+	 * @route  POST /wifi/spectrum/keep-alive
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4920,7 +4920,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Stop spectrum analysis for a specific FortiAP.
 	 * Access Group: wifi
-	 * @route  /wifi/spectrum/stop
+	 * @route  POST /wifi/spectrum/stop
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4933,7 +4933,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Retrieve the VLAN probe results.
 	 * Access Group: wifi
-	 * @route  /wifi/vlan-probe
+	 * @route  GET /wifi/vlan-probe
 	 * @param  $ap_interface FortiAP interface to send the probe on.
 	 * @param  $wtp FortiAP ID.
 	 * @return stdClass Return the firewall's response as an object.
@@ -4947,7 +4947,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Start a VLAN probe.
 	 * Access Group: wifi
-	 * @route  /wifi/vlan-probe/start
+	 * @route  POST /wifi/vlan-probe/start
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4960,7 +4960,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Stop a VLAN probe.
 	 * Access Group: wifi
-	 * @route  /wifi/vlan-probe/stop
+	 * @route  POST /wifi/vlan-probe/stop
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -4973,7 +4973,7 @@ class FortiOSAPIMonitor extends FortiOSAPI
 	/**
 	 * Generate pre-shared keys for specific multi pre-shared key profile.
 	 * Access Group: wifi
-	 * @route  /wifi/ssid/generate-keys
+	 * @route  POST /wifi/ssid/generate-keys
 	 * @param  $body Possible parameters to go in the body for the request.
 	 * @return stdClass Return the firewall's response as an object.
 	 */

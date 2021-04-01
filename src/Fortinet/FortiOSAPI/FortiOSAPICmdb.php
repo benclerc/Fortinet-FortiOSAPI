@@ -21,7 +21,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /alertemail/setting
+	 * @route  GET /alertemail/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -82,7 +82,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /alertemail/setting
+	 * @route  PUT /alertemail/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -121,7 +121,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/heuristic
+	 * @route  GET /antivirus/heuristic
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -182,7 +182,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/heuristic
+	 * @route  PUT /antivirus/heuristic
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -221,7 +221,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/profile/{name}
+	 * @route  GET /antivirus/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -256,7 +256,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/profile/{name}
+	 * @route  PUT /antivirus/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -297,7 +297,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/profile/{name}
+	 * @route  DELETE /antivirus/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -316,7 +316,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/profile
+	 * @route  GET /antivirus/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -377,7 +377,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/profile
+	 * @route  POST /antivirus/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -410,7 +410,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/quarantine
+	 * @route  GET /antivirus/quarantine
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -471,7 +471,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/quarantine
+	 * @route  PUT /antivirus/quarantine
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -510,7 +510,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/settings
+	 * @route  GET /antivirus/settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -571,7 +571,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /antivirus/settings
+	 * @route  PUT /antivirus/settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -610,7 +610,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/custom/{tag}
+	 * @route  GET /application/custom/{tag}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -645,7 +645,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/custom/{tag}
+	 * @route  PUT /application/custom/{tag}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -686,7 +686,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/custom/{tag}
+	 * @route  DELETE /application/custom/{tag}
 	 * @param  $tag mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -705,7 +705,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/custom
+	 * @route  GET /application/custom
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -766,7 +766,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /application/custom
+	 * @route  POST /application/custom
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -799,7 +799,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/group/{name}
+	 * @route  GET /application/group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -834,7 +834,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/group/{name}
+	 * @route  PUT /application/group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -875,7 +875,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/group/{name}
+	 * @route  DELETE /application/group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -894,7 +894,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/group
+	 * @route  GET /application/group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -955,7 +955,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /application/group
+	 * @route  POST /application/group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -988,7 +988,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/list/{name}
+	 * @route  GET /application/list/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -1023,7 +1023,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/list/{name}
+	 * @route  PUT /application/list/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1064,7 +1064,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/list/{name}
+	 * @route  DELETE /application/list/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1083,7 +1083,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/list
+	 * @route  GET /application/list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -1144,7 +1144,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /application/list
+	 * @route  POST /application/list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1177,7 +1177,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/name/{name}
+	 * @route  GET /application/name/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -1212,7 +1212,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/name/{name}
+	 * @route  PUT /application/name/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1253,7 +1253,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/name/{name}
+	 * @route  DELETE /application/name/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1272,7 +1272,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/name
+	 * @route  GET /application/name
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -1333,7 +1333,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /application/name
+	 * @route  POST /application/name
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1366,7 +1366,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/rule-settings/{id}
+	 * @route  GET /application/rule-settings/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -1401,7 +1401,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/rule-settings/{id}
+	 * @route  PUT /application/rule-settings/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1442,7 +1442,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /application/rule-settings/{id}
+	 * @route  DELETE /application/rule-settings/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1461,7 +1461,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /application/rule-settings
+	 * @route  GET /application/rule-settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -1522,7 +1522,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /application/rule-settings
+	 * @route  POST /application/rule-settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1555,7 +1555,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /authentication/rule/{name}
+	 * @route  GET /authentication/rule/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -1590,7 +1590,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /authentication/rule/{name}
+	 * @route  PUT /authentication/rule/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1631,7 +1631,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /authentication/rule/{name}
+	 * @route  DELETE /authentication/rule/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1650,7 +1650,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /authentication/rule
+	 * @route  GET /authentication/rule
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -1711,7 +1711,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /authentication/rule
+	 * @route  POST /authentication/rule
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1744,7 +1744,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /authentication/scheme/{name}
+	 * @route  GET /authentication/scheme/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -1779,7 +1779,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /authentication/scheme/{name}
+	 * @route  PUT /authentication/scheme/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1820,7 +1820,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /authentication/scheme/{name}
+	 * @route  DELETE /authentication/scheme/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1839,7 +1839,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /authentication/scheme
+	 * @route  GET /authentication/scheme
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -1900,7 +1900,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /authentication/scheme
+	 * @route  POST /authentication/scheme
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -1933,7 +1933,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /authentication/setting
+	 * @route  GET /authentication/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -1994,7 +1994,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /authentication/setting
+	 * @route  PUT /authentication/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2033,7 +2033,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/ca/{name}
+	 * @route  GET /certificate/ca/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -2068,7 +2068,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/ca/{name}
+	 * @route  PUT /certificate/ca/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2109,7 +2109,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/ca/{name}
+	 * @route  DELETE /certificate/ca/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2128,7 +2128,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/ca
+	 * @route  GET /certificate/ca
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -2189,7 +2189,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/ca
+	 * @route  POST /certificate/ca
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2222,7 +2222,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/crl/{name}
+	 * @route  GET /certificate/crl/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -2257,7 +2257,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/crl/{name}
+	 * @route  PUT /certificate/crl/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2298,7 +2298,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/crl/{name}
+	 * @route  DELETE /certificate/crl/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2317,7 +2317,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/crl
+	 * @route  GET /certificate/crl
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -2378,7 +2378,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/crl
+	 * @route  POST /certificate/crl
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2411,7 +2411,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/local/{name}
+	 * @route  GET /certificate/local/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -2446,7 +2446,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/local/{name}
+	 * @route  PUT /certificate/local/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2487,7 +2487,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/local/{name}
+	 * @route  DELETE /certificate/local/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2506,7 +2506,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/local
+	 * @route  GET /certificate/local
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -2567,7 +2567,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/local
+	 * @route  POST /certificate/local
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2600,7 +2600,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/remote/{name}
+	 * @route  GET /certificate/remote/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -2635,7 +2635,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/remote/{name}
+	 * @route  PUT /certificate/remote/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2676,7 +2676,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/remote/{name}
+	 * @route  DELETE /certificate/remote/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2695,7 +2695,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/remote
+	 * @route  GET /certificate/remote
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -2756,7 +2756,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /certificate/remote
+	 * @route  POST /certificate/remote
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2789,7 +2789,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /credential-store/domain-controller/{server-name}
+	 * @route  GET /credential-store/domain-controller/{server-name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -2824,7 +2824,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /credential-store/domain-controller/{server-name}
+	 * @route  PUT /credential-store/domain-controller/{server-name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2865,7 +2865,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /credential-store/domain-controller/{server-name}
+	 * @route  DELETE /credential-store/domain-controller/{server-name}
 	 * @param  $serverName mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2884,7 +2884,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /credential-store/domain-controller
+	 * @route  GET /credential-store/domain-controller
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -2945,7 +2945,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /credential-store/domain-controller
+	 * @route  POST /credential-store/domain-controller
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -2978,7 +2978,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/filepattern/{id}
+	 * @route  GET /dlp/filepattern/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -3013,7 +3013,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/filepattern/{id}
+	 * @route  PUT /dlp/filepattern/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3054,7 +3054,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/filepattern/{id}
+	 * @route  DELETE /dlp/filepattern/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3073,7 +3073,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/filepattern
+	 * @route  GET /dlp/filepattern
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -3134,7 +3134,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/filepattern
+	 * @route  POST /dlp/filepattern
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3167,7 +3167,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/fp-doc-source/{name}
+	 * @route  GET /dlp/fp-doc-source/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -3202,7 +3202,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/fp-doc-source/{name}
+	 * @route  PUT /dlp/fp-doc-source/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3243,7 +3243,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/fp-doc-source/{name}
+	 * @route  DELETE /dlp/fp-doc-source/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3262,7 +3262,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/fp-doc-source
+	 * @route  GET /dlp/fp-doc-source
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -3323,7 +3323,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/fp-doc-source
+	 * @route  POST /dlp/fp-doc-source
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3356,7 +3356,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensitivity/{name}
+	 * @route  GET /dlp/sensitivity/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -3391,7 +3391,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensitivity/{name}
+	 * @route  PUT /dlp/sensitivity/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3432,7 +3432,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensitivity/{name}
+	 * @route  DELETE /dlp/sensitivity/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3451,7 +3451,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensitivity
+	 * @route  GET /dlp/sensitivity
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -3512,7 +3512,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensitivity
+	 * @route  POST /dlp/sensitivity
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3545,7 +3545,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensor/{name}
+	 * @route  GET /dlp/sensor/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -3580,7 +3580,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensor/{name}
+	 * @route  PUT /dlp/sensor/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3621,7 +3621,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensor/{name}
+	 * @route  DELETE /dlp/sensor/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3640,7 +3640,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensor
+	 * @route  GET /dlp/sensor
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -3701,7 +3701,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/sensor
+	 * @route  POST /dlp/sensor
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3730,7 +3730,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/settings
+	 * @route  GET /dlp/settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -3791,7 +3791,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dlp/settings
+	 * @route  PUT /dlp/settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3830,7 +3830,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/domain-filter/{id}
+	 * @route  GET /dnsfilter/domain-filter/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -3865,7 +3865,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/domain-filter/{id}
+	 * @route  PUT /dnsfilter/domain-filter/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3906,7 +3906,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/domain-filter/{id}
+	 * @route  DELETE /dnsfilter/domain-filter/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -3925,7 +3925,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/domain-filter
+	 * @route  GET /dnsfilter/domain-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -3986,7 +3986,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/domain-filter
+	 * @route  POST /dnsfilter/domain-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4019,7 +4019,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/profile/{name}
+	 * @route  GET /dnsfilter/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -4054,7 +4054,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/profile/{name}
+	 * @route  PUT /dnsfilter/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4095,7 +4095,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/profile/{name}
+	 * @route  DELETE /dnsfilter/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4114,7 +4114,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/profile
+	 * @route  GET /dnsfilter/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -4175,7 +4175,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /dnsfilter/profile
+	 * @route  POST /dnsfilter/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4208,7 +4208,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bwl/{id}
+	 * @route  GET /emailfilter/bwl/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -4243,7 +4243,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bwl/{id}
+	 * @route  PUT /emailfilter/bwl/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4284,7 +4284,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bwl/{id}
+	 * @route  DELETE /emailfilter/bwl/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4303,7 +4303,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bwl
+	 * @route  GET /emailfilter/bwl
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -4364,7 +4364,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bwl
+	 * @route  POST /emailfilter/bwl
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4397,7 +4397,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bword/{id}
+	 * @route  GET /emailfilter/bword/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -4432,7 +4432,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bword/{id}
+	 * @route  PUT /emailfilter/bword/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4473,7 +4473,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bword/{id}
+	 * @route  DELETE /emailfilter/bword/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4492,7 +4492,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bword
+	 * @route  GET /emailfilter/bword
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -4553,7 +4553,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/bword
+	 * @route  POST /emailfilter/bword
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4586,7 +4586,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/dnsbl/{id}
+	 * @route  GET /emailfilter/dnsbl/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -4621,7 +4621,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/dnsbl/{id}
+	 * @route  PUT /emailfilter/dnsbl/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4662,7 +4662,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/dnsbl/{id}
+	 * @route  DELETE /emailfilter/dnsbl/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4681,7 +4681,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/dnsbl
+	 * @route  GET /emailfilter/dnsbl
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -4742,7 +4742,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/dnsbl
+	 * @route  POST /emailfilter/dnsbl
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4775,7 +4775,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/fortishield
+	 * @route  GET /emailfilter/fortishield
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -4836,7 +4836,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/fortishield
+	 * @route  PUT /emailfilter/fortishield
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4875,7 +4875,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/iptrust/{id}
+	 * @route  GET /emailfilter/iptrust/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -4910,7 +4910,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/iptrust/{id}
+	 * @route  PUT /emailfilter/iptrust/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4951,7 +4951,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/iptrust/{id}
+	 * @route  DELETE /emailfilter/iptrust/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -4970,7 +4970,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/iptrust
+	 * @route  GET /emailfilter/iptrust
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -5031,7 +5031,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/iptrust
+	 * @route  POST /emailfilter/iptrust
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5064,7 +5064,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/mheader/{id}
+	 * @route  GET /emailfilter/mheader/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -5099,7 +5099,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/mheader/{id}
+	 * @route  PUT /emailfilter/mheader/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5140,7 +5140,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/mheader/{id}
+	 * @route  DELETE /emailfilter/mheader/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5159,7 +5159,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/mheader
+	 * @route  GET /emailfilter/mheader
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -5220,7 +5220,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/mheader
+	 * @route  POST /emailfilter/mheader
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5253,7 +5253,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/options
+	 * @route  GET /emailfilter/options
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -5314,7 +5314,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/options
+	 * @route  PUT /emailfilter/options
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5353,7 +5353,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/profile/{name}
+	 * @route  GET /emailfilter/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -5388,7 +5388,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/profile/{name}
+	 * @route  PUT /emailfilter/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5429,7 +5429,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/profile/{name}
+	 * @route  DELETE /emailfilter/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5448,7 +5448,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/profile
+	 * @route  GET /emailfilter/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -5509,7 +5509,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /emailfilter/profile
+	 * @route  POST /emailfilter/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5542,7 +5542,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /endpoint-control/fctems/{name}
+	 * @route  GET /endpoint-control/fctems/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -5577,7 +5577,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /endpoint-control/fctems/{name}
+	 * @route  PUT /endpoint-control/fctems/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5618,7 +5618,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /endpoint-control/fctems/{name}
+	 * @route  DELETE /endpoint-control/fctems/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5637,7 +5637,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /endpoint-control/fctems
+	 * @route  GET /endpoint-control/fctems
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -5698,7 +5698,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /endpoint-control/fctems
+	 * @route  POST /endpoint-control/fctems
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5731,7 +5731,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/dataplan/{name}
+	 * @route  GET /extender-controller/dataplan/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -5766,7 +5766,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/dataplan/{name}
+	 * @route  PUT /extender-controller/dataplan/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5807,7 +5807,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/dataplan/{name}
+	 * @route  DELETE /extender-controller/dataplan/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5826,7 +5826,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/dataplan
+	 * @route  GET /extender-controller/dataplan
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -5887,7 +5887,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/dataplan
+	 * @route  POST /extender-controller/dataplan
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5920,7 +5920,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/extender/{name}
+	 * @route  GET /extender-controller/extender/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -5955,7 +5955,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/extender/{name}
+	 * @route  PUT /extender-controller/extender/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -5996,7 +5996,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/extender/{name}
+	 * @route  DELETE /extender-controller/extender/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6015,7 +6015,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/extender
+	 * @route  GET /extender-controller/extender
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -6076,7 +6076,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /extender-controller/extender
+	 * @route  POST /extender-controller/extender
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6109,7 +6109,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /file-filter/profile/{name}
+	 * @route  GET /file-filter/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -6144,7 +6144,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /file-filter/profile/{name}
+	 * @route  PUT /file-filter/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6185,7 +6185,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /file-filter/profile/{name}
+	 * @route  DELETE /file-filter/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6204,7 +6204,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /file-filter/profile
+	 * @route  GET /file-filter/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -6265,7 +6265,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /file-filter/profile
+	 * @route  POST /file-filter/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6298,7 +6298,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ipmacbinding/setting
+	 * @route  GET /firewall.ipmacbinding/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -6359,7 +6359,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ipmacbinding/setting
+	 * @route  PUT /firewall.ipmacbinding/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6398,7 +6398,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ipmacbinding/table/{seq-num}
+	 * @route  GET /firewall.ipmacbinding/table/{seq-num}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -6433,7 +6433,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ipmacbinding/table/{seq-num}
+	 * @route  PUT /firewall.ipmacbinding/table/{seq-num}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6474,7 +6474,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ipmacbinding/table/{seq-num}
+	 * @route  DELETE /firewall.ipmacbinding/table/{seq-num}
 	 * @param  $seqNum mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6493,7 +6493,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ipmacbinding/table
+	 * @route  GET /firewall.ipmacbinding/table
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -6554,7 +6554,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ipmacbinding/table
+	 * @route  POST /firewall.ipmacbinding/table
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6587,7 +6587,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/group/{name}
+	 * @route  GET /firewall.schedule/group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -6622,7 +6622,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/group/{name}
+	 * @route  PUT /firewall.schedule/group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6663,7 +6663,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/group/{name}
+	 * @route  DELETE /firewall.schedule/group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6682,7 +6682,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/group
+	 * @route  GET /firewall.schedule/group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -6743,7 +6743,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/group
+	 * @route  POST /firewall.schedule/group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6776,7 +6776,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/onetime/{name}
+	 * @route  GET /firewall.schedule/onetime/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -6811,7 +6811,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/onetime/{name}
+	 * @route  PUT /firewall.schedule/onetime/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6852,7 +6852,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/onetime/{name}
+	 * @route  DELETE /firewall.schedule/onetime/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6871,7 +6871,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/onetime
+	 * @route  GET /firewall.schedule/onetime
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -6932,7 +6932,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/onetime
+	 * @route  POST /firewall.schedule/onetime
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -6965,7 +6965,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/recurring/{name}
+	 * @route  GET /firewall.schedule/recurring/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -7000,7 +7000,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/recurring/{name}
+	 * @route  PUT /firewall.schedule/recurring/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7041,7 +7041,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/recurring/{name}
+	 * @route  DELETE /firewall.schedule/recurring/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7060,7 +7060,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/recurring
+	 * @route  GET /firewall.schedule/recurring
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -7121,7 +7121,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.schedule/recurring
+	 * @route  POST /firewall.schedule/recurring
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7154,7 +7154,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/category/{name}
+	 * @route  GET /firewall.service/category/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -7189,7 +7189,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/category/{name}
+	 * @route  PUT /firewall.service/category/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7230,7 +7230,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/category/{name}
+	 * @route  DELETE /firewall.service/category/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7249,7 +7249,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/category
+	 * @route  GET /firewall.service/category
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -7310,7 +7310,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/category
+	 * @route  POST /firewall.service/category
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7343,7 +7343,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/custom/{name}
+	 * @route  GET /firewall.service/custom/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -7378,7 +7378,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/custom/{name}
+	 * @route  PUT /firewall.service/custom/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7419,7 +7419,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/custom/{name}
+	 * @route  DELETE /firewall.service/custom/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7438,7 +7438,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/custom
+	 * @route  GET /firewall.service/custom
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -7499,7 +7499,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/custom
+	 * @route  POST /firewall.service/custom
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7532,7 +7532,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/group/{name}
+	 * @route  GET /firewall.service/group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -7567,7 +7567,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/group/{name}
+	 * @route  PUT /firewall.service/group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7608,7 +7608,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/group/{name}
+	 * @route  DELETE /firewall.service/group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7627,7 +7627,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/group
+	 * @route  GET /firewall.service/group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -7688,7 +7688,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.service/group
+	 * @route  POST /firewall.service/group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7721,7 +7721,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/per-ip-shaper/{name}
+	 * @route  GET /firewall.shaper/per-ip-shaper/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -7756,7 +7756,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/per-ip-shaper/{name}
+	 * @route  PUT /firewall.shaper/per-ip-shaper/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7797,7 +7797,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/per-ip-shaper/{name}
+	 * @route  DELETE /firewall.shaper/per-ip-shaper/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7816,7 +7816,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/per-ip-shaper
+	 * @route  GET /firewall.shaper/per-ip-shaper
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -7877,7 +7877,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/per-ip-shaper
+	 * @route  POST /firewall.shaper/per-ip-shaper
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7910,7 +7910,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/traffic-shaper/{name}
+	 * @route  GET /firewall.shaper/traffic-shaper/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -7945,7 +7945,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/traffic-shaper/{name}
+	 * @route  PUT /firewall.shaper/traffic-shaper/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -7986,7 +7986,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/traffic-shaper/{name}
+	 * @route  DELETE /firewall.shaper/traffic-shaper/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8005,7 +8005,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/traffic-shaper
+	 * @route  GET /firewall.shaper/traffic-shaper
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -8066,7 +8066,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.shaper/traffic-shaper
+	 * @route  POST /firewall.shaper/traffic-shaper
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8099,7 +8099,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/host-key/{name}
+	 * @route  GET /firewall.ssh/host-key/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -8134,7 +8134,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/host-key/{name}
+	 * @route  PUT /firewall.ssh/host-key/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8175,7 +8175,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/host-key/{name}
+	 * @route  DELETE /firewall.ssh/host-key/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8194,7 +8194,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/host-key
+	 * @route  GET /firewall.ssh/host-key
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -8255,7 +8255,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/host-key
+	 * @route  POST /firewall.ssh/host-key
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8288,7 +8288,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-ca/{name}
+	 * @route  GET /firewall.ssh/local-ca/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -8323,7 +8323,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-ca/{name}
+	 * @route  PUT /firewall.ssh/local-ca/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8364,7 +8364,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-ca/{name}
+	 * @route  DELETE /firewall.ssh/local-ca/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8383,7 +8383,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-ca
+	 * @route  GET /firewall.ssh/local-ca
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -8444,7 +8444,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-ca
+	 * @route  POST /firewall.ssh/local-ca
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8477,7 +8477,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-key/{name}
+	 * @route  GET /firewall.ssh/local-key/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -8512,7 +8512,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-key/{name}
+	 * @route  PUT /firewall.ssh/local-key/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8553,7 +8553,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-key/{name}
+	 * @route  DELETE /firewall.ssh/local-key/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8572,7 +8572,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-key
+	 * @route  GET /firewall.ssh/local-key
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -8633,7 +8633,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/local-key
+	 * @route  POST /firewall.ssh/local-key
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8666,7 +8666,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/setting
+	 * @route  GET /firewall.ssh/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -8727,7 +8727,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssh/setting
+	 * @route  PUT /firewall.ssh/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8766,7 +8766,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssl/setting
+	 * @route  GET /firewall.ssl/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -8827,7 +8827,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.ssl/setting
+	 * @route  PUT /firewall.ssl/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8866,7 +8866,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/custom/{name}
+	 * @route  GET /firewall.wildcard-fqdn/custom/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -8901,7 +8901,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/custom/{name}
+	 * @route  PUT /firewall.wildcard-fqdn/custom/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8942,7 +8942,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/custom/{name}
+	 * @route  DELETE /firewall.wildcard-fqdn/custom/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -8961,7 +8961,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/custom
+	 * @route  GET /firewall.wildcard-fqdn/custom
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -9022,7 +9022,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/custom
+	 * @route  POST /firewall.wildcard-fqdn/custom
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9055,7 +9055,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/group/{name}
+	 * @route  GET /firewall.wildcard-fqdn/group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -9090,7 +9090,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/group/{name}
+	 * @route  PUT /firewall.wildcard-fqdn/group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9131,7 +9131,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/group/{name}
+	 * @route  DELETE /firewall.wildcard-fqdn/group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9150,7 +9150,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/group
+	 * @route  GET /firewall.wildcard-fqdn/group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -9211,7 +9211,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall.wildcard-fqdn/group
+	 * @route  POST /firewall.wildcard-fqdn/group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9244,7 +9244,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy/{policyid}
+	 * @route  GET /firewall/DoS-policy/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -9279,7 +9279,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy/{policyid}
+	 * @route  PUT /firewall/DoS-policy/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9320,7 +9320,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy/{policyid}
+	 * @route  DELETE /firewall/DoS-policy/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9339,7 +9339,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy
+	 * @route  GET /firewall/DoS-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -9400,7 +9400,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy
+	 * @route  POST /firewall/DoS-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9433,7 +9433,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy6/{policyid}
+	 * @route  GET /firewall/DoS-policy6/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -9468,7 +9468,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy6/{policyid}
+	 * @route  PUT /firewall/DoS-policy6/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9509,7 +9509,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy6/{policyid}
+	 * @route  DELETE /firewall/DoS-policy6/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9528,7 +9528,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy6
+	 * @route  GET /firewall/DoS-policy6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -9589,7 +9589,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/DoS-policy6
+	 * @route  POST /firewall/DoS-policy6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9622,7 +9622,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl/{policyid}
+	 * @route  GET /firewall/acl/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -9657,7 +9657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl/{policyid}
+	 * @route  PUT /firewall/acl/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9698,7 +9698,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl/{policyid}
+	 * @route  DELETE /firewall/acl/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9717,7 +9717,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl
+	 * @route  GET /firewall/acl
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -9778,7 +9778,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl
+	 * @route  POST /firewall/acl
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9811,7 +9811,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl6/{policyid}
+	 * @route  GET /firewall/acl6/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -9846,7 +9846,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl6/{policyid}
+	 * @route  PUT /firewall/acl6/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9887,7 +9887,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl6/{policyid}
+	 * @route  DELETE /firewall/acl6/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -9906,7 +9906,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl6
+	 * @route  GET /firewall/acl6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -9967,7 +9967,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/acl6
+	 * @route  POST /firewall/acl6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10000,7 +10000,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address/{name}
+	 * @route  GET /firewall/address/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -10035,7 +10035,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address/{name}
+	 * @route  PUT /firewall/address/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10076,7 +10076,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address/{name}
+	 * @route  DELETE /firewall/address/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10095,7 +10095,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address
+	 * @route  GET /firewall/address
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -10156,7 +10156,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address
+	 * @route  POST /firewall/address
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10189,7 +10189,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6/{name}
+	 * @route  GET /firewall/address6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -10224,7 +10224,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6/{name}
+	 * @route  PUT /firewall/address6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10265,7 +10265,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6/{name}
+	 * @route  DELETE /firewall/address6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10284,7 +10284,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6
+	 * @route  GET /firewall/address6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -10345,7 +10345,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6
+	 * @route  POST /firewall/address6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10378,7 +10378,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6-template/{name}
+	 * @route  GET /firewall/address6-template/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -10413,7 +10413,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6-template/{name}
+	 * @route  PUT /firewall/address6-template/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10454,7 +10454,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6-template/{name}
+	 * @route  DELETE /firewall/address6-template/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10473,7 +10473,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6-template
+	 * @route  GET /firewall/address6-template
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -10534,7 +10534,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/address6-template
+	 * @route  POST /firewall/address6-template
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10567,7 +10567,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp/{name}
+	 * @route  GET /firewall/addrgrp/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -10602,7 +10602,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp/{name}
+	 * @route  PUT /firewall/addrgrp/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10643,7 +10643,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp/{name}
+	 * @route  DELETE /firewall/addrgrp/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10662,7 +10662,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp
+	 * @route  GET /firewall/addrgrp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -10723,7 +10723,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp
+	 * @route  POST /firewall/addrgrp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10756,7 +10756,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp6/{name}
+	 * @route  GET /firewall/addrgrp6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -10791,7 +10791,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp6/{name}
+	 * @route  PUT /firewall/addrgrp6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10832,7 +10832,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp6/{name}
+	 * @route  DELETE /firewall/addrgrp6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10851,7 +10851,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp6
+	 * @route  GET /firewall/addrgrp6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -10912,7 +10912,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/addrgrp6
+	 * @route  POST /firewall/addrgrp6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -10945,7 +10945,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/auth-portal
+	 * @route  GET /firewall/auth-portal
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -11006,7 +11006,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/auth-portal
+	 * @route  PUT /firewall/auth-portal
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11045,7 +11045,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/central-snat-map/{policyid}
+	 * @route  GET /firewall/central-snat-map/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -11080,7 +11080,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/central-snat-map/{policyid}
+	 * @route  PUT /firewall/central-snat-map/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11121,7 +11121,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/central-snat-map/{policyid}
+	 * @route  DELETE /firewall/central-snat-map/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11140,7 +11140,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/central-snat-map
+	 * @route  GET /firewall/central-snat-map
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -11201,7 +11201,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/central-snat-map
+	 * @route  POST /firewall/central-snat-map
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11234,7 +11234,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/city/{id}
+	 * @route  GET /firewall/city/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -11269,7 +11269,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/city/{id}
+	 * @route  PUT /firewall/city/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11310,7 +11310,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/city/{id}
+	 * @route  DELETE /firewall/city/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11329,7 +11329,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/city
+	 * @route  GET /firewall/city
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -11390,7 +11390,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/city
+	 * @route  POST /firewall/city
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11423,7 +11423,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/country/{id}
+	 * @route  GET /firewall/country/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -11458,7 +11458,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/country/{id}
+	 * @route  PUT /firewall/country/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11499,7 +11499,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/country/{id}
+	 * @route  DELETE /firewall/country/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11518,7 +11518,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/country
+	 * @route  GET /firewall/country
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -11579,7 +11579,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/country
+	 * @route  POST /firewall/country
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11612,7 +11612,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/decrypted-traffic-mirror/{name}
+	 * @route  GET /firewall/decrypted-traffic-mirror/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -11647,7 +11647,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/decrypted-traffic-mirror/{name}
+	 * @route  PUT /firewall/decrypted-traffic-mirror/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11688,7 +11688,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/decrypted-traffic-mirror/{name}
+	 * @route  DELETE /firewall/decrypted-traffic-mirror/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11707,7 +11707,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/decrypted-traffic-mirror
+	 * @route  GET /firewall/decrypted-traffic-mirror
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -11768,7 +11768,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/decrypted-traffic-mirror
+	 * @route  POST /firewall/decrypted-traffic-mirror
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11801,7 +11801,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/dnstranslation/{id}
+	 * @route  GET /firewall/dnstranslation/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -11836,7 +11836,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/dnstranslation/{id}
+	 * @route  PUT /firewall/dnstranslation/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11877,7 +11877,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/dnstranslation/{id}
+	 * @route  DELETE /firewall/dnstranslation/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11896,7 +11896,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/dnstranslation
+	 * @route  GET /firewall/dnstranslation
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -11957,7 +11957,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/dnstranslation
+	 * @route  POST /firewall/dnstranslation
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -11990,7 +11990,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/identity-based-route/{name}
+	 * @route  GET /firewall/identity-based-route/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -12025,7 +12025,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/identity-based-route/{name}
+	 * @route  PUT /firewall/identity-based-route/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12066,7 +12066,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/identity-based-route/{name}
+	 * @route  DELETE /firewall/identity-based-route/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12085,7 +12085,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/identity-based-route
+	 * @route  GET /firewall/identity-based-route
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -12146,7 +12146,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/identity-based-route
+	 * @route  POST /firewall/identity-based-route
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12179,7 +12179,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy/{policyid}
+	 * @route  GET /firewall/interface-policy/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -12214,7 +12214,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy/{policyid}
+	 * @route  PUT /firewall/interface-policy/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12255,7 +12255,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy/{policyid}
+	 * @route  DELETE /firewall/interface-policy/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12274,7 +12274,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy
+	 * @route  GET /firewall/interface-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -12335,7 +12335,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy
+	 * @route  POST /firewall/interface-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12368,7 +12368,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy6/{policyid}
+	 * @route  GET /firewall/interface-policy6/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -12403,7 +12403,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy6/{policyid}
+	 * @route  PUT /firewall/interface-policy6/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12444,7 +12444,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy6/{policyid}
+	 * @route  DELETE /firewall/interface-policy6/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12463,7 +12463,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy6
+	 * @route  GET /firewall/interface-policy6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -12524,7 +12524,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/interface-policy6
+	 * @route  POST /firewall/interface-policy6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12557,7 +12557,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service/{id}
+	 * @route  GET /firewall/internet-service/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -12592,7 +12592,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service/{id}
+	 * @route  PUT /firewall/internet-service/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12633,7 +12633,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service/{id}
+	 * @route  DELETE /firewall/internet-service/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12652,7 +12652,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service
+	 * @route  GET /firewall/internet-service
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -12713,7 +12713,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service
+	 * @route  POST /firewall/internet-service
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12746,7 +12746,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-addition/{id}
+	 * @route  GET /firewall/internet-service-addition/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -12781,7 +12781,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-addition/{id}
+	 * @route  PUT /firewall/internet-service-addition/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12822,7 +12822,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-addition/{id}
+	 * @route  DELETE /firewall/internet-service-addition/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12841,7 +12841,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-addition
+	 * @route  GET /firewall/internet-service-addition
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -12902,7 +12902,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-addition
+	 * @route  POST /firewall/internet-service-addition
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -12935,7 +12935,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-append
+	 * @route  GET /firewall/internet-service-append
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -12996,7 +12996,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-append
+	 * @route  PUT /firewall/internet-service-append
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13035,7 +13035,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-botnet/{id}
+	 * @route  GET /firewall/internet-service-botnet/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -13070,7 +13070,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-botnet/{id}
+	 * @route  PUT /firewall/internet-service-botnet/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13111,7 +13111,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-botnet/{id}
+	 * @route  DELETE /firewall/internet-service-botnet/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13130,7 +13130,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-botnet
+	 * @route  GET /firewall/internet-service-botnet
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -13191,7 +13191,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-botnet
+	 * @route  POST /firewall/internet-service-botnet
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13224,7 +13224,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom/{name}
+	 * @route  GET /firewall/internet-service-custom/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -13259,7 +13259,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom/{name}
+	 * @route  PUT /firewall/internet-service-custom/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13300,7 +13300,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom/{name}
+	 * @route  DELETE /firewall/internet-service-custom/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13319,7 +13319,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom
+	 * @route  GET /firewall/internet-service-custom
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -13380,7 +13380,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom
+	 * @route  POST /firewall/internet-service-custom
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13413,7 +13413,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom-group/{name}
+	 * @route  GET /firewall/internet-service-custom-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -13448,7 +13448,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom-group/{name}
+	 * @route  PUT /firewall/internet-service-custom-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13489,7 +13489,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom-group/{name}
+	 * @route  DELETE /firewall/internet-service-custom-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13508,7 +13508,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom-group
+	 * @route  GET /firewall/internet-service-custom-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -13569,7 +13569,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-custom-group
+	 * @route  POST /firewall/internet-service-custom-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13602,7 +13602,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-definition/{id}
+	 * @route  GET /firewall/internet-service-definition/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -13637,7 +13637,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-definition/{id}
+	 * @route  PUT /firewall/internet-service-definition/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13678,7 +13678,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-definition/{id}
+	 * @route  DELETE /firewall/internet-service-definition/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13697,7 +13697,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-definition
+	 * @route  GET /firewall/internet-service-definition
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -13758,7 +13758,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-definition
+	 * @route  POST /firewall/internet-service-definition
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13791,7 +13791,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-extension/{id}
+	 * @route  GET /firewall/internet-service-extension/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -13826,7 +13826,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-extension/{id}
+	 * @route  PUT /firewall/internet-service-extension/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13867,7 +13867,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-extension/{id}
+	 * @route  DELETE /firewall/internet-service-extension/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13886,7 +13886,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-extension
+	 * @route  GET /firewall/internet-service-extension
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -13947,7 +13947,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-extension
+	 * @route  POST /firewall/internet-service-extension
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -13980,7 +13980,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-group/{name}
+	 * @route  GET /firewall/internet-service-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -14015,7 +14015,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-group/{name}
+	 * @route  PUT /firewall/internet-service-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14056,7 +14056,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-group/{name}
+	 * @route  DELETE /firewall/internet-service-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14075,7 +14075,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-group
+	 * @route  GET /firewall/internet-service-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -14136,7 +14136,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-group
+	 * @route  POST /firewall/internet-service-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14169,7 +14169,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-reason/{id}
+	 * @route  GET /firewall/internet-service-ipbl-reason/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -14204,7 +14204,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-reason/{id}
+	 * @route  PUT /firewall/internet-service-ipbl-reason/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14245,7 +14245,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-reason/{id}
+	 * @route  DELETE /firewall/internet-service-ipbl-reason/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14264,7 +14264,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-reason
+	 * @route  GET /firewall/internet-service-ipbl-reason
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -14325,7 +14325,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-reason
+	 * @route  POST /firewall/internet-service-ipbl-reason
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14358,7 +14358,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-vendor/{id}
+	 * @route  GET /firewall/internet-service-ipbl-vendor/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -14393,7 +14393,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-vendor/{id}
+	 * @route  PUT /firewall/internet-service-ipbl-vendor/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14434,7 +14434,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-vendor/{id}
+	 * @route  DELETE /firewall/internet-service-ipbl-vendor/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14453,7 +14453,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-vendor
+	 * @route  GET /firewall/internet-service-ipbl-vendor
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -14514,7 +14514,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-ipbl-vendor
+	 * @route  POST /firewall/internet-service-ipbl-vendor
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14547,7 +14547,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-list/{id}
+	 * @route  GET /firewall/internet-service-list/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -14582,7 +14582,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-list/{id}
+	 * @route  PUT /firewall/internet-service-list/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14623,7 +14623,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-list/{id}
+	 * @route  DELETE /firewall/internet-service-list/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14642,7 +14642,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-list
+	 * @route  GET /firewall/internet-service-list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -14703,7 +14703,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-list
+	 * @route  POST /firewall/internet-service-list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14736,7 +14736,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-name/{name}
+	 * @route  GET /firewall/internet-service-name/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -14771,7 +14771,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-name/{name}
+	 * @route  PUT /firewall/internet-service-name/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14812,7 +14812,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-name/{name}
+	 * @route  DELETE /firewall/internet-service-name/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14831,7 +14831,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-name
+	 * @route  GET /firewall/internet-service-name
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -14892,7 +14892,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-name
+	 * @route  POST /firewall/internet-service-name
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -14925,7 +14925,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-owner/{id}
+	 * @route  GET /firewall/internet-service-owner/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -14960,7 +14960,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-owner/{id}
+	 * @route  PUT /firewall/internet-service-owner/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15001,7 +15001,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-owner/{id}
+	 * @route  DELETE /firewall/internet-service-owner/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15020,7 +15020,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-owner
+	 * @route  GET /firewall/internet-service-owner
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -15081,7 +15081,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-owner
+	 * @route  POST /firewall/internet-service-owner
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15114,7 +15114,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-reputation/{id}
+	 * @route  GET /firewall/internet-service-reputation/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -15149,7 +15149,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-reputation/{id}
+	 * @route  PUT /firewall/internet-service-reputation/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15190,7 +15190,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-reputation/{id}
+	 * @route  DELETE /firewall/internet-service-reputation/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15209,7 +15209,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-reputation
+	 * @route  GET /firewall/internet-service-reputation
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -15270,7 +15270,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-reputation
+	 * @route  POST /firewall/internet-service-reputation
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15303,7 +15303,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-sld/{id}
+	 * @route  GET /firewall/internet-service-sld/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -15338,7 +15338,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-sld/{id}
+	 * @route  PUT /firewall/internet-service-sld/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15379,7 +15379,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-sld/{id}
+	 * @route  DELETE /firewall/internet-service-sld/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15398,7 +15398,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-sld
+	 * @route  GET /firewall/internet-service-sld
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -15459,7 +15459,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/internet-service-sld
+	 * @route  POST /firewall/internet-service-sld
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15492,7 +15492,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ip-translation/{transid}
+	 * @route  GET /firewall/ip-translation/{transid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -15527,7 +15527,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ip-translation/{transid}
+	 * @route  PUT /firewall/ip-translation/{transid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15568,7 +15568,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ip-translation/{transid}
+	 * @route  DELETE /firewall/ip-translation/{transid}
 	 * @param  $transid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15587,7 +15587,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ip-translation
+	 * @route  GET /firewall/ip-translation
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -15648,7 +15648,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ip-translation
+	 * @route  POST /firewall/ip-translation
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15681,7 +15681,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool/{name}
+	 * @route  GET /firewall/ippool/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -15716,7 +15716,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool/{name}
+	 * @route  PUT /firewall/ippool/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15757,7 +15757,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool/{name}
+	 * @route  DELETE /firewall/ippool/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15776,7 +15776,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool
+	 * @route  GET /firewall/ippool
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -15837,7 +15837,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool
+	 * @route  POST /firewall/ippool
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15870,7 +15870,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool6/{name}
+	 * @route  GET /firewall/ippool6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -15905,7 +15905,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool6/{name}
+	 * @route  PUT /firewall/ippool6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15946,7 +15946,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool6/{name}
+	 * @route  DELETE /firewall/ippool6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -15965,7 +15965,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool6
+	 * @route  GET /firewall/ippool6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -16026,7 +16026,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ippool6
+	 * @route  POST /firewall/ippool6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16059,7 +16059,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ldb-monitor/{name}
+	 * @route  GET /firewall/ldb-monitor/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -16094,7 +16094,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ldb-monitor/{name}
+	 * @route  PUT /firewall/ldb-monitor/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16135,7 +16135,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ldb-monitor/{name}
+	 * @route  DELETE /firewall/ldb-monitor/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16154,7 +16154,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ldb-monitor
+	 * @route  GET /firewall/ldb-monitor
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -16215,7 +16215,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ldb-monitor
+	 * @route  POST /firewall/ldb-monitor
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16248,7 +16248,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy/{policyid}
+	 * @route  GET /firewall/local-in-policy/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -16283,7 +16283,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy/{policyid}
+	 * @route  PUT /firewall/local-in-policy/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16324,7 +16324,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy/{policyid}
+	 * @route  DELETE /firewall/local-in-policy/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16343,7 +16343,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy
+	 * @route  GET /firewall/local-in-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -16404,7 +16404,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy
+	 * @route  POST /firewall/local-in-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16437,7 +16437,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy6/{policyid}
+	 * @route  GET /firewall/local-in-policy6/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -16472,7 +16472,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy6/{policyid}
+	 * @route  PUT /firewall/local-in-policy6/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16513,7 +16513,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy6/{policyid}
+	 * @route  DELETE /firewall/local-in-policy6/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16532,7 +16532,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy6
+	 * @route  GET /firewall/local-in-policy6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -16593,7 +16593,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/local-in-policy6
+	 * @route  POST /firewall/local-in-policy6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16626,7 +16626,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address/{name}
+	 * @route  GET /firewall/multicast-address/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -16661,7 +16661,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address/{name}
+	 * @route  PUT /firewall/multicast-address/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16702,7 +16702,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address/{name}
+	 * @route  DELETE /firewall/multicast-address/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16721,7 +16721,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address
+	 * @route  GET /firewall/multicast-address
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -16782,7 +16782,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address
+	 * @route  POST /firewall/multicast-address
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16815,7 +16815,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address6/{name}
+	 * @route  GET /firewall/multicast-address6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -16850,7 +16850,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address6/{name}
+	 * @route  PUT /firewall/multicast-address6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16891,7 +16891,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address6/{name}
+	 * @route  DELETE /firewall/multicast-address6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -16910,7 +16910,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address6
+	 * @route  GET /firewall/multicast-address6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -16971,7 +16971,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-address6
+	 * @route  POST /firewall/multicast-address6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17004,7 +17004,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy/{id}
+	 * @route  GET /firewall/multicast-policy/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -17039,7 +17039,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy/{id}
+	 * @route  PUT /firewall/multicast-policy/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17080,7 +17080,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy/{id}
+	 * @route  DELETE /firewall/multicast-policy/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17099,7 +17099,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy
+	 * @route  GET /firewall/multicast-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -17160,7 +17160,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy
+	 * @route  POST /firewall/multicast-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17193,7 +17193,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy6/{id}
+	 * @route  GET /firewall/multicast-policy6/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -17228,7 +17228,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy6/{id}
+	 * @route  PUT /firewall/multicast-policy6/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17269,7 +17269,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy6/{id}
+	 * @route  DELETE /firewall/multicast-policy6/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17288,7 +17288,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy6
+	 * @route  GET /firewall/multicast-policy6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -17349,7 +17349,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/multicast-policy6
+	 * @route  POST /firewall/multicast-policy6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17382,7 +17382,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy/{policyid}
+	 * @route  GET /firewall/policy/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -17417,7 +17417,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy/{policyid}
+	 * @route  PUT /firewall/policy/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17458,7 +17458,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy/{policyid}
+	 * @route  DELETE /firewall/policy/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17477,7 +17477,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy
+	 * @route  GET /firewall/policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -17538,7 +17538,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy
+	 * @route  POST /firewall/policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17571,7 +17571,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy46/{policyid}
+	 * @route  GET /firewall/policy46/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -17606,7 +17606,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy46/{policyid}
+	 * @route  PUT /firewall/policy46/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17647,7 +17647,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy46/{policyid}
+	 * @route  DELETE /firewall/policy46/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17666,7 +17666,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy46
+	 * @route  GET /firewall/policy46
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -17727,7 +17727,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy46
+	 * @route  POST /firewall/policy46
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17760,7 +17760,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy64/{policyid}
+	 * @route  GET /firewall/policy64/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -17795,7 +17795,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy64/{policyid}
+	 * @route  PUT /firewall/policy64/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17836,7 +17836,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy64/{policyid}
+	 * @route  DELETE /firewall/policy64/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17855,7 +17855,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy64
+	 * @route  GET /firewall/policy64
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -17916,7 +17916,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/policy64
+	 * @route  POST /firewall/policy64
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -17949,7 +17949,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-group/{name}
+	 * @route  GET /firewall/profile-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -17984,7 +17984,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-group/{name}
+	 * @route  PUT /firewall/profile-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18025,7 +18025,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-group/{name}
+	 * @route  DELETE /firewall/profile-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18044,7 +18044,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-group
+	 * @route  GET /firewall/profile-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -18105,7 +18105,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-group
+	 * @route  POST /firewall/profile-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18138,7 +18138,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-protocol-options/{name}
+	 * @route  GET /firewall/profile-protocol-options/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -18173,7 +18173,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-protocol-options/{name}
+	 * @route  PUT /firewall/profile-protocol-options/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18214,7 +18214,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-protocol-options/{name}
+	 * @route  DELETE /firewall/profile-protocol-options/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18233,7 +18233,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-protocol-options
+	 * @route  GET /firewall/profile-protocol-options
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -18294,7 +18294,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/profile-protocol-options
+	 * @route  POST /firewall/profile-protocol-options
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18327,7 +18327,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-address/{name}
+	 * @route  GET /firewall/proxy-address/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -18362,7 +18362,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-address/{name}
+	 * @route  PUT /firewall/proxy-address/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18403,7 +18403,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-address/{name}
+	 * @route  DELETE /firewall/proxy-address/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18422,7 +18422,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-address
+	 * @route  GET /firewall/proxy-address
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -18483,7 +18483,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-address
+	 * @route  POST /firewall/proxy-address
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18516,7 +18516,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-addrgrp/{name}
+	 * @route  GET /firewall/proxy-addrgrp/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -18551,7 +18551,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-addrgrp/{name}
+	 * @route  PUT /firewall/proxy-addrgrp/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18592,7 +18592,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-addrgrp/{name}
+	 * @route  DELETE /firewall/proxy-addrgrp/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18611,7 +18611,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-addrgrp
+	 * @route  GET /firewall/proxy-addrgrp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -18672,7 +18672,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-addrgrp
+	 * @route  POST /firewall/proxy-addrgrp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18705,7 +18705,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-policy/{policyid}
+	 * @route  GET /firewall/proxy-policy/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -18740,7 +18740,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-policy/{policyid}
+	 * @route  PUT /firewall/proxy-policy/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18781,7 +18781,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-policy/{policyid}
+	 * @route  DELETE /firewall/proxy-policy/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18800,7 +18800,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-policy
+	 * @route  GET /firewall/proxy-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -18861,7 +18861,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/proxy-policy
+	 * @route  POST /firewall/proxy-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18894,7 +18894,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/region/{id}
+	 * @route  GET /firewall/region/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -18929,7 +18929,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/region/{id}
+	 * @route  PUT /firewall/region/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18970,7 +18970,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/region/{id}
+	 * @route  DELETE /firewall/region/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -18989,7 +18989,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/region
+	 * @route  GET /firewall/region
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -19050,7 +19050,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/region
+	 * @route  POST /firewall/region
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19083,7 +19083,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/security-policy/{policyid}
+	 * @route  GET /firewall/security-policy/{policyid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -19118,7 +19118,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/security-policy/{policyid}
+	 * @route  PUT /firewall/security-policy/{policyid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19159,7 +19159,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/security-policy/{policyid}
+	 * @route  DELETE /firewall/security-policy/{policyid}
 	 * @param  $policyid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19178,7 +19178,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/security-policy
+	 * @route  GET /firewall/security-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -19239,7 +19239,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/security-policy
+	 * @route  POST /firewall/security-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19272,7 +19272,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-policy/{id}
+	 * @route  GET /firewall/shaping-policy/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -19307,7 +19307,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-policy/{id}
+	 * @route  PUT /firewall/shaping-policy/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19348,7 +19348,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-policy/{id}
+	 * @route  DELETE /firewall/shaping-policy/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19367,7 +19367,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-policy
+	 * @route  GET /firewall/shaping-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -19428,7 +19428,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-policy
+	 * @route  POST /firewall/shaping-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19461,7 +19461,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-profile/{profile-name}
+	 * @route  GET /firewall/shaping-profile/{profile-name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -19496,7 +19496,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-profile/{profile-name}
+	 * @route  PUT /firewall/shaping-profile/{profile-name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19537,7 +19537,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-profile/{profile-name}
+	 * @route  DELETE /firewall/shaping-profile/{profile-name}
 	 * @param  $profileName mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19556,7 +19556,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-profile
+	 * @route  GET /firewall/shaping-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -19617,7 +19617,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/shaping-profile
+	 * @route  POST /firewall/shaping-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19650,7 +19650,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /firewall/sniffer/{id}
+	 * @route  GET /firewall/sniffer/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -19685,7 +19685,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /firewall/sniffer/{id}
+	 * @route  PUT /firewall/sniffer/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19726,7 +19726,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /firewall/sniffer/{id}
+	 * @route  DELETE /firewall/sniffer/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19745,7 +19745,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /firewall/sniffer
+	 * @route  GET /firewall/sniffer
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -19806,7 +19806,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /firewall/sniffer
+	 * @route  POST /firewall/sniffer
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19839,7 +19839,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-server/{name}
+	 * @route  GET /firewall/ssl-server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -19874,7 +19874,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-server/{name}
+	 * @route  PUT /firewall/ssl-server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19915,7 +19915,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-server/{name}
+	 * @route  DELETE /firewall/ssl-server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -19934,7 +19934,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-server
+	 * @route  GET /firewall/ssl-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -19995,7 +19995,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-server
+	 * @route  POST /firewall/ssl-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20028,7 +20028,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-ssh-profile/{name}
+	 * @route  GET /firewall/ssl-ssh-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -20063,7 +20063,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-ssh-profile/{name}
+	 * @route  PUT /firewall/ssl-ssh-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20104,7 +20104,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-ssh-profile/{name}
+	 * @route  DELETE /firewall/ssl-ssh-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20123,7 +20123,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-ssh-profile
+	 * @route  GET /firewall/ssl-ssh-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -20184,7 +20184,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ssl-ssh-profile
+	 * @route  POST /firewall/ssl-ssh-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20217,7 +20217,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/traffic-class/{class-id}
+	 * @route  GET /firewall/traffic-class/{class-id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -20252,7 +20252,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/traffic-class/{class-id}
+	 * @route  PUT /firewall/traffic-class/{class-id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20293,7 +20293,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/traffic-class/{class-id}
+	 * @route  DELETE /firewall/traffic-class/{class-id}
 	 * @param  $classId mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20312,7 +20312,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/traffic-class
+	 * @route  GET /firewall/traffic-class
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -20373,7 +20373,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/traffic-class
+	 * @route  POST /firewall/traffic-class
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20406,7 +20406,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ttl-policy/{id}
+	 * @route  GET /firewall/ttl-policy/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -20441,7 +20441,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ttl-policy/{id}
+	 * @route  PUT /firewall/ttl-policy/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20482,7 +20482,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ttl-policy/{id}
+	 * @route  DELETE /firewall/ttl-policy/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20501,7 +20501,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ttl-policy
+	 * @route  GET /firewall/ttl-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -20562,7 +20562,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/ttl-policy
+	 * @route  POST /firewall/ttl-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20595,7 +20595,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vendor-mac/{id}
+	 * @route  GET /firewall/vendor-mac/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -20630,7 +20630,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vendor-mac/{id}
+	 * @route  PUT /firewall/vendor-mac/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20671,7 +20671,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vendor-mac/{id}
+	 * @route  DELETE /firewall/vendor-mac/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20690,7 +20690,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vendor-mac
+	 * @route  GET /firewall/vendor-mac
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -20751,7 +20751,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vendor-mac
+	 * @route  POST /firewall/vendor-mac
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20784,7 +20784,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vendor-mac-summary
+	 * @route  GET /firewall/vendor-mac-summary
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -20845,7 +20845,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vendor-mac-summary
+	 * @route  PUT /firewall/vendor-mac-summary
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20884,7 +20884,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip/{name}
+	 * @route  GET /firewall/vip/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -20919,7 +20919,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip/{name}
+	 * @route  PUT /firewall/vip/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20960,7 +20960,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip/{name}
+	 * @route  DELETE /firewall/vip/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -20979,7 +20979,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip
+	 * @route  GET /firewall/vip
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -21040,7 +21040,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip
+	 * @route  POST /firewall/vip
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21073,7 +21073,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip46/{name}
+	 * @route  GET /firewall/vip46/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -21108,7 +21108,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip46/{name}
+	 * @route  PUT /firewall/vip46/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21149,7 +21149,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip46/{name}
+	 * @route  DELETE /firewall/vip46/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21168,7 +21168,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip46
+	 * @route  GET /firewall/vip46
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -21229,7 +21229,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip46
+	 * @route  POST /firewall/vip46
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21262,7 +21262,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip6/{name}
+	 * @route  GET /firewall/vip6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -21297,7 +21297,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip6/{name}
+	 * @route  PUT /firewall/vip6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21338,7 +21338,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip6/{name}
+	 * @route  DELETE /firewall/vip6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21357,7 +21357,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip6
+	 * @route  GET /firewall/vip6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -21418,7 +21418,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip6
+	 * @route  POST /firewall/vip6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21451,7 +21451,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip64/{name}
+	 * @route  GET /firewall/vip64/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -21486,7 +21486,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip64/{name}
+	 * @route  PUT /firewall/vip64/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21527,7 +21527,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip64/{name}
+	 * @route  DELETE /firewall/vip64/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21546,7 +21546,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip64
+	 * @route  GET /firewall/vip64
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -21607,7 +21607,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vip64
+	 * @route  POST /firewall/vip64
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21640,7 +21640,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp/{name}
+	 * @route  GET /firewall/vipgrp/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -21675,7 +21675,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp/{name}
+	 * @route  PUT /firewall/vipgrp/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21716,7 +21716,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp/{name}
+	 * @route  DELETE /firewall/vipgrp/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21735,7 +21735,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp
+	 * @route  GET /firewall/vipgrp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -21796,7 +21796,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp
+	 * @route  POST /firewall/vipgrp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21829,7 +21829,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp46/{name}
+	 * @route  GET /firewall/vipgrp46/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -21864,7 +21864,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp46/{name}
+	 * @route  PUT /firewall/vipgrp46/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21905,7 +21905,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp46/{name}
+	 * @route  DELETE /firewall/vipgrp46/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -21924,7 +21924,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp46
+	 * @route  GET /firewall/vipgrp46
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -21985,7 +21985,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp46
+	 * @route  POST /firewall/vipgrp46
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22018,7 +22018,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp6/{name}
+	 * @route  GET /firewall/vipgrp6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -22053,7 +22053,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp6/{name}
+	 * @route  PUT /firewall/vipgrp6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22094,7 +22094,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp6/{name}
+	 * @route  DELETE /firewall/vipgrp6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22113,7 +22113,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp6
+	 * @route  GET /firewall/vipgrp6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -22174,7 +22174,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp6
+	 * @route  POST /firewall/vipgrp6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22207,7 +22207,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp64/{name}
+	 * @route  GET /firewall/vipgrp64/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -22242,7 +22242,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp64/{name}
+	 * @route  PUT /firewall/vipgrp64/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22283,7 +22283,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp64/{name}
+	 * @route  DELETE /firewall/vipgrp64/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22302,7 +22302,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp64
+	 * @route  GET /firewall/vipgrp64
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -22363,7 +22363,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: fwgrp
-	 * @route  /firewall/vipgrp64
+	 * @route  POST /firewall/vipgrp64
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22396,7 +22396,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /ftp-proxy/explicit
+	 * @route  GET /ftp-proxy/explicit
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -22457,7 +22457,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /ftp-proxy/explicit
+	 * @route  PUT /ftp-proxy/explicit
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22496,7 +22496,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /icap/profile/{name}
+	 * @route  GET /icap/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -22531,7 +22531,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /icap/profile/{name}
+	 * @route  PUT /icap/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22572,7 +22572,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /icap/profile/{name}
+	 * @route  DELETE /icap/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22591,7 +22591,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /icap/profile
+	 * @route  GET /icap/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -22652,7 +22652,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /icap/profile
+	 * @route  POST /icap/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22685,7 +22685,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /icap/server/{name}
+	 * @route  GET /icap/server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -22720,7 +22720,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /icap/server/{name}
+	 * @route  PUT /icap/server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22761,7 +22761,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /icap/server/{name}
+	 * @route  DELETE /icap/server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22780,7 +22780,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /icap/server
+	 * @route  GET /icap/server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -22841,7 +22841,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /icap/server
+	 * @route  POST /icap/server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22874,7 +22874,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/custom/{tag}
+	 * @route  GET /ips/custom/{tag}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -22909,7 +22909,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/custom/{tag}
+	 * @route  PUT /ips/custom/{tag}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22950,7 +22950,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/custom/{tag}
+	 * @route  DELETE /ips/custom/{tag}
 	 * @param  $tag mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -22969,7 +22969,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/custom
+	 * @route  GET /ips/custom
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -23030,7 +23030,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/custom
+	 * @route  POST /ips/custom
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23059,7 +23059,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/decoder/{name}
+	 * @route  GET /ips/decoder/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -23094,7 +23094,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/decoder/{name}
+	 * @route  PUT /ips/decoder/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23135,7 +23135,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/decoder/{name}
+	 * @route  DELETE /ips/decoder/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23154,7 +23154,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/decoder
+	 * @route  GET /ips/decoder
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -23215,7 +23215,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/decoder
+	 * @route  POST /ips/decoder
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23248,7 +23248,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/global
+	 * @route  GET /ips/global
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -23309,7 +23309,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/global
+	 * @route  PUT /ips/global
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23348,7 +23348,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule/{name}
+	 * @route  GET /ips/rule/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -23383,7 +23383,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule/{name}
+	 * @route  PUT /ips/rule/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23424,7 +23424,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule/{name}
+	 * @route  DELETE /ips/rule/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23443,7 +23443,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule
+	 * @route  GET /ips/rule
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -23504,7 +23504,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule
+	 * @route  POST /ips/rule
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23533,7 +23533,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule-settings/{id}
+	 * @route  GET /ips/rule-settings/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -23568,7 +23568,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule-settings/{id}
+	 * @route  PUT /ips/rule-settings/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23609,7 +23609,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule-settings/{id}
+	 * @route  DELETE /ips/rule-settings/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23628,7 +23628,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule-settings
+	 * @route  GET /ips/rule-settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -23689,7 +23689,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/rule-settings
+	 * @route  POST /ips/rule-settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23722,7 +23722,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/sensor/{name}
+	 * @route  GET /ips/sensor/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -23757,7 +23757,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/sensor/{name}
+	 * @route  PUT /ips/sensor/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23798,7 +23798,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/sensor/{name}
+	 * @route  DELETE /ips/sensor/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23817,7 +23817,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/sensor
+	 * @route  GET /ips/sensor
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -23878,7 +23878,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/sensor
+	 * @route  POST /ips/sensor
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -23907,7 +23907,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/settings
+	 * @route  GET /ips/settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -23968,7 +23968,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/settings
+	 * @route  PUT /ips/settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24007,7 +24007,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/view-map/{id}
+	 * @route  GET /ips/view-map/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -24042,7 +24042,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/view-map/{id}
+	 * @route  PUT /ips/view-map/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24083,7 +24083,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ips/view-map/{id}
+	 * @route  DELETE /ips/view-map/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24102,7 +24102,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/view-map
+	 * @route  GET /ips/view-map
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24163,7 +24163,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /ips/view-map
+	 * @route  POST /ips/view-map
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24196,7 +24196,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.disk/filter
+	 * @route  GET /log.disk/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24257,7 +24257,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.disk/filter
+	 * @route  PUT /log.disk/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24296,7 +24296,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.disk/setting
+	 * @route  GET /log.disk/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24357,7 +24357,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.disk/setting
+	 * @route  PUT /log.disk/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24396,7 +24396,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer-cloud/filter
+	 * @route  GET /log.fortianalyzer-cloud/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24457,7 +24457,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer-cloud/filter
+	 * @route  PUT /log.fortianalyzer-cloud/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24496,7 +24496,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer-cloud/override-filter
+	 * @route  GET /log.fortianalyzer-cloud/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24557,7 +24557,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer-cloud/override-filter
+	 * @route  PUT /log.fortianalyzer-cloud/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24596,7 +24596,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer-cloud/override-setting
+	 * @route  GET /log.fortianalyzer-cloud/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24657,7 +24657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer-cloud/override-setting
+	 * @route  PUT /log.fortianalyzer-cloud/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24696,7 +24696,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer-cloud/setting
+	 * @route  GET /log.fortianalyzer-cloud/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24757,7 +24757,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer-cloud/setting
+	 * @route  PUT /log.fortianalyzer-cloud/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24796,7 +24796,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer/filter
+	 * @route  GET /log.fortianalyzer/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24857,7 +24857,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer/filter
+	 * @route  PUT /log.fortianalyzer/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24896,7 +24896,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer/override-filter
+	 * @route  GET /log.fortianalyzer/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -24957,7 +24957,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer/override-filter
+	 * @route  PUT /log.fortianalyzer/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -24996,7 +24996,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer/override-setting
+	 * @route  GET /log.fortianalyzer/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25057,7 +25057,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer/override-setting
+	 * @route  PUT /log.fortianalyzer/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25096,7 +25096,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer/setting
+	 * @route  GET /log.fortianalyzer/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25157,7 +25157,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer/setting
+	 * @route  PUT /log.fortianalyzer/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25196,7 +25196,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer2/filter
+	 * @route  GET /log.fortianalyzer2/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25257,7 +25257,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer2/filter
+	 * @route  PUT /log.fortianalyzer2/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25296,7 +25296,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer2/override-filter
+	 * @route  GET /log.fortianalyzer2/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25357,7 +25357,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer2/override-filter
+	 * @route  PUT /log.fortianalyzer2/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25396,7 +25396,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer2/override-setting
+	 * @route  GET /log.fortianalyzer2/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25457,7 +25457,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer2/override-setting
+	 * @route  PUT /log.fortianalyzer2/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25496,7 +25496,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer2/setting
+	 * @route  GET /log.fortianalyzer2/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25557,7 +25557,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer2/setting
+	 * @route  PUT /log.fortianalyzer2/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25596,7 +25596,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer3/filter
+	 * @route  GET /log.fortianalyzer3/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25657,7 +25657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer3/filter
+	 * @route  PUT /log.fortianalyzer3/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25696,7 +25696,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer3/override-filter
+	 * @route  GET /log.fortianalyzer3/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25757,7 +25757,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortianalyzer3/override-filter
+	 * @route  PUT /log.fortianalyzer3/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25796,7 +25796,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer3/override-setting
+	 * @route  GET /log.fortianalyzer3/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25857,7 +25857,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer3/override-setting
+	 * @route  PUT /log.fortianalyzer3/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25896,7 +25896,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer3/setting
+	 * @route  GET /log.fortianalyzer3/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -25957,7 +25957,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /log.fortianalyzer3/setting
+	 * @route  PUT /log.fortianalyzer3/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -25996,7 +25996,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/filter
+	 * @route  GET /log.fortiguard/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26057,7 +26057,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/filter
+	 * @route  PUT /log.fortiguard/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26096,7 +26096,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/override-filter
+	 * @route  GET /log.fortiguard/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26157,7 +26157,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/override-filter
+	 * @route  PUT /log.fortiguard/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26196,7 +26196,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/override-setting
+	 * @route  GET /log.fortiguard/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26257,7 +26257,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/override-setting
+	 * @route  PUT /log.fortiguard/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26296,7 +26296,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/setting
+	 * @route  GET /log.fortiguard/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26357,7 +26357,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.fortiguard/setting
+	 * @route  PUT /log.fortiguard/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26396,7 +26396,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.memory/filter
+	 * @route  GET /log.memory/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26457,7 +26457,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.memory/filter
+	 * @route  PUT /log.memory/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26496,7 +26496,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.memory/global-setting
+	 * @route  GET /log.memory/global-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26557,7 +26557,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.memory/global-setting
+	 * @route  PUT /log.memory/global-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26596,7 +26596,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.memory/setting
+	 * @route  GET /log.memory/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26657,7 +26657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.memory/setting
+	 * @route  PUT /log.memory/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26696,7 +26696,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.null-device/filter
+	 * @route  GET /log.null-device/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26757,7 +26757,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.null-device/filter
+	 * @route  PUT /log.null-device/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26796,7 +26796,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.null-device/setting
+	 * @route  GET /log.null-device/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26857,7 +26857,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.null-device/setting
+	 * @route  PUT /log.null-device/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26896,7 +26896,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/filter
+	 * @route  GET /log.syslogd/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -26957,7 +26957,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/filter
+	 * @route  PUT /log.syslogd/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -26996,7 +26996,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/override-filter
+	 * @route  GET /log.syslogd/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27057,7 +27057,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/override-filter
+	 * @route  PUT /log.syslogd/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27096,7 +27096,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/override-setting
+	 * @route  GET /log.syslogd/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27157,7 +27157,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/override-setting
+	 * @route  PUT /log.syslogd/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27196,7 +27196,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/setting
+	 * @route  GET /log.syslogd/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27257,7 +27257,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd/setting
+	 * @route  PUT /log.syslogd/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27296,7 +27296,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/filter
+	 * @route  GET /log.syslogd2/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27357,7 +27357,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/filter
+	 * @route  PUT /log.syslogd2/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27396,7 +27396,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/override-filter
+	 * @route  GET /log.syslogd2/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27457,7 +27457,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/override-filter
+	 * @route  PUT /log.syslogd2/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27496,7 +27496,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/override-setting
+	 * @route  GET /log.syslogd2/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27557,7 +27557,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/override-setting
+	 * @route  PUT /log.syslogd2/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27596,7 +27596,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/setting
+	 * @route  GET /log.syslogd2/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27657,7 +27657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd2/setting
+	 * @route  PUT /log.syslogd2/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27696,7 +27696,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/filter
+	 * @route  GET /log.syslogd3/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27757,7 +27757,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/filter
+	 * @route  PUT /log.syslogd3/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27796,7 +27796,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/override-filter
+	 * @route  GET /log.syslogd3/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27857,7 +27857,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/override-filter
+	 * @route  PUT /log.syslogd3/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27896,7 +27896,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/override-setting
+	 * @route  GET /log.syslogd3/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -27957,7 +27957,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/override-setting
+	 * @route  PUT /log.syslogd3/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -27996,7 +27996,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/setting
+	 * @route  GET /log.syslogd3/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28057,7 +28057,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd3/setting
+	 * @route  PUT /log.syslogd3/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28096,7 +28096,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/filter
+	 * @route  GET /log.syslogd4/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28157,7 +28157,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/filter
+	 * @route  PUT /log.syslogd4/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28196,7 +28196,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/override-filter
+	 * @route  GET /log.syslogd4/override-filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28257,7 +28257,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/override-filter
+	 * @route  PUT /log.syslogd4/override-filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28296,7 +28296,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/override-setting
+	 * @route  GET /log.syslogd4/override-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28357,7 +28357,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/override-setting
+	 * @route  PUT /log.syslogd4/override-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28396,7 +28396,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/setting
+	 * @route  GET /log.syslogd4/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28457,7 +28457,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.syslogd4/setting
+	 * @route  PUT /log.syslogd4/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28496,7 +28496,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.webtrends/filter
+	 * @route  GET /log.webtrends/filter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28557,7 +28557,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.webtrends/filter
+	 * @route  PUT /log.webtrends/filter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28596,7 +28596,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log.webtrends/setting
+	 * @route  GET /log.webtrends/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28657,7 +28657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log.webtrends/setting
+	 * @route  PUT /log.webtrends/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28696,7 +28696,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log/custom-field/{id}
+	 * @route  GET /log/custom-field/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -28731,7 +28731,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log/custom-field/{id}
+	 * @route  PUT /log/custom-field/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28772,7 +28772,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log/custom-field/{id}
+	 * @route  DELETE /log/custom-field/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28791,7 +28791,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log/custom-field
+	 * @route  GET /log/custom-field
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28852,7 +28852,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: loggrp
-	 * @route  /log/custom-field
+	 * @route  POST /log/custom-field
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28885,7 +28885,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log/eventfilter
+	 * @route  GET /log/eventfilter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -28946,7 +28946,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log/eventfilter
+	 * @route  PUT /log/eventfilter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -28985,7 +28985,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log/gui-display
+	 * @route  GET /log/gui-display
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -29046,7 +29046,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log/gui-display
+	 * @route  PUT /log/gui-display
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29085,7 +29085,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log/setting
+	 * @route  GET /log/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -29146,7 +29146,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log/setting
+	 * @route  PUT /log/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29185,7 +29185,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /log/threat-weight
+	 * @route  GET /log/threat-weight
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -29246,7 +29246,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /log/threat-weight
+	 * @route  PUT /log/threat-weight
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29285,7 +29285,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/chart/{name}
+	 * @route  GET /report/chart/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -29320,7 +29320,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/chart/{name}
+	 * @route  PUT /report/chart/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29361,7 +29361,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/chart/{name}
+	 * @route  DELETE /report/chart/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29380,7 +29380,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/chart
+	 * @route  GET /report/chart
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -29441,7 +29441,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: loggrp
-	 * @route  /report/chart
+	 * @route  POST /report/chart
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29474,7 +29474,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/dataset/{name}
+	 * @route  GET /report/dataset/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -29509,7 +29509,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/dataset/{name}
+	 * @route  PUT /report/dataset/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29550,7 +29550,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/dataset/{name}
+	 * @route  DELETE /report/dataset/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29569,7 +29569,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/dataset
+	 * @route  GET /report/dataset
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -29630,7 +29630,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: loggrp
-	 * @route  /report/dataset
+	 * @route  POST /report/dataset
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29663,7 +29663,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/layout/{name}
+	 * @route  GET /report/layout/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -29698,7 +29698,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/layout/{name}
+	 * @route  PUT /report/layout/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29739,7 +29739,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/layout/{name}
+	 * @route  DELETE /report/layout/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29758,7 +29758,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/layout
+	 * @route  GET /report/layout
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -29819,7 +29819,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: loggrp
-	 * @route  /report/layout
+	 * @route  POST /report/layout
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29852,7 +29852,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/setting
+	 * @route  GET /report/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -29913,7 +29913,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/setting
+	 * @route  PUT /report/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -29952,7 +29952,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/style/{name}
+	 * @route  GET /report/style/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -29987,7 +29987,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/style/{name}
+	 * @route  PUT /report/style/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30028,7 +30028,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/style/{name}
+	 * @route  DELETE /report/style/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30047,7 +30047,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/style
+	 * @route  GET /report/style
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -30108,7 +30108,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: loggrp
-	 * @route  /report/style
+	 * @route  POST /report/style
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30141,7 +30141,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/theme/{name}
+	 * @route  GET /report/theme/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -30176,7 +30176,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/theme/{name}
+	 * @route  PUT /report/theme/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30217,7 +30217,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /report/theme/{name}
+	 * @route  DELETE /report/theme/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30236,7 +30236,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /report/theme
+	 * @route  GET /report/theme
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -30297,7 +30297,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: loggrp
-	 * @route  /report/theme
+	 * @route  POST /report/theme
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30330,7 +30330,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list/{name}
+	 * @route  GET /router/access-list/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -30365,7 +30365,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list/{name}
+	 * @route  PUT /router/access-list/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30406,7 +30406,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list/{name}
+	 * @route  DELETE /router/access-list/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30425,7 +30425,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list
+	 * @route  GET /router/access-list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -30486,7 +30486,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list
+	 * @route  POST /router/access-list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30519,7 +30519,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list6/{name}
+	 * @route  GET /router/access-list6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -30554,7 +30554,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list6/{name}
+	 * @route  PUT /router/access-list6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30595,7 +30595,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list6/{name}
+	 * @route  DELETE /router/access-list6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30614,7 +30614,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list6
+	 * @route  GET /router/access-list6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -30675,7 +30675,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/access-list6
+	 * @route  POST /router/access-list6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30708,7 +30708,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/aspath-list/{name}
+	 * @route  GET /router/aspath-list/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -30743,7 +30743,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/aspath-list/{name}
+	 * @route  PUT /router/aspath-list/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30784,7 +30784,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/aspath-list/{name}
+	 * @route  DELETE /router/aspath-list/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30803,7 +30803,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/aspath-list
+	 * @route  GET /router/aspath-list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -30864,7 +30864,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/aspath-list
+	 * @route  POST /router/aspath-list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30897,7 +30897,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/auth-path/{name}
+	 * @route  GET /router/auth-path/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -30932,7 +30932,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/auth-path/{name}
+	 * @route  PUT /router/auth-path/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30973,7 +30973,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/auth-path/{name}
+	 * @route  DELETE /router/auth-path/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -30992,7 +30992,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/auth-path
+	 * @route  GET /router/auth-path
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31053,7 +31053,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/auth-path
+	 * @route  POST /router/auth-path
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31086,7 +31086,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/bfd
+	 * @route  GET /router/bfd
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31147,7 +31147,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/bfd
+	 * @route  PUT /router/bfd
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31186,7 +31186,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/bfd6
+	 * @route  GET /router/bfd6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31247,7 +31247,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/bfd6
+	 * @route  PUT /router/bfd6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31286,7 +31286,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/bgp
+	 * @route  GET /router/bgp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31347,7 +31347,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/bgp
+	 * @route  PUT /router/bgp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31386,7 +31386,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/community-list/{name}
+	 * @route  GET /router/community-list/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -31421,7 +31421,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/community-list/{name}
+	 * @route  PUT /router/community-list/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31462,7 +31462,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/community-list/{name}
+	 * @route  DELETE /router/community-list/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31481,7 +31481,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/community-list
+	 * @route  GET /router/community-list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31542,7 +31542,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/community-list
+	 * @route  POST /router/community-list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31575,7 +31575,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/isis
+	 * @route  GET /router/isis
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31636,7 +31636,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/isis
+	 * @route  PUT /router/isis
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31675,7 +31675,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/key-chain/{name}
+	 * @route  GET /router/key-chain/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -31710,7 +31710,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/key-chain/{name}
+	 * @route  PUT /router/key-chain/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31751,7 +31751,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/key-chain/{name}
+	 * @route  DELETE /router/key-chain/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31770,7 +31770,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/key-chain
+	 * @route  GET /router/key-chain
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31831,7 +31831,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/key-chain
+	 * @route  POST /router/key-chain
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31864,7 +31864,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast
+	 * @route  GET /router/multicast
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -31925,7 +31925,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast
+	 * @route  PUT /router/multicast
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -31964,7 +31964,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast-flow/{name}
+	 * @route  GET /router/multicast-flow/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -31999,7 +31999,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast-flow/{name}
+	 * @route  PUT /router/multicast-flow/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32040,7 +32040,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast-flow/{name}
+	 * @route  DELETE /router/multicast-flow/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32059,7 +32059,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast-flow
+	 * @route  GET /router/multicast-flow
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -32120,7 +32120,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast-flow
+	 * @route  POST /router/multicast-flow
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32153,7 +32153,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast6
+	 * @route  GET /router/multicast6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -32214,7 +32214,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/multicast6
+	 * @route  PUT /router/multicast6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32253,7 +32253,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/ospf
+	 * @route  GET /router/ospf
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -32314,7 +32314,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/ospf
+	 * @route  PUT /router/ospf
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32353,7 +32353,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/ospf6
+	 * @route  GET /router/ospf6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -32414,7 +32414,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/ospf6
+	 * @route  PUT /router/ospf6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32453,7 +32453,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/policy/{seq-num}
+	 * @route  GET /router/policy/{seq-num}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -32488,7 +32488,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/policy/{seq-num}
+	 * @route  PUT /router/policy/{seq-num}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32529,7 +32529,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/policy/{seq-num}
+	 * @route  DELETE /router/policy/{seq-num}
 	 * @param  $seqNum mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32548,7 +32548,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/policy
+	 * @route  GET /router/policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -32609,7 +32609,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/policy
+	 * @route  POST /router/policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32642,7 +32642,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/policy6/{seq-num}
+	 * @route  GET /router/policy6/{seq-num}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -32677,7 +32677,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/policy6/{seq-num}
+	 * @route  PUT /router/policy6/{seq-num}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32718,7 +32718,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/policy6/{seq-num}
+	 * @route  DELETE /router/policy6/{seq-num}
 	 * @param  $seqNum mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32737,7 +32737,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/policy6
+	 * @route  GET /router/policy6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -32798,7 +32798,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/policy6
+	 * @route  POST /router/policy6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32831,7 +32831,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list/{name}
+	 * @route  GET /router/prefix-list/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -32866,7 +32866,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list/{name}
+	 * @route  PUT /router/prefix-list/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32907,7 +32907,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list/{name}
+	 * @route  DELETE /router/prefix-list/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -32926,7 +32926,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list
+	 * @route  GET /router/prefix-list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -32987,7 +32987,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list
+	 * @route  POST /router/prefix-list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33020,7 +33020,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list6/{name}
+	 * @route  GET /router/prefix-list6/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -33055,7 +33055,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list6/{name}
+	 * @route  PUT /router/prefix-list6/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33096,7 +33096,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list6/{name}
+	 * @route  DELETE /router/prefix-list6/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33115,7 +33115,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list6
+	 * @route  GET /router/prefix-list6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -33176,7 +33176,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/prefix-list6
+	 * @route  POST /router/prefix-list6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33209,7 +33209,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/rip
+	 * @route  GET /router/rip
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -33270,7 +33270,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/rip
+	 * @route  PUT /router/rip
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33309,7 +33309,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/ripng
+	 * @route  GET /router/ripng
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -33370,7 +33370,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/ripng
+	 * @route  PUT /router/ripng
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33409,7 +33409,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/route-map/{name}
+	 * @route  GET /router/route-map/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -33444,7 +33444,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/route-map/{name}
+	 * @route  PUT /router/route-map/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33485,7 +33485,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/route-map/{name}
+	 * @route  DELETE /router/route-map/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33504,7 +33504,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/route-map
+	 * @route  GET /router/route-map
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -33565,7 +33565,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/route-map
+	 * @route  POST /router/route-map
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33598,7 +33598,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/setting
+	 * @route  GET /router/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -33659,7 +33659,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/setting
+	 * @route  PUT /router/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33698,7 +33698,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/static/{seq-num}
+	 * @route  GET /router/static/{seq-num}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -33733,7 +33733,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/static/{seq-num}
+	 * @route  PUT /router/static/{seq-num}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33774,7 +33774,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/static/{seq-num}
+	 * @route  DELETE /router/static/{seq-num}
 	 * @param  $seqNum mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33793,7 +33793,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/static
+	 * @route  GET /router/static
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -33854,7 +33854,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/static
+	 * @route  POST /router/static
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33887,7 +33887,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/static6/{seq-num}
+	 * @route  GET /router/static6/{seq-num}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -33922,7 +33922,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/static6/{seq-num}
+	 * @route  PUT /router/static6/{seq-num}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33963,7 +33963,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /router/static6/{seq-num}
+	 * @route  DELETE /router/static6/{seq-num}
 	 * @param  $seqNum mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -33982,7 +33982,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /router/static6
+	 * @route  GET /router/static6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -34043,7 +34043,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /router/static6
+	 * @route  POST /router/static6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34076,7 +34076,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ssh-filter/profile/{name}
+	 * @route  GET /ssh-filter/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -34111,7 +34111,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ssh-filter/profile/{name}
+	 * @route  PUT /ssh-filter/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34152,7 +34152,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /ssh-filter/profile/{name}
+	 * @route  DELETE /ssh-filter/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34171,7 +34171,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /ssh-filter/profile
+	 * @route  GET /ssh-filter/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -34232,7 +34232,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /ssh-filter/profile
+	 * @route  POST /ssh-filter/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34265,7 +34265,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.auto-config/default
+	 * @route  GET /switch-controller.auto-config/default
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -34326,7 +34326,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.auto-config/default
+	 * @route  PUT /switch-controller.auto-config/default
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34365,7 +34365,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.initial-config/template/{name}
+	 * @route  GET /switch-controller.initial-config/template/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -34400,7 +34400,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.initial-config/template/{name}
+	 * @route  PUT /switch-controller.initial-config/template/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34441,7 +34441,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.initial-config/template/{name}
+	 * @route  DELETE /switch-controller.initial-config/template/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34460,7 +34460,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.initial-config/template
+	 * @route  GET /switch-controller.initial-config/template
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -34521,7 +34521,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.initial-config/template
+	 * @route  POST /switch-controller.initial-config/template
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34554,7 +34554,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.initial-config/vlans
+	 * @route  GET /switch-controller.initial-config/vlans
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -34615,7 +34615,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.initial-config/vlans
+	 * @route  PUT /switch-controller.initial-config/vlans
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34654,7 +34654,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.security-policy/802-1X/{name}
+	 * @route  GET /switch-controller.security-policy/802-1X/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -34689,7 +34689,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.security-policy/802-1X/{name}
+	 * @route  PUT /switch-controller.security-policy/802-1X/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34730,7 +34730,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.security-policy/802-1X/{name}
+	 * @route  DELETE /switch-controller.security-policy/802-1X/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34749,7 +34749,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.security-policy/802-1X
+	 * @route  GET /switch-controller.security-policy/802-1X
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -34810,7 +34810,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller.security-policy/802-1X
+	 * @route  POST /switch-controller.security-policy/802-1X
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34843,7 +34843,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/global
+	 * @route  GET /switch-controller/global
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -34904,7 +34904,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/global
+	 * @route  PUT /switch-controller/global
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -34943,7 +34943,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/lldp-profile/{name}
+	 * @route  GET /switch-controller/lldp-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -34978,7 +34978,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/lldp-profile/{name}
+	 * @route  PUT /switch-controller/lldp-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35019,7 +35019,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/lldp-profile/{name}
+	 * @route  DELETE /switch-controller/lldp-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35038,7 +35038,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/lldp-profile
+	 * @route  GET /switch-controller/lldp-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -35099,7 +35099,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/lldp-profile
+	 * @route  POST /switch-controller/lldp-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35132,7 +35132,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/lldp-settings
+	 * @route  GET /switch-controller/lldp-settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -35193,7 +35193,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/lldp-settings
+	 * @route  PUT /switch-controller/lldp-settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35232,7 +35232,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/location/{name}
+	 * @route  GET /switch-controller/location/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -35267,7 +35267,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/location/{name}
+	 * @route  PUT /switch-controller/location/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35308,7 +35308,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/location/{name}
+	 * @route  DELETE /switch-controller/location/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35327,7 +35327,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/location
+	 * @route  GET /switch-controller/location
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -35388,7 +35388,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/location
+	 * @route  POST /switch-controller/location
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35421,7 +35421,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/mac-policy/{name}
+	 * @route  GET /switch-controller/mac-policy/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -35456,7 +35456,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/mac-policy/{name}
+	 * @route  PUT /switch-controller/mac-policy/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35497,7 +35497,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/mac-policy/{name}
+	 * @route  DELETE /switch-controller/mac-policy/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35516,7 +35516,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/mac-policy
+	 * @route  GET /switch-controller/mac-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -35577,7 +35577,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/mac-policy
+	 * @route  POST /switch-controller/mac-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35610,7 +35610,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/managed-switch/{switch-id}
+	 * @route  GET /switch-controller/managed-switch/{switch-id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -35645,7 +35645,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/managed-switch/{switch-id}
+	 * @route  PUT /switch-controller/managed-switch/{switch-id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35686,7 +35686,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/managed-switch/{switch-id}
+	 * @route  DELETE /switch-controller/managed-switch/{switch-id}
 	 * @param  $switchId mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35705,7 +35705,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/managed-switch
+	 * @route  GET /switch-controller/managed-switch
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -35766,7 +35766,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/managed-switch
+	 * @route  POST /switch-controller/managed-switch
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35799,7 +35799,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-device/{id}
+	 * @route  GET /switch-controller/nac-device/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -35834,7 +35834,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-device/{id}
+	 * @route  PUT /switch-controller/nac-device/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35875,7 +35875,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-device/{id}
+	 * @route  DELETE /switch-controller/nac-device/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35894,7 +35894,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-device
+	 * @route  GET /switch-controller/nac-device
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -35955,7 +35955,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-device
+	 * @route  POST /switch-controller/nac-device
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -35988,7 +35988,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-settings/{name}
+	 * @route  GET /switch-controller/nac-settings/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -36023,7 +36023,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-settings/{name}
+	 * @route  PUT /switch-controller/nac-settings/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36064,7 +36064,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-settings/{name}
+	 * @route  DELETE /switch-controller/nac-settings/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36083,7 +36083,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-settings
+	 * @route  GET /switch-controller/nac-settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -36144,7 +36144,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/nac-settings
+	 * @route  POST /switch-controller/nac-settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36177,7 +36177,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/port-policy/{name}
+	 * @route  GET /switch-controller/port-policy/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -36212,7 +36212,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/port-policy/{name}
+	 * @route  PUT /switch-controller/port-policy/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36253,7 +36253,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/port-policy/{name}
+	 * @route  DELETE /switch-controller/port-policy/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36272,7 +36272,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/port-policy
+	 * @route  GET /switch-controller/port-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -36333,7 +36333,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/port-policy
+	 * @route  POST /switch-controller/port-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36366,7 +36366,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/snmp-community/{id}
+	 * @route  GET /switch-controller/snmp-community/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -36401,7 +36401,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/snmp-community/{id}
+	 * @route  PUT /switch-controller/snmp-community/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36442,7 +36442,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/snmp-community/{id}
+	 * @route  DELETE /switch-controller/snmp-community/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36461,7 +36461,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/snmp-community
+	 * @route  GET /switch-controller/snmp-community
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -36522,7 +36522,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/snmp-community
+	 * @route  POST /switch-controller/snmp-community
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36555,7 +36555,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/stp-instance/{id}
+	 * @route  GET /switch-controller/stp-instance/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -36590,7 +36590,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/stp-instance/{id}
+	 * @route  PUT /switch-controller/stp-instance/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36631,7 +36631,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/stp-instance/{id}
+	 * @route  DELETE /switch-controller/stp-instance/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36650,7 +36650,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/stp-instance
+	 * @route  GET /switch-controller/stp-instance
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -36711,7 +36711,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/stp-instance
+	 * @route  POST /switch-controller/stp-instance
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36744,7 +36744,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/stp-settings
+	 * @route  GET /switch-controller/stp-settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -36805,7 +36805,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/stp-settings
+	 * @route  PUT /switch-controller/stp-settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36844,7 +36844,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/switch-group/{name}
+	 * @route  GET /switch-controller/switch-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -36879,7 +36879,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/switch-group/{name}
+	 * @route  PUT /switch-controller/switch-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36920,7 +36920,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/switch-group/{name}
+	 * @route  DELETE /switch-controller/switch-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -36939,7 +36939,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/switch-group
+	 * @route  GET /switch-controller/switch-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37000,7 +37000,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/switch-group
+	 * @route  POST /switch-controller/switch-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37033,7 +37033,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/system
+	 * @route  GET /switch-controller/system
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37094,7 +37094,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/system
+	 * @route  PUT /switch-controller/system
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37133,7 +37133,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/vlan-policy/{name}
+	 * @route  GET /switch-controller/vlan-policy/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -37168,7 +37168,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/vlan-policy/{name}
+	 * @route  PUT /switch-controller/vlan-policy/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37209,7 +37209,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/vlan-policy/{name}
+	 * @route  DELETE /switch-controller/vlan-policy/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37228,7 +37228,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/vlan-policy
+	 * @route  GET /switch-controller/vlan-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37289,7 +37289,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /switch-controller/vlan-policy
+	 * @route  POST /switch-controller/vlan-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37322,7 +37322,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.3g-modem/custom/{id}
+	 * @route  GET /system.3g-modem/custom/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -37357,7 +37357,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.3g-modem/custom/{id}
+	 * @route  PUT /system.3g-modem/custom/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37398,7 +37398,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.3g-modem/custom/{id}
+	 * @route  DELETE /system.3g-modem/custom/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37417,7 +37417,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.3g-modem/custom
+	 * @route  GET /system.3g-modem/custom
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37478,7 +37478,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.3g-modem/custom
+	 * @route  POST /system.3g-modem/custom
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37511,7 +37511,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.autoupdate/push-update
+	 * @route  GET /system.autoupdate/push-update
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37572,7 +37572,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.autoupdate/push-update
+	 * @route  PUT /system.autoupdate/push-update
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37611,7 +37611,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.autoupdate/schedule
+	 * @route  GET /system.autoupdate/schedule
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37672,7 +37672,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.autoupdate/schedule
+	 * @route  PUT /system.autoupdate/schedule
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37711,7 +37711,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.autoupdate/tunneling
+	 * @route  GET /system.autoupdate/tunneling
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37772,7 +37772,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.autoupdate/tunneling
+	 * @route  PUT /system.autoupdate/tunneling
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37811,7 +37811,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp/server/{id}
+	 * @route  GET /system.dhcp/server/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -37846,7 +37846,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp/server/{id}
+	 * @route  PUT /system.dhcp/server/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37887,7 +37887,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp/server/{id}
+	 * @route  DELETE /system.dhcp/server/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -37906,7 +37906,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp/server
+	 * @route  GET /system.dhcp/server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -37967,7 +37967,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp/server
+	 * @route  POST /system.dhcp/server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38000,7 +38000,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp6/server/{id}
+	 * @route  GET /system.dhcp6/server/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -38035,7 +38035,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp6/server/{id}
+	 * @route  PUT /system.dhcp6/server/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38076,7 +38076,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp6/server/{id}
+	 * @route  DELETE /system.dhcp6/server/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38095,7 +38095,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp6/server
+	 * @route  GET /system.dhcp6/server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -38156,7 +38156,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system.dhcp6/server
+	 * @route  POST /system.dhcp6/server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38189,7 +38189,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.lldp/network-policy/{name}
+	 * @route  GET /system.lldp/network-policy/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -38224,7 +38224,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.lldp/network-policy/{name}
+	 * @route  PUT /system.lldp/network-policy/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38265,7 +38265,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.lldp/network-policy/{name}
+	 * @route  DELETE /system.lldp/network-policy/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38284,7 +38284,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.lldp/network-policy
+	 * @route  GET /system.lldp/network-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -38345,7 +38345,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.lldp/network-policy
+	 * @route  POST /system.lldp/network-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38378,7 +38378,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/admin/{msg-type}
+	 * @route  GET /system.replacemsg/admin/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -38413,7 +38413,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/admin/{msg-type}
+	 * @route  PUT /system.replacemsg/admin/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38454,7 +38454,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/admin/{msg-type}
+	 * @route  DELETE /system.replacemsg/admin/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38473,7 +38473,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/admin
+	 * @route  GET /system.replacemsg/admin
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -38534,7 +38534,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/admin
+	 * @route  POST /system.replacemsg/admin
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38567,7 +38567,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/alertmail/{msg-type}
+	 * @route  GET /system.replacemsg/alertmail/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -38602,7 +38602,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/alertmail/{msg-type}
+	 * @route  PUT /system.replacemsg/alertmail/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38643,7 +38643,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/alertmail/{msg-type}
+	 * @route  DELETE /system.replacemsg/alertmail/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38662,7 +38662,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/alertmail
+	 * @route  GET /system.replacemsg/alertmail
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -38723,7 +38723,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/alertmail
+	 * @route  POST /system.replacemsg/alertmail
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38756,7 +38756,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/auth/{msg-type}
+	 * @route  GET /system.replacemsg/auth/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -38791,7 +38791,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/auth/{msg-type}
+	 * @route  PUT /system.replacemsg/auth/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38832,7 +38832,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/auth/{msg-type}
+	 * @route  DELETE /system.replacemsg/auth/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38851,7 +38851,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/auth
+	 * @route  GET /system.replacemsg/auth
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -38912,7 +38912,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/auth
+	 * @route  POST /system.replacemsg/auth
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -38945,7 +38945,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/fortiguard-wf/{msg-type}
+	 * @route  GET /system.replacemsg/fortiguard-wf/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -38980,7 +38980,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/fortiguard-wf/{msg-type}
+	 * @route  PUT /system.replacemsg/fortiguard-wf/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39021,7 +39021,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/fortiguard-wf/{msg-type}
+	 * @route  DELETE /system.replacemsg/fortiguard-wf/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39040,7 +39040,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/fortiguard-wf
+	 * @route  GET /system.replacemsg/fortiguard-wf
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -39101,7 +39101,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/fortiguard-wf
+	 * @route  POST /system.replacemsg/fortiguard-wf
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39134,7 +39134,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/ftp/{msg-type}
+	 * @route  GET /system.replacemsg/ftp/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -39169,7 +39169,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/ftp/{msg-type}
+	 * @route  PUT /system.replacemsg/ftp/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39210,7 +39210,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/ftp/{msg-type}
+	 * @route  DELETE /system.replacemsg/ftp/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39229,7 +39229,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/ftp
+	 * @route  GET /system.replacemsg/ftp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -39290,7 +39290,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/ftp
+	 * @route  POST /system.replacemsg/ftp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39323,7 +39323,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/http/{msg-type}
+	 * @route  GET /system.replacemsg/http/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -39358,7 +39358,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/http/{msg-type}
+	 * @route  PUT /system.replacemsg/http/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39399,7 +39399,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/http/{msg-type}
+	 * @route  DELETE /system.replacemsg/http/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39418,7 +39418,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/http
+	 * @route  GET /system.replacemsg/http
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -39479,7 +39479,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/http
+	 * @route  POST /system.replacemsg/http
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39512,7 +39512,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/icap/{msg-type}
+	 * @route  GET /system.replacemsg/icap/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -39547,7 +39547,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/icap/{msg-type}
+	 * @route  PUT /system.replacemsg/icap/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39588,7 +39588,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/icap/{msg-type}
+	 * @route  DELETE /system.replacemsg/icap/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39607,7 +39607,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/icap
+	 * @route  GET /system.replacemsg/icap
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -39668,7 +39668,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/icap
+	 * @route  POST /system.replacemsg/icap
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39701,7 +39701,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/mail/{msg-type}
+	 * @route  GET /system.replacemsg/mail/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -39736,7 +39736,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/mail/{msg-type}
+	 * @route  PUT /system.replacemsg/mail/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39777,7 +39777,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/mail/{msg-type}
+	 * @route  DELETE /system.replacemsg/mail/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39796,7 +39796,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/mail
+	 * @route  GET /system.replacemsg/mail
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -39857,7 +39857,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/mail
+	 * @route  POST /system.replacemsg/mail
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39890,7 +39890,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/nac-quar/{msg-type}
+	 * @route  GET /system.replacemsg/nac-quar/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -39925,7 +39925,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/nac-quar/{msg-type}
+	 * @route  PUT /system.replacemsg/nac-quar/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39966,7 +39966,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/nac-quar/{msg-type}
+	 * @route  DELETE /system.replacemsg/nac-quar/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -39985,7 +39985,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/nac-quar
+	 * @route  GET /system.replacemsg/nac-quar
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -40046,7 +40046,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/nac-quar
+	 * @route  POST /system.replacemsg/nac-quar
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40079,7 +40079,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/spam/{msg-type}
+	 * @route  GET /system.replacemsg/spam/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -40114,7 +40114,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/spam/{msg-type}
+	 * @route  PUT /system.replacemsg/spam/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40155,7 +40155,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/spam/{msg-type}
+	 * @route  DELETE /system.replacemsg/spam/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40174,7 +40174,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/spam
+	 * @route  GET /system.replacemsg/spam
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -40235,7 +40235,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/spam
+	 * @route  POST /system.replacemsg/spam
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40268,7 +40268,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/sslvpn/{msg-type}
+	 * @route  GET /system.replacemsg/sslvpn/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -40303,7 +40303,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/sslvpn/{msg-type}
+	 * @route  PUT /system.replacemsg/sslvpn/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40344,7 +40344,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/sslvpn/{msg-type}
+	 * @route  DELETE /system.replacemsg/sslvpn/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40363,7 +40363,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/sslvpn
+	 * @route  GET /system.replacemsg/sslvpn
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -40424,7 +40424,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/sslvpn
+	 * @route  POST /system.replacemsg/sslvpn
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40457,7 +40457,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/traffic-quota/{msg-type}
+	 * @route  GET /system.replacemsg/traffic-quota/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -40492,7 +40492,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/traffic-quota/{msg-type}
+	 * @route  PUT /system.replacemsg/traffic-quota/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40533,7 +40533,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/traffic-quota/{msg-type}
+	 * @route  DELETE /system.replacemsg/traffic-quota/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40552,7 +40552,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/traffic-quota
+	 * @route  GET /system.replacemsg/traffic-quota
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -40613,7 +40613,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/traffic-quota
+	 * @route  POST /system.replacemsg/traffic-quota
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40646,7 +40646,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/utm/{msg-type}
+	 * @route  GET /system.replacemsg/utm/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -40681,7 +40681,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/utm/{msg-type}
+	 * @route  PUT /system.replacemsg/utm/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40722,7 +40722,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/utm/{msg-type}
+	 * @route  DELETE /system.replacemsg/utm/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40741,7 +40741,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/utm
+	 * @route  GET /system.replacemsg/utm
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -40802,7 +40802,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/utm
+	 * @route  POST /system.replacemsg/utm
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40835,7 +40835,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/webproxy/{msg-type}
+	 * @route  GET /system.replacemsg/webproxy/{msg-type}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -40870,7 +40870,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/webproxy/{msg-type}
+	 * @route  PUT /system.replacemsg/webproxy/{msg-type}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40911,7 +40911,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/webproxy/{msg-type}
+	 * @route  DELETE /system.replacemsg/webproxy/{msg-type}
 	 * @param  $msgType mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -40930,7 +40930,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/webproxy
+	 * @route  GET /system.replacemsg/webproxy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -40991,7 +40991,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.replacemsg/webproxy
+	 * @route  POST /system.replacemsg/webproxy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41024,7 +41024,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/community/{id}
+	 * @route  GET /system.snmp/community/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -41059,7 +41059,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/community/{id}
+	 * @route  PUT /system.snmp/community/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41100,7 +41100,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/community/{id}
+	 * @route  DELETE /system.snmp/community/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41119,7 +41119,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/community
+	 * @route  GET /system.snmp/community
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -41180,7 +41180,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/community
+	 * @route  POST /system.snmp/community
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41213,7 +41213,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/sysinfo
+	 * @route  GET /system.snmp/sysinfo
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -41274,7 +41274,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/sysinfo
+	 * @route  PUT /system.snmp/sysinfo
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41313,7 +41313,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/user/{name}
+	 * @route  GET /system.snmp/user/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -41348,7 +41348,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/user/{name}
+	 * @route  PUT /system.snmp/user/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41389,7 +41389,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/user/{name}
+	 * @route  DELETE /system.snmp/user/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41408,7 +41408,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/user
+	 * @route  GET /system.snmp/user
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -41469,7 +41469,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system.snmp/user
+	 * @route  POST /system.snmp/user
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41502,7 +41502,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/accprofile/{name}
+	 * @route  GET /system/accprofile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -41537,7 +41537,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/accprofile/{name}
+	 * @route  PUT /system/accprofile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41578,7 +41578,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/accprofile/{name}
+	 * @route  DELETE /system/accprofile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41597,7 +41597,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/accprofile
+	 * @route  GET /system/accprofile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -41658,7 +41658,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/accprofile
+	 * @route  POST /system/accprofile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41691,7 +41691,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/admin/{name}
+	 * @route  GET /system/admin/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -41726,7 +41726,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/admin/{name}
+	 * @route  PUT /system/admin/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41767,7 +41767,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/admin/{name}
+	 * @route  DELETE /system/admin/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41786,7 +41786,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/admin
+	 * @route  GET /system/admin
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -41847,7 +41847,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/admin
+	 * @route  POST /system/admin
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41880,7 +41880,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/alarm
+	 * @route  GET /system/alarm
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -41941,7 +41941,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/alarm
+	 * @route  PUT /system/alarm
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -41980,7 +41980,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/api-user/{name}
+	 * @route  GET /system/api-user/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -42015,7 +42015,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/api-user/{name}
+	 * @route  PUT /system/api-user/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42056,7 +42056,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/api-user/{name}
+	 * @route  DELETE /system/api-user/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42075,7 +42075,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/api-user
+	 * @route  GET /system/api-user
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -42136,7 +42136,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/api-user
+	 * @route  POST /system/api-user
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42169,7 +42169,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/arp-table/{id}
+	 * @route  GET /system/arp-table/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -42204,7 +42204,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/arp-table/{id}
+	 * @route  PUT /system/arp-table/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42245,7 +42245,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/arp-table/{id}
+	 * @route  DELETE /system/arp-table/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42264,7 +42264,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/arp-table
+	 * @route  GET /system/arp-table
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -42325,7 +42325,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/arp-table
+	 * @route  POST /system/arp-table
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42358,7 +42358,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/auto-install
+	 * @route  GET /system/auto-install
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -42419,7 +42419,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/auto-install
+	 * @route  PUT /system/auto-install
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42458,7 +42458,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/auto-script/{name}
+	 * @route  GET /system/auto-script/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -42493,7 +42493,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/auto-script/{name}
+	 * @route  PUT /system/auto-script/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42534,7 +42534,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/auto-script/{name}
+	 * @route  DELETE /system/auto-script/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42553,7 +42553,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/auto-script
+	 * @route  GET /system/auto-script
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -42614,7 +42614,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/auto-script
+	 * @route  POST /system/auto-script
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42647,7 +42647,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-action/{name}
+	 * @route  GET /system/automation-action/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -42682,7 +42682,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-action/{name}
+	 * @route  PUT /system/automation-action/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42723,7 +42723,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-action/{name}
+	 * @route  DELETE /system/automation-action/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42742,7 +42742,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-action
+	 * @route  GET /system/automation-action
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -42803,7 +42803,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-action
+	 * @route  POST /system/automation-action
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42836,7 +42836,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-destination/{name}
+	 * @route  GET /system/automation-destination/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -42871,7 +42871,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-destination/{name}
+	 * @route  PUT /system/automation-destination/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42912,7 +42912,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-destination/{name}
+	 * @route  DELETE /system/automation-destination/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -42931,7 +42931,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-destination
+	 * @route  GET /system/automation-destination
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -42992,7 +42992,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-destination
+	 * @route  POST /system/automation-destination
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43025,7 +43025,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-stitch/{name}
+	 * @route  GET /system/automation-stitch/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -43060,7 +43060,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-stitch/{name}
+	 * @route  PUT /system/automation-stitch/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43101,7 +43101,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-stitch/{name}
+	 * @route  DELETE /system/automation-stitch/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43120,7 +43120,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-stitch
+	 * @route  GET /system/automation-stitch
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -43181,7 +43181,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-stitch
+	 * @route  POST /system/automation-stitch
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43214,7 +43214,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-trigger/{name}
+	 * @route  GET /system/automation-trigger/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -43249,7 +43249,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-trigger/{name}
+	 * @route  PUT /system/automation-trigger/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43290,7 +43290,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-trigger/{name}
+	 * @route  DELETE /system/automation-trigger/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43309,7 +43309,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-trigger
+	 * @route  GET /system/automation-trigger
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -43370,7 +43370,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/automation-trigger
+	 * @route  POST /system/automation-trigger
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43403,7 +43403,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/central-management
+	 * @route  GET /system/central-management
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -43464,7 +43464,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/central-management
+	 * @route  PUT /system/central-management
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43503,7 +43503,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/cluster-sync/{sync-id}
+	 * @route  GET /system/cluster-sync/{sync-id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -43538,7 +43538,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/cluster-sync/{sync-id}
+	 * @route  PUT /system/cluster-sync/{sync-id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43579,7 +43579,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/cluster-sync/{sync-id}
+	 * @route  DELETE /system/cluster-sync/{sync-id}
 	 * @param  $syncId mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43598,7 +43598,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/cluster-sync
+	 * @route  GET /system/cluster-sync
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -43659,7 +43659,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/cluster-sync
+	 * @route  POST /system/cluster-sync
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43692,7 +43692,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/console
+	 * @route  GET /system/console
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -43753,7 +43753,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/console
+	 * @route  PUT /system/console
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43792,7 +43792,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /system/csf
+	 * @route  GET /system/csf
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -43853,7 +43853,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /system/csf
+	 * @route  PUT /system/csf
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43892,7 +43892,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/custom-language/{name}
+	 * @route  GET /system/custom-language/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -43927,7 +43927,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/custom-language/{name}
+	 * @route  PUT /system/custom-language/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43968,7 +43968,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/custom-language/{name}
+	 * @route  DELETE /system/custom-language/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -43987,7 +43987,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/custom-language
+	 * @route  GET /system/custom-language
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -44048,7 +44048,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/custom-language
+	 * @route  POST /system/custom-language
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44081,7 +44081,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ddns/{ddnsid}
+	 * @route  GET /system/ddns/{ddnsid}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -44116,7 +44116,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ddns/{ddnsid}
+	 * @route  PUT /system/ddns/{ddnsid}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44157,7 +44157,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ddns/{ddnsid}
+	 * @route  DELETE /system/ddns/{ddnsid}
 	 * @param  $ddnsid mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44176,7 +44176,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ddns
+	 * @route  GET /system/ddns
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -44237,7 +44237,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ddns
+	 * @route  POST /system/ddns
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44270,7 +44270,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dedicated-mgmt
+	 * @route  GET /system/dedicated-mgmt
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -44331,7 +44331,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dedicated-mgmt
+	 * @route  PUT /system/dedicated-mgmt
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44370,7 +44370,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns
+	 * @route  GET /system/dns
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -44431,7 +44431,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns
+	 * @route  PUT /system/dns
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44470,7 +44470,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-database/{name}
+	 * @route  GET /system/dns-database/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -44505,7 +44505,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-database/{name}
+	 * @route  PUT /system/dns-database/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44546,7 +44546,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-database/{name}
+	 * @route  DELETE /system/dns-database/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44565,7 +44565,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-database
+	 * @route  GET /system/dns-database
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -44626,7 +44626,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-database
+	 * @route  POST /system/dns-database
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44659,7 +44659,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-server/{name}
+	 * @route  GET /system/dns-server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -44694,7 +44694,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-server/{name}
+	 * @route  PUT /system/dns-server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44735,7 +44735,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-server/{name}
+	 * @route  DELETE /system/dns-server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44754,7 +44754,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-server
+	 * @route  GET /system/dns-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -44815,7 +44815,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dns-server
+	 * @route  POST /system/dns-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44848,7 +44848,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dscp-based-priority/{id}
+	 * @route  GET /system/dscp-based-priority/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -44883,7 +44883,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dscp-based-priority/{id}
+	 * @route  PUT /system/dscp-based-priority/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44924,7 +44924,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/dscp-based-priority/{id}
+	 * @route  DELETE /system/dscp-based-priority/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -44943,7 +44943,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dscp-based-priority
+	 * @route  GET /system/dscp-based-priority
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45004,7 +45004,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/dscp-based-priority
+	 * @route  POST /system/dscp-based-priority
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45037,7 +45037,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /system/email-server
+	 * @route  GET /system/email-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45098,7 +45098,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /system/email-server
+	 * @route  PUT /system/email-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45137,7 +45137,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/external-resource/{name}
+	 * @route  GET /system/external-resource/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -45172,7 +45172,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/external-resource/{name}
+	 * @route  PUT /system/external-resource/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45213,7 +45213,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/external-resource/{name}
+	 * @route  DELETE /system/external-resource/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45232,7 +45232,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/external-resource
+	 * @route  GET /system/external-resource
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45293,7 +45293,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/external-resource
+	 * @route  POST /system/external-resource
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45326,7 +45326,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/fips-cc
+	 * @route  GET /system/fips-cc
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45387,7 +45387,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/fips-cc
+	 * @route  PUT /system/fips-cc
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45426,7 +45426,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/fortiguard
+	 * @route  GET /system/fortiguard
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45487,7 +45487,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/fortiguard
+	 * @route  PUT /system/fortiguard
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45526,7 +45526,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/fortimanager
+	 * @route  GET /system/fortimanager
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45587,7 +45587,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/fortimanager
+	 * @route  PUT /system/fortimanager
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45626,7 +45626,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /system/fortisandbox
+	 * @route  GET /system/fortisandbox
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45687,7 +45687,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /system/fortisandbox
+	 * @route  PUT /system/fortisandbox
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45726,7 +45726,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/fsso-polling
+	 * @route  GET /system/fsso-polling
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45787,7 +45787,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/fsso-polling
+	 * @route  PUT /system/fsso-polling
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45826,7 +45826,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ftm-push
+	 * @route  GET /system/ftm-push
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -45887,7 +45887,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ftm-push
+	 * @route  PUT /system/ftm-push
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -45926,7 +45926,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/geneve/{name}
+	 * @route  GET /system/geneve/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -45961,7 +45961,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/geneve/{name}
+	 * @route  PUT /system/geneve/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46002,7 +46002,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/geneve/{name}
+	 * @route  DELETE /system/geneve/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46021,7 +46021,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/geneve
+	 * @route  GET /system/geneve
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -46082,7 +46082,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/geneve
+	 * @route  POST /system/geneve
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46115,7 +46115,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-country/{id}
+	 * @route  GET /system/geoip-country/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -46150,7 +46150,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-country/{id}
+	 * @route  PUT /system/geoip-country/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46191,7 +46191,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-country/{id}
+	 * @route  DELETE /system/geoip-country/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46210,7 +46210,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-country
+	 * @route  GET /system/geoip-country
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -46271,7 +46271,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-country
+	 * @route  POST /system/geoip-country
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46304,7 +46304,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-override/{name}
+	 * @route  GET /system/geoip-override/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -46339,7 +46339,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-override/{name}
+	 * @route  PUT /system/geoip-override/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46380,7 +46380,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-override/{name}
+	 * @route  DELETE /system/geoip-override/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46399,7 +46399,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-override
+	 * @route  GET /system/geoip-override
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -46460,7 +46460,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/geoip-override
+	 * @route  POST /system/geoip-override
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46493,7 +46493,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/global
+	 * @route  GET /system/global
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -46554,7 +46554,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/global
+	 * @route  PUT /system/global
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46593,7 +46593,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/gre-tunnel/{name}
+	 * @route  GET /system/gre-tunnel/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -46628,7 +46628,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/gre-tunnel/{name}
+	 * @route  PUT /system/gre-tunnel/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46669,7 +46669,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/gre-tunnel/{name}
+	 * @route  DELETE /system/gre-tunnel/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46688,7 +46688,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/gre-tunnel
+	 * @route  GET /system/gre-tunnel
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -46749,7 +46749,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/gre-tunnel
+	 * @route  POST /system/gre-tunnel
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46782,7 +46782,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ha
+	 * @route  GET /system/ha
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -46843,7 +46843,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ha
+	 * @route  PUT /system/ha
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46882,7 +46882,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ha-monitor
+	 * @route  GET /system/ha-monitor
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -46943,7 +46943,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ha-monitor
+	 * @route  PUT /system/ha-monitor
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -46982,7 +46982,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/interface/{name}
+	 * @route  GET /system/interface/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -47017,7 +47017,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/interface/{name}
+	 * @route  PUT /system/interface/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47058,7 +47058,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/interface/{name}
+	 * @route  DELETE /system/interface/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47077,7 +47077,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/interface
+	 * @route  GET /system/interface
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -47138,7 +47138,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/interface
+	 * @route  POST /system/interface
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47171,7 +47171,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipip-tunnel/{name}
+	 * @route  GET /system/ipip-tunnel/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -47206,7 +47206,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/ipip-tunnel/{name}
+	 * @route  PUT /system/ipip-tunnel/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47247,7 +47247,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/ipip-tunnel/{name}
+	 * @route  DELETE /system/ipip-tunnel/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47266,7 +47266,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipip-tunnel
+	 * @route  GET /system/ipip-tunnel
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -47327,7 +47327,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipip-tunnel
+	 * @route  POST /system/ipip-tunnel
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47360,7 +47360,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips
+	 * @route  GET /system/ips
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -47421,7 +47421,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips
+	 * @route  PUT /system/ips
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47460,7 +47460,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns/{address}
+	 * @route  GET /system/ips-urlfilter-dns/{address}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -47495,7 +47495,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns/{address}
+	 * @route  PUT /system/ips-urlfilter-dns/{address}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47536,7 +47536,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns/{address}
+	 * @route  DELETE /system/ips-urlfilter-dns/{address}
 	 * @param  $address mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47555,7 +47555,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns
+	 * @route  GET /system/ips-urlfilter-dns
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -47616,7 +47616,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns
+	 * @route  POST /system/ips-urlfilter-dns
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47649,7 +47649,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns6/{address6}
+	 * @route  GET /system/ips-urlfilter-dns6/{address6}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -47684,7 +47684,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns6/{address6}
+	 * @route  PUT /system/ips-urlfilter-dns6/{address6}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47725,7 +47725,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns6/{address6}
+	 * @route  DELETE /system/ips-urlfilter-dns6/{address6}
 	 * @param  $address6 mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47744,7 +47744,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns6
+	 * @route  GET /system/ips-urlfilter-dns6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -47805,7 +47805,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ips-urlfilter-dns6
+	 * @route  POST /system/ips-urlfilter-dns6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47838,7 +47838,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipsec-aggregate/{name}
+	 * @route  GET /system/ipsec-aggregate/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -47873,7 +47873,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/ipsec-aggregate/{name}
+	 * @route  PUT /system/ipsec-aggregate/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47914,7 +47914,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/ipsec-aggregate/{name}
+	 * @route  DELETE /system/ipsec-aggregate/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -47933,7 +47933,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipsec-aggregate
+	 * @route  GET /system/ipsec-aggregate
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -47994,7 +47994,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipsec-aggregate
+	 * @route  POST /system/ipsec-aggregate
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48027,7 +48027,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipv6-neighbor-cache/{id}
+	 * @route  GET /system/ipv6-neighbor-cache/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -48062,7 +48062,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/ipv6-neighbor-cache/{id}
+	 * @route  PUT /system/ipv6-neighbor-cache/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48103,7 +48103,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/ipv6-neighbor-cache/{id}
+	 * @route  DELETE /system/ipv6-neighbor-cache/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48122,7 +48122,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipv6-neighbor-cache
+	 * @route  GET /system/ipv6-neighbor-cache
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -48183,7 +48183,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/ipv6-neighbor-cache
+	 * @route  POST /system/ipv6-neighbor-cache
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48216,7 +48216,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ipv6-tunnel/{name}
+	 * @route  GET /system/ipv6-tunnel/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -48251,7 +48251,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ipv6-tunnel/{name}
+	 * @route  PUT /system/ipv6-tunnel/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48292,7 +48292,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ipv6-tunnel/{name}
+	 * @route  DELETE /system/ipv6-tunnel/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48311,7 +48311,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ipv6-tunnel
+	 * @route  GET /system/ipv6-tunnel
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -48372,7 +48372,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ipv6-tunnel
+	 * @route  POST /system/ipv6-tunnel
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48405,7 +48405,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/link-monitor/{name}
+	 * @route  GET /system/link-monitor/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -48440,7 +48440,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/link-monitor/{name}
+	 * @route  PUT /system/link-monitor/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48481,7 +48481,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/link-monitor/{name}
+	 * @route  DELETE /system/link-monitor/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48500,7 +48500,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/link-monitor
+	 * @route  GET /system/link-monitor
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -48561,7 +48561,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/link-monitor
+	 * @route  POST /system/link-monitor
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48594,7 +48594,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/lte-modem
+	 * @route  GET /system/lte-modem
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -48655,7 +48655,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/lte-modem
+	 * @route  PUT /system/lte-modem
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48694,7 +48694,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/mac-address-table/{mac}
+	 * @route  GET /system/mac-address-table/{mac}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -48729,7 +48729,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/mac-address-table/{mac}
+	 * @route  PUT /system/mac-address-table/{mac}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48770,7 +48770,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/mac-address-table/{mac}
+	 * @route  DELETE /system/mac-address-table/{mac}
 	 * @param  $mac mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48789,7 +48789,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/mac-address-table
+	 * @route  GET /system/mac-address-table
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -48850,7 +48850,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/mac-address-table
+	 * @route  POST /system/mac-address-table
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48883,7 +48883,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/mobile-tunnel/{name}
+	 * @route  GET /system/mobile-tunnel/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -48918,7 +48918,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/mobile-tunnel/{name}
+	 * @route  PUT /system/mobile-tunnel/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48959,7 +48959,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/mobile-tunnel/{name}
+	 * @route  DELETE /system/mobile-tunnel/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -48978,7 +48978,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/mobile-tunnel
+	 * @route  GET /system/mobile-tunnel
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49039,7 +49039,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/mobile-tunnel
+	 * @route  POST /system/mobile-tunnel
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49072,7 +49072,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/modem
+	 * @route  GET /system/modem
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49133,7 +49133,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/modem
+	 * @route  PUT /system/modem
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49172,7 +49172,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/nat64
+	 * @route  GET /system/nat64
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49233,7 +49233,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/nat64
+	 * @route  PUT /system/nat64
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49272,7 +49272,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/nd-proxy
+	 * @route  GET /system/nd-proxy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49333,7 +49333,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/nd-proxy
+	 * @route  PUT /system/nd-proxy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49372,7 +49372,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/netflow
+	 * @route  GET /system/netflow
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49433,7 +49433,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/netflow
+	 * @route  PUT /system/netflow
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49472,7 +49472,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: loggrp
-	 * @route  /system/network-visibility
+	 * @route  GET /system/network-visibility
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49533,7 +49533,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: loggrp
-	 * @route  /system/network-visibility
+	 * @route  PUT /system/network-visibility
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49572,7 +49572,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/npu
+	 * @route  GET /system/npu
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49633,7 +49633,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/npu
+	 * @route  PUT /system/npu
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49672,7 +49672,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ntp
+	 * @route  GET /system/ntp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49733,7 +49733,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ntp
+	 * @route  PUT /system/ntp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49772,7 +49772,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/object-tagging/{category}
+	 * @route  GET /system/object-tagging/{category}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -49807,7 +49807,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/object-tagging/{category}
+	 * @route  PUT /system/object-tagging/{category}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49848,7 +49848,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/object-tagging/{category}
+	 * @route  DELETE /system/object-tagging/{category}
 	 * @param  $category mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49867,7 +49867,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/object-tagging
+	 * @route  GET /system/object-tagging
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -49928,7 +49928,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/object-tagging
+	 * @route  POST /system/object-tagging
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -49961,7 +49961,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/password-policy
+	 * @route  GET /system/password-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -50022,7 +50022,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/password-policy
+	 * @route  PUT /system/password-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50061,7 +50061,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/password-policy-guest-admin
+	 * @route  GET /system/password-policy-guest-admin
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -50122,7 +50122,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/password-policy-guest-admin
+	 * @route  PUT /system/password-policy-guest-admin
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50161,7 +50161,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/physical-switch/{name}
+	 * @route  GET /system/physical-switch/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -50196,7 +50196,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/physical-switch/{name}
+	 * @route  PUT /system/physical-switch/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50237,7 +50237,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/physical-switch/{name}
+	 * @route  DELETE /system/physical-switch/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50256,7 +50256,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/physical-switch
+	 * @route  GET /system/physical-switch
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -50317,7 +50317,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/physical-switch
+	 * @route  POST /system/physical-switch
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50350,7 +50350,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/pppoe-interface/{name}
+	 * @route  GET /system/pppoe-interface/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -50385,7 +50385,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/pppoe-interface/{name}
+	 * @route  PUT /system/pppoe-interface/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50426,7 +50426,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/pppoe-interface/{name}
+	 * @route  DELETE /system/pppoe-interface/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50445,7 +50445,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/pppoe-interface
+	 * @route  GET /system/pppoe-interface
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -50506,7 +50506,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/pppoe-interface
+	 * @route  POST /system/pppoe-interface
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50539,7 +50539,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/probe-response
+	 * @route  GET /system/probe-response
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -50600,7 +50600,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/probe-response
+	 * @route  PUT /system/probe-response
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50639,7 +50639,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/proxy-arp/{id}
+	 * @route  GET /system/proxy-arp/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -50674,7 +50674,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/proxy-arp/{id}
+	 * @route  PUT /system/proxy-arp/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50715,7 +50715,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/proxy-arp/{id}
+	 * @route  DELETE /system/proxy-arp/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50734,7 +50734,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/proxy-arp
+	 * @route  GET /system/proxy-arp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -50795,7 +50795,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/proxy-arp
+	 * @route  POST /system/proxy-arp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50828,7 +50828,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/ptp
+	 * @route  GET /system/ptp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -50889,7 +50889,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/ptp
+	 * @route  PUT /system/ptp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -50928,7 +50928,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-group/{name}
+	 * @route  GET /system/replacemsg-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -50963,7 +50963,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-group/{name}
+	 * @route  PUT /system/replacemsg-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51004,7 +51004,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-group/{name}
+	 * @route  DELETE /system/replacemsg-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51023,7 +51023,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-group
+	 * @route  GET /system/replacemsg-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -51084,7 +51084,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-group
+	 * @route  POST /system/replacemsg-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51117,7 +51117,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-image/{name}
+	 * @route  GET /system/replacemsg-image/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -51152,7 +51152,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-image/{name}
+	 * @route  PUT /system/replacemsg-image/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51193,7 +51193,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-image/{name}
+	 * @route  DELETE /system/replacemsg-image/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51212,7 +51212,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-image
+	 * @route  GET /system/replacemsg-image
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -51273,7 +51273,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/replacemsg-image
+	 * @route  POST /system/replacemsg-image
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51306,7 +51306,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/resource-limits
+	 * @route  GET /system/resource-limits
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -51367,7 +51367,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/resource-limits
+	 * @route  PUT /system/resource-limits
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51406,7 +51406,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/saml
+	 * @route  GET /system/saml
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -51467,7 +51467,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/saml
+	 * @route  PUT /system/saml
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51506,7 +51506,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sdn-connector/{name}
+	 * @route  GET /system/sdn-connector/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -51541,7 +51541,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/sdn-connector/{name}
+	 * @route  PUT /system/sdn-connector/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51582,7 +51582,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/sdn-connector/{name}
+	 * @route  DELETE /system/sdn-connector/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51601,7 +51601,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sdn-connector
+	 * @route  GET /system/sdn-connector
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -51662,7 +51662,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sdn-connector
+	 * @route  POST /system/sdn-connector
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51695,7 +51695,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/sdwan
+	 * @route  GET /system/sdwan
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -51756,7 +51756,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/sdwan
+	 * @route  PUT /system/sdwan
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51795,7 +51795,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/session-helper/{id}
+	 * @route  GET /system/session-helper/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -51830,7 +51830,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/session-helper/{id}
+	 * @route  PUT /system/session-helper/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51871,7 +51871,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/session-helper/{id}
+	 * @route  DELETE /system/session-helper/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51890,7 +51890,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/session-helper
+	 * @route  GET /system/session-helper
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -51951,7 +51951,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/session-helper
+	 * @route  POST /system/session-helper
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -51984,7 +51984,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/session-ttl
+	 * @route  GET /system/session-ttl
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -52045,7 +52045,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/session-ttl
+	 * @route  PUT /system/session-ttl
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52084,7 +52084,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/settings
+	 * @route  GET /system/settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -52145,7 +52145,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/settings
+	 * @route  PUT /system/settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52184,7 +52184,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sflow
+	 * @route  GET /system/sflow
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -52245,7 +52245,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/sflow
+	 * @route  PUT /system/sflow
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52284,7 +52284,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sit-tunnel/{name}
+	 * @route  GET /system/sit-tunnel/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -52319,7 +52319,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/sit-tunnel/{name}
+	 * @route  PUT /system/sit-tunnel/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52360,7 +52360,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/sit-tunnel/{name}
+	 * @route  DELETE /system/sit-tunnel/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52379,7 +52379,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sit-tunnel
+	 * @route  GET /system/sit-tunnel
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -52440,7 +52440,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sit-tunnel
+	 * @route  POST /system/sit-tunnel
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52473,7 +52473,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /system/sms-server/{name}
+	 * @route  GET /system/sms-server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -52508,7 +52508,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /system/sms-server/{name}
+	 * @route  PUT /system/sms-server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52549,7 +52549,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /system/sms-server/{name}
+	 * @route  DELETE /system/sms-server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52568,7 +52568,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /system/sms-server
+	 * @route  GET /system/sms-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -52629,7 +52629,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /system/sms-server
+	 * @route  POST /system/sms-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52662,7 +52662,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/speed-test-server/{name}
+	 * @route  GET /system/speed-test-server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -52697,7 +52697,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/speed-test-server/{name}
+	 * @route  PUT /system/speed-test-server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52738,7 +52738,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/speed-test-server/{name}
+	 * @route  DELETE /system/speed-test-server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52757,7 +52757,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/speed-test-server
+	 * @route  GET /system/speed-test-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -52818,7 +52818,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/speed-test-server
+	 * @route  POST /system/speed-test-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52851,7 +52851,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sso-admin/{name}
+	 * @route  GET /system/sso-admin/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -52886,7 +52886,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/sso-admin/{name}
+	 * @route  PUT /system/sso-admin/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52927,7 +52927,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/sso-admin/{name}
+	 * @route  DELETE /system/sso-admin/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -52946,7 +52946,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sso-admin
+	 * @route  GET /system/sso-admin
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -53007,7 +53007,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/sso-admin
+	 * @route  POST /system/sso-admin
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53040,7 +53040,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/standalone-cluster
+	 * @route  GET /system/standalone-cluster
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -53101,7 +53101,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/standalone-cluster
+	 * @route  PUT /system/standalone-cluster
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53140,7 +53140,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/storage/{name}
+	 * @route  GET /system/storage/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -53175,7 +53175,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/storage/{name}
+	 * @route  PUT /system/storage/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53216,7 +53216,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/storage/{name}
+	 * @route  DELETE /system/storage/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53235,7 +53235,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/storage
+	 * @route  GET /system/storage
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -53296,7 +53296,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/storage
+	 * @route  POST /system/storage
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53329,7 +53329,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/stp
+	 * @route  GET /system/stp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -53390,7 +53390,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/stp
+	 * @route  PUT /system/stp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53429,7 +53429,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/switch-interface/{name}
+	 * @route  GET /system/switch-interface/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -53464,7 +53464,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/switch-interface/{name}
+	 * @route  PUT /system/switch-interface/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53505,7 +53505,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/switch-interface/{name}
+	 * @route  DELETE /system/switch-interface/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53524,7 +53524,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/switch-interface
+	 * @route  GET /system/switch-interface
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -53585,7 +53585,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/switch-interface
+	 * @route  POST /system/switch-interface
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53618,7 +53618,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/tos-based-priority/{id}
+	 * @route  GET /system/tos-based-priority/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -53653,7 +53653,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/tos-based-priority/{id}
+	 * @route  PUT /system/tos-based-priority/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53694,7 +53694,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/tos-based-priority/{id}
+	 * @route  DELETE /system/tos-based-priority/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53713,7 +53713,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/tos-based-priority
+	 * @route  GET /system/tos-based-priority
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -53774,7 +53774,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/tos-based-priority
+	 * @route  POST /system/tos-based-priority
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53807,7 +53807,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom/{name}
+	 * @route  GET /system/vdom/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -53842,7 +53842,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom/{name}
+	 * @route  PUT /system/vdom/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53883,7 +53883,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom/{name}
+	 * @route  DELETE /system/vdom/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53902,7 +53902,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom
+	 * @route  GET /system/vdom
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -53963,7 +53963,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom
+	 * @route  POST /system/vdom
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -53996,7 +53996,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-dns
+	 * @route  GET /system/vdom-dns
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -54057,7 +54057,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-dns
+	 * @route  PUT /system/vdom-dns
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54096,7 +54096,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-exception/{id}
+	 * @route  GET /system/vdom-exception/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -54131,7 +54131,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-exception/{id}
+	 * @route  PUT /system/vdom-exception/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54172,7 +54172,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-exception/{id}
+	 * @route  DELETE /system/vdom-exception/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54191,7 +54191,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-exception
+	 * @route  GET /system/vdom-exception
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -54252,7 +54252,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-exception
+	 * @route  POST /system/vdom-exception
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54285,7 +54285,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/vdom-link/{name}
+	 * @route  GET /system/vdom-link/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -54320,7 +54320,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/vdom-link/{name}
+	 * @route  PUT /system/vdom-link/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54361,7 +54361,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/vdom-link/{name}
+	 * @route  DELETE /system/vdom-link/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54380,7 +54380,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/vdom-link
+	 * @route  GET /system/vdom-link
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -54441,7 +54441,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/vdom-link
+	 * @route  POST /system/vdom-link
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54474,7 +54474,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-netflow
+	 * @route  GET /system/vdom-netflow
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -54535,7 +54535,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-netflow
+	 * @route  PUT /system/vdom-netflow
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54574,7 +54574,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-property/{name}
+	 * @route  GET /system/vdom-property/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -54609,7 +54609,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-property/{name}
+	 * @route  PUT /system/vdom-property/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54650,7 +54650,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-property/{name}
+	 * @route  DELETE /system/vdom-property/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54669,7 +54669,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-property
+	 * @route  GET /system/vdom-property
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -54730,7 +54730,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-property
+	 * @route  POST /system/vdom-property
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54763,7 +54763,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /system/vdom-radius-server/{name}
+	 * @route  GET /system/vdom-radius-server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -54798,7 +54798,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /system/vdom-radius-server/{name}
+	 * @route  PUT /system/vdom-radius-server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54839,7 +54839,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /system/vdom-radius-server/{name}
+	 * @route  DELETE /system/vdom-radius-server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54858,7 +54858,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /system/vdom-radius-server
+	 * @route  GET /system/vdom-radius-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -54919,7 +54919,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /system/vdom-radius-server
+	 * @route  POST /system/vdom-radius-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -54952,7 +54952,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-sflow
+	 * @route  GET /system/vdom-sflow
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -55013,7 +55013,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/vdom-sflow
+	 * @route  PUT /system/vdom-sflow
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55052,7 +55052,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/virtual-switch/{name}
+	 * @route  GET /system/virtual-switch/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -55087,7 +55087,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/virtual-switch/{name}
+	 * @route  PUT /system/virtual-switch/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55128,7 +55128,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: sysgrp
-	 * @route  /system/virtual-switch/{name}
+	 * @route  DELETE /system/virtual-switch/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55147,7 +55147,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: sysgrp
-	 * @route  /system/virtual-switch
+	 * @route  GET /system/virtual-switch
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -55208,7 +55208,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: sysgrp
-	 * @route  /system/virtual-switch
+	 * @route  POST /system/virtual-switch
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55241,7 +55241,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/virtual-wire-pair/{name}
+	 * @route  GET /system/virtual-wire-pair/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -55276,7 +55276,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/virtual-wire-pair/{name}
+	 * @route  PUT /system/virtual-wire-pair/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55317,7 +55317,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/virtual-wire-pair/{name}
+	 * @route  DELETE /system/virtual-wire-pair/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55336,7 +55336,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/virtual-wire-pair
+	 * @route  GET /system/virtual-wire-pair
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -55397,7 +55397,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/virtual-wire-pair
+	 * @route  POST /system/virtual-wire-pair
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55430,7 +55430,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/vne-tunnel
+	 * @route  GET /system/vne-tunnel
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -55491,7 +55491,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/vne-tunnel
+	 * @route  PUT /system/vne-tunnel
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55530,7 +55530,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/vxlan/{name}
+	 * @route  GET /system/vxlan/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -55565,7 +55565,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/vxlan/{name}
+	 * @route  PUT /system/vxlan/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55606,7 +55606,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/vxlan/{name}
+	 * @route  DELETE /system/vxlan/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55625,7 +55625,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/vxlan
+	 * @route  GET /system/vxlan
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -55686,7 +55686,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/vxlan
+	 * @route  POST /system/vxlan
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55719,7 +55719,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /system/wccp/{service-id}
+	 * @route  GET /system/wccp/{service-id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -55754,7 +55754,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /system/wccp/{service-id}
+	 * @route  PUT /system/wccp/{service-id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55795,7 +55795,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: secfabgrp
-	 * @route  /system/wccp/{service-id}
+	 * @route  DELETE /system/wccp/{service-id}
 	 * @param  $serviceId mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55814,7 +55814,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: secfabgrp
-	 * @route  /system/wccp
+	 * @route  GET /system/wccp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -55875,7 +55875,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: secfabgrp
-	 * @route  /system/wccp
+	 * @route  POST /system/wccp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55908,7 +55908,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/zone/{name}
+	 * @route  GET /system/zone/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -55943,7 +55943,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/zone/{name}
+	 * @route  PUT /system/zone/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -55984,7 +55984,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /system/zone/{name}
+	 * @route  DELETE /system/zone/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56003,7 +56003,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /system/zone
+	 * @route  GET /system/zone
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -56064,7 +56064,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /system/zone
+	 * @route  POST /system/zone
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56097,7 +56097,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/adgrp/{name}
+	 * @route  GET /user/adgrp/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -56132,7 +56132,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/adgrp/{name}
+	 * @route  PUT /user/adgrp/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56173,7 +56173,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/adgrp/{name}
+	 * @route  DELETE /user/adgrp/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56192,7 +56192,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/adgrp
+	 * @route  GET /user/adgrp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -56253,7 +56253,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/adgrp
+	 * @route  POST /user/adgrp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56282,7 +56282,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/domain-controller/{name}
+	 * @route  GET /user/domain-controller/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -56317,7 +56317,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/domain-controller/{name}
+	 * @route  PUT /user/domain-controller/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56358,7 +56358,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/domain-controller/{name}
+	 * @route  DELETE /user/domain-controller/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56377,7 +56377,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/domain-controller
+	 * @route  GET /user/domain-controller
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -56438,7 +56438,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/domain-controller
+	 * @route  POST /user/domain-controller
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56471,7 +56471,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/exchange/{name}
+	 * @route  GET /user/exchange/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -56506,7 +56506,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/exchange/{name}
+	 * @route  PUT /user/exchange/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56547,7 +56547,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/exchange/{name}
+	 * @route  DELETE /user/exchange/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56566,7 +56566,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/exchange
+	 * @route  GET /user/exchange
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -56627,7 +56627,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/exchange
+	 * @route  POST /user/exchange
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56660,7 +56660,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/fortitoken/{serial-number}
+	 * @route  GET /user/fortitoken/{serial-number}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -56695,7 +56695,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/fortitoken/{serial-number}
+	 * @route  PUT /user/fortitoken/{serial-number}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56736,7 +56736,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/fortitoken/{serial-number}
+	 * @route  DELETE /user/fortitoken/{serial-number}
 	 * @param  $serialNumber mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56755,7 +56755,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/fortitoken
+	 * @route  GET /user/fortitoken
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -56816,7 +56816,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/fortitoken
+	 * @route  POST /user/fortitoken
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56849,7 +56849,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso/{name}
+	 * @route  GET /user/fsso/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -56884,7 +56884,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso/{name}
+	 * @route  PUT /user/fsso/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56925,7 +56925,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso/{name}
+	 * @route  DELETE /user/fsso/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -56944,7 +56944,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso
+	 * @route  GET /user/fsso
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -57005,7 +57005,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso
+	 * @route  POST /user/fsso
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57034,7 +57034,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso-polling/{id}
+	 * @route  GET /user/fsso-polling/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -57069,7 +57069,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso-polling/{id}
+	 * @route  PUT /user/fsso-polling/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57110,7 +57110,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso-polling/{id}
+	 * @route  DELETE /user/fsso-polling/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57129,7 +57129,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso-polling
+	 * @route  GET /user/fsso-polling
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -57190,7 +57190,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/fsso-polling
+	 * @route  POST /user/fsso-polling
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57223,7 +57223,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/group/{name}
+	 * @route  GET /user/group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -57258,7 +57258,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/group/{name}
+	 * @route  PUT /user/group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57299,7 +57299,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/group/{name}
+	 * @route  DELETE /user/group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57318,7 +57318,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/group
+	 * @route  GET /user/group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -57379,7 +57379,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/group
+	 * @route  POST /user/group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57408,7 +57408,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/krb-keytab/{name}
+	 * @route  GET /user/krb-keytab/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -57443,7 +57443,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/krb-keytab/{name}
+	 * @route  PUT /user/krb-keytab/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57484,7 +57484,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/krb-keytab/{name}
+	 * @route  DELETE /user/krb-keytab/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57503,7 +57503,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/krb-keytab
+	 * @route  GET /user/krb-keytab
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -57564,7 +57564,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/krb-keytab
+	 * @route  POST /user/krb-keytab
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57597,7 +57597,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/ldap/{name}
+	 * @route  GET /user/ldap/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -57632,7 +57632,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/ldap/{name}
+	 * @route  PUT /user/ldap/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57673,7 +57673,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/ldap/{name}
+	 * @route  DELETE /user/ldap/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57692,7 +57692,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/ldap
+	 * @route  GET /user/ldap
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -57753,7 +57753,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/ldap
+	 * @route  POST /user/ldap
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57782,7 +57782,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/local/{name}
+	 * @route  GET /user/local/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -57817,7 +57817,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/local/{name}
+	 * @route  PUT /user/local/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57858,7 +57858,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/local/{name}
+	 * @route  DELETE /user/local/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57877,7 +57877,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/local
+	 * @route  GET /user/local
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -57938,7 +57938,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/local
+	 * @route  POST /user/local
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -57967,7 +57967,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /user/nac-policy/{name}
+	 * @route  GET /user/nac-policy/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -58002,7 +58002,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /user/nac-policy/{name}
+	 * @route  PUT /user/nac-policy/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58043,7 +58043,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /user/nac-policy/{name}
+	 * @route  DELETE /user/nac-policy/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58062,7 +58062,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /user/nac-policy
+	 * @route  GET /user/nac-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -58123,7 +58123,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /user/nac-policy
+	 * @route  POST /user/nac-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58156,7 +58156,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/password-policy/{name}
+	 * @route  GET /user/password-policy/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -58191,7 +58191,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/password-policy/{name}
+	 * @route  PUT /user/password-policy/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58232,7 +58232,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/password-policy/{name}
+	 * @route  DELETE /user/password-policy/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58251,7 +58251,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/password-policy
+	 * @route  GET /user/password-policy
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -58312,7 +58312,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/password-policy
+	 * @route  POST /user/password-policy
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58345,7 +58345,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/peer/{name}
+	 * @route  GET /user/peer/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -58380,7 +58380,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/peer/{name}
+	 * @route  PUT /user/peer/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58421,7 +58421,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/peer/{name}
+	 * @route  DELETE /user/peer/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58440,7 +58440,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/peer
+	 * @route  GET /user/peer
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -58501,7 +58501,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/peer
+	 * @route  POST /user/peer
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58530,7 +58530,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/peergrp/{name}
+	 * @route  GET /user/peergrp/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -58565,7 +58565,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/peergrp/{name}
+	 * @route  PUT /user/peergrp/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58606,7 +58606,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/peergrp/{name}
+	 * @route  DELETE /user/peergrp/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58625,7 +58625,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/peergrp
+	 * @route  GET /user/peergrp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -58686,7 +58686,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/peergrp
+	 * @route  POST /user/peergrp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58719,7 +58719,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/pop3/{name}
+	 * @route  GET /user/pop3/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -58754,7 +58754,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/pop3/{name}
+	 * @route  PUT /user/pop3/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58795,7 +58795,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/pop3/{name}
+	 * @route  DELETE /user/pop3/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58814,7 +58814,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/pop3
+	 * @route  GET /user/pop3
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -58875,7 +58875,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/pop3
+	 * @route  POST /user/pop3
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -58904,7 +58904,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /user/quarantine
+	 * @route  GET /user/quarantine
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -58965,7 +58965,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /user/quarantine
+	 * @route  PUT /user/quarantine
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59004,7 +59004,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/radius/{name}
+	 * @route  GET /user/radius/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -59039,7 +59039,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/radius/{name}
+	 * @route  PUT /user/radius/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59080,7 +59080,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/radius/{name}
+	 * @route  DELETE /user/radius/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59099,7 +59099,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/radius
+	 * @route  GET /user/radius
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -59160,7 +59160,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/radius
+	 * @route  POST /user/radius
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59193,7 +59193,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/saml/{name}
+	 * @route  GET /user/saml/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -59228,7 +59228,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/saml/{name}
+	 * @route  PUT /user/saml/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59269,7 +59269,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/saml/{name}
+	 * @route  DELETE /user/saml/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59288,7 +59288,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/saml
+	 * @route  GET /user/saml
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -59349,7 +59349,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/saml
+	 * @route  POST /user/saml
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59378,7 +59378,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/security-exempt-list/{name}
+	 * @route  GET /user/security-exempt-list/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -59413,7 +59413,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/security-exempt-list/{name}
+	 * @route  PUT /user/security-exempt-list/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59454,7 +59454,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/security-exempt-list/{name}
+	 * @route  DELETE /user/security-exempt-list/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59473,7 +59473,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/security-exempt-list
+	 * @route  GET /user/security-exempt-list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -59534,7 +59534,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/security-exempt-list
+	 * @route  POST /user/security-exempt-list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59567,7 +59567,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/setting
+	 * @route  GET /user/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -59628,7 +59628,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/setting
+	 * @route  PUT /user/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59667,7 +59667,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/tacacs+/{name}
+	 * @route  GET /user/tacacs+/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -59702,7 +59702,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/tacacs+/{name}
+	 * @route  PUT /user/tacacs+/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59743,7 +59743,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: authgrp
-	 * @route  /user/tacacs+/{name}
+	 * @route  DELETE /user/tacacs+/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59762,7 +59762,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: authgrp
-	 * @route  /user/tacacs+
+	 * @route  GET /user/tacacs+
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -59823,7 +59823,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: authgrp
-	 * @route  /user/tacacs+
+	 * @route  POST /user/tacacs+
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59856,7 +59856,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /voip/profile/{name}
+	 * @route  GET /voip/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -59891,7 +59891,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /voip/profile/{name}
+	 * @route  PUT /voip/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59932,7 +59932,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /voip/profile/{name}
+	 * @route  DELETE /voip/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -59951,7 +59951,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /voip/profile
+	 * @route  GET /voip/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -60012,7 +60012,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /voip/profile
+	 * @route  POST /voip/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60045,7 +60045,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ca/{name}
+	 * @route  GET /vpn.certificate/ca/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -60080,7 +60080,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ca/{name}
+	 * @route  PUT /vpn.certificate/ca/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60121,7 +60121,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ca/{name}
+	 * @route  DELETE /vpn.certificate/ca/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60140,7 +60140,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ca
+	 * @route  GET /vpn.certificate/ca
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -60201,7 +60201,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ca
+	 * @route  POST /vpn.certificate/ca
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60234,7 +60234,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/crl/{name}
+	 * @route  GET /vpn.certificate/crl/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -60269,7 +60269,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/crl/{name}
+	 * @route  PUT /vpn.certificate/crl/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60310,7 +60310,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/crl/{name}
+	 * @route  DELETE /vpn.certificate/crl/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60329,7 +60329,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/crl
+	 * @route  GET /vpn.certificate/crl
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -60390,7 +60390,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/crl
+	 * @route  POST /vpn.certificate/crl
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60423,7 +60423,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/local/{name}
+	 * @route  GET /vpn.certificate/local/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -60458,7 +60458,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/local/{name}
+	 * @route  PUT /vpn.certificate/local/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60499,7 +60499,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/local/{name}
+	 * @route  DELETE /vpn.certificate/local/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60518,7 +60518,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/local
+	 * @route  GET /vpn.certificate/local
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -60579,7 +60579,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/local
+	 * @route  POST /vpn.certificate/local
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60612,7 +60612,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ocsp-server/{name}
+	 * @route  GET /vpn.certificate/ocsp-server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -60647,7 +60647,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ocsp-server/{name}
+	 * @route  PUT /vpn.certificate/ocsp-server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60688,7 +60688,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ocsp-server/{name}
+	 * @route  DELETE /vpn.certificate/ocsp-server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60707,7 +60707,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ocsp-server
+	 * @route  GET /vpn.certificate/ocsp-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -60768,7 +60768,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/ocsp-server
+	 * @route  POST /vpn.certificate/ocsp-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60801,7 +60801,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/remote/{name}
+	 * @route  GET /vpn.certificate/remote/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -60836,7 +60836,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/remote/{name}
+	 * @route  PUT /vpn.certificate/remote/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60877,7 +60877,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/remote/{name}
+	 * @route  DELETE /vpn.certificate/remote/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60896,7 +60896,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/remote
+	 * @route  GET /vpn.certificate/remote
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -60957,7 +60957,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/remote
+	 * @route  POST /vpn.certificate/remote
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -60990,7 +60990,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/setting
+	 * @route  GET /vpn.certificate/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -61051,7 +61051,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.certificate/setting
+	 * @route  PUT /vpn.certificate/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61090,7 +61090,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/concentrator/{name}
+	 * @route  GET /vpn.ipsec/concentrator/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -61125,7 +61125,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/concentrator/{name}
+	 * @route  PUT /vpn.ipsec/concentrator/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61166,7 +61166,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/concentrator/{name}
+	 * @route  DELETE /vpn.ipsec/concentrator/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61185,7 +61185,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/concentrator
+	 * @route  GET /vpn.ipsec/concentrator
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -61246,7 +61246,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/concentrator
+	 * @route  POST /vpn.ipsec/concentrator
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61279,7 +61279,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/forticlient/{realm}
+	 * @route  GET /vpn.ipsec/forticlient/{realm}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -61314,7 +61314,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/forticlient/{realm}
+	 * @route  PUT /vpn.ipsec/forticlient/{realm}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61355,7 +61355,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/forticlient/{realm}
+	 * @route  DELETE /vpn.ipsec/forticlient/{realm}
 	 * @param  $realm mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61374,7 +61374,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/forticlient
+	 * @route  GET /vpn.ipsec/forticlient
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -61435,7 +61435,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/forticlient
+	 * @route  POST /vpn.ipsec/forticlient
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61468,7 +61468,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey/{name}
+	 * @route  GET /vpn.ipsec/manualkey/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -61503,7 +61503,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey/{name}
+	 * @route  PUT /vpn.ipsec/manualkey/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61544,7 +61544,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey/{name}
+	 * @route  DELETE /vpn.ipsec/manualkey/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61563,7 +61563,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey
+	 * @route  GET /vpn.ipsec/manualkey
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -61624,7 +61624,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey
+	 * @route  POST /vpn.ipsec/manualkey
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61657,7 +61657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey-interface/{name}
+	 * @route  GET /vpn.ipsec/manualkey-interface/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -61692,7 +61692,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey-interface/{name}
+	 * @route  PUT /vpn.ipsec/manualkey-interface/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61733,7 +61733,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey-interface/{name}
+	 * @route  DELETE /vpn.ipsec/manualkey-interface/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61752,7 +61752,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey-interface
+	 * @route  GET /vpn.ipsec/manualkey-interface
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -61813,7 +61813,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/manualkey-interface
+	 * @route  POST /vpn.ipsec/manualkey-interface
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61846,7 +61846,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1/{name}
+	 * @route  GET /vpn.ipsec/phase1/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -61881,7 +61881,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1/{name}
+	 * @route  PUT /vpn.ipsec/phase1/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61922,7 +61922,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1/{name}
+	 * @route  DELETE /vpn.ipsec/phase1/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -61941,7 +61941,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1
+	 * @route  GET /vpn.ipsec/phase1
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -62002,7 +62002,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1
+	 * @route  POST /vpn.ipsec/phase1
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62035,7 +62035,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1-interface/{name}
+	 * @route  GET /vpn.ipsec/phase1-interface/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -62070,7 +62070,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1-interface/{name}
+	 * @route  PUT /vpn.ipsec/phase1-interface/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62111,7 +62111,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1-interface/{name}
+	 * @route  DELETE /vpn.ipsec/phase1-interface/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62130,7 +62130,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1-interface
+	 * @route  GET /vpn.ipsec/phase1-interface
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -62191,7 +62191,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase1-interface
+	 * @route  POST /vpn.ipsec/phase1-interface
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62224,7 +62224,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2/{name}
+	 * @route  GET /vpn.ipsec/phase2/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -62259,7 +62259,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2/{name}
+	 * @route  PUT /vpn.ipsec/phase2/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62300,7 +62300,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2/{name}
+	 * @route  DELETE /vpn.ipsec/phase2/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62319,7 +62319,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2
+	 * @route  GET /vpn.ipsec/phase2
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -62380,7 +62380,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2
+	 * @route  POST /vpn.ipsec/phase2
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62413,7 +62413,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2-interface/{name}
+	 * @route  GET /vpn.ipsec/phase2-interface/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -62448,7 +62448,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2-interface/{name}
+	 * @route  PUT /vpn.ipsec/phase2-interface/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62489,7 +62489,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2-interface/{name}
+	 * @route  DELETE /vpn.ipsec/phase2-interface/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62508,7 +62508,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2-interface
+	 * @route  GET /vpn.ipsec/phase2-interface
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -62569,7 +62569,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ipsec/phase2-interface
+	 * @route  POST /vpn.ipsec/phase2-interface
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62602,7 +62602,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/host-check-software/{name}
+	 * @route  GET /vpn.ssl.web/host-check-software/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -62637,7 +62637,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/host-check-software/{name}
+	 * @route  PUT /vpn.ssl.web/host-check-software/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62678,7 +62678,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/host-check-software/{name}
+	 * @route  DELETE /vpn.ssl.web/host-check-software/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62697,7 +62697,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/host-check-software
+	 * @route  GET /vpn.ssl.web/host-check-software
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -62758,7 +62758,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/host-check-software
+	 * @route  POST /vpn.ssl.web/host-check-software
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62791,7 +62791,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/portal/{name}
+	 * @route  GET /vpn.ssl.web/portal/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -62826,7 +62826,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/portal/{name}
+	 * @route  PUT /vpn.ssl.web/portal/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62867,7 +62867,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/portal/{name}
+	 * @route  DELETE /vpn.ssl.web/portal/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62886,7 +62886,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/portal
+	 * @route  GET /vpn.ssl.web/portal
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -62947,7 +62947,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/portal
+	 * @route  POST /vpn.ssl.web/portal
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -62980,7 +62980,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/realm/{url-path}
+	 * @route  GET /vpn.ssl.web/realm/{url-path}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -63015,7 +63015,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/realm/{url-path}
+	 * @route  PUT /vpn.ssl.web/realm/{url-path}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63056,7 +63056,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/realm/{url-path}
+	 * @route  DELETE /vpn.ssl.web/realm/{url-path}
 	 * @param  $urlPath mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63075,7 +63075,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/realm
+	 * @route  GET /vpn.ssl.web/realm
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -63136,7 +63136,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/realm
+	 * @route  POST /vpn.ssl.web/realm
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63169,7 +63169,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-bookmark/{name}
+	 * @route  GET /vpn.ssl.web/user-bookmark/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -63204,7 +63204,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-bookmark/{name}
+	 * @route  PUT /vpn.ssl.web/user-bookmark/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63245,7 +63245,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-bookmark/{name}
+	 * @route  DELETE /vpn.ssl.web/user-bookmark/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63264,7 +63264,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-bookmark
+	 * @route  GET /vpn.ssl.web/user-bookmark
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -63325,7 +63325,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-bookmark
+	 * @route  POST /vpn.ssl.web/user-bookmark
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63358,7 +63358,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-group-bookmark/{name}
+	 * @route  GET /vpn.ssl.web/user-group-bookmark/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -63393,7 +63393,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-group-bookmark/{name}
+	 * @route  PUT /vpn.ssl.web/user-group-bookmark/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63434,7 +63434,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-group-bookmark/{name}
+	 * @route  DELETE /vpn.ssl.web/user-group-bookmark/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63453,7 +63453,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-group-bookmark
+	 * @route  GET /vpn.ssl.web/user-group-bookmark
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -63514,7 +63514,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl.web/user-group-bookmark
+	 * @route  POST /vpn.ssl.web/user-group-bookmark
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63547,7 +63547,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl/settings
+	 * @route  GET /vpn.ssl/settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -63608,7 +63608,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn.ssl/settings
+	 * @route  PUT /vpn.ssl/settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63647,7 +63647,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn/l2tp
+	 * @route  GET /vpn/l2tp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -63708,7 +63708,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn/l2tp
+	 * @route  PUT /vpn/l2tp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63747,7 +63747,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn/ocvpn
+	 * @route  GET /vpn/ocvpn
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -63808,7 +63808,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn/ocvpn
+	 * @route  PUT /vpn/ocvpn
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63847,7 +63847,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: vpngrp
-	 * @route  /vpn/pptp
+	 * @route  GET /vpn/pptp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -63908,7 +63908,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: vpngrp
-	 * @route  /vpn/pptp
+	 * @route  PUT /vpn/pptp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -63947,7 +63947,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/main-class/{id}
+	 * @route  GET /waf/main-class/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -63982,7 +63982,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /waf/main-class/{id}
+	 * @route  PUT /waf/main-class/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64023,7 +64023,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /waf/main-class/{id}
+	 * @route  DELETE /waf/main-class/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64042,7 +64042,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/main-class
+	 * @route  GET /waf/main-class
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -64103,7 +64103,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/main-class
+	 * @route  POST /waf/main-class
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64136,7 +64136,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/profile/{name}
+	 * @route  GET /waf/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -64171,7 +64171,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /waf/profile/{name}
+	 * @route  PUT /waf/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64212,7 +64212,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /waf/profile/{name}
+	 * @route  DELETE /waf/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64231,7 +64231,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/profile
+	 * @route  GET /waf/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -64292,7 +64292,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/profile
+	 * @route  POST /waf/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64325,7 +64325,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/signature/{id}
+	 * @route  GET /waf/signature/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -64360,7 +64360,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /waf/signature/{id}
+	 * @route  PUT /waf/signature/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64401,7 +64401,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /waf/signature/{id}
+	 * @route  DELETE /waf/signature/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64420,7 +64420,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/signature
+	 * @route  GET /waf/signature
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -64481,7 +64481,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /waf/signature
+	 * @route  POST /waf/signature
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64514,7 +64514,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/auth-group/{name}
+	 * @route  GET /wanopt/auth-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -64549,7 +64549,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/auth-group/{name}
+	 * @route  PUT /wanopt/auth-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64590,7 +64590,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/auth-group/{name}
+	 * @route  DELETE /wanopt/auth-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64609,7 +64609,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/auth-group
+	 * @route  GET /wanopt/auth-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -64670,7 +64670,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/auth-group
+	 * @route  POST /wanopt/auth-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64703,7 +64703,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/cache-service
+	 * @route  GET /wanopt/cache-service
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -64764,7 +64764,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/cache-service
+	 * @route  PUT /wanopt/cache-service
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64803,7 +64803,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/content-delivery-network-rule/{name}
+	 * @route  GET /wanopt/content-delivery-network-rule/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -64838,7 +64838,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/content-delivery-network-rule/{name}
+	 * @route  PUT /wanopt/content-delivery-network-rule/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64879,7 +64879,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/content-delivery-network-rule/{name}
+	 * @route  DELETE /wanopt/content-delivery-network-rule/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64898,7 +64898,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/content-delivery-network-rule
+	 * @route  GET /wanopt/content-delivery-network-rule
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -64959,7 +64959,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/content-delivery-network-rule
+	 * @route  POST /wanopt/content-delivery-network-rule
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -64992,7 +64992,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/peer/{peer-host-id}
+	 * @route  GET /wanopt/peer/{peer-host-id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -65027,7 +65027,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/peer/{peer-host-id}
+	 * @route  PUT /wanopt/peer/{peer-host-id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65068,7 +65068,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/peer/{peer-host-id}
+	 * @route  DELETE /wanopt/peer/{peer-host-id}
 	 * @param  $peerHostId mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65087,7 +65087,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/peer
+	 * @route  GET /wanopt/peer
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -65148,7 +65148,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/peer
+	 * @route  POST /wanopt/peer
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65181,7 +65181,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/profile/{name}
+	 * @route  GET /wanopt/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -65216,7 +65216,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/profile/{name}
+	 * @route  PUT /wanopt/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65257,7 +65257,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/profile/{name}
+	 * @route  DELETE /wanopt/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65276,7 +65276,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/profile
+	 * @route  GET /wanopt/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -65337,7 +65337,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/profile
+	 * @route  POST /wanopt/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65370,7 +65370,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/remote-storage
+	 * @route  GET /wanopt/remote-storage
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -65431,7 +65431,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/remote-storage
+	 * @route  PUT /wanopt/remote-storage
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65470,7 +65470,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/settings
+	 * @route  GET /wanopt/settings
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -65531,7 +65531,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/settings
+	 * @route  PUT /wanopt/settings
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65570,7 +65570,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/webcache
+	 * @route  GET /wanopt/webcache
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -65631,7 +65631,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wanoptgrp
-	 * @route  /wanopt/webcache
+	 * @route  PUT /wanopt/webcache
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65670,7 +65670,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/debug-url/{name}
+	 * @route  GET /web-proxy/debug-url/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -65705,7 +65705,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/debug-url/{name}
+	 * @route  PUT /web-proxy/debug-url/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65746,7 +65746,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/debug-url/{name}
+	 * @route  DELETE /web-proxy/debug-url/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65765,7 +65765,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/debug-url
+	 * @route  GET /web-proxy/debug-url
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -65826,7 +65826,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/debug-url
+	 * @route  POST /web-proxy/debug-url
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65859,7 +65859,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/explicit
+	 * @route  GET /web-proxy/explicit
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -65920,7 +65920,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/explicit
+	 * @route  PUT /web-proxy/explicit
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -65959,7 +65959,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server/{name}
+	 * @route  GET /web-proxy/forward-server/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -65994,7 +65994,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server/{name}
+	 * @route  PUT /web-proxy/forward-server/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66035,7 +66035,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server/{name}
+	 * @route  DELETE /web-proxy/forward-server/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66054,7 +66054,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server
+	 * @route  GET /web-proxy/forward-server
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -66115,7 +66115,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server
+	 * @route  POST /web-proxy/forward-server
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66148,7 +66148,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server-group/{name}
+	 * @route  GET /web-proxy/forward-server-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -66183,7 +66183,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server-group/{name}
+	 * @route  PUT /web-proxy/forward-server-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66224,7 +66224,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server-group/{name}
+	 * @route  DELETE /web-proxy/forward-server-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66243,7 +66243,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server-group
+	 * @route  GET /web-proxy/forward-server-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -66304,7 +66304,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/forward-server-group
+	 * @route  POST /web-proxy/forward-server-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66337,7 +66337,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/global
+	 * @route  GET /web-proxy/global
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -66398,7 +66398,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/global
+	 * @route  PUT /web-proxy/global
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66437,7 +66437,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/profile/{name}
+	 * @route  GET /web-proxy/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -66472,7 +66472,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/profile/{name}
+	 * @route  PUT /web-proxy/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66513,7 +66513,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/profile/{name}
+	 * @route  DELETE /web-proxy/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66532,7 +66532,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/profile
+	 * @route  GET /web-proxy/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -66593,7 +66593,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/profile
+	 * @route  POST /web-proxy/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66626,7 +66626,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/url-match/{name}
+	 * @route  GET /web-proxy/url-match/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -66661,7 +66661,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/url-match/{name}
+	 * @route  PUT /web-proxy/url-match/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66702,7 +66702,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/url-match/{name}
+	 * @route  DELETE /web-proxy/url-match/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66721,7 +66721,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/url-match
+	 * @route  GET /web-proxy/url-match
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -66782,7 +66782,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/url-match
+	 * @route  POST /web-proxy/url-match
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66815,7 +66815,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/wisp/{name}
+	 * @route  GET /web-proxy/wisp/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -66850,7 +66850,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/wisp/{name}
+	 * @route  PUT /web-proxy/wisp/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66891,7 +66891,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/wisp/{name}
+	 * @route  DELETE /web-proxy/wisp/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -66910,7 +66910,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/wisp
+	 * @route  GET /web-proxy/wisp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -66971,7 +66971,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: netgrp
-	 * @route  /web-proxy/wisp
+	 * @route  POST /web-proxy/wisp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67004,7 +67004,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content/{id}
+	 * @route  GET /webfilter/content/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -67039,7 +67039,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content/{id}
+	 * @route  PUT /webfilter/content/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67080,7 +67080,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content/{id}
+	 * @route  DELETE /webfilter/content/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67099,7 +67099,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content
+	 * @route  GET /webfilter/content
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -67160,7 +67160,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content
+	 * @route  POST /webfilter/content
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67193,7 +67193,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content-header/{id}
+	 * @route  GET /webfilter/content-header/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -67228,7 +67228,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content-header/{id}
+	 * @route  PUT /webfilter/content-header/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67269,7 +67269,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content-header/{id}
+	 * @route  DELETE /webfilter/content-header/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67288,7 +67288,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content-header
+	 * @route  GET /webfilter/content-header
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -67349,7 +67349,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/content-header
+	 * @route  POST /webfilter/content-header
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67382,7 +67382,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/fortiguard
+	 * @route  GET /webfilter/fortiguard
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -67443,7 +67443,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/fortiguard
+	 * @route  PUT /webfilter/fortiguard
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67482,7 +67482,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-cat/{desc}
+	 * @route  GET /webfilter/ftgd-local-cat/{desc}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -67517,7 +67517,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-cat/{desc}
+	 * @route  PUT /webfilter/ftgd-local-cat/{desc}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67558,7 +67558,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-cat/{desc}
+	 * @route  DELETE /webfilter/ftgd-local-cat/{desc}
 	 * @param  $desc mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67577,7 +67577,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-cat
+	 * @route  GET /webfilter/ftgd-local-cat
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -67638,7 +67638,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-cat
+	 * @route  POST /webfilter/ftgd-local-cat
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67671,7 +67671,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-rating/{url}
+	 * @route  GET /webfilter/ftgd-local-rating/{url}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -67706,7 +67706,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-rating/{url}
+	 * @route  PUT /webfilter/ftgd-local-rating/{url}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67747,7 +67747,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-rating/{url}
+	 * @route  DELETE /webfilter/ftgd-local-rating/{url}
 	 * @param  $url mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67766,7 +67766,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-rating
+	 * @route  GET /webfilter/ftgd-local-rating
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -67827,7 +67827,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ftgd-local-rating
+	 * @route  POST /webfilter/ftgd-local-rating
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67860,7 +67860,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ips-urlfilter-cache-setting
+	 * @route  GET /webfilter/ips-urlfilter-cache-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -67921,7 +67921,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ips-urlfilter-cache-setting
+	 * @route  PUT /webfilter/ips-urlfilter-cache-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -67960,7 +67960,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ips-urlfilter-setting
+	 * @route  GET /webfilter/ips-urlfilter-setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -68021,7 +68021,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ips-urlfilter-setting
+	 * @route  PUT /webfilter/ips-urlfilter-setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68060,7 +68060,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ips-urlfilter-setting6
+	 * @route  GET /webfilter/ips-urlfilter-setting6
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -68121,7 +68121,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/ips-urlfilter-setting6
+	 * @route  PUT /webfilter/ips-urlfilter-setting6
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68160,7 +68160,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/override/{id}
+	 * @route  GET /webfilter/override/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -68195,7 +68195,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/override/{id}
+	 * @route  PUT /webfilter/override/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68236,7 +68236,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/override/{id}
+	 * @route  DELETE /webfilter/override/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68255,7 +68255,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/override
+	 * @route  GET /webfilter/override
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -68316,7 +68316,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/override
+	 * @route  POST /webfilter/override
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68349,7 +68349,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/profile/{name}
+	 * @route  GET /webfilter/profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -68384,7 +68384,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/profile/{name}
+	 * @route  PUT /webfilter/profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68425,7 +68425,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/profile/{name}
+	 * @route  DELETE /webfilter/profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68444,7 +68444,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/profile
+	 * @route  GET /webfilter/profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -68505,7 +68505,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/profile
+	 * @route  POST /webfilter/profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68538,7 +68538,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/search-engine/{name}
+	 * @route  GET /webfilter/search-engine/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -68573,7 +68573,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/search-engine/{name}
+	 * @route  PUT /webfilter/search-engine/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68614,7 +68614,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/search-engine/{name}
+	 * @route  DELETE /webfilter/search-engine/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68633,7 +68633,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/search-engine
+	 * @route  GET /webfilter/search-engine
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -68694,7 +68694,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/search-engine
+	 * @route  POST /webfilter/search-engine
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68727,7 +68727,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/urlfilter/{id}
+	 * @route  GET /webfilter/urlfilter/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -68762,7 +68762,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/urlfilter/{id}
+	 * @route  PUT /webfilter/urlfilter/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68803,7 +68803,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/urlfilter/{id}
+	 * @route  DELETE /webfilter/urlfilter/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68822,7 +68822,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/urlfilter
+	 * @route  GET /webfilter/urlfilter
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -68883,7 +68883,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: utmgrp
-	 * @route  /webfilter/urlfilter
+	 * @route  POST /webfilter/urlfilter
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68916,7 +68916,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-3gpp-cellular/{name}
+	 * @route  GET /wireless-controller.hotspot20/anqp-3gpp-cellular/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -68951,7 +68951,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-3gpp-cellular/{name}
+	 * @route  PUT /wireless-controller.hotspot20/anqp-3gpp-cellular/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -68992,7 +68992,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-3gpp-cellular/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/anqp-3gpp-cellular/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69011,7 +69011,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-3gpp-cellular
+	 * @route  GET /wireless-controller.hotspot20/anqp-3gpp-cellular
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -69072,7 +69072,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-3gpp-cellular
+	 * @route  POST /wireless-controller.hotspot20/anqp-3gpp-cellular
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69105,7 +69105,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-ip-address-type/{name}
+	 * @route  GET /wireless-controller.hotspot20/anqp-ip-address-type/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -69140,7 +69140,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-ip-address-type/{name}
+	 * @route  PUT /wireless-controller.hotspot20/anqp-ip-address-type/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69181,7 +69181,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-ip-address-type/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/anqp-ip-address-type/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69200,7 +69200,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-ip-address-type
+	 * @route  GET /wireless-controller.hotspot20/anqp-ip-address-type
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -69261,7 +69261,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-ip-address-type
+	 * @route  POST /wireless-controller.hotspot20/anqp-ip-address-type
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69294,7 +69294,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-nai-realm/{name}
+	 * @route  GET /wireless-controller.hotspot20/anqp-nai-realm/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -69329,7 +69329,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-nai-realm/{name}
+	 * @route  PUT /wireless-controller.hotspot20/anqp-nai-realm/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69370,7 +69370,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-nai-realm/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/anqp-nai-realm/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69389,7 +69389,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-nai-realm
+	 * @route  GET /wireless-controller.hotspot20/anqp-nai-realm
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -69450,7 +69450,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-nai-realm
+	 * @route  POST /wireless-controller.hotspot20/anqp-nai-realm
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69483,7 +69483,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-network-auth-type/{name}
+	 * @route  GET /wireless-controller.hotspot20/anqp-network-auth-type/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -69518,7 +69518,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-network-auth-type/{name}
+	 * @route  PUT /wireless-controller.hotspot20/anqp-network-auth-type/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69559,7 +69559,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-network-auth-type/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/anqp-network-auth-type/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69578,7 +69578,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-network-auth-type
+	 * @route  GET /wireless-controller.hotspot20/anqp-network-auth-type
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -69639,7 +69639,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-network-auth-type
+	 * @route  POST /wireless-controller.hotspot20/anqp-network-auth-type
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69672,7 +69672,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-roaming-consortium/{name}
+	 * @route  GET /wireless-controller.hotspot20/anqp-roaming-consortium/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -69707,7 +69707,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-roaming-consortium/{name}
+	 * @route  PUT /wireless-controller.hotspot20/anqp-roaming-consortium/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69748,7 +69748,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-roaming-consortium/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/anqp-roaming-consortium/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69767,7 +69767,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-roaming-consortium
+	 * @route  GET /wireless-controller.hotspot20/anqp-roaming-consortium
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -69828,7 +69828,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-roaming-consortium
+	 * @route  POST /wireless-controller.hotspot20/anqp-roaming-consortium
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69861,7 +69861,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-venue-name/{name}
+	 * @route  GET /wireless-controller.hotspot20/anqp-venue-name/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -69896,7 +69896,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-venue-name/{name}
+	 * @route  PUT /wireless-controller.hotspot20/anqp-venue-name/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69937,7 +69937,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-venue-name/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/anqp-venue-name/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -69956,7 +69956,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-venue-name
+	 * @route  GET /wireless-controller.hotspot20/anqp-venue-name
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -70017,7 +70017,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/anqp-venue-name
+	 * @route  POST /wireless-controller.hotspot20/anqp-venue-name
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70050,7 +70050,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-conn-capability/{name}
+	 * @route  GET /wireless-controller.hotspot20/h2qp-conn-capability/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -70085,7 +70085,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-conn-capability/{name}
+	 * @route  PUT /wireless-controller.hotspot20/h2qp-conn-capability/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70126,7 +70126,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-conn-capability/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/h2qp-conn-capability/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70145,7 +70145,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-conn-capability
+	 * @route  GET /wireless-controller.hotspot20/h2qp-conn-capability
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -70206,7 +70206,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-conn-capability
+	 * @route  POST /wireless-controller.hotspot20/h2qp-conn-capability
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70239,7 +70239,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-operator-name/{name}
+	 * @route  GET /wireless-controller.hotspot20/h2qp-operator-name/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -70274,7 +70274,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-operator-name/{name}
+	 * @route  PUT /wireless-controller.hotspot20/h2qp-operator-name/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70315,7 +70315,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-operator-name/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/h2qp-operator-name/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70334,7 +70334,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-operator-name
+	 * @route  GET /wireless-controller.hotspot20/h2qp-operator-name
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -70395,7 +70395,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-operator-name
+	 * @route  POST /wireless-controller.hotspot20/h2qp-operator-name
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70428,7 +70428,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-osu-provider/{name}
+	 * @route  GET /wireless-controller.hotspot20/h2qp-osu-provider/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -70463,7 +70463,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-osu-provider/{name}
+	 * @route  PUT /wireless-controller.hotspot20/h2qp-osu-provider/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70504,7 +70504,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-osu-provider/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/h2qp-osu-provider/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70523,7 +70523,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-osu-provider
+	 * @route  GET /wireless-controller.hotspot20/h2qp-osu-provider
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -70584,7 +70584,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-osu-provider
+	 * @route  POST /wireless-controller.hotspot20/h2qp-osu-provider
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70617,7 +70617,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-wan-metric/{name}
+	 * @route  GET /wireless-controller.hotspot20/h2qp-wan-metric/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -70652,7 +70652,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-wan-metric/{name}
+	 * @route  PUT /wireless-controller.hotspot20/h2qp-wan-metric/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70693,7 +70693,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-wan-metric/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/h2qp-wan-metric/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70712,7 +70712,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-wan-metric
+	 * @route  GET /wireless-controller.hotspot20/h2qp-wan-metric
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -70773,7 +70773,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/h2qp-wan-metric
+	 * @route  POST /wireless-controller.hotspot20/h2qp-wan-metric
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70806,7 +70806,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/hs-profile/{name}
+	 * @route  GET /wireless-controller.hotspot20/hs-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -70841,7 +70841,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/hs-profile/{name}
+	 * @route  PUT /wireless-controller.hotspot20/hs-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70882,7 +70882,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/hs-profile/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/hs-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70901,7 +70901,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/hs-profile
+	 * @route  GET /wireless-controller.hotspot20/hs-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -70962,7 +70962,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/hs-profile
+	 * @route  POST /wireless-controller.hotspot20/hs-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -70995,7 +70995,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/icon/{name}
+	 * @route  GET /wireless-controller.hotspot20/icon/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -71030,7 +71030,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/icon/{name}
+	 * @route  PUT /wireless-controller.hotspot20/icon/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71071,7 +71071,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/icon/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/icon/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71090,7 +71090,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/icon
+	 * @route  GET /wireless-controller.hotspot20/icon
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -71151,7 +71151,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/icon
+	 * @route  POST /wireless-controller.hotspot20/icon
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71184,7 +71184,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/qos-map/{name}
+	 * @route  GET /wireless-controller.hotspot20/qos-map/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -71219,7 +71219,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/qos-map/{name}
+	 * @route  PUT /wireless-controller.hotspot20/qos-map/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71260,7 +71260,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/qos-map/{name}
+	 * @route  DELETE /wireless-controller.hotspot20/qos-map/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71279,7 +71279,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/qos-map
+	 * @route  GET /wireless-controller.hotspot20/qos-map
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -71340,7 +71340,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller.hotspot20/qos-map
+	 * @route  POST /wireless-controller.hotspot20/qos-map
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71373,7 +71373,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/access-control-list/{name}
+	 * @route  GET /wireless-controller/access-control-list/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -71408,7 +71408,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/access-control-list/{name}
+	 * @route  PUT /wireless-controller/access-control-list/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71449,7 +71449,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/access-control-list/{name}
+	 * @route  DELETE /wireless-controller/access-control-list/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71468,7 +71468,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/access-control-list
+	 * @route  GET /wireless-controller/access-control-list
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -71529,7 +71529,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/access-control-list
+	 * @route  POST /wireless-controller/access-control-list
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71562,7 +71562,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/address/{id}
+	 * @route  GET /wireless-controller/address/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -71597,7 +71597,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/address/{id}
+	 * @route  PUT /wireless-controller/address/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71638,7 +71638,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/address/{id}
+	 * @route  DELETE /wireless-controller/address/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71657,7 +71657,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/address
+	 * @route  GET /wireless-controller/address
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -71718,7 +71718,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/address
+	 * @route  POST /wireless-controller/address
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71751,7 +71751,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/addrgrp/{id}
+	 * @route  GET /wireless-controller/addrgrp/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -71786,7 +71786,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/addrgrp/{id}
+	 * @route  PUT /wireless-controller/addrgrp/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71827,7 +71827,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/addrgrp/{id}
+	 * @route  DELETE /wireless-controller/addrgrp/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71846,7 +71846,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/addrgrp
+	 * @route  GET /wireless-controller/addrgrp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -71907,7 +71907,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/addrgrp
+	 * @route  POST /wireless-controller/addrgrp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -71940,7 +71940,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ap-status/{id}
+	 * @route  GET /wireless-controller/ap-status/{id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -71975,7 +71975,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ap-status/{id}
+	 * @route  PUT /wireless-controller/ap-status/{id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72016,7 +72016,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ap-status/{id}
+	 * @route  DELETE /wireless-controller/ap-status/{id}
 	 * @param  $id mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72035,7 +72035,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ap-status
+	 * @route  GET /wireless-controller/ap-status
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -72096,7 +72096,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ap-status
+	 * @route  POST /wireless-controller/ap-status
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72129,7 +72129,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/apcfg-profile/{name}
+	 * @route  GET /wireless-controller/apcfg-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -72164,7 +72164,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/apcfg-profile/{name}
+	 * @route  PUT /wireless-controller/apcfg-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72205,7 +72205,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/apcfg-profile/{name}
+	 * @route  DELETE /wireless-controller/apcfg-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72224,7 +72224,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/apcfg-profile
+	 * @route  GET /wireless-controller/apcfg-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -72285,7 +72285,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/apcfg-profile
+	 * @route  POST /wireless-controller/apcfg-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72318,7 +72318,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/arrp-profile/{name}
+	 * @route  GET /wireless-controller/arrp-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -72353,7 +72353,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/arrp-profile/{name}
+	 * @route  PUT /wireless-controller/arrp-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72394,7 +72394,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/arrp-profile/{name}
+	 * @route  DELETE /wireless-controller/arrp-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72413,7 +72413,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/arrp-profile
+	 * @route  GET /wireless-controller/arrp-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -72474,7 +72474,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/arrp-profile
+	 * @route  POST /wireless-controller/arrp-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72507,7 +72507,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ble-profile/{name}
+	 * @route  GET /wireless-controller/ble-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -72542,7 +72542,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ble-profile/{name}
+	 * @route  PUT /wireless-controller/ble-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72583,7 +72583,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ble-profile/{name}
+	 * @route  DELETE /wireless-controller/ble-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72602,7 +72602,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ble-profile
+	 * @route  GET /wireless-controller/ble-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -72663,7 +72663,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/ble-profile
+	 * @route  POST /wireless-controller/ble-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72696,7 +72696,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/bonjour-profile/{name}
+	 * @route  GET /wireless-controller/bonjour-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -72731,7 +72731,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/bonjour-profile/{name}
+	 * @route  PUT /wireless-controller/bonjour-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72772,7 +72772,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/bonjour-profile/{name}
+	 * @route  DELETE /wireless-controller/bonjour-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72791,7 +72791,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/bonjour-profile
+	 * @route  GET /wireless-controller/bonjour-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -72852,7 +72852,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/bonjour-profile
+	 * @route  POST /wireless-controller/bonjour-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72885,7 +72885,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/global
+	 * @route  GET /wireless-controller/global
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -72946,7 +72946,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/global
+	 * @route  PUT /wireless-controller/global
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -72985,7 +72985,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/inter-controller
+	 * @route  GET /wireless-controller/inter-controller
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -73046,7 +73046,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/inter-controller
+	 * @route  PUT /wireless-controller/inter-controller
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73085,7 +73085,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/log
+	 * @route  GET /wireless-controller/log
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -73146,7 +73146,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/log
+	 * @route  PUT /wireless-controller/log
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73185,7 +73185,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/mpsk-profile/{name}
+	 * @route  GET /wireless-controller/mpsk-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -73220,7 +73220,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/mpsk-profile/{name}
+	 * @route  PUT /wireless-controller/mpsk-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73261,7 +73261,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/mpsk-profile/{name}
+	 * @route  DELETE /wireless-controller/mpsk-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73280,7 +73280,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/mpsk-profile
+	 * @route  GET /wireless-controller/mpsk-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -73341,7 +73341,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/mpsk-profile
+	 * @route  POST /wireless-controller/mpsk-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73374,7 +73374,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/qos-profile/{name}
+	 * @route  GET /wireless-controller/qos-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -73409,7 +73409,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/qos-profile/{name}
+	 * @route  PUT /wireless-controller/qos-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73450,7 +73450,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/qos-profile/{name}
+	 * @route  DELETE /wireless-controller/qos-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73469,7 +73469,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/qos-profile
+	 * @route  GET /wireless-controller/qos-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -73530,7 +73530,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/qos-profile
+	 * @route  POST /wireless-controller/qos-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73563,7 +73563,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/region/{name}
+	 * @route  GET /wireless-controller/region/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -73598,7 +73598,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/region/{name}
+	 * @route  PUT /wireless-controller/region/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73639,7 +73639,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/region/{name}
+	 * @route  DELETE /wireless-controller/region/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73658,7 +73658,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/region
+	 * @route  GET /wireless-controller/region
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -73719,7 +73719,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/region
+	 * @route  POST /wireless-controller/region
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73752,7 +73752,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/setting
+	 * @route  GET /wireless-controller/setting
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -73813,7 +73813,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/setting
+	 * @route  PUT /wireless-controller/setting
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73852,7 +73852,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/snmp
+	 * @route  GET /wireless-controller/snmp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -73913,7 +73913,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/snmp
+	 * @route  PUT /wireless-controller/snmp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -73952,7 +73952,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/timers
+	 * @route  GET /wireless-controller/timers
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -74013,7 +74013,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/timers
+	 * @route  PUT /wireless-controller/timers
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74052,7 +74052,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/utm-profile/{name}
+	 * @route  GET /wireless-controller/utm-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -74087,7 +74087,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/utm-profile/{name}
+	 * @route  PUT /wireless-controller/utm-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74128,7 +74128,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/utm-profile/{name}
+	 * @route  DELETE /wireless-controller/utm-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74147,7 +74147,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/utm-profile
+	 * @route  GET /wireless-controller/utm-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -74208,7 +74208,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/utm-profile
+	 * @route  POST /wireless-controller/utm-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74241,7 +74241,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap/{name}
+	 * @route  GET /wireless-controller/vap/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -74276,7 +74276,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap/{name}
+	 * @route  PUT /wireless-controller/vap/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74317,7 +74317,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap/{name}
+	 * @route  DELETE /wireless-controller/vap/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74336,7 +74336,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap
+	 * @route  GET /wireless-controller/vap
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -74397,7 +74397,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap
+	 * @route  POST /wireless-controller/vap
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74430,7 +74430,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap-group/{name}
+	 * @route  GET /wireless-controller/vap-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -74465,7 +74465,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap-group/{name}
+	 * @route  PUT /wireless-controller/vap-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74506,7 +74506,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap-group/{name}
+	 * @route  DELETE /wireless-controller/vap-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74525,7 +74525,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap-group
+	 * @route  GET /wireless-controller/vap-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -74586,7 +74586,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/vap-group
+	 * @route  POST /wireless-controller/vap-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74619,7 +74619,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wag-profile/{name}
+	 * @route  GET /wireless-controller/wag-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -74654,7 +74654,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wag-profile/{name}
+	 * @route  PUT /wireless-controller/wag-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74695,7 +74695,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wag-profile/{name}
+	 * @route  DELETE /wireless-controller/wag-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74714,7 +74714,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wag-profile
+	 * @route  GET /wireless-controller/wag-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -74775,7 +74775,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wag-profile
+	 * @route  POST /wireless-controller/wag-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74808,7 +74808,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wids-profile/{name}
+	 * @route  GET /wireless-controller/wids-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -74843,7 +74843,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wids-profile/{name}
+	 * @route  PUT /wireless-controller/wids-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74884,7 +74884,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wids-profile/{name}
+	 * @route  DELETE /wireless-controller/wids-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74903,7 +74903,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wids-profile
+	 * @route  GET /wireless-controller/wids-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -74964,7 +74964,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wids-profile
+	 * @route  POST /wireless-controller/wids-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -74997,7 +74997,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp/{wtp-id}
+	 * @route  GET /wireless-controller/wtp/{wtp-id}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -75032,7 +75032,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp/{wtp-id}
+	 * @route  PUT /wireless-controller/wtp/{wtp-id}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75073,7 +75073,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp/{wtp-id}
+	 * @route  DELETE /wireless-controller/wtp/{wtp-id}
 	 * @param  $wtpId mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75092,7 +75092,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp
+	 * @route  GET /wireless-controller/wtp
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -75153,7 +75153,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp
+	 * @route  POST /wireless-controller/wtp
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75186,7 +75186,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-group/{name}
+	 * @route  GET /wireless-controller/wtp-group/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -75221,7 +75221,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-group/{name}
+	 * @route  PUT /wireless-controller/wtp-group/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75262,7 +75262,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-group/{name}
+	 * @route  DELETE /wireless-controller/wtp-group/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75281,7 +75281,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-group
+	 * @route  GET /wireless-controller/wtp-group
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -75342,7 +75342,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-group
+	 * @route  POST /wireless-controller/wtp-group
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75375,7 +75375,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select a specific entry from a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-profile/{name}
+	 * @route  GET /wireless-controller/wtp-profile/{name}
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $with_meta Enable to include meta information about each object (type id, references, etc).
 	 * @param  $skip Enable to call CLI skip operator to hide skipped properties.
@@ -75410,7 +75410,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Update this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-profile/{name}
+	 * @route  PUT /wireless-controller/wtp-profile/{name}
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75451,7 +75451,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Delete this specific resource.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-profile/{name}
+	 * @route  DELETE /wireless-controller/wtp-profile/{name}
 	 * @param  $name mkey
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:
@@ -75470,7 +75470,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Select all entries in a CLI table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-profile
+	 * @route  GET /wireless-controller/wtp-profile
 	 * @param  $datasource Enable to include datasource information for each linked object.
 	 * @param  $start Starting entry index.
 	 * @param  $count Maximum number of entries to return.
@@ -75531,7 +75531,7 @@ class FortiOSAPICmdb extends FortiOSAPI
 	/**
 	 * Create object(s) in this table.
 	 *  Access Group: wifi
-	 * @route  /wireless-controller/wtp-profile
+	 * @route  POST /wireless-controller/wtp-profile
 	 * @param  $body Possible parameters to go in the body for the request
 	 * @param  $vdom Specify the Virtual Domain(s) from which results are returned or changes are applied to. If this parameter is not provided, the management VDOM will be used. If the admin does not have access to the VDOM, a permission error will be returned.
 	 * The URL parameter is one of:

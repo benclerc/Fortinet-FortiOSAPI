@@ -20,7 +20,7 @@ class FortiOSAPILog extends FortiOSAPI
 {
 	/**
 	 * Return a description of the quarantined virus file.
-	 * @route  /disk/virus/archive
+	 * @route  GET /disk/virus/archive
 	 * @param  $mkey checksum column from the virus log.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -32,7 +32,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Return a list of archived items for the desired type. :type can be app-ctrl or ips
-	 * @route  /disk/{type}/archive
+	 * @route  GET /disk/{type}/archive
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -45,7 +45,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Download an archived file.
-	 * @route  /disk/{type}/archive-download
+	 * @route  GET /disk/{type}/archive-download
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -58,7 +58,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /disk/{type}/raw
+	 * @route  GET /disk/{type}/raw
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -96,7 +96,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /disk/traffic/{subtype}/raw
+	 * @route  GET /disk/traffic/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -134,7 +134,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /disk/event/{subtype}/raw
+	 * @route  GET /disk/event/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -172,7 +172,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /disk/{type}
+	 * @route  GET /disk/{type}
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -212,7 +212,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /disk/traffic/{subtype}
+	 * @route  GET /disk/traffic/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -252,7 +252,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /disk/event/{subtype}
+	 * @route  GET /disk/event/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -292,7 +292,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Return a description of the quarantined virus file.
-	 * @route  /fortianalyzer/virus/archive
+	 * @route  GET /fortianalyzer/virus/archive
 	 * @param  $mkey checksum column from the virus log.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -304,7 +304,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Return a list of archived items for the desired type. :type can be app-ctrl or ips
-	 * @route  /fortianalyzer/{type}/archive
+	 * @route  GET /fortianalyzer/{type}/archive
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -317,7 +317,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Download an archived file.
-	 * @route  /fortianalyzer/{type}/archive-download
+	 * @route  GET /fortianalyzer/{type}/archive-download
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -330,7 +330,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /fortianalyzer/{type}/raw
+	 * @route  GET /fortianalyzer/{type}/raw
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -368,7 +368,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /fortianalyzer/traffic/{subtype}/raw
+	 * @route  GET /fortianalyzer/traffic/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -406,7 +406,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /fortianalyzer/event/{subtype}/raw
+	 * @route  GET /fortianalyzer/event/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -444,7 +444,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /fortianalyzer/{type}
+	 * @route  GET /fortianalyzer/{type}
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -484,7 +484,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /fortianalyzer/traffic/{subtype}
+	 * @route  GET /fortianalyzer/traffic/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -524,7 +524,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /fortianalyzer/event/{subtype}
+	 * @route  GET /fortianalyzer/event/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -564,7 +564,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Return a description of the quarantined virus file.
-	 * @route  /forticloud/virus/archive
+	 * @route  GET /forticloud/virus/archive
 	 * @param  $mkey checksum column from the virus log.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -576,7 +576,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Return a list of archived items for the desired type. :type can be app-ctrl or ips
-	 * @route  /forticloud/{type}/archive
+	 * @route  GET /forticloud/{type}/archive
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -589,7 +589,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Download an archived file.
-	 * @route  /forticloud/{type}/archive-download
+	 * @route  GET /forticloud/{type}/archive-download
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -602,7 +602,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /forticloud/{type}/raw
+	 * @route  GET /forticloud/{type}/raw
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -640,7 +640,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /forticloud/traffic/{subtype}/raw
+	 * @route  GET /forticloud/traffic/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -678,7 +678,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /forticloud/event/{subtype}/raw
+	 * @route  GET /forticloud/event/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -716,7 +716,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /forticloud/{type}
+	 * @route  GET /forticloud/{type}
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -756,7 +756,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /forticloud/traffic/{subtype}
+	 * @route  GET /forticloud/traffic/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -796,7 +796,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /forticloud/event/{subtype}
+	 * @route  GET /forticloud/event/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -836,7 +836,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Return a description of the quarantined virus file.
-	 * @route  /memory/virus/archive
+	 * @route  GET /memory/virus/archive
 	 * @param  $mkey checksum column from the virus log.
 	 * @return stdClass Return the firewall's response as an object.
 	 */
@@ -848,7 +848,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Return a list of archived items for the desired type. :type can be app-ctrl or ips
-	 * @route  /memory/{type}/archive
+	 * @route  GET /memory/{type}/archive
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -861,7 +861,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Download an archived file.
-	 * @route  /memory/{type}/archive-download
+	 * @route  GET /memory/{type}/archive-download
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $mkey Archive identifier.
 	 * @return stdClass Return the firewall's response as an object.
@@ -874,7 +874,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /memory/{type}/raw
+	 * @route  GET /memory/{type}/raw
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -912,7 +912,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /memory/traffic/{subtype}/raw
+	 * @route  GET /memory/traffic/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -950,7 +950,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type in raw format.
-	 * @route  /memory/event/{subtype}/raw
+	 * @route  GET /memory/event/{subtype}/raw
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -988,7 +988,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /memory/{type}
+	 * @route  GET /memory/{type}
 	 * @param  $type Type of log that can be retrieved
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
@@ -1028,7 +1028,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /memory/traffic/{subtype}
+	 * @route  GET /memory/traffic/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -1068,7 +1068,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Log data for the given log type (and subtype). Append '/raw' to retrieve in raw format.
-	 * @route  /memory/event/{subtype}
+	 * @route  GET /memory/event/{subtype}
 	 * @param  $start Row number for the first row to return.
 	 * @param  $rows Number of rows to return.
 	 * @param  $session_id Provide a session_id to continue getting data for that request.
@@ -1108,7 +1108,7 @@ class FortiOSAPILog extends FortiOSAPI
 
 	/**
 	 * Abort a running log search session.
-	 * @route  /search/abort/{session_id}
+	 * @route  POST /search/abort/{session_id}
 	 * @param  $session_id Provide the session ID for the request
 	 * @return stdClass Return the firewall's response as an object.
 	 */
