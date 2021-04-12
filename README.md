@@ -22,8 +22,8 @@ You can find all supported methods on [Fortinet's developer website](https://fnd
 1. Get [Composer](http://getcomposer.org/).
 2. Install the library using composer `composer require benclerc/fortinet-fortiosapi`.
 3. Add the following to your application's main PHP file `require 'vendor/autoload.php';`.
-4. Instanciate the Config class with the firewall's hostname, username and password `$configFirewall = new \Fortinet\Config('123.123.123.123', 'admin', 'password');`.
-5. Use the Config object previously created to instanciate the FortiOSAPI object `$firewall = new \Fortinet\FortiOSAPICmdb($configFirewall);`.
+4. Instanciate the Config class with the firewall's hostname, username and password `$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');`.
+5. Use the Config object previously created to instanciate the FortiOSAPI object `$firewall = new \Fortinet\FortiOSAPI\FortiOSAPICmdb($configFirewall);`.
 6. Start using the library `$staticRoutes = $firewall->getAllRouterStatic();`.
 
 ## Documentation
@@ -51,24 +51,24 @@ Optional parameters :
 
 ```php
 // Basic configuration
-$configFirewall = new \Fortinet\Config('123.123.123.123', 'admin', 'password');
+$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
 
 // Configuration for very slow firewalls/long requests
-$configFirewall = new \Fortinet\Config('123.123.123.123', 'admin', 'password');
+$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
 $configFirewall->setTimeout(20000);
 
 // Unsecure configuration
-$configFirewall = new \Fortinet\Config('123.123.123.123', 'admin', 'password');
+$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
 $configFirewall->setSSLVerifyPeer(FALSE)->setSSLVerifyHost(FALSE);
 
 // Special API version
-$configFirewall = new \Fortinet\Config('123.123.123.123', 'admin', 'password');
+$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
 $configFirewall->setAPIVersion(1);
 
 // The class logins to the firewall when being instanciated hence the try/catch statement.
 // Here I use the class FortiOSAPICmdb for the example but it the same for FortiOSAPILog and FortiOSAPIMonitor classes.
 try {
-	$firewall = new \Fortinet\FortiOSAPICmdb($configFirewall);
+	$firewall = new \Fortinet\FortiOSAPI\FortiOSAPICmdb($configFirewall);
 } catch (Exception $e) {
 	echo('Handle error : '.$e->getMessage());
 }
