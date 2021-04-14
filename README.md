@@ -1,6 +1,8 @@
 # Fortinet Fortigate configuration API (FortiOS)
 
-PHP library used for interacting with Fortigate firewall (FortiOS) APIs (CMDB, Log and Monitor). This library can retrieve, create, update and delete configuration on the firewall.
+_This library is automatically generated, if you want support for a newer version, please open an issue._
+
+PHP library used for interacting with Fortigate firewall (FortiOS) APIs (CMDB (Configuration), Log and Monitor). This library can retrieve, create, update and delete configuration on the firewall.
 
 You can find all supported methods on [Fortinet's developer website](https://fndn.fortinet.net/index.php?/fortiapi/1-fortios/), you will need an account to browse information.
 
@@ -12,7 +14,7 @@ You can find all supported methods on [Fortinet's developer website](https://fnd
 	  * [Config class](#config-class)
 		 * [Usage](#usage)
 		 * [Examples](#examples)
-	  * [FortiOSAPICmdb, FortiOSAPILog and FortiOSAPIMonitor classes](#fortiosapicmdb-fortiosapilog-and-fortiosapimonitor-classes)
+	  * [Configuration, Log and Monitor classes](#configuration-log-and-monitor-classes)
 		 * [Usage](#usage)
 		 * [Examples](#examples-1)
 <!--te-->
@@ -22,9 +24,9 @@ You can find all supported methods on [Fortinet's developer website](https://fnd
 1. Get [Composer](http://getcomposer.org/).
 2. Install the library using composer `composer require benclerc/fortinet-fortiosapi`.
 3. Add the following to your application's main PHP file `require 'vendor/autoload.php';`.
-4. Instanciate the Config class with the firewall's hostname, username and password `$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');`.
-5. Use the Config object previously created to instanciate the FortiOSAPI object `$firewall = new \Fortinet\FortiOSAPI\FortiOSAPICmdb($configFirewall);`.
-6. Start using the library `$staticRoutes = $firewall->getAllRouterStatic();`.
+4. Instanciate the Config class with the firewall's hostname, username and password `$configConnection = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');`.
+5. Use the Config object previously created to instanciate the FortiOSAPI object `$firewallConf = new \Fortinet\FortiOSAPI\Configuration($configConnection);`.
+6. Start using the library `$staticRoutes = $firewallConf->getAllRouterStatic();`.
 
 ## Documentation
 
@@ -51,30 +53,30 @@ Optional parameters :
 
 ```php
 // Basic configuration
-$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
+$configConnection = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
 
 // Configuration for very slow firewalls/long requests
-$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
-$configFirewall->setTimeout(20000);
+$configConnection = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
+$configConnection->setTimeout(20000);
 
 // Unsecure configuration
-$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
-$configFirewall->setSSLVerifyPeer(FALSE)->setSSLVerifyHost(FALSE);
+$configConnection = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
+$configConnection->setSSLVerifyPeer(FALSE)->setSSLVerifyHost(FALSE);
 
 // Special API version
-$configFirewall = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
-$configFirewall->setAPIVersion(1);
+$configConnection = new \Fortinet\FortiOSAPI\Config('123.123.123.123', 'admin', 'password');
+$configConnection->setAPIVersion(1);
 
 // The class logins to the firewall when being instanciated hence the try/catch statement.
-// Here I use the class FortiOSAPICmdb for the example but it the same for FortiOSAPILog and FortiOSAPIMonitor classes.
+// Here I use the class Configuration for the example but it the same for Log and Monitor classes.
 try {
-	$firewall = new \Fortinet\FortiOSAPI\FortiOSAPICmdb($configFirewall);
+	$firewallConf = new \Fortinet\FortiOSAPI\Configuration($configConnection);
 } catch (Exception $e) {
 	echo('Handle error : '.$e->getMessage());
 }
 ```
 
-### FortiOSAPICmdb, FortiOSAPILog and FortiOSAPIMonitor classes
+### Configuration, Log and Monitor classes
 
 #### Usage
 
@@ -85,7 +87,7 @@ These classes uses Exception to handle errors, for nominal execution you should 
 ```php
 // Get one particular static route
 try {
-	$res = $firewall->getRouterStatic(1);
+	$res = $firewallConf->getRouterStatic(1);
 	echo('Gateway is : '.$res->results[0]->gateway);
 } catch (Exception $e) {
 	echo('Handle error : '.$e->getMessage());
@@ -94,9 +96,9 @@ try {
 // Get routes using filters
 try {
 	// Will return fields dst and status of default gateways
-	$res = $firewall->getAllRouterStatic(NULL, NULL, NULL, NULL, NULL, NULL, ['dst', 'status'], ['dst==0.0.0.0 0.0.0.0']);
+	$res = $firewallConf->getAllRouterStatic(NULL, NULL, NULL, NULL, NULL, NULL, ['dst', 'status'], ['dst==0.0.0.0 0.0.0.0']);
 	// For obvious reasons, it would be a charm to use the new PHP 8.0 syntax to call the method :
-	// $firewall->getAllRouterStatic(format: ['dst', 'status'], filter: ['dst==0.0.0.0 0.0.0.0'])
+	// $firewallConf->getAllRouterStatic(format: ['dst', 'status'], filter: ['dst==0.0.0.0 0.0.0.0'])
 } catch (Exception $e) {
 	echo('Handle error : '.$e->getMessage());
 }
@@ -114,7 +116,7 @@ $staticRoute->distance = 20;
 
 // Send the request to the firewall
 try {
-	$res = $firewall->addRouterStatic($staticRoute);
+	$res = $firewallConf->addRouterStatic($staticRoute);
 
 	if ($res->status == 'success') {
 		echo('Route added');
