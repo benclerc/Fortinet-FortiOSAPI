@@ -39,7 +39,7 @@ You can find a full documentation [here](https://benclerc.github.io/Fortinet-For
 
 This Config class is used to prepare the mandatory configuration information to instanciate and use the FortiOSAPI... classes. In the constructor you must pass :
 
-1. The switch's hostname (FQDN) or IP address
+1. The firewall's hostname (FQDN) or IP address
 2. A valid user's username
 3. The valid user's password
 
