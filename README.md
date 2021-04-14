@@ -17,6 +17,7 @@ You can find all supported methods on [Fortinet's developer website](https://fnd
 	  * [Configuration, Log and Monitor classes](#configuration-log-and-monitor-classes)
 		 * [Usage](#usage)
 		 * [Examples](#examples-1)
+		 * [Transactions](#transactions)
 <!--te-->
 
 ## Getting started
@@ -127,3 +128,41 @@ try {
 	echo('Handle error : '.$e->getMessage());
 }
 ```
+
+#### Transactions
+
+This library also supports transactions : start a transaction, create, update, delete, and depending on the result commit or abort your changes.
+
+```php
+// Start transaction
+$firewallConf->startTransaction();
+
+// Create many IP objects
+$error = FALSE;
+for ($i=1; $i < 50; $i++) {
+	// Create body object
+	$ip = new stdClass;
+	$ip->name = 'IP'.$i;
+	$ip->type = 'subnet';
+	$ip->subnet = '10.1.'.$i.'.0/24';
+
+	// Create object on the firewall
+	try {
+		$firewallConf->addFirewallAddress($ip);
+		echo("[SUCCESS] Created IP ".$ip->name.".\n");
+	} catch (Exception $e) {
+		echo("[ERROR] Unable to create IP : ".$ip->name.". Details : ".$e->getMessage()."\n");
+		$error = TRUE;
+	}
+}
+
+// Check error
+if ($error === FALSE) {
+	// No errors, commit
+	$firewallConf->commitTransaction();
+} else {
+	// Errors, abort and rollback
+	$firewallConf->abortTransaction();
+}
+```
+
