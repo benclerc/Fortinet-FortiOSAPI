@@ -29,7 +29,7 @@ class FortiOSAPI
 
 
 	/**
-	 * Constructor takes care of checking and registering switch's data and login to the API
+	 * Constructor takes care of checking and registering firewall's data and login to the API
 	 * @param Config $config Object containing all necessary configuration.
 	 */
 	public function __construct(Config $config)

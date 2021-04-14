@@ -39,7 +39,7 @@ class Config
 	 * @param string $hostname Firewall's FQDN or IP address.
 	 * @param string $username A valid firewall user.
 	 * @param string $password The valid user's password.
-	 * @return Config Config object to be passed on a new instance of diffezrent FortiOS APIs classes.
+	 * @return Config Config object to be passed on a new instance of different FortiOS APIs classes.
 	 */
 	public function __construct(string $hostname, string $username, string $password)
 	{
@@ -128,7 +128,7 @@ class Config
 	/**
 	 * Setter for curl's option to verify SSL peer.
 	 * @param int $verifySSLPeer Curl's option to verify SSL peer.
-	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
+	 * @return Config Config object to be passed on a new instance of FortiOS APIs classes.
 	 */
 	public function setSSLVerifyPeer(int $verifySSLPeer) : Config
 	{
@@ -139,7 +139,7 @@ class Config
 	/**
 	 * Setter for curl's option to verify SSL peer.
 	 * @param bool $verifySSLHost Curl's option to verify SSL host.
-	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
+	 * @return Config Config object to be passed on a new instance of FortiOS APIs classes.
 	 */
 	public function setSSLVerifyHost(bool $verifySSLHost) : Config
 	{
@@ -150,7 +150,7 @@ class Config
 	/**
 	 * Setter for curl's timeout in ms.
 	 * @param int $timeout Curl's timeout in ms.
-	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
+	 * @return Config Config object to be passed on a new instance of FortiOS APIs classes.
 	 */
 	public function setTimeout(int $timeout) : Config
 	{
@@ -161,7 +161,7 @@ class Config
 	/**
 	 * Setter for API version to use.
 	 * @param int $version API version to use e.g. '2'.
-	 * @return Config Config object to be passed on a new instance of SwitchOSAPI object.
+	 * @return Config Config object to be passed on a new instance of FortiOS APIs classes.
 	 */
 	public function setAPIVersion(int $version) : Config
 	{
