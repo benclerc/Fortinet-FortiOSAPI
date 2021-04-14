@@ -26,7 +26,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getAllDiskVirusArchive(int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/disk/virus/archive', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/disk/virus/archive', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -39,7 +39,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getDiskArchive(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/disk/archive', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/disk/archive', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -52,7 +52,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getDiskArchiveDownload(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/disk/archive-download', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/disk/archive-download', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -90,7 +90,7 @@ class Log extends FortiOSAPI
 		string $is_ha_member = null,
 		array $filter = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/disk/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/disk/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -128,7 +128,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/disk/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/disk/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -166,7 +166,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/disk/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/disk/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -206,7 +206,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $extra = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/disk', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/disk', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -246,7 +246,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/disk/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/disk/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -286,7 +286,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/disk/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/disk/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -298,7 +298,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getAllFortianalyzerVirusArchive(int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/fortianalyzer/virus/archive', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/virus/archive', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -311,7 +311,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getFortianalyzerArchive(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/fortianalyzer/archive', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/archive', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -324,7 +324,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getFortianalyzerArchiveDownload(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/fortianalyzer/archive-download', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/archive-download', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -362,7 +362,7 @@ class Log extends FortiOSAPI
 		string $is_ha_member = null,
 		array $filter = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/fortianalyzer/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -400,7 +400,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/fortianalyzer/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -438,7 +438,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/fortianalyzer/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -478,7 +478,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $extra = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/fortianalyzer', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -518,7 +518,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/fortianalyzer/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -558,7 +558,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/fortianalyzer/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/fortianalyzer/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -570,7 +570,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getAllForticloudVirusArchive(int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/forticloud/virus/archive', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/virus/archive', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -583,7 +583,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getForticloudArchive(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/forticloud/archive', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/archive', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -596,7 +596,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getForticloudArchiveDownload(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/forticloud/archive-download', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/archive-download', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -634,7 +634,7 @@ class Log extends FortiOSAPI
 		string $is_ha_member = null,
 		array $filter = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/forticloud/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -672,7 +672,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/forticloud/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -710,7 +710,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/forticloud/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -750,7 +750,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $extra = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/forticloud', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/forticloud', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -790,7 +790,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/forticloud/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -830,7 +830,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/forticloud/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/forticloud/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -842,7 +842,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getAllMemoryVirusArchive(int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/memory/virus/archive', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/memory/virus/archive', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -855,7 +855,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getMemoryArchive(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/memory/archive', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/memory/archive', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -868,7 +868,7 @@ class Log extends FortiOSAPI
 	 */
 	public function getMemoryArchiveDownload(string $type, int $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Log/memory/archive-download', $type, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/log/memory/archive-download', $type, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -906,7 +906,7 @@ class Log extends FortiOSAPI
 		string $is_ha_member = null,
 		array $filter = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/memory/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/memory/raw', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -944,7 +944,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/memory/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/memory/traffic/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -982,7 +982,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/memory/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
+		return $this->curlRequest('GET', '/log/memory/event/raw', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter], NULL);
 	}
 
 
@@ -1022,7 +1022,7 @@ class Log extends FortiOSAPI
 		array $filter = null,
 		string $extra = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/memory', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/memory', $type, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -1062,7 +1062,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/memory/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/memory/traffic', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -1102,7 +1102,7 @@ class Log extends FortiOSAPI
 		string $extra = null,
 		string $subtype
 	) : stdClass {
-		return $this->curlRequest('GET', '/Log/memory/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
+		return $this->curlRequest('GET', '/log/memory/event', $subtype, ['start'=>$start, 'rows'=>$rows, 'session_id'=>$session_id, 'serial_no'=>$serial_no, 'is_ha_member'=>$is_ha_member, 'filter'=>$filter, 'extra'=>$extra], NULL);
 	}
 
 
@@ -1114,6 +1114,6 @@ class Log extends FortiOSAPI
 	 */
 	public function addSearchAbort(int $session_id) : stdClass
 	{
-		return $this->curlRequest('POST', '/Log/search/abort', $session_id, NULL, NULL);
+		return $this->curlRequest('POST', '/log/search/abort', $session_id, NULL, NULL);
 	}
 }

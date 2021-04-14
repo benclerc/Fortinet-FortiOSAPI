@@ -26,7 +26,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllAzureApplicationList() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/azure/application-list', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/azure/application-list', NULL, NULL, NULL);
 	}
 
 
@@ -39,7 +39,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addAzureApplicationListRefresh(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/azure/application-list/refresh', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/azure/application-list/refresh', NULL, NULL, $body);
 	}
 
 
@@ -52,7 +52,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllEndpointControlRecordList(string $intf_name = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/record-list', NULL, ['intf_name'=>$intf_name], NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/record-list', NULL, ['intf_name'=>$intf_name], NULL);
 	}
 
 
@@ -64,7 +64,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllEndpointControlSummary() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/summary', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/summary', NULL, NULL, NULL);
 	}
 
 
@@ -77,7 +77,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllEndpointControlInstaller(string $min_version = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/installer', NULL, ['min_version'=>$min_version], NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/installer', NULL, ['min_version'=>$min_version], NULL);
 	}
 
 
@@ -90,7 +90,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllEndpointControlInstallerDownload(string $mkey) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/installer/download', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/installer/download', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -110,7 +110,7 @@ class Monitor extends FortiOSAPI
 		string $fingerprint = null,
 		string $default = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/avatar/download', NULL, ['uid'=>$uid, 'user'=>$user, 'fingerprint'=>$fingerprint, 'default'=>$default], NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/avatar/download', NULL, ['uid'=>$uid, 'user'=>$user, 'fingerprint'=>$fingerprint, 'default'=>$default], NULL);
 	}
 
 
@@ -123,7 +123,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllEndpointControlEmsStatus(string $ems_name) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/ems/status', NULL, ['ems_name'=>$ems_name], NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/ems/status', NULL, ['ems_name'=>$ems_name], NULL);
 	}
 
 
@@ -137,7 +137,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllEndpointControlEmsCertStatus(string $ems_name, bool $with_cert = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/ems/cert-status', NULL, ['ems_name'=>$ems_name, 'with_cert'=>$with_cert], NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/ems/cert-status', NULL, ['ems_name'=>$ems_name, 'with_cert'=>$with_cert], NULL);
 	}
 
 
@@ -150,7 +150,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addEndpointControlEmsVerifyCert(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/endpoint-control/ems/verify-cert', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/endpoint-control/ems/verify-cert', NULL, NULL, $body);
 	}
 
 
@@ -162,7 +162,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllEndpointControlEmsStatusSummary() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/endpoint-control/ems/status-summary', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/endpoint-control/ems/status-summary', NULL, NULL, NULL);
 	}
 
 
@@ -177,7 +177,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllExtenderControllerExtender(string $id, array $name = null, string $type = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/extender-controller/extender', NULL, ['id'=>$id, 'name'=>$name, 'type'=>$type], NULL);
+		return $this->curlRequest('GET', '/monitor/extender-controller/extender', NULL, ['id'=>$id, 'name'=>$name, 'type'=>$type], NULL);
 	}
 
 
@@ -190,7 +190,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addExtenderControllerExtenderDiagnose(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/extender-controller/extender/diagnose', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/extender-controller/extender/diagnose', NULL, NULL, $body);
 	}
 
 
@@ -203,7 +203,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addExtenderControllerExtenderReset(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/extender-controller/extender/reset', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/extender-controller/extender/reset', NULL, NULL, $body);
 	}
 
 
@@ -216,7 +216,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addExtenderControllerExtenderUpgrade(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/extender-controller/extender/upgrade', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/extender-controller/extender/upgrade', NULL, NULL, $body);
 	}
 
 
@@ -228,7 +228,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallHealth() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/health', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/health', NULL, NULL, NULL);
 	}
 
 
@@ -240,7 +240,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallLocalIn() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/local-in', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/local-in', NULL, NULL, NULL);
 	}
 
 
@@ -252,7 +252,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallAcl() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/acl', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/acl', NULL, NULL, NULL);
 	}
 
 
@@ -265,7 +265,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallAclClear_counters(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/acl/clear_counters', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/acl/clear_counters', NULL, NULL, $body);
 	}
 
 
@@ -277,7 +277,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallAcl6() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/acl6', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/acl6', NULL, NULL, NULL);
 	}
 
 
@@ -290,7 +290,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallAcl6Clear_counters(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/acl6/clear_counters', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/acl6/clear_counters', NULL, NULL, $body);
 	}
 
 
@@ -304,7 +304,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallInternetServiceMatch(string $ip, string $mask) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/internet-service-match', NULL, ['ip'=>$ip, 'mask'=>$mask], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/internet-service-match', NULL, ['ip'=>$ip, 'mask'=>$mask], NULL);
 	}
 
 
@@ -330,7 +330,7 @@ class Monitor extends FortiOSAPI
 		int $count = null,
 		bool $summary_only = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/firewall/internet-service-details', NULL, ['id'=>$id, 'country_id'=>$country_id, 'region_id'=>$region_id, 'city_id'=>$city_id, 'start'=>$start, 'count'=>$count, 'summary_only'=>$summary_only], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/internet-service-details', NULL, ['id'=>$id, 'country_id'=>$country_id, 'region_id'=>$region_id, 'city_id'=>$city_id, 'start'=>$start, 'count'=>$count, 'summary_only'=>$summary_only], NULL);
 	}
 
 
@@ -344,7 +344,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallPolicy(int $policyid = null, string $ip_version = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/policy', NULL, ['policyid'=>$policyid, 'ip_version'=>$ip_version], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/policy', NULL, ['policyid'=>$policyid, 'ip_version'=>$ip_version], NULL);
 	}
 
 
@@ -356,7 +356,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallPolicyReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/policy/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/firewall/policy/reset', NULL, NULL, NULL);
 	}
 
 
@@ -369,7 +369,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallPolicyClear_counters(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/policy/clear_counters', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/policy/clear_counters', NULL, NULL, $body);
 	}
 
 
@@ -382,7 +382,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallSecurityPolicy(int $policyid = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/security-policy', NULL, ['policyid'=>$policyid], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/security-policy', NULL, ['policyid'=>$policyid], NULL);
 	}
 
 
@@ -395,7 +395,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallSecurityPolicyClear_counters(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/security-policy/clear_counters', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/security-policy/clear_counters', NULL, NULL, $body);
 	}
 
 
@@ -408,7 +408,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallProxyPolicy(int $policyid = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/proxy-policy', NULL, ['policyid'=>$policyid], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/proxy-policy', NULL, ['policyid'=>$policyid], NULL);
 	}
 
 
@@ -421,7 +421,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallProxyPolicyClear_counters(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/proxy-policy/clear_counters', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/proxy-policy/clear_counters', NULL, NULL, $body);
 	}
 
 
@@ -451,7 +451,7 @@ class Monitor extends FortiOSAPI
 		int $icmptype = null,
 		int $icmpcode = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/firewall/policy-lookup', NULL, ['ipv6'=>$ipv6, 'srcintf'=>$srcintf, 'sourceport'=>$sourceport, 'sourceip'=>$sourceip, 'protocol'=>$protocol, 'dest'=>$dest, 'destport'=>$destport, 'icmptype'=>$icmptype, 'icmpcode'=>$icmpcode], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/policy-lookup', NULL, ['ipv6'=>$ipv6, 'srcintf'=>$srcintf, 'sourceport'=>$sourceport, 'sourceip'=>$sourceip, 'protocol'=>$protocol, 'dest'=>$dest, 'destport'=>$destport, 'icmptype'=>$icmptype, 'icmpcode'=>$icmpcode], NULL);
 	}
 
 
@@ -524,7 +524,7 @@ class Monitor extends FortiOSAPI
 		int $fortiasic = null,
 		int $nturbo = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/firewall/session', NULL, ['ip_version'=>$ip_version, 'start'=>$start, 'count'=>$count, 'summary'=>$summary, 'sourceport'=>$sourceport, 'policyid'=>$policyid, 'application'=>$application, 'protocol'=>$protocol, 'destport'=>$destport, 'srcintf'=>$srcintf, 'dstintf'=>$dstintf, 'srcintfrole'=>$srcintfrole, 'dstintfrole'=>$dstintfrole, 'source'=>$source, 'srcuuid'=>$srcuuid, 'destination'=>$destination, 'dstuuid'=>$dstuuid, 'username'=>$username, 'shaper'=>$shaper, 'country'=>$country, 'owner'=>$owner, 'natsourceaddress'=>$natsourceaddress, 'natsourceport'=>$natsourceport, 'filter-csf'=>$filterCsf, 'since'=>$since, 'seconds'=>$seconds, 'web-domain'=>$webDomain, 'web-category'=>$webCategory, 'fortiasic'=>$fortiasic, 'nturbo'=>$nturbo], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/session', NULL, ['ip_version'=>$ip_version, 'start'=>$start, 'count'=>$count, 'summary'=>$summary, 'sourceport'=>$sourceport, 'policyid'=>$policyid, 'application'=>$application, 'protocol'=>$protocol, 'destport'=>$destport, 'srcintf'=>$srcintf, 'dstintf'=>$dstintf, 'srcintfrole'=>$srcintfrole, 'dstintfrole'=>$dstintfrole, 'source'=>$source, 'srcuuid'=>$srcuuid, 'destination'=>$destination, 'dstuuid'=>$dstuuid, 'username'=>$username, 'shaper'=>$shaper, 'country'=>$country, 'owner'=>$owner, 'natsourceaddress'=>$natsourceaddress, 'natsourceport'=>$natsourceport, 'filter-csf'=>$filterCsf, 'since'=>$since, 'seconds'=>$seconds, 'web-domain'=>$webDomain, 'web-category'=>$webCategory, 'fortiasic'=>$fortiasic, 'nturbo'=>$nturbo], NULL);
 	}
 
 
@@ -536,7 +536,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallSessionClear_all() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/session/clear_all', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/firewall/session/clear_all', NULL, NULL, NULL);
 	}
 
 
@@ -549,7 +549,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallSessionClose(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/session/close', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/session/close', NULL, NULL, $body);
 	}
 
 
@@ -561,7 +561,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallShaper() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/shaper', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/shaper', NULL, NULL, NULL);
 	}
 
 
@@ -573,7 +573,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallShaperReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/shaper/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/firewall/shaper/reset', NULL, NULL, NULL);
 	}
 
 
@@ -585,7 +585,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallPerIpShaper() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/per-ip-shaper', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/per-ip-shaper', NULL, NULL, NULL);
 	}
 
 
@@ -597,7 +597,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallPerIpShaperReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/per-ip-shaper/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/firewall/per-ip-shaper/reset', NULL, NULL, NULL);
 	}
 
 
@@ -611,7 +611,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallLoadBalance(int $start = null, int $count) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/load-balance', NULL, ['start'=>$start, 'count'=>$count], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/load-balance', NULL, ['start'=>$start, 'count'=>$count], NULL);
 	}
 
 
@@ -623,7 +623,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallAddressFqdns() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/address-fqdns', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/address-fqdns', NULL, NULL, NULL);
 	}
 
 
@@ -635,7 +635,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallAddressFqdns6() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/address-fqdns6', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/address-fqdns6', NULL, NULL, NULL);
 	}
 
 
@@ -648,7 +648,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallClearpassAddressAdd(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/clearpass-address/add', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/clearpass-address/add', NULL, NULL, $body);
 	}
 
 
@@ -661,7 +661,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFirewallClearpassAddressDelete(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/firewall/clearpass-address/delete', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/firewall/clearpass-address/delete', NULL, NULL, $body);
 	}
 
 
@@ -673,7 +673,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallIppool() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/ippool', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/ippool', NULL, NULL, NULL);
 	}
 
 
@@ -686,7 +686,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallIppoolMapping(string $mkey) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/ippool/mapping', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/ippool/mapping', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -698,7 +698,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallUuidList() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/uuid-list', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/uuid-list', NULL, NULL, NULL);
 	}
 
 
@@ -712,7 +712,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallUuidTypeLookup(array $uuids = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/uuid-type-lookup', NULL, ['uuids'=>$uuids], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/uuid-type-lookup', NULL, ['uuids'=>$uuids], NULL);
 	}
 
 
@@ -724,7 +724,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallAddressDynamic() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/address-dynamic', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/address-dynamic', NULL, NULL, NULL);
 	}
 
 
@@ -736,7 +736,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallAddress6Dynamic() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/address6-dynamic', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/address6-dynamic', NULL, NULL, NULL);
 	}
 
 
@@ -749,7 +749,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFirewallSdnConnectorFilters(string $connector) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/firewall/sdn-connector-filters', NULL, ['connector'=>$connector], NULL);
+		return $this->curlRequest('GET', '/monitor/firewall/sdn-connector-filters', NULL, ['connector'=>$connector], NULL);
 	}
 
 
@@ -761,7 +761,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFortiguardRedirectPortal() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/fortiguard/redirect-portal', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/fortiguard/redirect-portal', NULL, NULL, NULL);
 	}
 
 
@@ -777,7 +777,7 @@ class Monitor extends FortiOSAPI
 		string $service_type = null,
 		string $timeslot = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/fortiguard/service-communication-stats', NULL, ['service_type'=>$service_type, 'timeslot'=>$timeslot], NULL);
+		return $this->curlRequest('GET', '/monitor/fortiguard/service-communication-stats', NULL, ['service_type'=>$service_type, 'timeslot'=>$timeslot], NULL);
 	}
 
 
@@ -811,7 +811,7 @@ class Monitor extends FortiOSAPI
 		int $end = null,
 		string $ip_version = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/fortiview/statistics', NULL, ['realtime'=>$realtime, 'filter'=>$filter, 'sessionid'=>$sessionid, 'count'=>$count, 'device'=>$device, 'report_by'=>$report_by, 'sort_by'=>$sort_by, 'chart_only'=>$chart_only, 'start'=>$start, 'end'=>$end, 'ip_version'=>$ip_version], NULL);
+		return $this->curlRequest('GET', '/monitor/fortiview/statistics', NULL, ['realtime'=>$realtime, 'filter'=>$filter, 'sessionid'=>$sessionid, 'count'=>$count, 'device'=>$device, 'report_by'=>$report_by, 'sort_by'=>$sort_by, 'chart_only'=>$chart_only, 'start'=>$start, 'end'=>$end, 'ip_version'=>$ip_version], NULL);
 	}
 
 
@@ -824,7 +824,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addFortiviewSessionCancel(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/fortiview/session/cancel', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/fortiview/session/cancel', NULL, NULL, $body);
 	}
 
 
@@ -837,7 +837,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFortiviewSandboxFileDetails(string $checksum) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/fortiview/sandbox-file-details', NULL, ['checksum'=>$checksum], NULL);
+		return $this->curlRequest('GET', '/monitor/fortiview/sandbox-file-details', NULL, ['checksum'=>$checksum], NULL);
 	}
 
 
@@ -849,7 +849,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllFortiviewSandboxFileList() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/fortiview/sandbox-file-list', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/fortiview/sandbox-file-list', NULL, NULL, NULL);
 	}
 
 
@@ -862,7 +862,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addGeoipGeoipQuerySelect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/geoip/geoip-query/select', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/geoip/geoip-query/select', NULL, NULL, $body);
 	}
 
 
@@ -874,7 +874,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllIpsRateBased() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/ips/rate-based', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/ips/rate-based', NULL, NULL, NULL);
 	}
 
 
@@ -886,7 +886,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllIpsMetadata() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/ips/metadata', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/ips/metadata', NULL, NULL, NULL);
 	}
 
 
@@ -898,7 +898,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllIpsAnomaly() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/ips/anomaly', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/ips/anomaly', NULL, NULL, NULL);
 	}
 
 
@@ -911,7 +911,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllIpsExceedScanRange(array $ids) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/ips/exceed-scan-range', NULL, ['ids'=>$ids], NULL);
+		return $this->curlRequest('GET', '/monitor/ips/exceed-scan-range', NULL, ['ids'=>$ids], NULL);
 	}
 
 
@@ -923,7 +923,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLicenseStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/license/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/license/status', NULL, NULL, NULL);
 	}
 
 
@@ -935,7 +935,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLicenseFortianalyzerStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/license/fortianalyzer-status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/license/fortianalyzer-status', NULL, NULL, NULL);
 	}
 
 
@@ -948,7 +948,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addLicenseDatabaseUpgrade(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/license/database/upgrade', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/license/database/upgrade', NULL, NULL, $body);
 	}
 
 
@@ -961,7 +961,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLicenseForticareResellers(int $country_code = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/license/forticare-resellers', NULL, ['country_code'=>$country_code], NULL);
+		return $this->curlRequest('GET', '/monitor/license/forticare-resellers', NULL, ['country_code'=>$country_code], NULL);
 	}
 
 
@@ -973,7 +973,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLicenseForticareOrgList() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/license/forticare-org-list', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/license/forticare-org-list', NULL, NULL, NULL);
 	}
 
 
@@ -985,7 +985,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogCurrentDiskUsage() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/current-disk-usage', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/log/current-disk-usage', NULL, NULL, NULL);
 	}
 
 
@@ -997,7 +997,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogDeviceState() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/device/state', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/log/device/state', NULL, NULL, NULL);
 	}
 
 
@@ -1009,7 +1009,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogForticloud() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/forticloud', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/log/forticloud', NULL, NULL, NULL);
 	}
 
 
@@ -1021,7 +1021,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogForticloudReportList() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/forticloud-report-list', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/log/forticloud-report-list', NULL, NULL, NULL);
 	}
 
 
@@ -1033,7 +1033,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogLocalReportList() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/local-report-list', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/log/local-report-list', NULL, NULL, NULL);
 	}
 
 
@@ -1046,7 +1046,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogLocalReportDownload(string $mkey) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/local-report/download', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/log/local-report/download', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -1059,7 +1059,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addLogLocalReportDelete(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/log/local-report/delete', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/log/local-report/delete', NULL, NULL, $body);
 	}
 
 
@@ -1074,7 +1074,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogFortianalyzer(string $scope = null, string $server = null, string $srcip = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/fortianalyzer', NULL, ['scope'=>$scope, 'server'=>$server, 'srcip'=>$srcip], NULL);
+		return $this->curlRequest('GET', '/monitor/log/fortianalyzer', NULL, ['scope'=>$scope, 'server'=>$server, 'srcip'=>$srcip], NULL);
 	}
 
 
@@ -1087,7 +1087,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogFortianalyzerQueue(string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/fortianalyzer-queue', NULL, ['scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/log/fortianalyzer-queue', NULL, ['scope'=>$scope], NULL);
 	}
 
 
@@ -1099,7 +1099,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogHourlyDiskUsage() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/hourly-disk-usage', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/log/hourly-disk-usage', NULL, NULL, NULL);
 	}
 
 
@@ -1112,7 +1112,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogHistoricDailyRemoteLogs(string $server) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/historic-daily-remote-logs', NULL, ['server'=>$server], NULL);
+		return $this->curlRequest('GET', '/monitor/log/historic-daily-remote-logs', NULL, ['server'=>$server], NULL);
 	}
 
 
@@ -1125,7 +1125,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogStats(string $dev = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/stats', NULL, ['dev'=>$dev], NULL);
+		return $this->curlRequest('GET', '/monitor/log/stats', NULL, ['dev'=>$dev], NULL);
 	}
 
 
@@ -1137,7 +1137,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addLogStatsReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/log/stats/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/log/stats/reset', NULL, NULL, NULL);
 	}
 
 
@@ -1151,7 +1151,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogForticloudReportDownload(int $mkey, int $inline = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/forticloud-report/download', NULL, ['mkey'=>$mkey, 'inline'=>$inline], NULL);
+		return $this->curlRequest('GET', '/monitor/log/forticloud-report/download', NULL, ['mkey'=>$mkey, 'inline'=>$inline], NULL);
 	}
 
 
@@ -1166,7 +1166,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogIpsArchiveDownload(int $mkey, int $pcap_no = null, int $pcap_category = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/ips-archive/download', NULL, ['mkey'=>$mkey, 'pcap_no'=>$pcap_no, 'pcap_category'=>$pcap_category], NULL);
+		return $this->curlRequest('GET', '/monitor/log/ips-archive/download', NULL, ['mkey'=>$mkey, 'pcap_no'=>$pcap_no, 'pcap_category'=>$pcap_category], NULL);
 	}
 
 
@@ -1181,7 +1181,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogPolicyArchiveDownload(int $mkey, string $srcip, string $dstip) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/policy-archive/download', NULL, ['mkey'=>$mkey, 'srcip'=>$srcip, 'dstip'=>$dstip], NULL);
+		return $this->curlRequest('GET', '/monitor/log/policy-archive/download', NULL, ['mkey'=>$mkey, 'srcip'=>$srcip, 'dstip'=>$dstip], NULL);
 	}
 
 
@@ -1194,7 +1194,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogAvArchiveDownload(string $mkey) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/av-archive/download', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/log/av-archive/download', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -1206,7 +1206,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllLogEvent() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/log/event', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/log/event', NULL, NULL, NULL);
 	}
 
 
@@ -1218,7 +1218,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkArp() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/arp', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/network/arp', NULL, NULL, NULL);
 	}
 
 
@@ -1230,7 +1230,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkLldpNeighbors() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/lldp/neighbors', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/network/lldp/neighbors', NULL, NULL, NULL);
 	}
 
 
@@ -1243,7 +1243,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkLldpPorts(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/lldp/ports', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/network/lldp/ports', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -1255,7 +1255,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkDnsLatency() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/dns/latency', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/network/dns/latency', NULL, NULL, NULL);
 	}
 
 
@@ -1267,7 +1267,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkFortiguardLiveServicesLatency() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/fortiguard/live-services-latency', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/network/fortiguard/live-services-latency', NULL, NULL, NULL);
 	}
 
 
@@ -1279,7 +1279,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkDdnsServers() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/ddns/servers', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/network/ddns/servers', NULL, NULL, NULL);
 	}
 
 
@@ -1292,7 +1292,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkDdnsLookup(string $domain) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/ddns/lookup', NULL, ['domain'=>$domain], NULL);
+		return $this->curlRequest('GET', '/monitor/network/ddns/lookup', NULL, ['domain'=>$domain], NULL);
 	}
 
 
@@ -1305,7 +1305,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNetworkReverseIpLookup(string $ip) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/network/reverse-ip-lookup', NULL, ['ip'=>$ip], NULL);
+		return $this->curlRequest('GET', '/monitor/network/reverse-ip-lookup', NULL, ['ip'=>$ip], NULL);
 	}
 
 
@@ -1318,7 +1318,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNsxServiceStatus(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/nsx/service/status', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/nsx/service/status', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -1331,7 +1331,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addNsxServiceAdd(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/nsx/service/add', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/nsx/service/add', NULL, NULL, $body);
 	}
 
 
@@ -1344,7 +1344,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllNsxInstance(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/nsx/instance', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/nsx/instance', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -1357,7 +1357,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticloudLogin(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticloud/login', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticloud/login', NULL, NULL, $body);
 	}
 
 
@@ -1370,7 +1370,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticloudCreate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticloud/create', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticloud/create', NULL, NULL, $body);
 	}
 
 
@@ -1382,7 +1382,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticloudLogout() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticloud/logout', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/registration/forticloud/logout', NULL, NULL, NULL);
 	}
 
 
@@ -1394,7 +1394,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllRegistrationForticloudDisclaimer() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/registration/forticloud/disclaimer', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/registration/forticloud/disclaimer', NULL, NULL, NULL);
 	}
 
 
@@ -1406,7 +1406,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllRegistrationForticloudDomains() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/registration/forticloud/domains', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/registration/forticloud/domains', NULL, NULL, NULL);
 	}
 
 
@@ -1419,7 +1419,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticareLogin(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticare/login', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticare/login', NULL, NULL, $body);
 	}
 
 
@@ -1432,7 +1432,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticareTransfer(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticare/transfer', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticare/transfer', NULL, NULL, $body);
 	}
 
 
@@ -1445,7 +1445,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticareCreate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticare/create', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticare/create', NULL, NULL, $body);
 	}
 
 
@@ -1458,7 +1458,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticareAddLicense(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticare/add-license', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticare/add-license', NULL, NULL, $body);
 	}
 
 
@@ -1471,7 +1471,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticloudRegisterDevice(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticloud/register-device', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticloud/register-device', NULL, NULL, $body);
 	}
 
 
@@ -1485,7 +1485,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllRegistrationForticloudDeviceStatus(array $serials, bool $update_cache = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/registration/forticloud/device-status', NULL, ['serials'=>$serials, 'update_cache'=>$update_cache], NULL);
+		return $this->curlRequest('GET', '/monitor/registration/forticloud/device-status', NULL, ['serials'=>$serials, 'update_cache'=>$update_cache], NULL);
 	}
 
 
@@ -1498,7 +1498,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationVdomAddLicense(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/vdom/add-license', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/vdom/add-license', NULL, NULL, $body);
 	}
 
 
@@ -1511,7 +1511,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addRegistrationForticloudMigrate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/registration/forticloud/migrate', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/registration/forticloud/migrate', NULL, NULL, $body);
 	}
 
 
@@ -1535,7 +1535,7 @@ class Monitor extends FortiOSAPI
 		string $type = null,
 		string $interface = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/router/ipv4', NULL, ['start'=>$start, 'count'=>$count, 'ip_mask'=>$ip_mask, 'gateway'=>$gateway, 'type'=>$type, 'interface'=>$interface], NULL);
+		return $this->curlRequest('GET', '/monitor/router/ipv4', NULL, ['start'=>$start, 'count'=>$count, 'ip_mask'=>$ip_mask, 'gateway'=>$gateway, 'type'=>$type, 'interface'=>$interface], NULL);
 	}
 
 
@@ -1559,7 +1559,7 @@ class Monitor extends FortiOSAPI
 		string $type = null,
 		string $interface = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/router/ipv6', NULL, ['start'=>$start, 'count'=>$count, 'ip_mask'=>$ip_mask, 'gateway'=>$gateway, 'type'=>$type, 'interface'=>$interface], NULL);
+		return $this->curlRequest('GET', '/monitor/router/ipv6', NULL, ['start'=>$start, 'count'=>$count, 'ip_mask'=>$ip_mask, 'gateway'=>$gateway, 'type'=>$type, 'interface'=>$interface], NULL);
 	}
 
 
@@ -1581,7 +1581,7 @@ class Monitor extends FortiOSAPI
 		string $type = null,
 		string $interface = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/router/statistics', NULL, ['ip_version'=>$ip_version, 'ip_mask'=>$ip_mask, 'gateway'=>$gateway, 'type'=>$type, 'interface'=>$interface], NULL);
+		return $this->curlRequest('GET', '/monitor/router/statistics', NULL, ['ip_version'=>$ip_version, 'ip_mask'=>$ip_mask, 'gateway'=>$gateway, 'type'=>$type, 'interface'=>$interface], NULL);
 	}
 
 
@@ -1595,7 +1595,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllRouterLookup(bool $ipv6 = null, string $destination) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/router/lookup', NULL, ['ipv6'=>$ipv6, 'destination'=>$destination], NULL);
+		return $this->curlRequest('GET', '/monitor/router/lookup', NULL, ['ipv6'=>$ipv6, 'destination'=>$destination], NULL);
 	}
 
 
@@ -1619,7 +1619,7 @@ class Monitor extends FortiOSAPI
 		string $interface_name = null,
 		int $protocol_number = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/router/lookup-policy', NULL, ['ipv6'=>$ipv6, 'destination'=>$destination, 'source'=>$source, 'destination_port'=>$destination_port, 'interface_name'=>$interface_name, 'protocol_number'=>$protocol_number], NULL);
+		return $this->curlRequest('GET', '/monitor/router/lookup-policy', NULL, ['ipv6'=>$ipv6, 'destination'=>$destination, 'source'=>$source, 'destination_port'=>$destination_port, 'interface_name'=>$interface_name, 'protocol_number'=>$protocol_number], NULL);
 	}
 
 
@@ -1634,7 +1634,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllRouterPolicy(int $start = null, int $count = null, bool $count_only = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/router/policy', NULL, ['start'=>$start, 'count'=>$count, 'count_only'=>$count_only], NULL);
+		return $this->curlRequest('GET', '/monitor/router/policy', NULL, ['start'=>$start, 'count'=>$count, 'count_only'=>$count_only], NULL);
 	}
 
 
@@ -1649,7 +1649,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllRouterPolicy6(int $start = null, int $count = null, bool $count_only = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/router/policy6', NULL, ['start'=>$start, 'count'=>$count, 'count_only'=>$count_only], NULL);
+		return $this->curlRequest('GET', '/monitor/router/policy6', NULL, ['start'=>$start, 'count'=>$count, 'count_only'=>$count_only], NULL);
 	}
 
 
@@ -1677,7 +1677,7 @@ class Monitor extends FortiOSAPI
 		bool $igmp_snooping_group = null,
 		bool $transceiver = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/switch-controller/managed-switch', NULL, ['mkey'=>$mkey, 'fsw_id'=>$fsw_id, 'poe'=>$poe, 'port_stats'=>$port_stats, 'qos_stats'=>$qos_stats, 'stp_status'=>$stp_status, 'igmp_snooping_group'=>$igmp_snooping_group, 'transceiver'=>$transceiver], NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/managed-switch', NULL, ['mkey'=>$mkey, 'fsw_id'=>$fsw_id, 'poe'=>$poe, 'port_stats'=>$port_stats, 'qos_stats'=>$qos_stats, 'stp_status'=>$stp_status, 'igmp_snooping_group'=>$igmp_snooping_group, 'transceiver'=>$transceiver], NULL);
 	}
 
 
@@ -1690,7 +1690,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSwitchControllerManagedSwitchUpdate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/switch-controller/managed-switch/update', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/switch-controller/managed-switch/update', NULL, NULL, $body);
 	}
 
 
@@ -1703,7 +1703,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSwitchControllerManagedSwitchRestart(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/switch-controller/managed-switch/restart', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/switch-controller/managed-switch/restart', NULL, NULL, $body);
 	}
 
 
@@ -1716,7 +1716,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSwitchControllerManagedSwitchPoeReset(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/switch-controller/managed-switch/poe-reset', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/switch-controller/managed-switch/poe-reset', NULL, NULL, $body);
 	}
 
 
@@ -1729,7 +1729,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerManagedSwitchFaceplateXml(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/managed-switch/faceplate-xml', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/managed-switch/faceplate-xml', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -1742,7 +1742,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSwitchControllerManagedSwitchFactoryReset(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/switch-controller/managed-switch/factory-reset', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/switch-controller/managed-switch/factory-reset', NULL, NULL, $body);
 	}
 
 
@@ -1754,7 +1754,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerManagedSwitchDhcpSnooping() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/managed-switch/dhcp-snooping', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/managed-switch/dhcp-snooping', NULL, NULL, NULL);
 	}
 
 
@@ -1766,7 +1766,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerManagedSwitchTransceivers() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/managed-switch/transceivers', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/managed-switch/transceivers', NULL, NULL, NULL);
 	}
 
 
@@ -1779,7 +1779,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerManagedSwitchHealth(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/managed-switch/health', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/managed-switch/health', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -1793,7 +1793,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerManagedSwitchCableStatus(string $mkey, string $port) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/managed-switch/cable-status', NULL, ['mkey'=>$mkey, 'port'=>$port], NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/managed-switch/cable-status', NULL, ['mkey'=>$mkey, 'port'=>$port], NULL);
 	}
 
 
@@ -1807,7 +1807,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerFswFirmware(string $mkey = null, string $timeout = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/fsw-firmware', NULL, ['mkey'=>$mkey, 'timeout'=>$timeout], NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/fsw-firmware', NULL, ['mkey'=>$mkey, 'timeout'=>$timeout], NULL);
 	}
 
 
@@ -1820,7 +1820,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSwitchControllerFswFirmwareDownload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/switch-controller/fsw-firmware/download', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/switch-controller/fsw-firmware/download', NULL, NULL, $body);
 	}
 
 
@@ -1833,7 +1833,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSwitchControllerFswFirmwarePush(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/switch-controller/fsw-firmware/push', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/switch-controller/fsw-firmware/push', NULL, NULL, $body);
 	}
 
 
@@ -1846,7 +1846,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSwitchControllerFswFirmwareUpload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/switch-controller/fsw-firmware/upload', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/switch-controller/fsw-firmware/upload', NULL, NULL, $body);
 	}
 
 
@@ -1858,7 +1858,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerDetectedDevice() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/detected-device', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/detected-device', NULL, NULL, NULL);
 	}
 
 
@@ -1871,7 +1871,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerValidateSwitchPrefix(string $prefix = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/validate-switch-prefix', NULL, ['prefix'=>$prefix], NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/validate-switch-prefix', NULL, ['prefix'=>$prefix], NULL);
 	}
 
 
@@ -1884,7 +1884,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSwitchControllerMclagIclEligiblePeer(string $fortilink) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/switch-controller/mclag-icl/eligible-peer', NULL, ['fortilink'=>$fortilink], NULL);
+		return $this->curlRequest('GET', '/monitor/switch-controller/mclag-icl/eligible-peer', NULL, ['fortilink'=>$fortilink], NULL);
 	}
 
 
@@ -1897,7 +1897,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemAdminChangeVdomMode(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/admin/change-vdom-mode', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/admin/change-vdom-mode', NULL, NULL, $body);
 	}
 
 
@@ -1909,7 +1909,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemConfigScript() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/config-script', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/config-script', NULL, NULL, NULL);
 	}
 
 
@@ -1922,7 +1922,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigScriptDelete(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config-script/delete', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/config-script/delete', NULL, NULL, $body);
 	}
 
 
@@ -1935,7 +1935,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigScriptRun(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config-script/run', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/config-script/run', NULL, NULL, $body);
 	}
 
 
@@ -1948,7 +1948,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigScriptUpload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config-script/upload', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/config-script/upload', NULL, NULL, $body);
 	}
 
 
@@ -1960,7 +1960,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemConfigSyncStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/config-sync/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/config-sync/status', NULL, NULL, NULL);
 	}
 
 
@@ -1973,7 +1973,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemApiUserGenerateKey(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/api-user/generate-key', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/api-user/generate-key', NULL, NULL, $body);
 	}
 
 
@@ -1985,7 +1985,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemConfigRevision() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/config-revision', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/config-revision', NULL, NULL, NULL);
 	}
 
 
@@ -1998,7 +1998,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigRevisionUpdateComments(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config-revision/update-comments', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/config-revision/update-comments', NULL, NULL, $body);
 	}
 
 
@@ -2011,7 +2011,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigRevisionDelete(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config-revision/delete', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/config-revision/delete', NULL, NULL, $body);
 	}
 
 
@@ -2024,7 +2024,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemConfigRevisionFile(int $config_id = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/config-revision/file', NULL, ['config_id'=>$config_id], NULL);
+		return $this->curlRequest('GET', '/monitor/system/config-revision/file', NULL, ['config_id'=>$config_id], NULL);
 	}
 
 
@@ -2037,7 +2037,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemConfigRevisionInfo(int $config_id = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/config-revision/info', NULL, ['config_id'=>$config_id], NULL);
+		return $this->curlRequest('GET', '/monitor/system/config-revision/info', NULL, ['config_id'=>$config_id], NULL);
 	}
 
 
@@ -2050,7 +2050,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigRevisionSave(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config-revision/save', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/config-revision/save', NULL, NULL, $body);
 	}
 
 
@@ -2062,7 +2062,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemCurrentAdmins() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/current-admins', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/current-admins', NULL, NULL, NULL);
 	}
 
 
@@ -2075,7 +2075,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemInterfaceConnectedAdminsInfo(string $interface) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/interface-connected-admins-info', NULL, ['interface'=>$interface], NULL);
+		return $this->curlRequest('GET', '/monitor/system/interface-connected-admins-info', NULL, ['interface'=>$interface], NULL);
 	}
 
 
@@ -2088,7 +2088,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemDisconnectAdminsSelect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/disconnect-admins/select', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/disconnect-admins/select', NULL, NULL, $body);
 	}
 
 
@@ -2101,7 +2101,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemTimeSet(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/time/set', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/time/set', NULL, NULL, $body);
 	}
 
 
@@ -2113,7 +2113,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemTime() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/time', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/time', NULL, NULL, NULL);
 	}
 
 
@@ -2126,7 +2126,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemVdomLink(string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/vdom-link', NULL, ['scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/vdom-link', NULL, ['scope'=>$scope], NULL);
 	}
 
 
@@ -2139,7 +2139,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemOsReboot(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/os/reboot', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/os/reboot', NULL, NULL, $body);
 	}
 
 
@@ -2152,7 +2152,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemOsShutdown(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/os/shutdown', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/os/shutdown', NULL, NULL, $body);
 	}
 
 
@@ -2164,7 +2164,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemGlobalResources() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/global-resources', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/global-resources', NULL, NULL, NULL);
 	}
 
 
@@ -2176,7 +2176,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemVdomResource() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/vdom-resource', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/vdom-resource', NULL, NULL, NULL);
 	}
 
 
@@ -2191,7 +2191,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemDhcp(string $scope = null, bool $ipv6 = null, string $interface = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/dhcp', NULL, ['scope'=>$scope, 'ipv6'=>$ipv6, 'interface'=>$interface], NULL);
+		return $this->curlRequest('GET', '/monitor/system/dhcp', NULL, ['scope'=>$scope, 'ipv6'=>$ipv6, 'interface'=>$interface], NULL);
 	}
 
 
@@ -2204,7 +2204,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemDhcpRevoke(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/dhcp/revoke', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/dhcp/revoke', NULL, NULL, $body);
 	}
 
 
@@ -2217,7 +2217,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemDhcp6Revoke(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/dhcp6/revoke', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/dhcp6/revoke', NULL, NULL, $body);
 	}
 
 
@@ -2229,7 +2229,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemNtpStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/ntp/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/ntp/status', NULL, NULL, NULL);
 	}
 
 
@@ -2241,7 +2241,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemFirmware() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/firmware', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/firmware', NULL, NULL, NULL);
 	}
 
 
@@ -2254,7 +2254,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemFirmwareUpgrade(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/firmware/upgrade', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/firmware/upgrade', NULL, NULL, $body);
 	}
 
 
@@ -2266,7 +2266,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemFirmwareUpgradePaths() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/firmware/upgrade-paths', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/firmware/upgrade-paths', NULL, NULL, NULL);
 	}
 
 
@@ -2278,7 +2278,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemFsckStart() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/fsck/start', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/fsck/start', NULL, NULL, NULL);
 	}
 
 
@@ -2290,7 +2290,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemStorage() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/storage', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/storage', NULL, NULL, NULL);
 	}
 
 
@@ -2303,7 +2303,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemChangePasswordSelect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/change-password/select', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/change-password/select', NULL, NULL, $body);
 	}
 
 
@@ -2316,7 +2316,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemPasswordPolicyConformSelect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/password-policy-conform/select', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/password-policy-conform/select', NULL, NULL, $body);
 	}
 
 
@@ -2329,7 +2329,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemCsf(string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/csf', NULL, ['scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/csf', NULL, ['scope'=>$scope], NULL);
 	}
 
 
@@ -2341,7 +2341,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemCsfPendingAuthorizations() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/csf/pending-authorizations', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/csf/pending-authorizations', NULL, NULL, NULL);
 	}
 
 
@@ -2354,7 +2354,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemCsfRegisterAppliance(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/csf/register-appliance', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/csf/register-appliance', NULL, NULL, $body);
 	}
 
 
@@ -2366,7 +2366,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemModem() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/modem', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/modem', NULL, NULL, NULL);
 	}
 
 
@@ -2378,7 +2378,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemModemReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/modem/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/modem/reset', NULL, NULL, NULL);
 	}
 
 
@@ -2390,7 +2390,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemModemConnect() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/modem/connect', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/modem/connect', NULL, NULL, NULL);
 	}
 
 
@@ -2402,7 +2402,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemModemDisconnect() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/modem/disconnect', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/modem/disconnect', NULL, NULL, NULL);
 	}
 
 
@@ -2414,7 +2414,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemModemUpdate() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/modem/update', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/modem/update', NULL, NULL, NULL);
 	}
 
 
@@ -2426,7 +2426,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystem3gModem() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/3g-modem', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/3g-modem', NULL, NULL, NULL);
 	}
 
 
@@ -2444,7 +2444,7 @@ class Monitor extends FortiOSAPI
 		string $resource = null,
 		string $interval = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/system/resource/usage', NULL, ['scope'=>$scope, 'resource'=>$resource, 'interval'=>$interval], NULL);
+		return $this->curlRequest('GET', '/monitor/system/resource/usage', NULL, ['scope'=>$scope, 'resource'=>$resource, 'interval'=>$interval], NULL);
 	}
 
 
@@ -2456,7 +2456,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSniffer() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sniffer', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/sniffer', NULL, NULL, NULL);
 	}
 
 
@@ -2469,7 +2469,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemSnifferRestart(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/sniffer/restart', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/sniffer/restart', NULL, NULL, $body);
 	}
 
 
@@ -2482,7 +2482,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemSnifferStart(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/sniffer/start', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/sniffer/start', NULL, NULL, $body);
 	}
 
 
@@ -2495,7 +2495,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemSnifferStop(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/sniffer/stop', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/sniffer/stop', NULL, NULL, $body);
 	}
 
 
@@ -2508,7 +2508,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemSnifferClear(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/sniffer/clear', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/sniffer/clear', NULL, NULL, $body);
 	}
 
 
@@ -2521,7 +2521,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSnifferDownload(int $mkey) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sniffer/download', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/system/sniffer/download', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -2534,7 +2534,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemAutomationStitchStats(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/automation-stitch/stats', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/system/automation-stitch/stats', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -2547,7 +2547,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemAutomationStitchTest(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/automation-stitch/test', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/automation-stitch/test', NULL, NULL, $body);
 	}
 
 
@@ -2560,7 +2560,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemAutomationStitchWebhook(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/automation-stitch/webhook', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/automation-stitch/webhook', NULL, NULL, $body);
 	}
 
 
@@ -2572,7 +2572,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemLogdiskFormat() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/logdisk/format', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/logdisk/format', NULL, NULL, NULL);
 	}
 
 
@@ -2592,7 +2592,7 @@ class Monitor extends FortiOSAPI
 		bool $include_aggregate = null,
 		string $scope = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/system/interface', NULL, ['interface_name'=>$interface_name, 'include_vlan'=>$include_vlan, 'include_aggregate'=>$include_aggregate, 'scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/interface', NULL, ['interface_name'=>$interface_name, 'include_vlan'=>$include_vlan, 'include_aggregate'=>$include_aggregate, 'scope'=>$scope], NULL);
 	}
 
 
@@ -2606,7 +2606,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemInterfacePoe(string $mkey = null, string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/interface/poe', NULL, ['mkey'=>$mkey, 'scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/interface/poe', NULL, ['mkey'=>$mkey, 'scope'=>$scope], NULL);
 	}
 
 
@@ -2619,7 +2619,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemInterfaceDhcpStatus(string $mkey) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/interface/dhcp-status', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/system/interface/dhcp-status', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -2632,7 +2632,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemInterfaceDhcpRenew(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/interface/dhcp-renew', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/interface/dhcp-renew', NULL, NULL, $body);
 	}
 
 
@@ -2646,7 +2646,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemAvailableInterfaces(string $view_type = null, string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/available-interfaces', NULL, ['view_type'=>$view_type, 'scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/available-interfaces', NULL, ['view_type'=>$view_type, 'scope'=>$scope], NULL);
 	}
 
 
@@ -2658,7 +2658,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemAcquiredDns() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/acquired-dns', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/acquired-dns', NULL, NULL, NULL);
 	}
 
 
@@ -2673,7 +2673,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemResolveFqdn(bool $ipv6 = null, array $fqdn = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/resolve-fqdn', NULL, ['ipv6'=>$ipv6, 'fqdn'=>$fqdn], NULL);
+		return $this->curlRequest('GET', '/monitor/system/resolve-fqdn', NULL, ['ipv6'=>$ipv6, 'fqdn'=>$fqdn], NULL);
 	}
 
 
@@ -2685,7 +2685,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemNat46Ippools() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/nat46-ippools', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/nat46-ippools', NULL, NULL, NULL);
 	}
 
 
@@ -2698,7 +2698,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemInterfaceSpeedTestTrigger(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/interface/speed-test-trigger', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/interface/speed-test-trigger', NULL, NULL, $body);
 	}
 
 
@@ -2711,7 +2711,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemInterfaceSpeedTestStatus(int $id) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/interface/speed-test-status', NULL, ['id'=>$id], NULL);
+		return $this->curlRequest('GET', '/monitor/system/interface/speed-test-status', NULL, ['id'=>$id], NULL);
 	}
 
 
@@ -2723,7 +2723,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemUsbLog() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/usb-log', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/usb-log', NULL, NULL, NULL);
 	}
 
 
@@ -2735,7 +2735,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemUsbLogStart() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/usb-log/start', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/usb-log/start', NULL, NULL, NULL);
 	}
 
 
@@ -2747,7 +2747,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemUsbLogStop() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/usb-log/stop', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/usb-log/stop', NULL, NULL, NULL);
 	}
 
 
@@ -2759,7 +2759,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemUsbDeviceEject() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/usb-device/eject', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/usb-device/eject', NULL, NULL, NULL);
 	}
 
 
@@ -2773,7 +2773,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemIpconf(array $devs, string $ipaddr) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/ipconf', NULL, ['devs'=>$devs, 'ipaddr'=>$ipaddr], NULL);
+		return $this->curlRequest('GET', '/monitor/system/ipconf', NULL, ['devs'=>$devs, 'ipaddr'=>$ipaddr], NULL);
 	}
 
 
@@ -2785,7 +2785,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemFortiguardUpdate() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/fortiguard/update', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/fortiguard/update', NULL, NULL, NULL);
 	}
 
 
@@ -2797,7 +2797,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemFortiguardClearStatistics() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/fortiguard/clear-statistics', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/fortiguard/clear-statistics', NULL, NULL, NULL);
 	}
 
 
@@ -2810,7 +2810,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemFortiguardTestAvailability(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/fortiguard/test-availability', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/fortiguard/test-availability', NULL, NULL, $body);
 	}
 
 
@@ -2822,7 +2822,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemFortiguardServerInfo() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/fortiguard/server-info', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/fortiguard/server-info', NULL, NULL, NULL);
 	}
 
 
@@ -2834,7 +2834,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemFortimanagerStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/fortimanager/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/fortimanager/status', NULL, NULL, NULL);
 	}
 
 
@@ -2847,7 +2847,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemFortimanagerConfig(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/fortimanager/config', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/fortimanager/config', NULL, NULL, $body);
 	}
 
 
@@ -2859,7 +2859,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemFortimanagerBackupSummary() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/fortimanager/backup-summary', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/fortimanager/backup-summary', NULL, NULL, NULL);
 	}
 
 
@@ -2872,7 +2872,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemFortimanagerBackupAction(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/fortimanager/backup-action', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/fortimanager/backup-action', NULL, NULL, $body);
 	}
 
 
@@ -2886,7 +2886,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemFortimanagerBackupDetails(string $mkey, string $datasource) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/fortimanager/backup-details', NULL, ['mkey'=>$mkey, 'datasource'=>$datasource], NULL);
+		return $this->curlRequest('GET', '/monitor/system/fortimanager/backup-details', NULL, ['mkey'=>$mkey, 'datasource'=>$datasource], NULL);
 	}
 
 
@@ -2906,7 +2906,7 @@ class Monitor extends FortiOSAPI
 		bool $with_ca = null,
 		bool $with_crl = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/system/available-certificates', NULL, ['scope'=>$scope, 'with_remote'=>$with_remote, 'with_ca'=>$with_ca, 'with_crl'=>$with_crl], NULL);
+		return $this->curlRequest('GET', '/monitor/system/available-certificates', NULL, ['scope'=>$scope, 'with_remote'=>$with_remote, 'with_ca'=>$with_ca, 'with_crl'=>$with_crl], NULL);
 	}
 
 
@@ -2919,7 +2919,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemTrustedCertAuthorities(string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/trusted-cert-authorities', NULL, ['scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/trusted-cert-authorities', NULL, ['scope'=>$scope], NULL);
 	}
 
 
@@ -2934,7 +2934,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemCertificateDownload(string $mkey, string $type, string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/certificate/download', NULL, ['mkey'=>$mkey, 'type'=>$type, 'scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/certificate/download', NULL, ['mkey'=>$mkey, 'type'=>$type, 'scope'=>$scope], NULL);
 	}
 
 
@@ -2947,7 +2947,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemCertificateReadInfo(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/certificate/read-info', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/certificate/read-info', NULL, NULL, $body);
 	}
 
 
@@ -2959,7 +2959,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemDebugDownload() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/debug/download', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/debug/download', NULL, NULL, NULL);
 	}
 
 
@@ -2971,7 +2971,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemComLogDump() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/com-log/dump', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/com-log/dump', NULL, NULL, NULL);
 	}
 
 
@@ -2983,7 +2983,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemComLogUpdate() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/com-log/update', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/com-log/update', NULL, NULL, NULL);
 	}
 
 
@@ -2995,7 +2995,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemComLogDownload() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/com-log/download', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/com-log/download', NULL, NULL, NULL);
 	}
 
 
@@ -3007,7 +3007,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemConfigErrorLogDownload() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/config-error-log/download', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/config-error-log/download', NULL, NULL, NULL);
 	}
 
 
@@ -3019,7 +3019,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemBotnetStat() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/botnet/stat', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/botnet/stat', NULL, NULL, NULL);
 	}
 
 
@@ -3034,7 +3034,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemBotnet(int $start = null, int $count = null, bool $include_hit_only = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/botnet', NULL, ['start'=>$start, 'count'=>$count, 'include_hit_only'=>$include_hit_only], NULL);
+		return $this->curlRequest('GET', '/monitor/system/botnet', NULL, ['start'=>$start, 'count'=>$count, 'include_hit_only'=>$include_hit_only], NULL);
 	}
 
 
@@ -3048,7 +3048,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemBotnetDomains(int $start = null, int $count = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/botnet-domains', NULL, ['start'=>$start, 'count'=>$count], NULL);
+		return $this->curlRequest('GET', '/monitor/system/botnet-domains', NULL, ['start'=>$start, 'count'=>$count], NULL);
 	}
 
 
@@ -3060,7 +3060,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemBotnetDomainsStat() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/botnet-domains/stat', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/botnet-domains/stat', NULL, NULL, NULL);
 	}
 
 
@@ -3072,7 +3072,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemBotnetDomainsHits() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/botnet-domains/hits', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/botnet-domains/hits', NULL, NULL, NULL);
 	}
 
 
@@ -3084,7 +3084,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemHaStatistics() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/ha-statistics', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/ha-statistics', NULL, NULL, NULL);
 	}
 
 
@@ -3096,7 +3096,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemHaHistory() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/ha-history', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/ha-history', NULL, NULL, NULL);
 	}
 
 
@@ -3108,7 +3108,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemHaChecksums() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/ha-checksums', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/ha-checksums', NULL, NULL, NULL);
 	}
 
 
@@ -3122,7 +3122,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemHaPeer(string $serial_no = null, int $vcluster_id = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/ha-peer', NULL, ['serial_no'=>$serial_no, 'vcluster_id'=>$vcluster_id], NULL);
+		return $this->curlRequest('GET', '/monitor/system/ha-peer', NULL, ['serial_no'=>$serial_no, 'vcluster_id'=>$vcluster_id], NULL);
 	}
 
 
@@ -3135,7 +3135,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemHaPeerUpdate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/ha-peer/update', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/ha-peer/update', NULL, NULL, $body);
 	}
 
 
@@ -3148,7 +3148,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemHaPeerDisconnect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/ha-peer/disconnect', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/ha-peer/disconnect', NULL, NULL, $body);
 	}
 
 
@@ -3161,7 +3161,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemLinkMonitor(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/link-monitor', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/system/link-monitor', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -3174,7 +3174,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigRestore(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config/restore', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/config/restore', NULL, NULL, $body);
 	}
 
 
@@ -3196,7 +3196,7 @@ class Monitor extends FortiOSAPI
 		string $scope,
 		string $vdom = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/system/config/backup', NULL, ['destination'=>$destination, 'usb_filename'=>$usb_filename, 'password'=>$password, 'scope'=>$scope, 'vdom'=>$vdom], NULL);
+		return $this->curlRequest('GET', '/monitor/system/config/backup', NULL, ['destination'=>$destination, 'usb_filename'=>$usb_filename, 'password'=>$password, 'scope'=>$scope, 'vdom'=>$vdom], NULL);
 	}
 
 
@@ -3208,7 +3208,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemConfigSave() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/config/save', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/system/config/save', NULL, NULL, NULL);
 	}
 
 
@@ -3220,7 +3220,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemConfigUsbFilelist() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/config/usb-filelist', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/config/usb-filelist', NULL, NULL, NULL);
 	}
 
 
@@ -3232,7 +3232,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemRunningProcesses() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/running-processes', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/running-processes', NULL, NULL, NULL);
 	}
 
 
@@ -3244,7 +3244,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSandboxCloudRegions() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sandbox/cloud-regions', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/sandbox/cloud-regions', NULL, NULL, NULL);
 	}
 
 
@@ -3256,7 +3256,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSandboxStats() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sandbox/stats', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/sandbox/stats', NULL, NULL, NULL);
 	}
 
 
@@ -3268,7 +3268,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSandboxStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sandbox/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/sandbox/status', NULL, NULL, NULL);
 	}
 
 
@@ -3281,7 +3281,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSandboxTestConnect(string $server) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sandbox/test-connect', NULL, ['server'=>$server], NULL);
+		return $this->curlRequest('GET', '/monitor/system/sandbox/test-connect', NULL, ['server'=>$server], NULL);
 	}
 
 
@@ -3303,7 +3303,7 @@ class Monitor extends FortiOSAPI
 		string $scope = null,
 		string $mkey
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/system/object/usage', NULL, ['q_path'=>$q_path, 'q_name'=>$q_name, 'qtypes'=>$qtypes, 'scope'=>$scope, 'mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/system/object/usage', NULL, ['q_path'=>$q_path, 'q_name'=>$q_name, 'qtypes'=>$qtypes, 'scope'=>$scope, 'mkey'=>$mkey], NULL);
 	}
 
 
@@ -3315,7 +3315,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/status', NULL, NULL, NULL);
 	}
 
 
@@ -3327,7 +3327,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemTimezone() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/timezone', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/timezone', NULL, NULL, NULL);
 	}
 
 
@@ -3340,7 +3340,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemInterfaceTransceivers(string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/interface/transceivers', NULL, ['scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/interface/transceivers', NULL, ['scope'=>$scope], NULL);
 	}
 
 
@@ -3352,7 +3352,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemVmInformation() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/vm-information', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/vm-information', NULL, NULL, NULL);
 	}
 
 
@@ -3365,7 +3365,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemVmlicenseUpload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/vmlicense/upload', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/vmlicense/upload', NULL, NULL, $body);
 	}
 
 
@@ -3377,7 +3377,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSensorInfo() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sensor-info', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/sensor-info', NULL, NULL, NULL);
 	}
 
 
@@ -3392,7 +3392,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSecurityRating(int $id = null, string $report_type = null, string $scope = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/security-rating', NULL, ['id'=>$id, 'report_type'=>$report_type, 'scope'=>$scope], NULL);
+		return $this->curlRequest('GET', '/monitor/system/security-rating', NULL, ['id'=>$id, 'report_type'=>$report_type, 'scope'=>$scope], NULL);
 	}
 
 
@@ -3404,7 +3404,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSecurityRatingSupportedReports() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/security-rating/supported-reports', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/system/security-rating/supported-reports', NULL, NULL, NULL);
 	}
 
 
@@ -3417,7 +3417,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSecurityRatingHistory(string $report_type = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/security-rating/history', NULL, ['report_type'=>$report_type], NULL);
+		return $this->curlRequest('GET', '/monitor/system/security-rating/history', NULL, ['report_type'=>$report_type], NULL);
 	}
 
 
@@ -3430,7 +3430,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemSecurityRatingTrigger(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/security-rating/trigger', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/security-rating/trigger', NULL, NULL, $body);
 	}
 
 
@@ -3448,7 +3448,7 @@ class Monitor extends FortiOSAPI
 		string $report_type = null,
 		bool $progress = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/system/security-rating/status', NULL, ['id'=>$id, 'report_type'=>$report_type, 'progress'=>$progress], NULL);
+		return $this->curlRequest('GET', '/monitor/system/security-rating/status', NULL, ['id'=>$id, 'report_type'=>$report_type, 'progress'=>$progress], NULL);
 	}
 
 
@@ -3461,7 +3461,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSecurityRatingLang(string $key = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/security-rating/lang', NULL, ['key'=>$key], NULL);
+		return $this->curlRequest('GET', '/monitor/system/security-rating/lang', NULL, ['key'=>$key], NULL);
 	}
 
 
@@ -3475,7 +3475,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemCheckPortAvailability(array $port_ranges, string $service = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/check-port-availability', NULL, ['port_ranges'=>$port_ranges, 'service'=>$service], NULL);
+		return $this->curlRequest('GET', '/monitor/system/check-port-availability', NULL, ['port_ranges'=>$port_ranges, 'service'=>$service], NULL);
 	}
 
 
@@ -3488,7 +3488,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSdnConnectorNsxSecurityTags(string $mkey = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sdn-connector/nsx-security-tags', NULL, ['mkey'=>$mkey], NULL);
+		return $this->curlRequest('GET', '/monitor/system/sdn-connector/nsx-security-tags', NULL, ['mkey'=>$mkey], NULL);
 	}
 
 
@@ -3502,7 +3502,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllSystemSdnConnectorStatus(string $mkey = null, string $type = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/system/sdn-connector/status', NULL, ['mkey'=>$mkey, 'type'=>$type], NULL);
+		return $this->curlRequest('GET', '/monitor/system/sdn-connector/status', NULL, ['mkey'=>$mkey, 'type'=>$type], NULL);
 	}
 
 
@@ -3515,7 +3515,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemSdnConnectorUpdate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/sdn-connector/update', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/sdn-connector/update', NULL, NULL, $body);
 	}
 
 
@@ -3528,7 +3528,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addSystemSdnConnectorValidateGcpKey(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/system/sdn-connector/validate-gcp-key', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/system/sdn-connector/validate-gcp-key', NULL, NULL, $body);
 	}
 
 
@@ -3548,7 +3548,7 @@ class Monitor extends FortiOSAPI
 		bool $ipv4 = null,
 		bool $ipv6 = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/user/firewall', NULL, ['start'=>$start, 'count'=>$count, 'ipv4'=>$ipv4, 'ipv6'=>$ipv6], NULL);
+		return $this->curlRequest('GET', '/monitor/user/firewall', NULL, ['start'=>$start, 'count'=>$count, 'ipv4'=>$ipv4, 'ipv6'=>$ipv6], NULL);
 	}
 
 
@@ -3561,7 +3561,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFirewallAuth(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/firewall/auth', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/firewall/auth', NULL, NULL, $body);
 	}
 
 
@@ -3574,7 +3574,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFirewallDeauth(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/firewall/deauth', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/firewall/deauth', NULL, NULL, $body);
 	}
 
 
@@ -3586,7 +3586,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserBanned() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/banned', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/user/banned', NULL, NULL, NULL);
 	}
 
 
@@ -3599,7 +3599,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserBannedClear_users(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/banned/clear_users', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/banned/clear_users', NULL, NULL, $body);
 	}
 
 
@@ -3612,7 +3612,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserBannedAdd_users(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/banned/add_users', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/banned/add_users', NULL, NULL, $body);
 	}
 
 
@@ -3624,7 +3624,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserBannedClear_all() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/banned/clear_all', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/user/banned/clear_all', NULL, NULL, NULL);
 	}
 
 
@@ -3636,7 +3636,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserFortitoken() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/fortitoken', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/user/fortitoken', NULL, NULL, NULL);
 	}
 
 
@@ -3649,7 +3649,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFortitokenActivate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fortitoken/activate', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/fortitoken/activate', NULL, NULL, $body);
 	}
 
 
@@ -3661,7 +3661,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserFortitokenCloudStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/fortitoken-cloud/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/user/fortitoken-cloud/status', NULL, NULL, NULL);
 	}
 
 
@@ -3674,7 +3674,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserCollectedEmail(bool $ipv6 = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/collected-email', NULL, ['ipv6'=>$ipv6], NULL);
+		return $this->curlRequest('GET', '/monitor/user/collected-email', NULL, ['ipv6'=>$ipv6], NULL);
 	}
 
 
@@ -3698,7 +3698,7 @@ class Monitor extends FortiOSAPI
 		bool $with_fortiap = null,
 		bool $with_user = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/user/detected-device', NULL, ['expand_child_macs'=>$expand_child_macs, 'with_dhcp'=>$with_dhcp, 'with_endpoint'=>$with_endpoint, 'with_fortilink'=>$with_fortilink, 'with_fortiap'=>$with_fortiap, 'with_user'=>$with_user], NULL);
+		return $this->curlRequest('GET', '/monitor/user/detected-device', NULL, ['expand_child_macs'=>$expand_child_macs, 'with_dhcp'=>$with_dhcp, 'with_endpoint'=>$with_endpoint, 'with_fortilink'=>$with_fortilink, 'with_fortiap'=>$with_fortiap, 'with_user'=>$with_user], NULL);
 	}
 
 
@@ -3713,7 +3713,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserDeviceQuery(int $start = null, int $number = null, string $filters = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/device/query', NULL, ['start'=>$start, 'number'=>$number, 'filters'=>$filters], NULL);
+		return $this->curlRequest('GET', '/monitor/user/device/query', NULL, ['start'=>$start, 'number'=>$number, 'filters'=>$filters], NULL);
 	}
 
 
@@ -3726,7 +3726,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserDeviceRemove(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/device/remove', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/device/remove', NULL, NULL, $body);
 	}
 
 
@@ -3740,7 +3740,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserDevice(bool $master_only = null, string $master_mac = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/device', NULL, ['master_only'=>$master_only, 'master_mac'=>$master_mac], NULL);
+		return $this->curlRequest('GET', '/monitor/user/device', NULL, ['master_only'=>$master_only, 'master_mac'=>$master_mac], NULL);
 	}
 
 
@@ -3753,7 +3753,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFortitokenRefresh(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fortitoken/refresh', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/fortitoken/refresh', NULL, NULL, $body);
 	}
 
 
@@ -3766,7 +3766,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFortitokenProvision(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fortitoken/provision', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/fortitoken/provision', NULL, NULL, $body);
 	}
 
 
@@ -3779,7 +3779,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFortitokenSendActivation(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fortitoken/send-activation', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/fortitoken/send-activation', NULL, NULL, $body);
 	}
 
 
@@ -3791,7 +3791,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFortitokenImportTrial() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fortitoken/import-trial', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/user/fortitoken/import-trial', NULL, NULL, NULL);
 	}
 
 
@@ -3804,7 +3804,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFortitokenImportMobile(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fortitoken/import-mobile', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/fortitoken/import-mobile', NULL, NULL, $body);
 	}
 
 
@@ -3817,7 +3817,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFortitokenImportSeed(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fortitoken/import-seed', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/fortitoken/import-seed', NULL, NULL, $body);
 	}
 
 
@@ -3829,7 +3829,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserFssoRefreshServer() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/fsso/refresh-server', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/user/fsso/refresh-server', NULL, NULL, NULL);
 	}
 
 
@@ -3843,7 +3843,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserFsso(string $mkey = null, string $type = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/fsso', NULL, ['mkey'=>$mkey, 'type'=>$type], NULL);
+		return $this->curlRequest('GET', '/monitor/user/fsso', NULL, ['mkey'=>$mkey, 'type'=>$type], NULL);
 	}
 
 
@@ -3856,7 +3856,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserGuestEmail(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/guest/email', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/guest/email', NULL, NULL, $body);
 	}
 
 
@@ -3869,7 +3869,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserGuestSms(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/guest/sms', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/guest/sms', NULL, NULL, $body);
 	}
 
 
@@ -3882,7 +3882,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserRadiusTestConnect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/radius/test-connect', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/radius/test-connect', NULL, NULL, $body);
 	}
 
 
@@ -3895,7 +3895,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUserTacacsPlusTest(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/user/tacacs-plus/test', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/user/tacacs-plus/test', NULL, NULL, $body);
 	}
 
 
@@ -3910,7 +3910,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserInfoQuery(int $start = null, int $number = null, array $filters) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/info/query', NULL, ['start'=>$start, 'number'=>$number, 'filters'=>$filters], NULL);
+		return $this->curlRequest('GET', '/monitor/user/info/query', NULL, ['start'=>$start, 'number'=>$number, 'filters'=>$filters], NULL);
 	}
 
 
@@ -3923,7 +3923,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUserInfoThumbnail(array $filters) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/user/info/thumbnail', NULL, ['filters'=>$filters], NULL);
+		return $this->curlRequest('GET', '/monitor/user/info/thumbnail', NULL, ['filters'=>$filters], NULL);
 	}
 
 
@@ -3936,7 +3936,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addUtmRatingLookupSelect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/utm/rating-lookup/select', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/utm/rating-lookup/select', NULL, NULL, $body);
 	}
 
 
@@ -3949,7 +3949,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUtmAppLookup(array $hosts = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/utm/app-lookup', NULL, ['hosts'=>$hosts], NULL);
+		return $this->curlRequest('GET', '/monitor/utm/app-lookup', NULL, ['hosts'=>$hosts], NULL);
 	}
 
 
@@ -3961,7 +3961,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUtmApplicationCategories() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/utm/application-categories', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/utm/application-categories', NULL, NULL, NULL);
 	}
 
 
@@ -3973,7 +3973,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUtmAntivirusStats() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/utm/antivirus/stats', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/utm/antivirus/stats', NULL, NULL, NULL);
 	}
 
 
@@ -3987,7 +3987,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUtmBlacklistedCertificates(int $start, int $count) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/utm/blacklisted-certificates', NULL, ['start'=>$start, 'count'=>$count], NULL);
+		return $this->curlRequest('GET', '/monitor/utm/blacklisted-certificates', NULL, ['start'=>$start, 'count'=>$count], NULL);
 	}
 
 
@@ -3999,7 +3999,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllUtmBlacklistedCertificatesStatistics() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/utm/blacklisted-certificates/statistics', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/utm/blacklisted-certificates/statistics', NULL, NULL, NULL);
 	}
 
 
@@ -4011,7 +4011,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVirtualWanHealthCheck() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/virtual-wan/health-check', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/virtual-wan/health-check', NULL, NULL, NULL);
 	}
 
 
@@ -4029,7 +4029,7 @@ class Monitor extends FortiOSAPI
 		int $since = null,
 		int $seconds = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/virtual-wan/interface-log', NULL, ['interface'=>$interface, 'since'=>$since, 'seconds'=>$seconds], NULL);
+		return $this->curlRequest('GET', '/monitor/virtual-wan/interface-log', NULL, ['interface'=>$interface, 'since'=>$since, 'seconds'=>$seconds], NULL);
 	}
 
 
@@ -4049,7 +4049,7 @@ class Monitor extends FortiOSAPI
 		int $since = null,
 		int $seconds = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/virtual-wan/sla-log', NULL, ['sla'=>$sla, 'interface'=>$interface, 'since'=>$since, 'seconds'=>$seconds], NULL);
+		return $this->curlRequest('GET', '/monitor/virtual-wan/sla-log', NULL, ['sla'=>$sla, 'interface'=>$interface, 'since'=>$since, 'seconds'=>$seconds], NULL);
 	}
 
 
@@ -4061,7 +4061,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVirtualWanMembers() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/virtual-wan/members', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/virtual-wan/members', NULL, NULL, NULL);
 	}
 
 
@@ -4074,7 +4074,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnCertificateCaImport(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn-certificate/ca/import', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn-certificate/ca/import', NULL, NULL, $body);
 	}
 
 
@@ -4087,7 +4087,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnCertificateCrlImport(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn-certificate/crl/import', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn-certificate/crl/import', NULL, NULL, $body);
 	}
 
 
@@ -4100,7 +4100,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnCertificateLocalImport(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn-certificate/local/import', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn-certificate/local/import', NULL, NULL, $body);
 	}
 
 
@@ -4113,7 +4113,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnCertificateRemoteImport(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn-certificate/remote/import', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn-certificate/remote/import', NULL, NULL, $body);
 	}
 
 
@@ -4126,7 +4126,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnCertificateCsrGenerate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn-certificate/csr/generate', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn-certificate/csr/generate', NULL, NULL, $body);
 	}
 
 
@@ -4139,7 +4139,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnIkeClear(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn/ike/clear', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn/ike/clear', NULL, NULL, $body);
 	}
 
 
@@ -4154,7 +4154,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVpnIpsec(string $tunnel = null, int $start = null, int $count = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/vpn/ipsec', NULL, ['tunnel'=>$tunnel, 'start'=>$start, 'count'=>$count], NULL);
+		return $this->curlRequest('GET', '/monitor/vpn/ipsec', NULL, ['tunnel'=>$tunnel, 'start'=>$start, 'count'=>$count], NULL);
 	}
 
 
@@ -4167,7 +4167,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnIpsecTunnel_up(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn/ipsec/tunnel_up', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn/ipsec/tunnel_up', NULL, NULL, $body);
 	}
 
 
@@ -4180,7 +4180,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnIpsecTunnel_down(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn/ipsec/tunnel_down', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn/ipsec/tunnel_down', NULL, NULL, $body);
 	}
 
 
@@ -4193,7 +4193,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnIpsecTunnel_reset_stats(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn/ipsec/tunnel_reset_stats', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn/ipsec/tunnel_reset_stats', NULL, NULL, $body);
 	}
 
 
@@ -4205,7 +4205,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVpnOcvpnMembers() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/vpn/ocvpn/members', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/vpn/ocvpn/members', NULL, NULL, NULL);
 	}
 
 
@@ -4217,7 +4217,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVpnOcvpnStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/vpn/ocvpn/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/vpn/ocvpn/status', NULL, NULL, NULL);
 	}
 
 
@@ -4229,7 +4229,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVpnOcvpnMeta() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/vpn/ocvpn/meta', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/vpn/ocvpn/meta', NULL, NULL, NULL);
 	}
 
 
@@ -4241,7 +4241,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVpnSsl() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/vpn/ssl', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/vpn/ssl', NULL, NULL, NULL);
 	}
 
 
@@ -4253,7 +4253,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnSslClear_tunnel() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn/ssl/clear_tunnel', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/vpn/ssl/clear_tunnel', NULL, NULL, NULL);
 	}
 
 
@@ -4266,7 +4266,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnSslDelete(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn/ssl/delete', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn/ssl/delete', NULL, NULL, $body);
 	}
 
 
@@ -4278,7 +4278,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllVpnSslStats() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/vpn/ssl/stats', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/vpn/ssl/stats', NULL, NULL, NULL);
 	}
 
 
@@ -4291,7 +4291,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addVpnSslProvisionUser(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/vpn/ssl/provision-user', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/vpn/ssl/provision-user', NULL, NULL, $body);
 	}
 
 
@@ -4304,7 +4304,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWanoptHistory(string $period = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wanopt/history', NULL, ['period'=>$period], NULL);
+		return $this->curlRequest('GET', '/monitor/wanopt/history', NULL, ['period'=>$period], NULL);
 	}
 
 
@@ -4316,7 +4316,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWanoptHistoryReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wanopt/history/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/wanopt/history/reset', NULL, NULL, NULL);
 	}
 
 
@@ -4329,7 +4329,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWanoptWebcache(string $period = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wanopt/webcache', NULL, ['period'=>$period], NULL);
+		return $this->curlRequest('GET', '/monitor/wanopt/webcache', NULL, ['period'=>$period], NULL);
 	}
 
 
@@ -4341,7 +4341,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWanoptWebcacheReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wanopt/webcache/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/wanopt/webcache/reset', NULL, NULL, NULL);
 	}
 
 
@@ -4353,7 +4353,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWanoptPeer_stats() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wanopt/peer_stats', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/wanopt/peer_stats', NULL, NULL, NULL);
 	}
 
 
@@ -4365,7 +4365,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWanoptPeer_statsReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wanopt/peer_stats/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/wanopt/peer_stats/reset', NULL, NULL, NULL);
 	}
 
 
@@ -4378,7 +4378,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWebUiLanguageImport(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/web-ui/language/import', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/web-ui/language/import', NULL, NULL, $body);
 	}
 
 
@@ -4391,7 +4391,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWebUiCustomLanguageCreate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/web-ui/custom-language/create', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/web-ui/custom-language/create', NULL, NULL, $body);
 	}
 
 
@@ -4404,7 +4404,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWebUiCustomLanguageUpdate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/web-ui/custom-language/update', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/web-ui/custom-language/update', NULL, NULL, $body);
 	}
 
 
@@ -4417,7 +4417,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebUiCustomLanguageDownload(string $filename) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/web-ui/custom-language/download', NULL, ['filename'=>$filename], NULL);
+		return $this->curlRequest('GET', '/monitor/web-ui/custom-language/download', NULL, ['filename'=>$filename], NULL);
 	}
 
 
@@ -4430,7 +4430,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebcacheStats(string $period = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/webcache/stats', NULL, ['period'=>$period], NULL);
+		return $this->curlRequest('GET', '/monitor/webcache/stats', NULL, ['period'=>$period], NULL);
 	}
 
 
@@ -4442,7 +4442,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWebcacheStatsReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/webcache/stats/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/webcache/stats/reset', NULL, NULL, NULL);
 	}
 
 
@@ -4454,7 +4454,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebfilterOverride() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/webfilter/override', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/webfilter/override', NULL, NULL, NULL);
 	}
 
 
@@ -4467,7 +4467,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWebfilterOverrideDelete(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/webfilter/override/delete', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/webfilter/override/delete', NULL, NULL, $body);
 	}
 
 
@@ -4479,7 +4479,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebfilterMaliciousUrls() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/webfilter/malicious-urls', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/webfilter/malicious-urls', NULL, NULL, NULL);
 	}
 
 
@@ -4491,7 +4491,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebfilterMaliciousUrlsStat() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/webfilter/malicious-urls/stat', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/webfilter/malicious-urls/stat', NULL, NULL, NULL);
 	}
 
 
@@ -4505,7 +4505,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebfilterCategoryQuota(string $profile = null, string $user = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/webfilter/category-quota', NULL, ['profile'=>$profile, 'user'=>$user], NULL);
+		return $this->curlRequest('GET', '/monitor/webfilter/category-quota', NULL, ['profile'=>$profile, 'user'=>$user], NULL);
 	}
 
 
@@ -4518,7 +4518,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWebfilterCategoryQuotaReset(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/webfilter/category-quota/reset', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/webfilter/category-quota/reset', NULL, NULL, $body);
 	}
 
 
@@ -4534,7 +4534,7 @@ class Monitor extends FortiOSAPI
 		bool $include_unrated = null,
 		bool $convert_unrated_id = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/webfilter/fortiguard-categories', NULL, ['include_unrated'=>$include_unrated, 'convert_unrated_id'=>$convert_unrated_id], NULL);
+		return $this->curlRequest('GET', '/monitor/webfilter/fortiguard-categories', NULL, ['include_unrated'=>$include_unrated, 'convert_unrated_id'=>$convert_unrated_id], NULL);
 	}
 
 
@@ -4546,7 +4546,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebfilterTrustedUrls() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/webfilter/trusted-urls', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/webfilter/trusted-urls', NULL, NULL, NULL);
 	}
 
 
@@ -4558,7 +4558,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWebproxyPacfileDownload() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/webproxy/pacfile/download', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/webproxy/pacfile/download', NULL, NULL, NULL);
 	}
 
 
@@ -4571,7 +4571,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWebproxyPacfileUpload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/webproxy/pacfile/upload', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/webproxy/pacfile/upload', NULL, NULL, $body);
 	}
 
 
@@ -4586,7 +4586,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiClient(int $start = null, int $count = null, string $type = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/client', NULL, ['start'=>$start, 'count'=>$count, 'type'=>$type], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/client', NULL, ['start'=>$start, 'count'=>$count, 'type'=>$type], NULL);
 	}
 
 
@@ -4599,7 +4599,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiClientDisassociate(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/client/disassociate', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/client/disassociate', NULL, NULL, $body);
 	}
 
 
@@ -4613,7 +4613,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiManaged_ap(string $wtp_id = null, bool $incl_local = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/managed_ap', NULL, ['wtp_id'=>$wtp_id, 'incl_local'=>$incl_local], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/managed_ap', NULL, ['wtp_id'=>$wtp_id, 'incl_local'=>$incl_local], NULL);
 	}
 
 
@@ -4626,7 +4626,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiManaged_apSet_status(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/managed_ap/set_status', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/managed_ap/set_status', NULL, NULL, $body);
 	}
 
 
@@ -4639,7 +4639,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiFirmware(string $timeout = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/firmware', NULL, ['timeout'=>$timeout], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/firmware', NULL, ['timeout'=>$timeout], NULL);
 	}
 
 
@@ -4652,7 +4652,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiFirmwareDownload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/firmware/download', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/firmware/download', NULL, NULL, $body);
 	}
 
 
@@ -4665,7 +4665,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiFirmwarePush(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/firmware/push', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/firmware/push', NULL, NULL, $body);
 	}
 
 
@@ -4678,7 +4678,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiFirmwareUpload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/firmware/upload', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/firmware/upload', NULL, NULL, $body);
 	}
 
 
@@ -4691,7 +4691,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiManaged_apRestart(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/managed_ap/restart', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/managed_ap/restart', NULL, NULL, $body);
 	}
 
 
@@ -4704,7 +4704,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiManaged_apLedBlink(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/managed_ap/led-blink', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/managed_ap/led-blink', NULL, NULL, $body);
 	}
 
 
@@ -4716,7 +4716,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiNetworkList() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/network/list', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/network/list', NULL, NULL, NULL);
 	}
 
 
@@ -4728,7 +4728,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiNetworkStatus() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/network/status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/network/status', NULL, NULL, NULL);
 	}
 
 
@@ -4741,7 +4741,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiNetworkConnect(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/network/connect', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/network/connect', NULL, NULL, $body);
 	}
 
 
@@ -4753,7 +4753,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiNetworkScan() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/network/scan', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/wifi/network/scan', NULL, NULL, NULL);
 	}
 
 
@@ -4765,7 +4765,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiAp_status() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/ap_status', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/ap_status', NULL, NULL, NULL);
 	}
 
 
@@ -4785,7 +4785,7 @@ class Monitor extends FortiOSAPI
 		int $start = null,
 		int $count = null
 	) : stdClass {
-		return $this->curlRequest('GET', '/Monitor/wifi/interfering_ap', NULL, ['wtp'=>$wtp, 'radio'=>$radio, 'start'=>$start, 'count'=>$count], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/interfering_ap', NULL, ['wtp'=>$wtp, 'radio'=>$radio, 'start'=>$start, 'count'=>$count], NULL);
 	}
 
 
@@ -4797,7 +4797,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiEuclid() : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/euclid', NULL, NULL, NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/euclid', NULL, NULL, NULL);
 	}
 
 
@@ -4809,7 +4809,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiEuclidReset() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/euclid/reset', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/wifi/euclid/reset', NULL, NULL, NULL);
 	}
 
 
@@ -4822,7 +4822,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiRegionImage(string $region_name) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/region-image', NULL, ['region_name'=>$region_name], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/region-image', NULL, ['region_name'=>$region_name], NULL);
 	}
 
 
@@ -4835,7 +4835,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiRegionImageUpload(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/region-image/upload', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/region-image/upload', NULL, NULL, $body);
 	}
 
 
@@ -4849,7 +4849,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiRogue_ap(int $start = null, int $count = null) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/rogue_ap', NULL, ['start'=>$start, 'count'=>$count], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/rogue_ap', NULL, ['start'=>$start, 'count'=>$count], NULL);
 	}
 
 
@@ -4861,7 +4861,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiRogue_apClear_all() : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/rogue_ap/clear_all', NULL, NULL, NULL);
+		return $this->curlRequest('POST', '/monitor/wifi/rogue_ap/clear_all', NULL, NULL, NULL);
 	}
 
 
@@ -4874,7 +4874,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiRogue_apSet_status(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/rogue_ap/set_status', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/rogue_ap/set_status', NULL, NULL, $body);
 	}
 
 
@@ -4887,7 +4887,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiSpectrum(string $wtp_id) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/spectrum', NULL, ['wtp_id'=>$wtp_id], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/spectrum', NULL, ['wtp_id'=>$wtp_id], NULL);
 	}
 
 
@@ -4900,7 +4900,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiSpectrumStart(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/spectrum/start', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/spectrum/start', NULL, NULL, $body);
 	}
 
 
@@ -4913,7 +4913,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiSpectrumKeepAlive(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/spectrum/keep-alive', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/spectrum/keep-alive', NULL, NULL, $body);
 	}
 
 
@@ -4926,7 +4926,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiSpectrumStop(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/spectrum/stop', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/spectrum/stop', NULL, NULL, $body);
 	}
 
 
@@ -4940,7 +4940,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function getAllWifiVlanProbe(int $ap_interface, string $wtp) : stdClass
 	{
-		return $this->curlRequest('GET', '/Monitor/wifi/vlan-probe', NULL, ['ap_interface'=>$ap_interface, 'wtp'=>$wtp], NULL);
+		return $this->curlRequest('GET', '/monitor/wifi/vlan-probe', NULL, ['ap_interface'=>$ap_interface, 'wtp'=>$wtp], NULL);
 	}
 
 
@@ -4953,7 +4953,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiVlanProbeStart(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/vlan-probe/start', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/vlan-probe/start', NULL, NULL, $body);
 	}
 
 
@@ -4966,7 +4966,7 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiVlanProbeStop(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/vlan-probe/stop', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/vlan-probe/stop', NULL, NULL, $body);
 	}
 
 
@@ -4979,6 +4979,6 @@ class Monitor extends FortiOSAPI
 	 */
 	public function addWifiSsidGenerateKeys(stdClass $body) : stdClass
 	{
-		return $this->curlRequest('POST', '/Monitor/wifi/ssid/generate-keys', NULL, NULL, $body);
+		return $this->curlRequest('POST', '/monitor/wifi/ssid/generate-keys', NULL, NULL, $body);
 	}
 }
