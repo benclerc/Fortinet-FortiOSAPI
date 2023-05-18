@@ -182,6 +182,7 @@ class FortiOSAPI
 				// Else with classicly insert values in query
 				default:
 					if ($first) { $first = FALSE; }
+					if (is_array($value)) {	$value = implode(",", $value); }
 					$query .= urlencode($key).'='.urlencode($value);
 					break;
 			}
