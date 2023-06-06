@@ -172,7 +172,7 @@ class Config
 	 * @param string $url Curl's proxy connect url.
 	 * @return Config Config object to be passed on a new instance of FortiOS APIs classes.
 	 */
-	public function setProxy(int $url) : Config
+	public function setProxy(string $url) : Config
 	{
 		$this->proxy = $url; return $this;
 	}
