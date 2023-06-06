@@ -17,6 +17,7 @@ use Exception;
  * @property string $hostname Firewall's FQDN.
  * @property string $username Firewall user's valid username.
  * @property string $password Firewall user's valid password.
+ * @property string $proxy proxy url to use.
  * @property int $timeout Wanted HTTP requests timeout, default to 5 seconds.
  * @property bool $SSLVerifyPeer HTTP client ssl verify peer option.
  * @property int $SSLVerifyHost HTTP client ssl verify host option.
@@ -28,6 +29,7 @@ class Config
 	private string $hostname;
 	private string $username;
 	private string $password;
+	private string $proxy = "";
 	private int $timeout = 5000;
 	private bool $SSLVerifyPeer = true;
 	private int $SSLVerifyHost = 2;
@@ -155,6 +157,16 @@ class Config
 	public function setTimeout(int $timeout) : Config
 	{
 		$this->timeout = $timeout; return $this;
+	}
+	
+	/**
+	 * Setter for proxy connect url.
+	 * @param string $url Curl's proxy connect url.
+	 * @return Config Config object to be passed on a new instance of FortiOS APIs classes.
+	 */
+	public function setProxy(int $url) : Config
+	{
+		$this->proxy = $url; return $this;
 	}
 
 
