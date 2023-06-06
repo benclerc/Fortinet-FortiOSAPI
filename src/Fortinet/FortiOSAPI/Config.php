@@ -17,7 +17,7 @@ use Exception;
  * @property string $hostname Firewall's FQDN.
  * @property string $username Firewall user's valid username.
  * @property string $password Firewall user's valid password.
- * @property string $proxy proxy url to use.
+ * @property string $proxy Proxy url to use.
  * @property int $timeout Wanted HTTP requests timeout, default to 5 seconds.
  * @property bool $SSLVerifyPeer HTTP client ssl verify peer option.
  * @property int $SSLVerifyHost HTTP client ssl verify host option.
@@ -88,7 +88,7 @@ class Config
 
 	/**
 	 * Getter for curl proxy string.
-	 * @return string proxy connect url
+	 * @return string Proxy connect url
 	 */
 	public function getProxy() : string
 	{
