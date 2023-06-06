@@ -86,7 +86,15 @@ class Config
 		return $this->password;
 	}
 
-
+	/**
+	 * Getter for curl proxy string.
+	 * @return string proxy connect url
+	 */
+	public function getProxy() : string
+	{
+		return $this->proxy;
+	}
+	
 	/**
 	 * Getter for curl's option to verify SSL peer.
 	 * @return bool Curl's option to verify SSL peer.
