@@ -95,6 +95,7 @@ class FortiOSAPI
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, $method);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, $this->config->getSSLVerifyPeer());
+		curl_setopt($ch, CURLOPT_PROXY, $this->config->getProxy());
 		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, $this->config->getSSLVerifyHost());
 		$curlTimeout = (empty($timeout)) ? $this->config->getTimeout() : $timeout;
 		curl_setopt($ch, CURLOPT_TIMEOUT_MS, $curlTimeout);
